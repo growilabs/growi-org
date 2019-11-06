@@ -1,4 +1,4 @@
-# growi-docs
+# growi-org
 
 ## Requirements
 
