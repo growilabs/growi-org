@@ -1,0 +1,27 @@
+# Logs
+logs
+*.log
+npm-debug.log.*
+
+# OS generated files #
+.DS_Store
+.Trash-*
+ehthumbs.db
+Thumbs.db
+
+# Node Files #
+/node_modules/
+npm-debug.log
+/npm-debug.log.*
+package-lock.json
+
+# Dist #
+docs/.vuepress/dist
+docs/.vuepress/public/redoc.html
+tmp
+
+# Doc #
+
+# IDE, dev #
+.idea
+*.orig

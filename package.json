@@ -1,0 +1,46 @@
+{
+  "name": "growi-org",
+  "version": "1.0.0",
+  "description": "The webpage for growi.org Project",
+  "keywords": [
+    "node",
+    "vuepress",
+    "markdown",
+    "growi",
+    "documentation"
+  ],
+  "homepage": "https:/growi.org",
+  "author": "Koki Oyatsu <kouki@weseek.co.jp>",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "vuepress-plugin-medium-zoom": "^1.1.6",
+    "vuepress-plugin-redirect": "^1.1.2",
+    "vuepress-plugin-sitemap": "^2.3.0"
+  },
+  "scripts": {
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs",
+    "start": "npm run docs:dev",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "engines": {
+    "node": ">=10.14 <11",
+    "npm": ">=6.1.0 <7",
+    "yarn": ">=1.12"
+  },
+  "devDependencies": {
+    "@vuepress/plugin-google-analytics": "^1.2.0",
+    "bootstrap-sass": "^3.3.7",
+    "eslint": "^5.15.1",
+    "eslint-config-weseek": "^1.0.1",
+    "eslint-plugin-import": "^2.16.0",
+    "nodemon": "^1.17.3",
+    "node-sass": "^4.7.2",
+    "npm-run-all": "^4.1.2",
+    "prettier-stylelint": "^0.4.2",
+    "stylelint-config-recess-order": "^2.0.1",
+    "sass-loader": "^8.0.0",
+    "vue-script2": "^2.1.0",
+    "vuepress": "^1.2.0"
+  }
+}
