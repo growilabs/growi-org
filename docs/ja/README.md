@@ -40,7 +40,7 @@ features:
     description: 左右2画面でのリアルタイムプレビューが可能。言語ごとのコードハイライトや絵文字や注釈(footnotes)、タスクリスト、Bootstrap による HTML コードにも対応しています。
   - title: シンプルなアセット管理
     icon: picture
-    description: ファイルのアップロードは編集画面にファイルをドロップするだけです。ストレージはローカルFSと AWS S3 のどちらかを選択できます。
+    description: ファイルのアップロードは編集画面にファイルをドロップするだけです。ストレージはローカルFS、AWS S3、Google Cloud Storage、MongoDB GridFS の4種をサポートしています。
 - image_path: /assets/images/screenshots/keymap.png
   details:
   - title: 3種のキーマップ
@@ -66,7 +66,7 @@ features:
   details:
   - title: 強力な認証機構・グループ管理
     icon: lock
-    description: <a href="http://www.passportjs.org/">Passport</a>による認証機構を採用、LDAP 認証および OAuth プロバイダを利用したログインをサポートしています。<br /> また、v3.0 からはグループごとのアクセスコントロールを搭載し、より柔軟なページ管理が可能になりました。
+    description: <a href="http://www.passportjs.org/">Passport</a>による認証機構を採用、SSO を実現する SAML や、LDAP 認証、GitHub/Twitter/Google OAuth プロバイダを利用したログインをサポートしています。<br /> また、グループごとのアクセスコントロールを搭載し、より柔軟なページ管理が可能です。
   - title: オープンWiki
     icon: users
     description: ゲストユーザーに対して閲覧を許可することで、オープンWikiの公開も可能です。

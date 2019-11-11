@@ -37,7 +37,7 @@ features:
     description: Real-time preview on left and right screens is possible. It also supports code highlights, pictograms, annotations (footnotes), task lists, and HTML codes by Bootstrap for each language.
   - title: Simple asset management
     icon: picture
-    description: To upload a file, simply drop it on the editor. The storage can be either local File System or AWS S3.
+    description: To upload a file, simply drop it on the editor. 4 kinds of storages are supported that local File System, AWS S3, Google Cloud Storage and MongoDB GridFS.
 - image_path: /assets/images/screenshots/keymap.png
   details:
   - title: 3 types of keymap
@@ -63,7 +63,7 @@ features:
   details:
   - title: Authentication and group management
     icon: lock
-    description: It uses an authentication mechanism based on <a href="http://www.passportjs.org/"> Passport </a>, and supports login using LDAP authentication and OAuth providers. <br /> In addition, from v3.0, access control for each group is implemented, enabling more flexible page management.
+    description: It uses an authentication mechanism based on <a href="http://www.passportjs.org/"> Passport </a>, and supports login using SAML, LDAP and OAuth providers (GitHub/Twitter/Google). <br /> In addition, access control for each group is implemented, it provides more flexible page management.
   - title: Public Wiki
     icon: users
     description: Public Wiki can also be published by allowing guest users to view.
