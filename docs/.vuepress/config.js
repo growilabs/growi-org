@@ -47,12 +47,12 @@ module.exports = ctx => ({
   ],
   locales: {
     '/en/': {
-      lang: 'en',
+      lang: 'en-US',
       title: 'GROWI - Get the best Markdown Wiki for *FREE*',
       description: 'Get the best Markdown Wiki for *FREE*'
     },
     '/ja/': {
-      lan: 'ja',
+      lang: 'ja',
       title: 'GROWI - 快適な Markdown Wiki を *無料で*',
       description: '快適な Markdown Wiki を *無料で*'
     }
@@ -72,8 +72,8 @@ module.exports = ctx => ({
       },
       '/ja/': {
         label: '日本語',
-        selectText: 'Languages',
-        ariaLabel: 'Select language',
+        selectText: '言語',
+        ariaLabel: '言語を選択',
         editLinkText: 'GitHub で編集',
         lastUpdated: '最終更新日',
         nav: require('./nav/ja')
