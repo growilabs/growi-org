@@ -16,19 +16,12 @@ deploy:
       code: |
         echo -n "node " && node -v
         echo -n "npm " && npm -v
+        echo -n "yarn " && yarn -v
         yarn list --depth=0
-
-    - script:
-      name: download and extract GROWI source
-      code: |
-        mkdir tmp/growi
-        curl -SL $GROWI_ARCHIVE_URL | tar -xz -C tmp/growi --strip-components 1
 
     - script:
       name: build docs
       code: |
-        yarn commons:build
-        yarn apiv3:build
         yarn docs:build
 
     - script:
