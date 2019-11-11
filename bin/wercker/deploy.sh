@@ -11,7 +11,7 @@ set -e
 cd docs/.vuepress/dist
 
 # if you are deploying to a custom domain
-echo 'growi.org' > CNAME
+# echo 'growi.org' > CNAME
 
 git add -A
 git commit -m 'deploy'
