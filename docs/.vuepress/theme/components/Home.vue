@@ -8,6 +8,9 @@
           <p class="banner-img animated fadeIn">
             <img :src="data.heroImage" alt="GROWI">
           </p>
+          <div class="row" style="height: 100px;">
+          </div>
+          <!--
           <div class="row">
             <div class="col-sm-12 animated fadeIn">
               <NavLink
@@ -22,10 +25,85 @@
               <img src="/assets/images/banner-img-2.png" alt="GROWI">
             </div>
           </div>
+          -->
         </div><!-- / header content -->
       </div><!-- / container -->
     </header><!-- / header -->
 
+    <div v-if="data.service && data.service.length" id="service" data-section="service">
+      <div class="container">
+        <div class="page-header wsub first">
+          <h2>{{ data.sections.service.title }}</h2>
+        </div>
+        <div v-for="(service, index) in data.service" class="row service-row" style="margin-top: 50px; margin-bottom: 100px;">
+          <div v-if="(index % 2) === 0">
+            <div class="service-image-left col-sm-12 col-md-7">
+              <img :src="service.image_path" alt="">
+            </div>
+            <div class="service-left image-left col-xs-12 col-md-5">
+              <div v-for="detail in service.details" class="service">
+                <div class="service-icon">
+                  <i class="lnr" :class="`lnr-${detail.icon}`"></i>
+                </div>
+                <h3>{{ detail.title }}</h3>
+                <p v-html="detail.description"></p>
+              </div>
+            </div>
+          </div>
+          <div v-else>
+            <div class="service-left image-left col-xs-12 col-md-5">
+              <div v-for="detail in service.details" class="service">
+                <div class="service-icon">
+                  <i class="lnr" :class="`lnr-${detail.icon}`"></i>
+                </div>
+                <h3>{{ detail.title }}</h3>
+                <p v-html="detail.description"></p>
+              </div>
+            </div>
+            <div class="service-image-left col-sm-12 col-md-7">
+              <img :src="service.image_path" alt="">
+            </div>
+
+          </div>
+        </div>
+
+
+<!--
+        <div v-for="(service, index) in data.service" class="row service-row" style="margin-top: 50px; margin-bottom: 100px;">
+          <div v-if="(index % 2) === 0">
+            <div class="service-image-left col-sm-12 col-md-7">
+              <img :src="service.image_path" alt="">
+            </div>
+            <div class="service-left image-left col-xs-12 col-md-5">
+              <div v-for="detail in service.details" class="service">
+                <div class="service-icon">
+                  <i class="lnr" :class="`lnr-${detail.icon}`"></i>
+                </div>
+                <h3>{{ detail.title }}</h3>
+                <p v-html="detail.description"></p>
+              </div>
+            </div>
+          </div>
+          <div v-else>
+            <div class="service-left image-left col-xs-12 col-md-5">
+              <div v-for="detail in service.details" class="service">
+                <div class="service-icon">
+                  <i class="lnr" :class="`lnr-${detail.icon}`"></i>
+                </div>
+                <h3>{{ detail.title }}</h3>
+                <p v-html="detail.description"></p>
+              </div>
+            </div>
+            <div class="service-image-left col-sm-12 col-md-7">
+              <img :src="service.image_path" alt="">
+            </div>
+          </div>
+        </div>
+        -->
+      </div><!-- /container -->
+    </div><!-- / service section image-left -->
+
+<!--
     <div v-if="data.features && data.features.length" id="features" data-section="features">
       <div class="container">
         <div class="page-header wsub first">
@@ -62,8 +140,9 @@
             </div>
           </div>
         </div>
-      </div><!-- /container -->
-    </div><!-- / features section image-left -->
+-->
+      <!--></div><!-- /container -->
+   <!--> </div><!-- / features section image-left -->
     <!-- / features section 4col image-left -->
 
     <div id="demo" class="row">

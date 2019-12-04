@@ -1,6 +1,6 @@
 ---
 home: true
-heroText: 快適な Markdown Wiki を<strong>*無料で*</strong>
+heroText: 今後のトレンドを担う新情報共有ツール
 heroImage: /assets/images/banner-logo.png
 heroButtons:
 - text: 機能紹介
@@ -10,6 +10,8 @@ heroButtons:
 - text: GROWI.cloud
   link: /ja/#cloud
 sections:
+  service:
+    title: GROWI とは
   features:
     title: 機能紹介
   documents:
@@ -32,7 +34,24 @@ sections:
       text: 03-6667-4862
       link: 0366674862
     email: info@weseek.co.jp
-features:
+service:
+- image_path: /assets/images/screenshots/editor.png
+  details:
+  - title: GROWI とは
+    icon: pencil
+    description: GROWI とは、オリジナルの wiki を構築できるサービスです。wiki というと多くの人は wikipedia を連想すると思いますが、wiki とは多数のユーザーが共同してブラウザからコンテンツを編集するウェブサイトの事です。
+  - title: GROWI で出来ること
+    icon: picture
+    description: オリジナルの wiki を作成できます。企業やサークル、個人などあらゆる単位で、特定の情報についてまとめて管理したいとき、GROWI を使えばそれらの情報やファイルを管理できます。整理の仕方、ページの追加が自由自在で、思った通りの情報管理が簡単に実現できます。
+- image_path: /assets/images/screenshots/keymap.png
+  details:
+  - title: GROWI を使うには
+    icon: keyboard
+    description: GROWI は、株式会社 WESEEK が開発を行い、MIT ライセンスで公開しているオープンソースソフトウェアです。ダウンロードして手順に沿って構築すれば、 wiki として使えるようになります。もっとも簡単な導入方法は、GROWI.cloud でサービスを契約する事です。無料プランもありますので、是非使ってみてください。
+  - title: 具体的に GROWI ってどんなサイト？
+    icon: smile
+    description: デモサイトにあるように、情報管理に向いています。ファイルサーバーとしても活用できます。使い方次第であらゆる用途に対応出来ます。ドキュメントや機能開発も充実させています。
+-features:
 - image_path: /assets/images/screenshots/editor.png
   details:
   - title: Markdown
