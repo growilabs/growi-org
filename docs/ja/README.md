@@ -35,7 +35,7 @@ sections:
       link: 0366674862
     email: info@weseek.co.jp
 service:
-- image_path: /assets/images/screenshots/editor.png
+- image_path: /assets/images/screenshots/whatgrowi.png
   details:
   - title: GROWI とは
     icon: pencil
@@ -43,7 +43,7 @@ service:
   - title: GROWI で出来ること
     icon: picture
     description: オリジナルの wiki を作成できます。企業やサークル、個人などあらゆる単位で、特定の情報についてまとめて管理したいとき、GROWI を使えばそれらの情報やファイルを管理できます。整理の仕方、ページの追加が自由自在で、思った通りの情報管理が簡単に実現できます。
-- image_path: /assets/images/screenshots/keymap.png
+- image_path: /assets/images/screenshots/howtouse.png
   details:
   - title: GROWI を使うには
     icon: keyboard
