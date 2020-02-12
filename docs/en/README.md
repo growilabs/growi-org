@@ -1,6 +1,6 @@
 ---
 home: true
-heroText: Get the best Markdown Wiki for <strong>*FREE*</strong>
+heroText: Comfortable information sharing for everyone
 heroImage: /assets/images/banner-logo.png
 heroButtons:
 - text: Features
