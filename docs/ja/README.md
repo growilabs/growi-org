@@ -1,6 +1,6 @@
 ---
 home: true
-heroText: 快適な Markdown Wiki を<strong>*無料で*</strong>
+heroText: 快適な情報共有を、全ての人へ
 heroImage: /assets/images/banner-logo.png
 heroButtons:
 - text: 機能紹介
