@@ -1,6 +1,6 @@
 ---
 home: true
-heroText: Comfortable information sharing for everyone
+heroText: Easy and Smooth Information Sharing For Everyone
 heroImage: /assets/images/banner-logo.png
 heroButtons:
 - text: Features
