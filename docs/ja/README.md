@@ -35,6 +35,11 @@ sections:
 features:
 - image_path: /assets/images/screenshots/editor.png
   details:
+  - title: フローチャートが簡単に書ける
+    icon: select
+    description: v3.7.0 より、GROWI に draw.io 連携機能を追加しました！ GROWI wiki 編集画面上で、簡単にフローチャートが作成できます。<br/> GROWI 編集画面内に、diagrams.net (旧draw.io)の編集ウィンドウが展開され、フローチャートが作成・編集できるようになりした。
+- image_path: /assets/images/screenshots/editor.png
+  details:
   - title: Markdown
     icon: pencil
     description: 左右2画面でのリアルタイムプレビューが可能。言語ごとのコードハイライトや絵文字や注釈(footnotes)、タスクリスト、Bootstrap による HTML コードにも対応しています。
