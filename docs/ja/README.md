@@ -33,11 +33,11 @@ sections:
       link: 0366674862
     email: info@weseek.co.jp
 features:
-- image_path: /assets/images/screenshots/editor.png
+- image_path: /assets/images/screenshots/drawio.gif
   details:
   - title: フローチャートが簡単に書ける
     icon: select
-    description: v3.7.0 より、GROWI に draw.io 連携機能を追加しました！ GROWI wiki 編集画面上で、簡単にフローチャートが作成できます。<br/> GROWI 編集画面内に、diagrams.net (旧draw.io)の編集ウィンドウが展開され、フローチャートが作成・編集できるようになりした。
+    description: v3.7.0 より、GROWI に draw.io 連携機能を追加しました！ <br/> GROWI wiki 編集画面上で、簡単にフローチャートが作成できます。<br/> GROWI 編集画面内に、diagrams.net (旧draw.io)の編集ウィンドウが展開され、フローチャートが作成・編集できるようになりました。
 - image_path: /assets/images/screenshots/editor.png
   details:
   - title: Markdown
