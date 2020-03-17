@@ -30,11 +30,6 @@ sections:
     address: Takadanobaba Access 10F, 2-20-15 Nishiwaseda, Shinjuku-ku, Tokyo, Japan
     email: info@weseek.co.jp
 features:
-- image_path: /assets/images/screenshots/drawio.gif
-  details:
-  - title: You can easily create flowcharts
-    icon: select
-    description: From v3.7.0, draw.io linkage function has been added to GROWI! <br/> You can easily create flowcharts on the GROWI wiki editing screen.<br/> The editing window of diagrams.net (formerly draw.io) has been expanded on the GROWI editing screen, and you can now create and edit flowcharts.
 - image_path: /assets/images/screenshots/editor.png
   details:
   - title: Markdown
@@ -43,6 +38,11 @@ features:
   - title: Simple asset management
     icon: picture
     description: To upload a file, simply drop it on the editor. 4 kinds of storages are supported that local File System, AWS S3, Google Cloud Storage and MongoDB GridFS.
+- image_path: /assets/images/screenshots/drawio.gif
+  details:
+  - title: You can easily create flowcharts
+    icon: select
+    description: By using the draw.io linkage function, you can easily draw various figures. (v3.7.0 or later) <br/> By pressing the draw.io button on the toolbar in the editing screen, you can intuitively create and edit diagrams on the diagrams.net (formerly draw.io) editing window.
 - image_path: /assets/images/screenshots/keymap.png
   details:
   - title: 3 types of keymap

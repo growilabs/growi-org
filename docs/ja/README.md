@@ -33,11 +33,6 @@ sections:
       link: 0366674862
     email: info@weseek.co.jp
 features:
-- image_path: /assets/images/screenshots/drawio.gif
-  details:
-  - title: フローチャートが簡単に書ける
-    icon: select
-    description: v3.7.0 より、GROWI に draw.io 連携機能を追加しました！ <br/> GROWI wiki 編集画面上で、簡単にフローチャートが作成できます。<br/> GROWI 編集画面内に、diagrams.net (旧draw.io)の編集ウィンドウが展開され、フローチャートが作成・編集できるようになりました。
 - image_path: /assets/images/screenshots/editor.png
   details:
   - title: Markdown
@@ -46,6 +41,11 @@ features:
   - title: シンプルなアセット管理
     icon: picture
     description: ファイルのアップロードは編集画面にファイルをドロップするだけです。ストレージはローカルFS、AWS S3、Google Cloud Storage、MongoDB GridFS の4種をサポートしています。
+- image_path: /assets/images/screenshots/drawio.gif
+  details:
+  - title: フローチャートが簡単に書ける
+    icon: select
+    description: draw.io 連携機能を使うことで、様々な図を簡単に描くことができます。(v3.7.0 以降) <br/> 編集画面内にあるツールバーの draw.io ボタンを押すことで diagrams.net (旧 draw.io) 編集ウィンドウ上で図を直感的に作成・編集することができます。
 - image_path: /assets/images/screenshots/keymap.png
   details:
   - title: 3種のキーマップ
