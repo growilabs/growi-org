@@ -48,13 +48,13 @@ module.exports = ctx => ({
   locales: {
     '/en/': {
       lang: 'en-US',
-      title: 'GROWI - Get the best Markdown Wiki for *FREE*',
-      description: 'Get the best Markdown Wiki for *FREE*'
+      title: 'GROWI - Easy and Smooth Information Sharing For Everyone',
+      description: 'Easy and Smooth Information Sharing For Everyone'
     },
     '/ja/': {
       lang: 'ja',
-      title: 'GROWI - 快適な Markdown Wiki を *無料で*',
-      description: '快適な Markdown Wiki を *無料で*'
+      title: 'GROWI - 快適な情報共有を、全ての人へ',
+      description: '快適な情報共有を、全ての人へ'
     }
   },
   themeConfig: {
