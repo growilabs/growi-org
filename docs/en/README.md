@@ -40,7 +40,7 @@ features:
     description: To upload a file, simply drop it on the editor. 4 kinds of storages are supported that local File System, AWS S3, Google Cloud Storage and MongoDB GridFS.
 - image_path: /assets/images/screenshots/drawio.gif
   details:
-  - title: You can easily create flowcharts
+  - title: Powerful, easy to use and secure diagramming
     icon: select
     description: You can easily draw a variety of charts with draw.io integration. (v3.7.0 or later) <br/> Charts can be created and edited intuitively on the diagrams.net (formerly draw.io) editing window by pressing the draw.io button shown in the edit page.
 - image_path: /assets/images/screenshots/keymap.png
