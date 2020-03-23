@@ -42,7 +42,7 @@ introductions:
     description: GROWI とは、オリジナルの wiki を構築できるサービスです。wiki というと多くの人は wikipedia を連想すると思いますが、wiki とは多数のユーザーが共同してブラウザからコンテンツを編集するウェブサイトの事です。GROWI を使えば、自分だけの、自分達の、自社だけの wiki を作成できます。
   - title: GROWI で出来ること  
     icon: picture
-    description: オリジナルの wiki を作成できます。企業やサークル、個人などあらゆる単位で、特定の情報についてまとめて管理したいとき、GROWI を使えばそれらの情報やファイルを管理できます。整理の仕方、ページの追加が自由自在で、思った通りの情報管理が簡単に実現できます。
+    description: 企業やサークル、個人などあらゆる単位で、特定の情報についてまとめたり、情報共有したいときに、GROWI を使えばそれらの情報やファイルを共有できます。整理の仕方、ページの追加が自由自在で、思った通りの情報共有が簡単に実現できます。
 - image_path: /assets/images/screenshots/growicloud.png
   details:
   - title: GROWI を使うには
@@ -53,12 +53,12 @@ introductions:
     description: GROWI の一番簡単な導入方法は、GROWI.cloud でサービスを契約する事です。GROWI.cloud では無料プランもありますので、是非使ってみてください。<br/><a href="https://growi.cloud/">GROWI.cloud</a>
 - image_path: /assets/images/screenshots/growidocs.png
   details:
-  - title: 具体的に GROWI ってどんなサイト？
+  - title: 具体的に GROWI ってどんなサービス？
     icon: music-note
-    description: デモサイトを紹介します。ノウハウの管理や、ファイルサーバーとしても活用できます。使い方次第であらゆる用途に対応出来ます。GROWI の使い方のキュメントや、便利な機能開発も充実させています。<br/><a href="https://demo.growi.org/">GROWIデモサイト</a>
+    description: GROWI にはデモサイトがあります。使い心地を気軽に試すことができます。GROWI はノウハウの管理や、ファイルサーバーとしても活用できます。使い方次第であらゆる用途に対応出来ます。GROWI の使い方のキュメントや、便利な機能開発も充実させています。<br/><a href="https://demo.growi.org/">GROWIデモサイト</a>
   - title: GROWI の使い方は難しくない？
     icon: cog
-    description: どなたでも簡単に使っていただけるよう、使い心地や使いやすさに力を入れて GROWI を開発しています。使い方についてのマニュアルも用意しているので、多くのお客様から使いやすいとのお声をいただいています。<br/><a href="https://docs.growi.org/">GROWI Docs</a>
+    description: どなたでも簡単に使っていただけるよう、使い心地や書きやすさに力を入れて GROWI を開発しています。使い方についてのマニュアルも用意しているので、多くのお客様から使いやすいとのお声をいただいています。<br/><a href="https://docs.growi.org/">マニュアル GROWI Docs</a>
 - image_path: /assets/images/screenshots/growiuser.png
   details:
   - title: 導入事例
