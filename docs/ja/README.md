@@ -55,7 +55,7 @@ introductions:
   details:
   - title: 具体的に GROWI ってどんなサービス？
     icon: music-note
-    description: GROWI にはデモサイトがあります。使い心地を気軽に試すことができます。GROWI はノウハウの管理や、ファイルサーバーとしても活用できます。使い方次第であらゆる用途に対応出来ます。GROWI の使い方のキュメントや、便利な機能開発も充実させています。<br/><a href="https://demo.growi.org/">GROWIデモサイト</a>
+    description: GROWI にはデモサイトがあります。使い心地を気軽に試すことができます。GROWI はノウハウの共有や、ファイルサーバーとしても活用できます。使い方次第であらゆる用途に対応出来ます。GROWI のドキュメントや、便利な機能開発も充実させています。<br/><a href="https://demo.growi.org/">GROWIデモサイト</a>
   - title: GROWI の使い方は難しくない？
     icon: cog
     description: どなたでも簡単に使っていただけるよう、使い心地や書きやすさに力を入れて GROWI を開発しています。使い方についてのマニュアルも用意しているので、多くのお客様から使いやすいとのお声をいただいています。<br/><a href="https://docs.growi.org/">マニュアル GROWI Docs</a>
