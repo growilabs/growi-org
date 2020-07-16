@@ -30,7 +30,7 @@ sections:
     address: Takadanobaba Access 10F, 2-20-15 Nishiwaseda, Shinjuku-ku, Tokyo, Japan
     email: info@weseek.co.jp
 features:
-- image_path: /assets/images/screenshots/editor.png
+- image_path: /assets/images/screenshots/renew-editor.png
   details:
   - title: Markdown
     icon: pencil
@@ -43,7 +43,7 @@ features:
   - title: Powerful, easy to use and secure diagramming
     icon: select
     description: You can easily draw a variety of charts with draw.io integration. (v3.7.0 or later) <br/> Charts can be created and edited intuitively on the diagrams.net (formerly draw.io) editing window by pressing the draw.io button shown in the edit page.
-- image_path: /assets/images/screenshots/keymap.png
+- image_path: /assets/images/screenshots/renew-keymap.png
   details:
   - title: 3 types of keymap
     icon: keyboard
@@ -51,7 +51,7 @@ features:
   - title: Emoji
     icon: smile
     description: 'Emojis by <a href="https://www.emojione.com/emoji/v3"> EmojiOne v3 </a> will color your document expressively. As an input support function, an autocomplete window is displayed by starting input from <code>:</code>.'
-- image_path: /assets/images/screenshots/customize.png
+- image_path: /assets/images/screenshots/renew-customize.png
   details:
   - title: Theme
     icon: music-note
@@ -59,12 +59,12 @@ features:
   - title: Customize for your team
     icon: cog
     description: In addition to selecting behavior and layout from two types, Markdown rendering settings can be changed from the management screen. Flexible settings can be set according to how the team is used.
-- image_path: /assets/images/screenshots/search.png
+- image_path: /assets/images/screenshots/renew-search.png
   details:
   - title: Fast full text search
     icon: magnifier
     description: Incremental search of page titles using ElasticSearch and full text search of page contents are possible. Friendly to Japanese users, alphanumeric characters can be hit in either half-width or half-width.
-- image_path: /assets/images/screenshots/ldaplogin.png
+- image_path: /assets/images/screenshots/renew-ldaplogin.png
   details:
   - title: Authentication and group management
     icon: lock
@@ -72,7 +72,7 @@ features:
   - title: Public Wiki
     icon: users
     description: Public Wiki can also be published by allowing guest users to view.
-- image_path: /assets/images/screenshots/comment.png
+- image_path: /assets/images/screenshots/renew-comment.png
   details:
   - title: Activating communication with the comment feature.
     icon: bubble

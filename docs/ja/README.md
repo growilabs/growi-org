@@ -33,7 +33,7 @@ sections:
       link: 0366674862
     email: info@weseek.co.jp
 features:
-- image_path: /assets/images/screenshots/editor.png
+- image_path: /assets/images/screenshots/renew-editor.png
   details:
   - title: Markdown
     icon: pencil
@@ -46,7 +46,7 @@ features:
   - title: 強力な GUI による図表編集
     icon: select
     description: draw.io 連携機能を使うことで、様々な図を簡単に描くことができます。(v3.7.0 以降) <br/> 編集画面内にあるツールバーの draw.io ボタンを押すことで diagrams.net (旧 draw.io) 編集ウィンドウ上で図を直感的に作成・編集することができます。
-- image_path: /assets/images/screenshots/keymap.png
+- image_path: /assets/images/screenshots/renew-keymap.png
   details:
   - title: 3種のキーマップ
     icon: keyboard
@@ -54,7 +54,7 @@ features:
   - title: 絵文字入力
     icon: smile
     description: <a href="https://www.emojione.com/emoji/v3">EmojiOne v3</a> による絵文字が文書を表情豊かに彩ります。入力支援機能として、<code>:</code>から入力を始めることでオートコンプリートウィンドウを表示します。
-- image_path: /assets/images/screenshots/customize.png
+- image_path: /assets/images/screenshots/renew-customize.png
   details:
   - title: テーマの変更
     icon: music-note
@@ -62,12 +62,12 @@ features:
   - title: チームに合わせたカスタマイズ
     icon: cog
     description: 挙動・レイアウトを2タイプから選択できる他、Markdown レンダリング設定を管理画面から変更できます。チームの使い方に合わせた柔軟な設定が可能です。
-- image_path: /assets/images/screenshots/search.png
+- image_path: /assets/images/screenshots/renew-search.png
   details:
   - title: 高速な検索
     icon: magnifier
     description: ElasticSearch を利用したページタイトルのインクリメンタルサーチと、ページコンテンツの全文検索が可能です。日本語ユーザーにもやさしく、英数字は全角半角どちらでもヒットするようになっています。
-- image_path: /assets/images/screenshots/ldaplogin.png
+- image_path: /assets/images/screenshots/renew-ldaplogin.png
   details:
   - title: 強力な認証機構・グループ管理
     icon: lock
@@ -75,7 +75,7 @@ features:
   - title: オープンWiki
     icon: users
     description: ゲストユーザーに対して閲覧を許可することで、オープンWikiの公開も可能です。
-- image_path: /assets/images/screenshots/comment.png
+- image_path: /assets/images/screenshots/renew-comment.png
   details:
   - title: コメント機能でコミュニケーション活性化
     icon: bubble
