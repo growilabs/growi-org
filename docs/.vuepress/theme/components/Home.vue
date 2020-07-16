@@ -19,7 +19,7 @@
           </div>
           <div class="row">
             <div class="parallax-header-main-img col-md-12">
-              <img src="/assets/images/banner-img-2.png" alt="GROWI">
+              <img src="/assets/images/renew-banner-img-2.png" alt="GROWI">
             </div>
           </div>
         </div><!-- / header content -->
