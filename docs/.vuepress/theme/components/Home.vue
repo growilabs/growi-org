@@ -63,13 +63,12 @@
             <div class="feature-image-left col-sm-12 col-md-7">
               <video
                 v-if="feature.image_path.split('.').pop() == 'mp4'"
-                class="movie-image"
                 :src="feature.image_path"
                 autoplay
                 loop
                 playsinline
                 muted="muted"
-                data-loaded="true"
+                width="100%"
               >
               </video>
               <img v-else :src="feature.image_path" alt />
