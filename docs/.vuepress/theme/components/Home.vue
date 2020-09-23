@@ -32,11 +32,7 @@
           <h2>{{ data.sections.features.title }}</h2>
         </div>
 
-        <div
-          v-for="(feature, index) in data.features"
-          class="row feature-row"
-          style="margin-top: 50px; margin-bottom: 100px;"
-        >
+        <div v-for="(feature, index) in data.features" class="row feature-row" style="margin-top: 50px; margin-bottom: 100px;">
           <div v-if="(index % 2) === 0">
             <div class="feature-image-left col-sm-12 col-md-7">
               <img :src="feature.image_path" alt="">
@@ -287,7 +283,7 @@
 </template>
 
 <script>
-import NavLink from '@theme/components/NavLink.vue';
+import NavLink from '@theme/components/NavLink.vue'
 
 export default {
   components: { NavLink },
