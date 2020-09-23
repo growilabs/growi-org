@@ -74,10 +74,9 @@
             </div>
           </div>
         </div>
-      </div>
-      <!-- /container -->
-    </div>
-    <!-- / features section image-left -->
+      </div><!-- /container -->
+    </div><!-- / features section image-left -->
+    <!-- / features section 4col image-left -->
 
     <div id="demo" class="row">
       <div class="col-sm-12 text-center" style="margin-top: 50px;">
