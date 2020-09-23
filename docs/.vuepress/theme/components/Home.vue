@@ -38,7 +38,7 @@
         >
           <div v-if="(index % 2) === 0">
             <div class="feature-image-left col-sm-12 col-md-7">
-              <img :src="feature.image_path" alt />
+              <img :src="feature.image_path" alt="">
             </div>
             <div class="features-left image-left col-xs-12 col-md-5">
               <div v-for="detail in feature.details" class="feature">
@@ -69,8 +69,7 @@
                 playsinline
                 muted="muted"
                 width="100%"
-              >
-              </video>
+              ></video>
               <img v-else :src="feature.image_path" alt />
             </div>
           </div>
@@ -79,7 +78,6 @@
       <!-- /container -->
     </div>
     <!-- / features section image-left -->
-    <!-- / features section 4col image-left -->
 
     <div id="demo" class="row">
       <div class="col-sm-12 text-center" style="margin-top: 50px;">
@@ -194,42 +192,25 @@
         </div>
         <div class="row">
           <div class="col-md-12">
-            <p
-              v-for="description in data.sections.joinus.descriptions"
-              v-html="description"
-              class="text-center"
-              style="margin-top: 30px;"
-            ></p>
+            <p v-for="description in data.sections.joinus.descriptions" v-html="description" class="text-center" style="margin-top: 30px;">
+            </p>
             <p class="text-center" style="margin-top: 60px;">
-              <iframe
-                src="https://ghbtns.com/github-btn.html?user=weseek&repo=growi&type=watch&count=true"
-                allowtransparency="true"
-                frameborder="0"
-                scrolling="0"
-                width="110"
-                height="20"
-              ></iframe>
+              <iframe src="https://ghbtns.com/github-btn.html?user=weseek&repo=growi&type=watch&count=true" allowtransparency="true"
+              frameborder="0" scrolling="0" width="110" height="20"></iframe>
               <a href="https://growi-slackin.weseek.co.jp/">
-                <img
-                  src="https://growi-slackin.weseek.co.jp/badge.svg"
-                  style="display: inline; vertical-align: baseline; margin-left: -20px;"
-                />
+                <img src="https://growi-slackin.weseek.co.jp/badge.svg" style="display: inline; vertical-align: baseline; margin-left: -20px;">
               </a>
             </p>
           </div>
         </div>
       </div>
       <!-- / container -->
-    </div>
-    <!-- / joinus -->
+    </div><!-- / joinus -->
 
     <!-- map -->
     <div>
-      <iframe
-        id="map"
-        frameborder="0"
-        src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCRwmtcbaWWW-2R-iiUBvZdVI-UeEb-aXo&q=東京都新宿区西早稲田2-20-15"
-      ></iframe>
+      <iframe id="map" frameborder="0" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCRwmtcbaWWW-2R-iiUBvZdVI-UeEb-aXo&q=東京都新宿区西早稲田2-20-15">
+      </iframe>
     </div>
     <!-- / map -->
 
@@ -238,27 +219,13 @@
       <div class="container">
         <div class="row">
           <div class="first-footer-widget col-sm-6">
-            <img src="/assets/images/logo.png" alt />
+            <img src="/assets/images/logo.png" alt="">
             <ul>
-              <li>
-                <a href="https://growi.cloud/">GROWI.cloud</a>
-              </li>
-              <li>
-                <a href="https://github.com/weseek/growi">
-                  <i class="fa fa-github" aria-hidden="true"></i> weseek/growi
-                </a>
-              </li>
-              <li>
-                <a href="https://github.com/weseek/growi-docker-compose">
-                  <i class="fa fa-github" aria-hidden="true"></i> weseek/growi-docker-compose
-                </a>
-              </li>
-              <li>
-                <a href="https://hub.docker.com/r/weseek/growi/">Docker Hub</a>
-              </li>
-              <li>
-                <a href="https://demo.growi.org">demo.growi.org</a>
-              </li>
+              <li><a href="https://growi.cloud/">GROWI.cloud</a></li>
+              <li><a href="https://github.com/weseek/growi"><i class="fa fa-github" aria-hidden="true"></i> weseek/growi</a></li>
+              <li><a href="https://github.com/weseek/growi-docker-compose"><i class="fa fa-github" aria-hidden="true"></i> weseek/growi-docker-compose</a></li>
+              <li><a href="https://hub.docker.com/r/weseek/growi/">Docker Hub</a></li>
+              <li><a href="https://demo.growi.org">demo.growi.org</a></li>
             </ul>
             <p></p>
           </div>
@@ -268,52 +235,34 @@
             </div>
             <div class="footer-contact-info">
               <div class="info">
-                <p>
-                  <i class="lnr lnr-map-marker"></i>
-                  <span>{{ data.sections.contact_us.address }}</span>
-                </p>
+                <p><i class="lnr lnr-map-marker"></i><span>{{ data.sections.contact_us.address }}</span></p>
               </div>
               <div class="info" v-if="data.sections.contact_us.tel">
-                <a :href="`tel:+${data.sections.contact_us.tel.link}`">
-                  <i class="lnr lnr-phone-handset"></i>
-                  <span>{{ data.sections.contact_us.tel.text }}</span>
-                </a>
+                <a :href="`tel:+${data.sections.contact_us.tel.link}`"><i class="lnr lnr-phone-handset"></i><span>{{ data.sections.contact_us.tel.text }}</span></a>
               </div>
               <div class="info">
-                <a :href="`mailto:${data.sections.contact_us.email}`">
-                  <i class="lnr lnr-envelope"></i>
-                  <span>{{ data.sections.contact_us.email }}</span>
-                </a>
+                <a :href="`mailto:${data.sections.contact_us.email}`"><i class="lnr lnr-envelope"></i><span>{{ data.sections.contact_us.email }}</span></a>
               </div>
             </div>
           </div>
         </div>
-      </div>
-      <!-- / container -->
-    </div>
-    <!-- / footer widgets 4col -->
+      </div><!-- / container -->
+    </div><!-- / footer widgets 4col -->
 
     <!-- footer social icons right -->
     <footer>
       <div class="container">
         <p class="row">
           <span class="col-xs-12 col-sm-8 left">
-            © 2018
-            <b>GROWI</b> - produced by
-            <a href="https://weseek.co.jp">WESEEK, Inc.</a>
+            © 2018 <b>GROWI</b> - produced by <a href="https://weseek.co.jp">WESEEK, Inc.</a>
           </span>
           <span class="col-xs-12 col-sm-4 right">
-            <a href="https://twitter.com/weseek_inc">
-              <i class="fa fa-twitter" aria-hidden="true"></i>
-            </a>
-            <a href="https://github.com/weseek">
-              <i class="fa fa-github" aria-hidden="true"></i>
-            </a>
+            <a href="https://twitter.com/weseek_inc"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+            <a href="https://github.com/weseek"><i class="fa fa-github" aria-hidden="true"></i></a>
           </span>
         </p>
       </div>
-    </footer>
-    <!-- / footer social icons right -->
+    </footer><!-- / footer social icons right -->
 
     <!-- javascript -->
     <script2 src="/assets/js/jquery.min.js"></script2>
@@ -379,8 +328,8 @@ export default {
       } else {
         return false;
       }
-    }
-  }
+    },
+  },
 };
 </script>
 
@@ -404,8 +353,7 @@ h2 {
 }
 
 /deep/ .btn {
-  i,
-  span {
+  i, span {
     vertical-align: middle;
   }
 
@@ -421,8 +369,7 @@ h2 {
   $success-hover: darken($success, 10%);
 
   .parallax-section-text {
-    $headings-font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
-      'Segoe UI Symbol';
+    $headings-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   }
 
   .font-weight-normal {
@@ -441,8 +388,7 @@ h2 {
     text-transform: none;
   }
 
-  .growi-cloud-btn:hover,
-  .growi-cloud-btn:focus {
+  .growi-cloud-btn:hover, .growi-cloud-btn:focus {
     color: $white;
     background-color: $success-hover;
     border-color: $success-hover;
