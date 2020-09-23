@@ -1309,6 +1309,10 @@ header#parallax-header-agency h2 {
   }
 }
 
+.movie-image {
+  width: 100%;
+}
+
 @media (min-width: $screen-md-min) {
   .feature-image-left {
     padding-right: 4em;
