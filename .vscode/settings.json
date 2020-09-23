@@ -12,7 +12,5 @@
   "prettier.stylelintIntegration": true,
   "[scss]": {
     "editor.formatOnSave": true
-  },
-  "editor.codeActionsOnSave": {
   }
 }
