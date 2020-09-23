@@ -6,24 +6,25 @@
         <div class="header-content">
           <h2 class="animated fadeIn display-3" v-html="data.heroText"></h2>
           <p class="banner-img animated fadeIn">
-            <img :src="data.heroImage" alt="GROWI" />
+            <img :src="data.heroImage" alt="GROWI">
           </p>
           <div class="row">
             <div class="col-sm-12 animated fadeIn">
-              <NavLink v-for="button in data.heroButtons" class="btn" :item="button" />
+              <NavLink
+                v-for="button in data.heroButtons"
+                class="btn"
+                :item="button"
+              />
             </div>
           </div>
           <div class="row">
             <div class="parallax-header-main-img col-md-12">
-              <img src="/assets/images/banner-img-2.png" alt="GROWI" />
+              <img src="/assets/images/banner-img-2.png" alt="GROWI">
             </div>
           </div>
-        </div>
-        <!-- / header content -->
-      </div>
-      <!-- / container -->
-    </header>
-    <!-- / header -->
+        </div><!-- / header content -->
+      </div><!-- / container -->
+    </header><!-- / header -->
 
     <div v-if="data.features && data.features.length" id="features" data-section="features">
       <div class="container">
@@ -83,7 +84,7 @@
         <a href="https://demo.growi.org/" class="btn btn-success" target="_blank">
           <i class="lnr fa-2x lnr-screen"></i>
           <span style="margin-left: 0.5em; font-size: 1.5em;">Live Demo</span>
-          <OutboundLink />
+          <OutboundLink/>
         </a>
       </div>
     </div>
@@ -92,29 +93,16 @@
     <div id="cloud" class="parallax" data-section="growi-cloud">
       <div class="container">
         <div class="page-header wsub first">
-          <h2>
-            GROWI
-            <span style="font-size: 0.8em;">.cloud</span>
-          </h2>
+          <h2>GROWI<span style="font-size: 0.8em;">.cloud</span></h2>
         </div>
         <div class="row gc-parallax-section-content" style="margin-bottom: 80px;">
           <h3 class="parallax-section-text">{{ data.sections.cloud.descriptions.text }}</h3>
-          <h4
-            class="parallax-section-text font-weight-normal"
-            v-html="data.sections.cloud.descriptions.subtext"
-          ></h4>
-          <p
-            class="parallax-section-text font-weight-normal text-muted"
-          >{{ data.sections.cloud.descriptions.subsubtext }}</p>
-          <a
-            href="https://growi.cloud/"
-            style="margin-top: 20px"
-            class="btn btn-success growi-cloud-btn"
-            target="_blank"
-          >
+          <h4 class="parallax-section-text font-weight-normal" v-html="data.sections.cloud.descriptions.subtext"></h4>
+          <p class="parallax-section-text font-weight-normal text-muted">{{ data.sections.cloud.descriptions.subsubtext }}</p>
+          <a href="https://growi.cloud/" style="margin-top: 20px" class="btn btn-success growi-cloud-btn" target="_blank">
             <i class="lnr lnr-cloud fa-2x"></i>
             <span class="btn-text">{{ data.sections.cloud.descriptions.button_text }}</span>
-            <OutboundLink />
+            <OutboundLink/>
           </a>
         </div>
       </div>
@@ -145,9 +133,7 @@
                 <i class="lnr lnr-book"></i>
               </div>
               <h5 class="about-title">
-                GROWI Docs
-                <br />
-                <small>by VuePress</small>
+                GROWI Docs<br><small>by VuePress</small>
               </h5>
             </a>
           </div>
@@ -283,17 +269,17 @@
     <!-- nav scroll -->
     <script2>
       $(document).ready(function () {
-      $('.nav').onePageNav();
+        $('.nav').onePageNav();
       });
     </script2>
     <!-- / nav scroll -->
     <!-- facts counter -->
     <script2 type="text/javascript">
       $('.timer').countTo({
-      refreshInterval: 60,
-      formatter: function (value, options) {
-      return value.toFixed(options.decimals);
-      },
+        refreshInterval: 60,
+        formatter: function (value, options) {
+          return value.toFixed(options.decimals);
+        },
       });
     </script2>
     <!-- / facts counter -->
