@@ -62,7 +62,7 @@
             </div>
             <div class="feature-image-left col-sm-12 col-md-7">
               <video
-                v-if="feature.image_path.split('.').pop() == 'mp4'"
+                v-if="isMovieFile(feature.image_path)"
                 :src="feature.image_path"
                 autoplay
                 loop
@@ -369,6 +369,17 @@ export default {
         text: this.data.actionText,
       };
     },
+  },
+
+  methods: {
+    isMovieFile(path) {
+      const extension = path.split('.').pop();
+      if (extension == 'mp4') {
+        return true;
+      } else {
+        return false;
+      }
+    }
   }
 };
 </script>
