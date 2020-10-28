@@ -26,6 +26,10 @@
       </div><!-- / container -->
     </header><!-- / header -->
 
+    <div class="parallax-header-main-img col-md-12">
+      <img src="/assets/images/lp_campaign_topbanner@2x.png" alt="GROWI">
+    </div>
+
     <div v-if="data.features && data.features.length" id="features" data-section="features">
       <div class="container">
         <div class="page-header wsub first">

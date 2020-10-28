@@ -11,6 +11,8 @@ heroButtons:
   link: /ja/#cloud
 sections:
   features:
+  - image_path: /assets/images/lp_campaign_topbanner@2x.png
+    details:
     title: 機能紹介
   documents:
     title: ドキュメント
