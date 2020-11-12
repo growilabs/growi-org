@@ -26,7 +26,7 @@
       </div><!-- / container -->
     </header><!-- / header -->
 
-    <div id="cloud-campaign-banner" class="gccampaign-lead" style="margin-top: 100px;">
+    <div id="cloud-campaign-banner" class="gccampaign-lead" style="margin-top: 50px;">
       <div class="container">
         <a href="https://growi.cloud/lp/telework">
           <img :src="data.sections.cloud_campaign.image_path" alt="cloud-campaign-banner">
