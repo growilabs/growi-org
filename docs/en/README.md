@@ -10,6 +10,8 @@ heroButtons:
 - text: GROWI.cloud
   link: /en/#cloud
 sections:
+  cloud_campaign:
+    image_path: /assets/images/lp_campaign_topbanner@2x.png
   features:
     title: Features
   documents:
