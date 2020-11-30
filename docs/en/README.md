@@ -38,7 +38,7 @@ features:
   - title: Simple asset management
     icon: picture
     description: To upload a file, simply drop it on the editor. 4 kinds of storages are supported that local File System, AWS S3, Google Cloud Storage and MongoDB GridFS.
-- image_path: /assets/images/screenshots/drawio.mp4
+- image_path: https://growi-org-public-images.s3-ap-northeast-1.amazonaws.com/drawio.mp4
   details:
   - title: Powerful, easy to use and secure diagramming
     icon: select
