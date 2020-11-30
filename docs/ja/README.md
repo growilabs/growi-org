@@ -41,7 +41,7 @@ features:
   - title: シンプルなアセット管理
     icon: picture
     description: ファイルのアップロードは編集画面にファイルをドロップするだけです。ストレージはローカルFS、AWS S3、Google Cloud Storage、MongoDB GridFS の4種をサポートしています。
-- image_path: /assets/images/screenshots/drawio.mp4
+- image_path: https://growi-org-public-images.s3-ap-northeast-1.amazonaws.com/drawio.mp4
   details:
   - title: 強力な GUI による図表編集
     icon: select
