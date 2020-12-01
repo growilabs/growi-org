@@ -26,6 +26,14 @@
       </div><!-- / container -->
     </header><!-- / header -->
 
+    <div id="cloud-campaign-banner" class="gccampaign-lead" style="margin-top: 50px;">
+      <div class="container">
+        <a href="https://growi.cloud/lp/telework">
+          <img :src="data.sections.cloud_campaign.image_path" alt="cloud-campaign-banner">
+        </a>
+      </div>
+    </div>
+
     <div v-if="data.features && data.features.length" id="features" data-section="features">
       <div class="container">
         <div class="page-header wsub first">
