@@ -66,7 +66,16 @@
               </div>
             </div>
             <div class="feature-image-left col-sm-12 col-md-7">
-              <img :src="feature.image_path" alt="">
+              <video
+                v-if="isMovieFile(feature.image_path)"
+                :src="feature.image_path"
+                autoplay
+                loop
+                playsinline
+                muted="muted"
+                width="100%"
+              ></video>
+              <img v-else :src="feature.image_path" alt />
             </div>
           </div>
         </div>
@@ -288,18 +297,29 @@ export default {
   components: { NavLink },
 
   computed: {
-    data () {
-      return this.$page.frontmatter
+    data() {
+      return this.$page.frontmatter;
     },
 
-    actionLink () {
+    actionLink() {
       return {
         link: this.data.actionLink,
-        text: this.data.actionText
+        text: this.data.actionText,
+      };
+    },
+  },
+
+  methods: {
+    isMovieFile(path) {
+      const extension = path.split('.').pop();
+      if (extension == 'mp4') {
+        return true;
+      } else {
+        return false;
       }
-    }
-  }
-}
+    },
+  },
+};
 </script>
 
 <style lang="scss" scoped>

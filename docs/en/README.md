@@ -40,7 +40,7 @@ features:
   - title: Simple asset management
     icon: picture
     description: To upload a file, simply drop it on the editor. 4 kinds of storages are supported that local File System, AWS S3, Google Cloud Storage and MongoDB GridFS.
-- image_path: /assets/images/screenshots/drawio.gif
+- image_path: https://growi-org-public-images.s3-ap-northeast-1.amazonaws.com/drawio.mp4
   details:
   - title: Powerful, easy to use and secure diagramming
     icon: select
@@ -53,7 +53,7 @@ features:
   - title: Emoji
     icon: smile
     description: 'Emojis by <a href="https://www.emojione.com/emoji/v3"> EmojiOne v3 </a> will color your document expressively. As an input support function, an autocomplete window is displayed by starting input from <code>:</code>.'
-- image_path: /assets/images/screenshots/customize.png
+- image_path: /assets/images/screenshots/customize.jpg
   details:
   - title: Theme
     icon: music-note
@@ -66,7 +66,7 @@ features:
   - title: Fast full text search
     icon: magnifier
     description: Incremental search of page titles using ElasticSearch and full text search of page contents are possible. Friendly to Japanese users, alphanumeric characters can be hit in either half-width or half-width.
-- image_path: /assets/images/screenshots/ldaplogin.png
+- image_path: /assets/images/screenshots/ldaplogin.jpg
   details:
   - title: Authentication and group management
     icon: lock
@@ -74,7 +74,7 @@ features:
   - title: Public Wiki
     icon: users
     description: Public Wiki can also be published by allowing guest users to view.
-- image_path: /assets/images/screenshots/comment.png
+- image_path: /assets/images/screenshots/comment.jpg
   details:
   - title: Activating communication with the comment feature.
     icon: bubble

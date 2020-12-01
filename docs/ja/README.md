@@ -43,7 +43,7 @@ features:
   - title: シンプルなアセット管理
     icon: picture
     description: ファイルのアップロードは編集画面にファイルをドロップするだけです。ストレージはローカルFS、AWS S3、Google Cloud Storage、MongoDB GridFS の4種をサポートしています。
-- image_path: /assets/images/screenshots/drawio.gif
+- image_path: https://growi-org-public-images.s3-ap-northeast-1.amazonaws.com/drawio.mp4
   details:
   - title: 強力な GUI による図表編集
     icon: select
@@ -56,7 +56,7 @@ features:
   - title: 絵文字入力
     icon: smile
     description: <a href="https://www.emojione.com/emoji/v3">EmojiOne v3</a> による絵文字が文書を表情豊かに彩ります。入力支援機能として、<code>:</code>から入力を始めることでオートコンプリートウィンドウを表示します。
-- image_path: /assets/images/screenshots/customize.png
+- image_path: /assets/images/screenshots/customize.jpg
   details:
   - title: テーマの変更
     icon: music-note
@@ -69,7 +69,7 @@ features:
   - title: 高速な検索
     icon: magnifier
     description: ElasticSearch を利用したページタイトルのインクリメンタルサーチと、ページコンテンツの全文検索が可能です。日本語ユーザーにもやさしく、英数字は全角半角どちらでもヒットするようになっています。
-- image_path: /assets/images/screenshots/ldaplogin.png
+- image_path: /assets/images/screenshots/ldaplogin.jpg
   details:
   - title: 強力な認証機構・グループ管理
     icon: lock
@@ -77,7 +77,7 @@ features:
   - title: オープンWiki
     icon: users
     description: ゲストユーザーに対して閲覧を許可することで、オープンWikiの公開も可能です。
-- image_path: /assets/images/screenshots/comment.png
+- image_path: /assets/images/screenshots/comment.jpg
   details:
   - title: コメント機能でコミュニケーション活性化
     icon: bubble
