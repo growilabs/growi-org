@@ -31,8 +31,8 @@ sections:
   contact_us:
     address: 東京都新宿区西早稲田2-20-15 高田馬場アクセス10F
     tel:
-      text: 03-6667-4862
-      link: 0366674862
+      text: 03-6233-9447
+      link: 0362339447
     email: info@weseek.co.jp
 features:
 - image_path: /assets/images/screenshots/editor.png
