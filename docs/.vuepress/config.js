@@ -34,7 +34,7 @@ module.exports = ctx => ({
     ]
   ],
   head: [
-    ['link', { rel: 'icon', href: '/images/favicon.ico' }],
+    ['link', { rel: 'icon', href: '/assets/images/favicon.ico' }],
     ['meta', { name: 'viewport', content: 'width=device-width, initial-scale=1'}],
     ['meta', { name: 'description', content: 'Team Collaboration Software using markdown'}],
     ['meta', { name: 'keywords', content: 'markdown, wiki, javascript, react, growi, crowi'}],
