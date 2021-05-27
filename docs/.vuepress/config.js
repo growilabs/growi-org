@@ -39,6 +39,15 @@ module.exports = ctx => ({
     ['meta', { name: 'description', content: 'Team Collaboration Software using markdown'}],
     ['meta', { name: 'keywords', content: 'markdown, wiki, javascript, react, growi, crowi'}],
     ['meta', { name: 'author', content: 'WESEEK, Inc.'}],
+    // OGP
+    ['meta', { property: 'og:title', content: 'OSS開発wikiツールのGROWI | 快適な情報共有を、全ての人へ'}],
+    ['meta', { property: 'og:description', content: 'GROWIはWESEEKが開発を行い、MITライセンスで公開しているオープンソースソフトウェアです。 dockerへのインストールやオンプレ対応も可能です。 開発を手伝っていただけるコントリビューター、開発してみたいインターン生も募集しています。'}],
+    // ['meta', { property: 'og:image', content: '/assets/images/logo.png'}],
+    // Twitter
+    ['meta', { name: 'twitter:card', content: 'summary'}],
+    ['meta', { name: 'twitter:title', content: 'OSS開発wikiツールのGROWI | 快適な情報共有を、全ての人へ'}],
+    ['meta', { name: 'twitter:description', content: '/assets/images/logo.png'}],
+    // ['meta', { name: 'twitter:image', content: '/assets/images/logo.png'}],
     ['link', { href: 'https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css', rel: 'stylesheet'}],
     // Fonts
     ['link', { href: 'https://fonts.googleapis.com/css?family=Lato:300,400,400italic,700', rel: 'stylesheet', type: 'text/css'}],
