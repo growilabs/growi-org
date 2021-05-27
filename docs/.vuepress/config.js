@@ -49,12 +49,12 @@ module.exports = ctx => ({
     '/en/': {
       lang: 'en-US',
       title: 'OSS wiki tool GROWI | Easy and Smooth Information Sharing For Everyone',
-      description: 'Easy and Smooth Information Sharing For Everyone'
+      description: 'GROWI is open source software developed by WESEEK and released under the MIT license. Installation on docker and on-premise support are also possible. We are also looking for contributors who can help with the development and internship students who want to develop.'
     },
     '/ja/': {
       lang: 'ja',
       title: 'OSS開発wikiツールのGROWI | 快適な情報共有を、全ての人へ',
-      description: '快適な情報共有を、全ての人へ'
+      description: 'GROWIはWESEEKが開発を行い、MITライセンスで公開しているオープンソースソフトウェアです。 dockerへのインストールやオンプレ対応も可能です。 開発を手伝っていただけるコントリビューター、開発してみたいインターン生も募集しています。'
     }
   },
   themeConfig: {
