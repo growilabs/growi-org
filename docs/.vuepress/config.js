@@ -48,12 +48,12 @@ module.exports = ctx => ({
   locales: {
     '/en/': {
       lang: 'en-US',
-      title: 'GROWI - Easy and Smooth Information Sharing For Everyone',
+      title: 'OSS wiki tool GROWI | Easy and Smooth Information Sharing For Everyone',
       description: 'Easy and Smooth Information Sharing For Everyone'
     },
     '/ja/': {
       lang: 'ja',
-      title: 'GROWI - 快適な情報共有を、全ての人へ',
+      title: 'OSS開発wikiツールのGROWI | 快適な情報共有を、全ての人へ',
       description: '快適な情報共有を、全ての人へ'
     }
   },
