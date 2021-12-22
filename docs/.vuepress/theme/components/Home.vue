@@ -100,6 +100,7 @@
             <span class="btn-text">{{ data.sections.cloud.descriptions.button_text }}</span>
             <OutboundLink/>
           </a>
+          <p class="text-center" v-html="data.sections.cloud.descriptions.description" style="margin-top: 30px;"></p>
         </div>
       </div>
     </div>
