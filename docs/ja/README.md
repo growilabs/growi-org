@@ -21,6 +21,7 @@ sections:
       subtext: 情報共有をもっと身近に、もっと手軽に
       subsubtext: GROWI.cloud は GROWI を手軽に始められるクラウドサービスです
       button_text: GROWI.cloud を始める
+      description: オンプレミスバージョンは <a href="https://growi.cloud/onpremise">こちら</a>
   joinus:
     title: JOIN US
     descriptions:

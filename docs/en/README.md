@@ -21,6 +21,7 @@ sections:
       subtext: Make Knowledge Sharing <strong>More Friendly and Simply</strong>
       subsubtext: GROWI.cloud is a cloud service that makes it easy to start GROWI
       button_text: Get Started GROWI.cloud
+      description: About On-premise version is <a href="https://growi.cloud/onpremise">here</a>
   joinus:
     title: JOIN US
     descriptions:

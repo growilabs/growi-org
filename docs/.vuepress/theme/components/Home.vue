@@ -91,7 +91,7 @@
         <div class="page-header wsub first">
           <h2>GROWI<span style="font-size: 0.8em;">.cloud</span></h2>
         </div>
-        <div class="row gc-parallax-section-content" style="margin-bottom: 80px;">
+        <div class="row gc-parallax-section-content" style="margin-bottom: 90px;">
           <h3 class="parallax-section-text">{{ data.sections.cloud.descriptions.text }}</h3>
           <h4 class="parallax-section-text font-weight-normal" v-html="data.sections.cloud.descriptions.subtext"></h4>
           <p class="parallax-section-text font-weight-normal text-muted">{{ data.sections.cloud.descriptions.subsubtext }}</p>
@@ -100,6 +100,7 @@
             <span class="btn-text">{{ data.sections.cloud.descriptions.button_text }}</span>
             <OutboundLink/>
           </a>
+          <p class="text-center" v-html="data.sections.cloud.descriptions.description" style="margin-top: 30px;"></p>
         </div>
       </div>
     </div>
