@@ -21,6 +21,6 @@ module.exports = [
   },
   {
     text: 'Blog',
-    link: 'https://weseek.co.jp/tags/GROWI/'
+    link: 'https://weseek.co.jp/tech/category/growi/'
   }
 ]
