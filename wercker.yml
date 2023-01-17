@@ -25,6 +25,12 @@ deploy:
         yarn docs:build
 
     - script:
+      name: Copy files to /dist to operate marketplace apps in subdirectories (/marketplace)
+      code: |
+        cp -r marketplace docs/.vuepress/dist
+        cp _config.yml docs/.vuepress/dist
+
+    - script:
       name: deploy to GitHub Pages
       code: |
         sh ./bin/wercker/init-git.sh
