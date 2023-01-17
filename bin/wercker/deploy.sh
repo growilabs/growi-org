@@ -7,8 +7,8 @@
 # abort on errors
 set -e
 
-# Copy files to /dist to operate marketplace apps in subdirectories (/plugin)
-cp -r plugin docs/.vuepress/dist
+# Copy files to /dist to operate marketplace apps in subdirectories (/marketplace)
+cp -r marketplace docs/.vuepress/dist
 cp _config.yml docs/.vuepress/dist
 
 # navigate into the build output directory
