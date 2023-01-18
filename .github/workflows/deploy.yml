@@ -54,7 +54,7 @@ jobs:
         yarn list --depth=0
 
     - name: Build and deploy
-      uses: jenkey2011/vuepress-deploy@v1.8.1
+      uses: miya/vuepress-deploy@master
       env:
         ACCESS_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         BUILD_SCRIPT: yarn docs:build
