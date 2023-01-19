@@ -57,6 +57,9 @@ jobs:
       uses: miya/vuepress-deploy@master
       env:
         ACCESS_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        BUILD_SCRIPT: yarn docs:build
+        BUILD_SCRIPT: |
+          yarn docs:build
+          cp -r plugins docs/.vuepress/dist
+          cp _config.yml docs/.vuepress/dist
         BUILD_DIR: docs/.vuepress/dist/
         CNAME: growi.org
