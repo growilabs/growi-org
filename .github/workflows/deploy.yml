@@ -54,12 +54,9 @@ jobs:
         yarn list --depth=0
 
     - name: Build and deploy
-      uses: miya/vuepress-deploy@master
+      uses: miya/vuepress-deploy@master # TODO: Using jenkey2011/vuepress-deploy after upgrading node
       env:
         ACCESS_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        BUILD_SCRIPT: |
-          yarn docs:build
-          cp -r plugins docs/.vuepress/dist
-          cp _config.yml docs/.vuepress/dist
+        BUILD_SCRIPT: yarn docs:build
         BUILD_DIR: docs/.vuepress/dist/
         CNAME: growi.org
