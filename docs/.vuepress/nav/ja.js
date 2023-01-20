@@ -20,6 +20,11 @@ module.exports = [
     link: '/ja/#joinus'
   },
   {
+    // TODO: https://redmine.weseek.co.jp/issues/113639
+    text: 'プラグイン',
+    link: 'https://growi-marketplace.vercel.app/plugins',
+  },
+  {
     text: 'Blog',
     link: 'https://weseek.co.jp/tech/category/growi/'
   }
