@@ -20,7 +20,6 @@ module.exports = [
     link: '/en/#joinus'
   },
   {
-    // TODO: https://redmine.weseek.co.jp/issues/113639
     text: 'Plugin',
     link: '/plugins',
   },
