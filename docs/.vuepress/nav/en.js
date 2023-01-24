@@ -22,7 +22,7 @@ module.exports = [
   {
     // TODO: https://redmine.weseek.co.jp/issues/113639
     text: 'Plugin',
-    link: 'https://growi-marketplace.vercel.app/plugins',
+    link: '/plugins',
   },
   {
     text: 'Blog',
