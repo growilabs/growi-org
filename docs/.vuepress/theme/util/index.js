@@ -31,6 +31,8 @@ export function isTel (path) {
 }
 
 export function ensureExt (path) {
+  // path が /plugins だったらそのまま返す
+  // 開発環境では 404 が返る
   if (pluginsLink === path) {
     return path
   }
