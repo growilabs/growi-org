@@ -3,8 +3,6 @@ export const extRE = /\.(md|html)$/
 export const endingSlashRE = /\/$/
 export const outboundRE = /^[a-z]+:/i
 
-const pluginsLink = '/plugins';
-
 export function normalize (path) {
   return decodeURI(path)
     .replace(hashRE, '')
@@ -31,11 +29,6 @@ export function isTel (path) {
 }
 
 export function ensureExt (path) {
-  // path が /plugins だったらそのまま返す
-  // 開発環境では 404 が返る
-  if (pluginsLink === path) {
-    return path
-  }
   if (isExternal(path)) {
     return path
   }
