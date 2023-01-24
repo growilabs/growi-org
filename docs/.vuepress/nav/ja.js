@@ -20,6 +20,10 @@ module.exports = [
     link: '/ja/#joinus'
   },
   {
+    text: 'プラグイン',
+    link: '/plugins',
+  },
+  {
     text: 'Blog',
     link: 'https://weseek.co.jp/tech/category/growi/'
   }
