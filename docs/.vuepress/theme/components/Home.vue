@@ -25,7 +25,7 @@
         </div><!-- / header content -->
       </div><!-- / container -->
     </header><!-- / header -->
-    <a href="https://growi.org/plugins">
+    <a href="https://connpass.com/event/277641/">
     <img src="/assets/images/startup-seminar-banner.png" alt="Seminar Banner" style="margin-top: 70px;"/>
   </a>
     <div v-if="data.features && data.features.length" id="features" data-section="features">
