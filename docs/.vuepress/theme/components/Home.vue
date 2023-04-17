@@ -26,6 +26,47 @@
       </div><!-- / container -->
     </header><!-- / header -->
 
+    <div v-if="data.introductions && data.introductions.length" id="introductions" data-section="introductions">
+      <div class="container">
+        <div class="page-header wsub first">
+          <h2>{{ data.sections.introduction.title }}</h2>
+        </div>
+
+        <div v-for="(introduction, index) in data.introductions" class="row feature-row" style="margin-top: 50px; margin-bottom: 100px;">
+          <div v-if="(index % 2) === 0">
+            <div class="feature-image-left col-sm-12 col-md-7">
+              <img :src="introduction.image_path" alt="">
+            </div>
+            <div class="features-left image-left col-xs-12 col-md-5">
+              <div v-for="detail in introduction.details" class="feature">
+                <div class="feature-icon">
+                  <i class="lnr" :class="`lnr-${detail.icon}`"></i>
+                </div>
+                <h3>{{ detail.title }}</h3>
+                <p v-html="detail.description"></p>
+              </div>
+            </div>
+          </div>
+          <div v-else>
+            <div class="features-left image-left col-xs-12 col-md-5">
+              <div v-for="detail in introduction.details" class="feature">
+                <div class="feature-icon">
+                  <i class="lnr" :class="`lnr-${detail.icon}`"></i>
+                </div>
+                <h3>{{ detail.title }}</h3>
+                <p v-html="detail.description"></p>
+              </div>
+            </div>
+            <div class="feature-image-left col-sm-12 col-md-7">
+              <img :src="introduction.image_path" alt="">
+            </div>
+          </div>
+        </div>
+      </div><!-- /container -->
+    </div><!-- / introductions section image-left -->
+    <!-- / introductions section 4col image-left -->
+
+
     <div v-if="data.features && data.features.length" id="features" data-section="features">
       <div class="container">
         <div class="page-header wsub first">
