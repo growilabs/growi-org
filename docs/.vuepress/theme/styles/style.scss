@@ -667,7 +667,7 @@ cite {
 /* Header Content */
 
 header h2 {
-  color: $white;
+  color: #555;
   font-size: 34px;
   margin-top: 50px;
   text-align: center;
@@ -676,16 +676,15 @@ header h2 {
 header a.btn {
   margin-bottom: 50px;
   color: $white;
-  border: 2px solid $white;
-  background: transparent;
-  opacity: 0.8;
+  background: linear-gradient(#79B536, #2FB516);
+  clip-path: polygon(92% 0%, 100% 50%, 92% 100%, 8% 100%, 0% 50%, 8% 0%);
+  border-radius: 0;
 }
 
 header a.btn:hover {
   color: $white;
-  border: 2px solid $primary-hover;
   background: $primary-hover;
-  opacity: 1 !important;
+  opacity: 0.8 !important;
 }
 
 header a.btn:focus {
@@ -695,8 +694,7 @@ header a.btn:focus {
 header a.btn-success {
   color: $white;
   opacity: 1;
-  background-color: $success;
-  border-color: $success;
+  background-color: linear-gradient(30deg,#79B536, #2FB516);
 }
 
 header a.btn-success.first-button {
@@ -711,16 +709,14 @@ header a.btn-success:hover {
 
 /* Parallax Header */
 #parallax-header {
-  background-image: url('/assets/images/primary-polygon.jpg');
+  background-color: #F0FFEA;
+  // background-image: url('/assets/images/primary-polygon.jpg');
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
   text-align: center;
-  -webkit-box-shadow: inset 0px -95px $bg-color;
-  -moz-box-shadow: inset 0px -95px $bg-color;
-  box-shadow: inset 0px -95px $bg-color;
 }
 
 #parallax-header.single {
@@ -737,11 +733,6 @@ header a.btn-success:hover {
   text-align: center;
   margin-top: 100px;
   z-index: 1;
-}
-
-#parallax-header .banner-img img {
-  max-height: 150px;
-  margin: 40px auto;
 }
 
 #parallax-header .parallax-header-main-img img {

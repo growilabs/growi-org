@@ -1,6 +1,8 @@
 ---
 home: true
-heroText: 快適な情報共有を、全ての人へ
+heroText: 
+ line1: 無料で使える
+ line2: 高機能なwikiツール
 heroImage: /assets/images/banner-logo.png
 heroButtons:
 - text: 機能紹介

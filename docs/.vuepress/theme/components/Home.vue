@@ -1,30 +1,25 @@
 <template>
   <main class="home" aria-labelledby="main-title">
     <header id="parallax-header" data-section="home">
-      <div id="home" class="container" style="position: relative;">
+      <div id="home" class="container">
         <!-- header content -->
-        <div class="header-content">
-          <h2 class="animated fadeIn display-3" v-html="data.heroText"></h2>
-          <p class="banner-img animated fadeIn">
-            <img :src="data.heroImage" alt="GROWI">
+        <div class="header-content row">
+          <div class="col-12 col-md-6">
+          <h2 class="animated fadeIn display-3"> {{ data.heroText.line1 }}<br />{{ data.heroText.line2 }}</h2>
+          <p>マニュアルや企画書の共有、議事録の同時編集など、<br />
+            チーム内での快適な情報共有と作業効率化を支えるツールです。</p>
+          <a href="https://github.com/weseek/growi" style="margin-top: 20px" class="btn" target="_blank">
+            <span class="btn-text">GROWIを始める</span><i class="fa fa-angle-right" style="margin-left: 6px;"></i>
+          </a>
+        </div>
+        <div class="col-12 col-md-6">
+          <p class="animated fadeIn">
+            <img src="/assets/images/banner-img-2.png" alt="GROWI">
           </p>
-          <div class="row">
-            <div class="col-sm-12 animated fadeIn">
-              <NavLink
-                v-for="button in data.heroButtons"
-                class="btn"
-                :item="button"
-              />
-            </div>
           </div>
-          <div class="row">
-            <div class="parallax-header-main-img col-md-12">
-              <img src="/assets/images/banner-img-2.png" alt="GROWI">
-            </div>
-          </div>
-        </div><!-- / header content -->
-      </div><!-- / container -->
-    </header><!-- / header -->
+        </div>
+      </div>
+    </header>
 
     <div v-if="data.features && data.features.length" id="features" data-section="features">
       <div class="container">
