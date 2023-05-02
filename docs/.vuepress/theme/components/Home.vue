@@ -21,6 +21,27 @@
       </div>
     </header>
 
+    <div class="container">
+      <h2 class="text-center">オープンソース GROWI</h2>
+      <div class="row">
+        <div class="col-md-6 text-center">
+          <p>
+            GROWI は、WESEEK, Inc. が開発を行い、<br />
+            MITライセンスで公開しているオープンソースソフトウェアです。<br />
+            ユーザーの方も加わった開発が日々活発に行われています。
+          </p>
+          <p>500+</p>
+                   <p>Docker Image Pulls </p>
+          <a href="https://docs.growi.org/ja/admin-guide/" style="margin-top: 20px" class="btn btn-success" target="_blank">
+            <i class="fa fa-"></i><span class="btn-text">Dockerhub</span>
+          </a>
+        </div>
+        <div class="col-md-6">
+          <img src="/assets/images/growi-logo.svg" alt="GROWI">
+        </div>
+      </div>
+    </div>
+
     <div v-if="data.features && data.features.length" id="features" data-section="features">
       <div class="container">
         <div class="page-header wsub first">
