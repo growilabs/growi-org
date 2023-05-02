@@ -136,6 +136,17 @@ cite {
 
 /* Header */
 
+/* button */
+.btn-hexagon-angle-right {
+  position: absolute;
+  top: 50%;
+  right: 5%;
+  // @include media-breakpoint-down(sm) {
+  //   right: 5%;
+  // }
+  transform: translateY(-50%);
+}
+
 /* Top Menu Style 1 */
 
 .top-menu a {
@@ -675,7 +686,9 @@ header h2 {
 
 header a.btn {
   margin-bottom: 50px;
+  padding:12px 48px 12px 48px;
   color: $white;
+  font-size:20px;
   background: linear-gradient(#79B536, #2FB516);
   clip-path: polygon(92% 0%, 100% 50%, 92% 100%, 8% 100%, 0% 50%, 8% 0%);
   border-radius: 0;

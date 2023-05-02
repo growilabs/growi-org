@@ -8,8 +8,8 @@
           <h2 class="animated fadeIn display-3"> {{ data.heroText.line1 }}<br />{{ data.heroText.line2 }}</h2>
           <p>マニュアルや企画書の共有、議事録の同時編集など、<br />
             チーム内での快適な情報共有と作業効率化を支えるツールです。</p>
-          <a href="https://github.com/weseek/growi" style="margin-top: 20px" class="btn" target="_blank">
-            <span class="btn-text">GROWIを始める</span><i class="fa fa-angle-right" style="margin-left: 6px;"></i>
+          <a href="https://docs.growi.org/ja/admin-guide/" style="margin-top: 20px" class="btn" target="_blank">
+            <span class="btn-text">GROWIを始める</span><i class="fa fa-angle-right btn-hexagon-angle-right"></i>
           </a>
         </div>
         <div class="col-12 col-md-6">
