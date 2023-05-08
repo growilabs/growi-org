@@ -1,4 +1,5 @@
 import VS2 from 'vue-script2'
+import 'bootstrap/dist/css/bootstrap.css';
 
 export default ({
   Vue,
