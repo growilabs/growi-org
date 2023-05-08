@@ -1,8 +1,10 @@
-$icon-font-path: '~bootstrap-sass/assets/fonts/bootstrap/';
-@import '~bootstrap-sass/assets/stylesheets/bootstrap';
-
 @import 'variables';
 @import 'mixins';
+
+
+$screen-md: 992px !default;
+$screen-md-min: $screen-md !default;
+
 
 /* Base */
 
