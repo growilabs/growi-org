@@ -345,11 +345,6 @@ export default {
   }
 }
 
-h2 {
-  @extend .h2;
-  border-bottom: 0;
-}
-
 /deep/ .btn {
   i, span {
     vertical-align: middle;
