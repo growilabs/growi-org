@@ -30,7 +30,6 @@
   },
   "devDependencies": {
     "@vuepress/plugin-google-analytics": "^1.2.0",
-    "bootstrap-sass": "^3.3.7",
     "bootstrap": "^5.2.3",
     "eslint": "^5.15.1",
     "eslint-config-weseek": "^1.0.1",
