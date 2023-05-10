@@ -1,18 +1,17 @@
 <template>
   <main class="home" aria-labelledby="main-title">
     <header id="parallax-header" data-section="home">
-      <div id="home" class="container">
+      <div id="home" class="container py-5">
         <!-- header content -->
         <div class="header-content row py-5 mt-5">
-          <div class="col-12 col-md-6">
-          <h2 class="animated fadeIn fs-1 border-0"> {{ data.heroText.line1 }}<br />{{ data.heroText.line2 }}</h2>
-          <p class="mt-3 text-nowrap">{{ data.heroText.subtext1 }}<br />
-            {{ data.heroText.subtext2 }}</p>
+          <div class="col-12 col-md-6 animated fadeIn">
+          <h2 class="fs-1 border-0"> {{ data.heroText.line1 }}<br />{{ data.heroText.line2 }}</h2>
+          <p class="mt-3 text-nowrap" v-html="data.heroText.subtext"></p>
           <a href="https://docs.growi.org/ja/admin-guide/" class="btn mt-4" target="_blank">
             <span class="btn-text"> {{ data.button.start }}</span><i class="fa fa-angle-right btn-hexagon-angle-right"></i>
           </a>
         </div>
-        <div class="col-12 col-md-6 my-auto">
+        <div class="col-12 col-md-6 my-auto animated fadeIn">
           <p class="animated fadeIn">
             <img src="/assets/images/banner-img-2.png" alt="GROWI">
           </p>
@@ -22,8 +21,8 @@
     </header>
 
     <div class="container">
-      <h2 class="text-center mx-5 py-5 section-title">オープンソース GROWI</h2>
-      <div class="row">
+      <h2 class="text-center mt-5 py-5 section-title animated fadeIn">{{ data.sections.introduction.title }}</h2>
+      <div class="row animated fadeIn">
         <div class="col-md-7 text-center">
           <p class="mb-4">
             GROWI は、WESEEK, Inc. が開発を行い、<br />
@@ -274,11 +273,6 @@
     <!-- <script2 src="/assets/js/scrolling-nav.js"></script2> -->
     <script2 src="/assets/js/jquery.nav.js"></script2>
     <!-- scripts -->
-    <!-- scroll to top -->
-    <a href="#home" class="scroll-to-top page-scroll">
-      <i class="fa fa-angle-up"></i>
-    </a>
-    <!-- / scroll to top -->
     <!-- nav scroll -->
     <script2>
       $(document).ready(function () {

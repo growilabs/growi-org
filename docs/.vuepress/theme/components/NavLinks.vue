@@ -22,10 +22,8 @@
       <a href="https://github.com/weseek/growi/" target="_blank">
         <i class="fa fa-lg fa-github"></i>
       </a>
-    </div>
-    <div class="nav-item">
-      <a href="https://twitter.com/weseek_inc" target="_blank">
-        <i class="fa fa-lg fa-twitter"></i>
+      <a class="btn btn-success text-white text-bold ms-4">
+        <span>{{ data.button.start }}</span>
       </a>
     </div>
 
@@ -94,6 +92,17 @@ export default {
           items: (link.items || []).map(resolveNavLinkItem)
         })
       })
+    },
+
+    data() {
+      return this.$page.frontmatter;
+    },
+
+    actionLink() {
+      return {
+        link: this.data.actionLink,
+        text: this.data.actionText,
+      };
     },
 
     repoLink () {

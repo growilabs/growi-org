@@ -3,8 +3,7 @@ home: true
 heroText: 
  line1: 無料で使える
  line2: 高機能なwikiツール
- subtext1: マニュアルや企画書の共有、議事録の同時編集など、
- subtext2: チーム内での快適な情報共有と作業効率化を支えるツールです。
+ subtext: マニュアルや企画書の共有、議事録の同時編集など、 <br /> チーム内での快適な情報共有と作業効率化を支えるツールです。
 heroImage: /assets/images/banner-logo.png
 heroButtons:
 - text: 機能紹介
@@ -15,7 +14,7 @@ heroButtons:
   link: /ja/#cloud
 sections:
   introduction:
-    title:
+    title: オープンソース GROWI
   features:
     title: 機能紹介
   documents:

@@ -91,8 +91,6 @@ $navbar-horizontal-padding = 1.5rem
 
 .navbar
   // WESEEK Custom
-  opacity 0.9
-  // WESEEK Custom
   padding $navbar-vertical-padding $navbar-horizontal-padding
   line-height $navbarHeight - 1.4rem
   a, span, img
