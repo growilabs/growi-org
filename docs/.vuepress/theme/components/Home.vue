@@ -13,7 +13,7 @@
         </div>
         <div class="col-12 col-md-6 my-auto animated fadeIn">
           <p class="animated fadeIn">
-            <img src="/assets/images/banner-img-2.png" alt="GROWI">
+            <img src="/assets/images/banner-img-2.png" alt="GROWI" v-on:click="handleClick">
           </p>
           </div>
         </div>
@@ -24,10 +24,7 @@
       <h2 class="text-center mt-5 py-5 section-title animated fadeIn">{{ data.sections.introduction.title }}</h2>
       <div class="row animated fadeIn">
         <div class="col-md-7 text-center">
-          <p class="mb-4">
-            GROWI は、WESEEK, Inc. が開発を行い、<br />
-            MITライセンスで公開しているオープンソースソフトウェアです。<br />
-            ユーザーの方も加わった開発が日々活発に行われています。
+          <p class="mb-4" v-html="data.sections.introduction.text">
           </p>
           <a class="ff-montserrat display-1 text-dark">500+</a>
                    <p class="ff-montserrat fs-3">Docker Image Pulls </p>
@@ -321,6 +318,10 @@ export default {
         return false;
       }
     },
+    handleClick(event) {
+      // クリックイベントを無視する
+      event.stopPropagation();
+    }
   },
 };
 </script>

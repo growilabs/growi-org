@@ -54,6 +54,7 @@ module.exports = ctx => ({
     ['link', { href: 'https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css', rel: 'stylesheet', integrity: 'sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN', crossorigin: 'anonymous'}],
     ['link', { href: 'https://cdn.linearicons.com/free/1.0.0/icon-font.min.css', rel: 'stylesheet'}],
     ['link', { href: 'https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap', rel: 'stylesheet', type: 'text/css'}],
+    ['link', { href: 'https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap', rel: 'stylesheet'}],
   ],
   locales: {
     '/en/': {
