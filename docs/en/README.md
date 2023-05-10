@@ -1,6 +1,10 @@
 ---
 home: true
-heroText: Easy and Smooth Information Sharing For Everyone
+heroText: 
+line1: Free high-performance wiki tool
+ line2:
+ subtext1: This tool for sharing munual, business proposal and simultaneous editing minutes in real time.
+ subtext2: it supports comfortable information sharing and work efficiency within the team.
 heroImage: /assets/images/banner-logo.png
 heroButtons:
 - text: Features
@@ -30,6 +34,8 @@ sections:
   contact_us:
     address: Takadanobaba Access 10F, 2-20-15 Nishiwaseda, Shinjuku-ku, Tokyo, Japan
     email: info@weseek.co.jp
+button:
+  start: Starting GROWI
 features:
 - image_path: /assets/images/screenshots/editor.png
   details:

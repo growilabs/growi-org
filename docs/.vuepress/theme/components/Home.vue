@@ -3,16 +3,16 @@
     <header id="parallax-header" data-section="home">
       <div id="home" class="container">
         <!-- header content -->
-        <div class="header-content row">
+        <div class="header-content row py-5 mt-5">
           <div class="col-12 col-md-6">
-          <h2 class="animated fadeIn display-3"> {{ data.heroText.line1 }}<br />{{ data.heroText.line2 }}</h2>
-          <p>マニュアルや企画書の共有、議事録の同時編集など、<br />
-            チーム内での快適な情報共有と作業効率化を支えるツールです。</p>
-          <a href="https://docs.growi.org/ja/admin-guide/" style="margin-top: 20px" class="btn" target="_blank">
-            <span class="btn-text">GROWIを始める</span><i class="fa fa-angle-right btn-hexagon-angle-right"></i>
+          <h2 class="animated fadeIn fs-1 border-0"> {{ data.heroText.line1 }}<br />{{ data.heroText.line2 }}</h2>
+          <p class="mt-3 text-nowrap">{{ data.heroText.subtext1 }}<br />
+            {{ data.heroText.subtext2 }}</p>
+          <a href="https://docs.growi.org/ja/admin-guide/" class="btn mt-4" target="_blank">
+            <span class="btn-text"> {{ data.button.start }}</span><i class="fa fa-angle-right btn-hexagon-angle-right"></i>
           </a>
         </div>
-        <div class="col-12 col-md-6">
+        <div class="col-12 col-md-6 my-auto">
           <p class="animated fadeIn">
             <img src="/assets/images/banner-img-2.png" alt="GROWI">
           </p>
@@ -22,22 +22,22 @@
     </header>
 
     <div class="container">
-      <h2 class="text-center">オープンソース GROWI</h2>
+      <h2 class="text-center mx-5 py-5 section-title">オープンソース GROWI</h2>
       <div class="row">
-        <div class="col-md-6 text-center">
-          <p>
+        <div class="col-md-7 text-center">
+          <p class="mb-4">
             GROWI は、WESEEK, Inc. が開発を行い、<br />
             MITライセンスで公開しているオープンソースソフトウェアです。<br />
             ユーザーの方も加わった開発が日々活発に行われています。
           </p>
-          <p>500+</p>
-                   <p>Docker Image Pulls </p>
-          <a href="https://docs.growi.org/ja/admin-guide/" style="margin-top: 20px" class="btn btn-success" target="_blank">
-            <i class="fa fa-"></i><span class="btn-text">Dockerhub</span>
+          <a class="ff-montserrat display-1 text-dark">500+</a>
+                   <p class="ff-montserrat fs-3">Docker Image Pulls </p>
+          <a href="https://docs.growi.org/ja/admin-guide/" class="btn btn-success mt-5" target="_blank">
+            <i class="fa fa-docker"></i><span class="btn-text">Dockerhub</span>
           </a>
         </div>
-        <div class="col-md-6">
-          <img src="/assets/images/growi-logo.svg" alt="GROWI">
+        <div class="col-md-5 my-auto">
+          <img src="/assets/images/growi-logo.svg" alt="GROWI" class="ms-0">
         </div>
       </div>
     </div>

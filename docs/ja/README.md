@@ -3,6 +3,8 @@ home: true
 heroText: 
  line1: 無料で使える
  line2: 高機能なwikiツール
+ subtext1: マニュアルや企画書の共有、議事録の同時編集など、
+ subtext2: チーム内での快適な情報共有と作業効率化を支えるツールです。
 heroImage: /assets/images/banner-logo.png
 heroButtons:
 - text: 機能紹介
@@ -12,6 +14,8 @@ heroButtons:
 - text: GROWI.cloud
   link: /ja/#cloud
 sections:
+  introduction:
+    title:
   features:
     title: 機能紹介
   documents:
@@ -35,6 +39,8 @@ sections:
       text: 03-6233-9447
       link: 0362339447
     email: info@weseek.co.jp
+button:
+  start: GROWIを始める
 features:
 - image_path: /assets/images/screenshots/editor.png
   details:

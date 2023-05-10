@@ -143,9 +143,6 @@ cite {
   position: absolute;
   top: 50%;
   right: 5%;
-  // @include media-breakpoint-down(sm) {
-  //   right: 5%;
-  // }
   transform: translateY(-50%);
 }
 
@@ -1052,6 +1049,33 @@ header#parallax-header-agency h2 {
 /* End Page Header */
 
 /* About Section */
+.section-title {
+  font-size: 24px;
+  color: #343A40;
+  border:none;
+  @media (min-width: $screen-md-min) {
+    font-size: 40px;
+  }
+  &::after {
+    display: block;
+    width: 60px;
+    height: 0px;
+    margin: 15px auto 0;
+    content: '';
+    border-color: #70B248 transparent transparent transparent;
+    border-style: solid;
+    border-width: 4px 2px 0 2px;
+  }
+}
+
+.ff-montserrat {
+  font-family: 'Montserrat';
+}
+
+.display-1 {
+  font-size: 6rem;
+  font-weight: 800;
+}
 
 .feature-icon-hover {
   color: $white;
