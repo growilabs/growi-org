@@ -20,10 +20,10 @@
     </div>
     <div class="nav-item">
       <a href="https://github.com/weseek/growi/" target="_blank">
-        <i class="fa fa-lg fa-github"></i>
+        <i class="fa fa-lg fa-github"></i><a class="d-md-none ms-2">GitHub</a>
       </a>
-      <a class="btn btn-success text-white text-bold ms-4">
-        <span>{{ data.button.start }}</span>
+      <a class="btn btn-success text-white text-bold ms-4 mt-4 mt-md-0">
+        <span>{{ data.button.start }}</span><i class="fa fa-angle-right ms-2"></i>
       </a>
     </div>
 
@@ -143,7 +143,7 @@ export default {
     line-height 1.4rem
     color inherit
     &:hover, &.router-link-active
-      color $accentColor
+      font-weight
   .nav-item
     position relative
     display inline-block

@@ -2,7 +2,7 @@
 home: true
 heroText: 
 line1: Free high-performance wiki tool
-line2:
+line2: 
 subtext: This tool for sharing munual, business proposal and simultaneous editing minutes in real time. <br /> it supports comfortable information sharing and work efficiency within the team.
 heroImage: /assets/images/banner-logo.png
 heroButtons:
@@ -13,6 +13,9 @@ heroButtons:
 - text: GROWI.cloud
   link: /en/#cloud
 sections:
+  introduction:
+    title: Open Source GROWI
+    text: GROWI.cloud is open software developed by WESEEK, Inc. <br /> And released under MIT license.
   features:
     title: Features
   documents:

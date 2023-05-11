@@ -4,14 +4,14 @@
       <div id="home" class="container py-5">
         <!-- header content -->
         <div class="header-content row py-5 mt-5">
-          <div class="col-12 col-md-6 animated fadeIn">
+          <div class="col-lg-6 animated fadeIn">
           <h2 class="fs-1 border-0"> {{ data.heroText.line1 }}<br />{{ data.heroText.line2 }}</h2>
-          <p class="mt-3 text-nowrap" v-html="data.heroText.subtext"></p>
+          <p class="mt-3" v-html="data.heroText.subtext"></p>
           <a href="https://docs.growi.org/ja/admin-guide/" class="btn mt-4" target="_blank">
             <span class="btn-text"> {{ data.button.start }}</span><i class="fa fa-angle-right btn-hexagon-angle-right"></i>
           </a>
         </div>
-        <div class="col-12 col-md-6 my-auto animated fadeIn">
+        <div class="col-lg-6 my-auto animated fadeIn">
           <p class="animated fadeIn">
             <img src="/assets/images/banner-img-2.png" alt="GROWI" v-on:click="handleClick">
           </p>
@@ -22,7 +22,7 @@
 
     <div class="container">
       <h2 class="text-center mt-5 py-5 section-title animated fadeIn">{{ data.sections.introduction.title }}</h2>
-      <div class="row animated fadeIn">
+      <div class="row animated fadeIn mb-5 pb-5">
         <div class="col-md-7 text-center">
           <p class="mb-4" v-html="data.sections.introduction.text">
           </p>
@@ -33,7 +33,20 @@
           </a>
         </div>
         <div class="col-md-5 my-auto">
-          <img src="/assets/images/growi-logo.svg" alt="GROWI" class="ms-0">
+          <img src="/assets/images/growi-logo.svg" alt="GROWI" class="ms-0" v-on:click="handleClick">
+        </div>
+      </div>
+    </div>
+
+    <div class="bg-lightgreen py-5 text-center">
+      <div class="container">
+        <h3>コミュニティ・サポート</h3>
+        <p>
+          GROWIに関する質問・要望・バグの報告は、
+          GitHubまたはSlackにて受け付けております。
+        </p>
+        <div class="row justify-content-center">
+          <a class="btn btn-success col-md-5">Github</a><a class="btn btn-success col-md-5">Slack</a>
         </div>
       </div>
     </div>

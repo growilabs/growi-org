@@ -93,6 +93,8 @@ $navbar-horizontal-padding = 1.5rem
   // WESEEK Custom
   padding $navbar-vertical-padding $navbar-horizontal-padding
   line-height $navbarHeight - 1.4rem
+  box-shadow 0px 0px 3px #808080
+  font-family Noto Sans JP
   a, span, img
     display inline-block
   .logo
@@ -110,7 +112,6 @@ $navbar-horizontal-padding = 1.5rem
     box-sizing border-box
     background-color white
     white-space nowrap
-    font-size 0.9rem
     position absolute
     right $navbar-horizontal-padding
     top $navbar-vertical-padding
