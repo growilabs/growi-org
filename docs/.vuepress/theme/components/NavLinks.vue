@@ -20,7 +20,7 @@
     </div>
     <div class="nav-item">
       <a href="https://github.com/weseek/growi/" target="_blank">
-        <i class="fa fa-lg fa-github"></i><a class="d-md-none ms-2">GitHub</a>
+        <i class="fab fa-lg fa-github"></i><a class="d-md-none ms-2">GitHub</a>
       </a>
       <a class="btn btn-success text-white text-bold ms-4 mt-4 mt-md-0">
         <span>{{ data.button.start }}</span><i class="fa fa-angle-right ms-2"></i>

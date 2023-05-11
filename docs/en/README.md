@@ -16,6 +16,10 @@ sections:
   introduction:
     title: Open Source GROWI
     text: GROWI.cloud is open software developed by WESEEK, Inc. <br /> And released under MIT license.
+  community:
+    title: Community-support
+    text: We are accepting questions, request and report of bug on our GItHub or Slack.
+  features:
   features:
     title: Features
   documents:

@@ -3,15 +3,16 @@
     <header id="parallax-header" data-section="home">
       <div id="home" class="container py-5">
         <!-- header content -->
-        <div class="header-content row py-5 mt-5">
-          <div class="col-lg-6 animated fadeIn">
-          <h2 class="fs-1 border-0"> {{ data.heroText.line1 }}<br />{{ data.heroText.line2 }}</h2>
+        <div class="header-content row pt-4 pt-lg-5 pb-0 pb-lg-5 mt-5">
+          <div class="col-lg-6 px-0 animated fadeIn">
+            <h2 class="fs-1 border-0 mt-0 mt-lg-4 mb-4"> {{ data.heroText.line1 }}<br />{{ data.heroText.line2 }}</h2>
+            <img src="/assets/images/banner-img-2.png" alt="GROWI" v-on:click="handleClick" class="d-lg-none">
           <p class="mt-3" v-html="data.heroText.subtext"></p>
           <a href="https://docs.growi.org/ja/admin-guide/" class="btn mt-4" target="_blank">
-            <span class="btn-text"> {{ data.button.start }}</span><i class="fa fa-angle-right btn-hexagon-angle-right"></i>
+            <span class="btn-text fs-6"> {{ data.button.start }}</span><i class="fa fa-angle-right btn-hexagon-angle-right"></i>
           </a>
         </div>
-        <div class="col-lg-6 my-auto animated fadeIn">
+        <div class="d-none d-lg-block col-lg-6 my-auto animated fadeIn">
           <p class="animated fadeIn">
             <img src="/assets/images/banner-img-2.png" alt="GROWI" v-on:click="handleClick">
           </p>
@@ -26,10 +27,10 @@
         <div class="col-md-7 text-center">
           <p class="mb-4" v-html="data.sections.introduction.text">
           </p>
-          <a class="ff-montserrat display-1 text-dark">500+</a>
+          <a class="ff-montserrat display-1 text-reset">500+</a>
                    <p class="ff-montserrat fs-3">Docker Image Pulls </p>
           <a href="https://docs.growi.org/ja/admin-guide/" class="btn btn-success mt-5" target="_blank">
-            <i class="fa fa-docker"></i><span class="btn-text">Dockerhub</span>
+            <i class="fab fa-docker me-2"></i><span class="btn-text">Dockerhub</span>
           </a>
         </div>
         <div class="col-md-5 my-auto">
@@ -40,13 +41,16 @@
 
     <div class="bg-lightgreen py-5 text-center">
       <div class="container">
-        <h3>コミュニティ・サポート</h3>
-        <p>
-          GROWIに関する質問・要望・バグの報告は、
-          GitHubまたはSlackにて受け付けております。
+        <h3 class="mb-4 fs-3 text-reset"> {{ data.sections.community.title }}</h3>
+        <p v-html="data.sections.community.text" class="mb-5">
         </p>
         <div class="row justify-content-center">
-          <a class="btn btn-success col-md-5">Github</a><a class="btn btn-success col-md-5">Slack</a>
+          <a href="https://github.com/weseek/growi/" target="_blank" class="bg-dark text-white col-md-5 mx-4">
+            <span><i class="fab fa-github me-2"></i>Github</span>
+          </a>
+          <a href="https://wsgrowi.slack.com" target="_blank" class="bg-dark text-white col-md-5 mx-4">
+            <span><i class="fab fa-slack me-2"></i>Slack</span>
+          </a>
         </div>
       </div>
     </div>

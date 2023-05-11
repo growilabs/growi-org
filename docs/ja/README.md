@@ -15,7 +15,10 @@ heroButtons:
 sections:
   introduction:
     title: オープンソース GROWI
-    text: GROWI は、WESEEK, Inc. が開発を行い、<br /> MITライセンスで公開しているオープンソースソフトウェアです。 <br /> ユーザーの方も加わった開発が日々活発に行われています。
+    text: GROWI は、WESEEK, Inc. が開発を行い、 <br /> MITライセンスで公開しているオープンソースソフトウェアです。 <br /> ユーザーの方も加わった開発が日々活発に行われています。
+  community:
+    title: コミュニティ・サポート
+    text: GROWIに関する質問・要望・バグの報告は、 <br /> GitHubまたはSlackにて受け付けております。
   features:
     title: 機能紹介
   documents:
