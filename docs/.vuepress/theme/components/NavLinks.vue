@@ -22,7 +22,7 @@
       <a href="https://github.com/weseek/growi/" target="_blank">
         <i class="fab fa-lg fa-github"></i><a class="d-md-none ms-2">GitHub</a>
       </a>
-      <a class="btn btn-success text-white text-bold ms-4 mt-4 mt-md-0">
+      <a class="btn btn-bg-green-gradient font-weight-bold ms-4 mt-4 mt-md-0">
         <span>{{ data.button.start }}</span><i class="fa fa-angle-right ms-2"></i>
       </a>
     </div>

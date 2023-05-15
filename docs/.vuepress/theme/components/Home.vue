@@ -27,13 +27,18 @@
         <div class="col-md-7 text-center">
           <p class="mb-4" v-html="data.sections.introduction.text">
           </p>
-          <a class="ff-montserrat display-1 text-reset">500+</a>
-                   <p class="ff-montserrat fs-3">Docker Image Pulls </p>
-          <a href="https://docs.growi.org/ja/admin-guide/" class="btn btn-success mt-5" target="_blank">
-            <i class="fab fa-docker me-2"></i><span class="btn-text">Dockerhub</span>
-          </a>
+          <div class="d-flex flex-md-fill flex-row">
+            <img src="/assets/images/growi-logo.svg" alt="GROWI" class="d-md-none w-25" v-on:click="handleClick">
+          <div>
+            <a class="ff-montserrat display-1 text-reset">500+</a>
+            <p class="ff-montserrat fs-3">Docker Image Pulls </p>
+          </div>
         </div>
-        <div class="col-md-5 my-auto">
+        <a href="https://docs.growi.org/ja/admin-guide/" class="btn btn-success mt-5" target="_blank">
+          <i class="fab fa-docker me-2"></i><span class="btn-text">Dockerhub</span>
+        </a>
+        </div>
+        <div class="col-md-5 my-auto d-none d-md-block">
           <img src="/assets/images/growi-logo.svg" alt="GROWI" class="ms-0" v-on:click="handleClick">
         </div>
       </div>
@@ -45,10 +50,10 @@
         <p v-html="data.sections.community.text" class="mb-5">
         </p>
         <div class="row justify-content-center">
-          <a href="https://github.com/weseek/growi/" target="_blank" class="bg-dark text-white col-md-5 mx-4">
+          <a href="https://github.com/weseek/growi/" target="_blank" class="btn btn-hexagon bg-dark text-white col-md-5 mx-4">
             <span><i class="fab fa-github me-2"></i>Github</span>
           </a>
-          <a href="https://wsgrowi.slack.com" target="_blank" class="bg-dark text-white col-md-5 mx-4">
+          <a href="https://wsgrowi.slack.com" target="_blank" class="btn btn-hexagon bg-dark text-white col-md-5 mx-4">
             <span><i class="fab fa-slack me-2"></i>Slack</span>
           </a>
         </div>

@@ -143,11 +143,25 @@ cite {
 /* Header */
 
 /* button */
+.btn-hexagon {
+  clip-path: polygon(92% 0%, 100% 50%, 92% 100%, 8% 100%, 0% 50%, 8% 0%);
+  border-radius: 0;
+  padding:8px 48px 8px 48px;
+}
+
 .btn-hexagon-angle-right {
   position: absolute;
   top: 50%;
   right: 5%;
   transform: translateY(-50%);
+}
+
+.btn-bg-green-gradient {
+  color:white;
+  background: linear-gradient(40deg,#79B536, #2FB516);
+  &:hover {
+    filter: brightness(85%);
+  }
 }
 
 /* Top Menu Style 1 */
@@ -692,7 +706,7 @@ header a.btn {
   padding:8px 48px 8px 48px;
   color: $white;
   font-size:16px;
-  background: linear-gradient(#79B536, #2FB516);
+  background: linear-gradient(40deg,#79B536, #2FB516);
   clip-path: polygon(92% 0%, 100% 50%, 92% 100%, 8% 100%, 0% 50%, 8% 0%);
   border-radius: 0;
   &:hover {
@@ -705,12 +719,6 @@ header a.btn {
 
 header a.btn:focus {
   color: $white;
-}
-
-header a.btn-success {
-  color: $white;
-  opacity: 1;
-  background-color: linear-gradient(40deg,#79B536, #2FB516);
 }
 
 header a.btn-success.first-button {
@@ -1078,8 +1086,11 @@ header#parallax-header-agency h2 {
 }
 
 .display-1 {
-  font-size: 6rem;
+  font-size: 3.5rem;
   font-weight: 800;
+  @media (min-width: $screen-md-min) {
+    font-size: 6rem;
+  }
 }
 
 .feature-icon-hover {
