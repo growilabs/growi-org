@@ -27,16 +27,18 @@
         <div class="col-md-7 text-center">
           <p class="mb-4" v-html="data.sections.introduction.text">
           </p>
-          <div class="d-flex flex-md-fill flex-row">
+          <div class="d-flex flex-md-fill flex-row justify-content-center">
             <img src="/assets/images/growi-logo.svg" alt="GROWI" class="d-md-none w-25" v-on:click="handleClick">
           <div>
-            <a class="ff-montserrat display-1 text-reset">500+</a>
+            <span class="ff-montserrat display-1 text-reset">500+</span>
             <p class="ff-montserrat fs-3">Docker Image Pulls </p>
           </div>
         </div>
-        <a href="https://docs.growi.org/ja/admin-guide/" class="btn btn-success mt-5" target="_blank">
+        <div class="btn-green-bg mt-5 mx-auto">
+        <a href="https://docs.growi.org/ja/admin-guide/" class="btn-green-line fw-bold d-inline-block" target="_blank">
           <i class="fab fa-docker me-2"></i><span class="btn-text">Dockerhub</span>
         </a>
+      </div>
         </div>
         <div class="col-md-5 my-auto d-none d-md-block">
           <img src="/assets/images/growi-logo.svg" alt="GROWI" class="ms-0" v-on:click="handleClick">
@@ -49,13 +51,17 @@
         <h3 class="mb-4 fs-3 text-reset"> {{ data.sections.community.title }}</h3>
         <p v-html="data.sections.community.text" class="mb-5">
         </p>
-        <div class="row justify-content-center">
-          <a href="https://github.com/weseek/growi/" target="_blank" class="btn btn-hexagon bg-dark text-white col-md-5 mx-4">
-            <span><i class="fab fa-github me-2"></i>Github</span>
-          </a>
-          <a href="https://wsgrowi.slack.com" target="_blank" class="btn btn-hexagon bg-dark text-white col-md-5 mx-4">
-            <span><i class="fab fa-slack me-2"></i>Slack</span>
-          </a>
+        <div class="d-md-flex justify-content-center">
+          <div>
+            <a href="https://github.com/weseek/growi/" target="_blank" class="btn btn-hexagon btn-navy text-white fs-6 rounded-0 py-2">
+              <span class="mx-5 d-inline-block"><i class="fab fa-github me-2"></i>Github</span>
+            </a>
+          </div>
+          <div>
+            <a href="https://wsgrowi.slack.com" target="_blank" class="btn btn-hexagon btn-navy text-white fs-6 rounded-0 py-2">
+              <span class="mx-5 d-inline-block"><i class="fab fa-slack me-2"></i>Slack</span>
+            </a>
+          </div>
         </div>
       </div>
     </div>

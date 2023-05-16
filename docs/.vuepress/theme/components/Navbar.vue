@@ -132,4 +132,10 @@ $navbar-horizontal-padding = 1.5rem
       overflow hidden
       white-space nowrap
       text-overflow ellipsis
+
+.btn-bg-green-gradient
+  color:white;
+  background: linear-gradient(40deg,#79B536, #2FB516);
+  &:hover
+    filter: brightness(85%);
 </style>

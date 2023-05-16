@@ -145,8 +145,35 @@ cite {
 /* button */
 .btn-hexagon {
   clip-path: polygon(92% 0%, 100% 50%, 92% 100%, 8% 100%, 0% 50%, 8% 0%);
-  border-radius: 0;
   padding:8px 48px 8px 48px;
+}
+
+.btn-green-bg {
+  width:270px;
+  height:48px;
+  background-color: $success;
+  clip-path: polygon(92% 0%, 100% 50%, 92% 100%, 8% 100%, 0% 50%, 8% 0%);
+}
+
+.btn-green-line {
+  width:270px;
+  height:48px;
+  padding: 12px 5%;
+  clip-path: polygon(calc(92% - 1px) 2px, calc(100% - 2px) 50%, calc(92% - 1px) calc(100% - 2px), calc(8% + 1px) calc(100% - 2px), 2px 50%, calc(8% + 1px) 2px);
+  background-color: white;
+  color: $success;
+  &:hover{
+    color:white;
+    background-color: $success;
+    transition: 0.2s;
+  }
+}
+
+.btn-navy {
+  background-color: #254459;
+  &:hover {
+    filter: brightness(120%);
+  }
 }
 
 .btn-hexagon-angle-right {

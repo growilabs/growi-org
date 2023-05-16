@@ -1,9 +1,9 @@
 ---
 home: true
 heroText: 
-line1: Free high-performance wiki tool
-line2: 
-subtext: This tool for sharing munual, business proposal and simultaneous editing minutes in real time. <br /> it supports comfortable information sharing and work efficiency within the team.
+  line1: Free high-performance
+  line2:  wiki tool
+  subtext: This tool for sharing munual, <br /> business proposal and simultaneous editing minutes in real time.<br /> it supports comfortable information sharing and work efficiency within the team.
 heroImage: /assets/images/banner-logo.png
 heroButtons:
 - text: Features
@@ -19,7 +19,6 @@ sections:
   community:
     title: Community-support
     text: We are accepting questions, request and report of bug on our GItHub or Slack.
-  features:
   features:
     title: Features
   documents:

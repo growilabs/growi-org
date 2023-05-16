@@ -5,7 +5,7 @@
   >
     <!-- user links -->
     <div
-      class="nav-item"
+      class="nav-item my-3 my-md-0"
       v-for="item in userLinks"
       :key="item.link"
     >
@@ -22,7 +22,7 @@
       <a href="https://github.com/weseek/growi/" target="_blank">
         <i class="fab fa-lg fa-github"></i><a class="d-md-none ms-2">GitHub</a>
       </a>
-      <a class="btn btn-bg-green-gradient font-weight-bold ms-4 mt-4 mt-md-0">
+      <a class="btn btn-bg-green-gradient text-white fw-bold ms-4 mt-5 mt-md-0 rounded-1">
         <span>{{ data.button.start }}</span><i class="fa fa-angle-right ms-2"></i>
       </a>
     </div>
@@ -167,4 +167,8 @@ export default {
     &:hover, &.router-link-active
       margin-bottom -2px
       border-bottom 2px solid #1f76bd
+.btn-green
+  background linear-gradient(40deg,#79B536, #2FB516);
+  &:hover
+    filter brightness(85%);
 </style>
