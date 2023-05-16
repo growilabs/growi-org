@@ -30,7 +30,7 @@
           <div class="d-flex flex-md-fill flex-row justify-content-center">
             <img src="/assets/images/growi-logo.svg" alt="GROWI" class="d-md-none w-25" v-on:click="handleClick">
           <div>
-            <span class="ff-montserrat display-1 text-reset">500+</span>
+            <span class="ff-montserrat display-1 text-reset">500K+</span>
             <p class="ff-montserrat fs-3">Docker Image Pulls </p>
           </div>
         </div>
