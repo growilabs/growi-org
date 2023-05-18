@@ -1,6 +1,9 @@
 ---
 home: true
-heroText: Easy and Smooth Information Sharing For Everyone
+heroText: 
+  line1: Free high-performance
+  line2:  wiki tool
+  subtext: This tool for sharing munual, <br /> business proposal and simultaneous editing minutes in real time.<br /> it supports comfortable information sharing and work efficiency within the team.
 heroImage: /assets/images/banner-logo.png
 heroButtons:
 - text: Features
@@ -10,6 +13,12 @@ heroButtons:
 - text: GROWI.cloud
   link: /en/#cloud
 sections:
+  introduction:
+    title: Open Source GROWI
+    text: GROWI.cloud is open software developed by WESEEK, Inc. <br /> And released under MIT license.
+  community:
+    title: Community-support
+    text: We are accepting questions, request and report of bug on our GItHub or Slack.
   features:
     title: Features
   documents:
@@ -30,6 +39,8 @@ sections:
   contact_us:
     address: Takadanobaba Access 10F, 2-20-15 Nishiwaseda, Shinjuku-ku, Tokyo, Japan
     email: info@weseek.co.jp
+button:
+  start: Starting GROWI
 features:
 - image_path: /assets/images/screenshots/editor.png
   details:

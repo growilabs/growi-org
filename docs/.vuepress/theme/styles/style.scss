@@ -48,7 +48,7 @@ p {
   font-family: $primary-font;
   font-weight: $regular;
   font-size: 16px;
-  line-height: 20px;
+  line-height: 24px;
   color: $text-color;
   letter-spacing: $letter-spacing;
   margin-bottom: 10px;
@@ -136,17 +136,59 @@ cite {
   padding-left: 0;
 }
 
+.bg-lightgreen {
+  background-color: #F0FFEA;
+}
+
 /* Header */
 
 /* button */
+.btn-hexagon {
+  clip-path: polygon(92% 0%, 100% 50%, 92% 100%, 8% 100%, 0% 50%, 8% 0%);
+  padding:8px 48px 8px 48px;
+}
+
+.btn-green-bg {
+  width:270px;
+  height:48px;
+  background-color: $success;
+  clip-path: polygon(92% 0%, 100% 50%, 92% 100%, 8% 100%, 0% 50%, 8% 0%);
+}
+
+.btn-green-line {
+  width:270px;
+  height:48px;
+  padding: 12px 5%;
+  clip-path: polygon(calc(92% - 1px) 2px, calc(100% - 2px) 50%, calc(92% - 1px) calc(100% - 2px), calc(8% + 1px) calc(100% - 2px), 2px 50%, calc(8% + 1px) 2px);
+  background-color: white;
+  color: $success;
+  &:hover{
+    color:white;
+    background-color: $success;
+    transition: 0.2s;
+  }
+}
+
+.btn-navy {
+  background-color: #254459;
+  &:hover {
+    filter: brightness(120%);
+  }
+}
+
 .btn-hexagon-angle-right {
   position: absolute;
   top: 50%;
   right: 5%;
-  // @include media-breakpoint-down(sm) {
-  //   right: 5%;
-  // }
   transform: translateY(-50%);
+}
+
+.btn-bg-green-gradient {
+  color:white;
+  background: linear-gradient(40deg,#79B536, #2FB516);
+  &:hover {
+    filter: brightness(85%);
+  }
 }
 
 /* Top Menu Style 1 */
@@ -688,28 +730,22 @@ header h2 {
 
 header a.btn {
   margin-bottom: 50px;
-  padding:12px 48px 12px 48px;
+  padding:8px 48px 8px 48px;
   color: $white;
-  font-size:20px;
-  background: linear-gradient(#79B536, #2FB516);
+  font-size:16px;
+  background: linear-gradient(40deg,#79B536, #2FB516);
   clip-path: polygon(92% 0%, 100% 50%, 92% 100%, 8% 100%, 0% 50%, 8% 0%);
   border-radius: 0;
-}
-
-header a.btn:hover {
-  color: $white;
-  background: $primary-hover;
-  opacity: 0.8 !important;
+  &:hover {
+    filter: brightness(85%);
+  }
+  @media (min-width: $screen-md-min) {
+    font-size:20px;
+  }
 }
 
 header a.btn:focus {
   color: $white;
-}
-
-header a.btn-success {
-  color: $white;
-  opacity: 1;
-  background-color: linear-gradient(30deg,#79B536, #2FB516);
 }
 
 header a.btn-success.first-button {
@@ -724,14 +760,15 @@ header a.btn-success:hover {
 
 /* Parallax Header */
 #parallax-header {
-  background-color: #F0FFEA;
-  // background-image: url('/assets/images/primary-polygon.jpg');
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: center;
-  text-align: center;
+background-color: #F0FFEA !important;
+  @media (min-width: $screen-md-min) {
+    background: url('/assets/images/background-abstract-left.png'), url('/assets/images/background-abstract-right.png');
+    background-repeat: no-repeat;
+    padding-top: 68px;
+    padding-bottom: 46px;
+    background-position: left -40% top, right bottom;
+    background-size: 70%, 70%;
+  }
 }
 
 #parallax-header.single {
@@ -1052,6 +1089,36 @@ header#parallax-header-agency h2 {
 /* End Page Header */
 
 /* About Section */
+.section-title {
+  font-size: 24px;
+  color: #343A40;
+  border:none;
+  @media (min-width: $screen-md-min) {
+    font-size: 40px;
+  }
+  &::after {
+    display: block;
+    width: 60px;
+    height: 0px;
+    margin: 15px auto 0;
+    content: '';
+    border-color: #70B248 transparent transparent transparent;
+    border-style: solid;
+    border-width: 4px 2px 0 2px;
+  }
+}
+
+.ff-montserrat {
+  font-family: 'Montserrat';
+}
+
+.display-1 {
+  font-size: 3.5rem;
+  font-weight: 800;
+  @media (min-width: $screen-md-min) {
+    font-size: 6rem;
+  }
+}
 
 .feature-icon-hover {
   color: $white;
@@ -1978,36 +2045,6 @@ footer.light .light-footer-social {
   margin-bottom: 10px;
 }
 /* End Footer */
-
-/* Scroll to Top */
-#home {
-  top: 0;
-}
-
-.scroll-to-top {
-  background: $white;
-  color: $primary;
-  width: 40px;
-  height: 40px;
-  bottom: 20px;
-  right: 20px;
-  font-size: 30px !important;
-  line-height: 32px;
-  border: 2px solid $primary;
-  border-radius: 100px;
-  position: fixed;
-  text-align: center;
-  font-size: 20px;
-  z-index: 99;
-}
-
-.scroll-to-top:hover {
-  background: $primary-hover;
-  color: $white;
-  border: 2px solid $primary-hover;
-}
-
-/* End Scroll to Top */
 
 /* Single Pages */
 

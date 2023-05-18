@@ -1,25 +1,70 @@
 <template>
   <main class="home" aria-labelledby="main-title">
     <header id="parallax-header" data-section="home">
-      <div id="home" class="container">
+      <div id="home" class="container py-5">
         <!-- header content -->
-        <div class="header-content row">
-          <div class="col-12 col-md-6">
-          <h2 class="animated fadeIn display-3"> {{ data.heroText.line1 }}<br />{{ data.heroText.line2 }}</h2>
-          <p>マニュアルや企画書の共有、議事録の同時編集など、<br />
-            チーム内での快適な情報共有と作業効率化を支えるツールです。</p>
-          <a href="https://docs.growi.org/ja/admin-guide/" style="margin-top: 20px" class="btn" target="_blank">
-            <span class="btn-text">GROWIを始める</span><i class="fa fa-angle-right btn-hexagon-angle-right"></i>
+        <div class="header-content row pt-4 pt-lg-5 pb-0 pb-lg-5 mt-5">
+          <div class="col-lg-6 px-0 animated fadeIn">
+            <h2 class="fs-1 border-0 mt-0 mt-lg-4 mb-4"> {{ data.heroText.line1 }}<br />{{ data.heroText.line2 }}</h2>
+            <img src="/assets/images/banner-img-2.png" alt="GROWI" v-on:click="handleClick" class="d-lg-none">
+          <p class="mt-3" v-html="data.heroText.subtext"></p>
+          <a href="https://docs.growi.org/ja/admin-guide/" class="btn mt-4" target="_blank">
+            <span class="btn-text fs-6"> {{ data.button.start }}</span><i class="fa fa-angle-right btn-hexagon-angle-right"></i>
           </a>
         </div>
-        <div class="col-12 col-md-6">
+        <div class="d-none d-lg-block col-lg-6 my-auto animated fadeIn">
           <p class="animated fadeIn">
-            <img src="/assets/images/banner-img-2.png" alt="GROWI">
+            <img src="/assets/images/banner-img-2.png" alt="GROWI" v-on:click="handleClick">
           </p>
           </div>
         </div>
       </div>
     </header>
+
+    <div class="container">
+      <h2 class="text-center mt-5 py-5 section-title animated fadeIn">{{ data.sections.introduction.title }}</h2>
+      <div class="row animated fadeIn mb-5 pb-5">
+        <div class="col-md-7 text-center">
+          <p class="mb-4" v-html="data.sections.introduction.text">
+          </p>
+          <div class="d-flex flex-md-fill flex-row justify-content-center">
+            <img src="/assets/images/growi-logo.svg" alt="GROWI" class="d-md-none w-25" v-on:click="handleClick">
+          <div>
+            <span class="ff-montserrat display-1 text-reset">500K+</span>
+            <p class="ff-montserrat fs-3">Docker Image Pulls </p>
+          </div>
+        </div>
+        <div class="btn-green-bg mt-5 mx-auto">
+        <a href="https://docs.growi.org/ja/admin-guide/" class="btn-green-line fw-bold d-inline-block" target="_blank">
+          <i class="fab fa-docker me-2"></i><span class="btn-text">Dockerhub</span>
+        </a>
+      </div>
+        </div>
+        <div class="col-md-5 my-auto d-none d-md-block">
+          <img src="/assets/images/growi-logo.svg" alt="GROWI" class="ms-0" v-on:click="handleClick">
+        </div>
+      </div>
+    </div>
+
+    <div class="bg-lightgreen py-5 text-center">
+      <div class="container">
+        <h3 class="mb-4 fs-3 text-reset"> {{ data.sections.community.title }}</h3>
+        <p v-html="data.sections.community.text" class="mb-5">
+        </p>
+        <div class="d-md-flex justify-content-center">
+          <div>
+            <a href="https://github.com/weseek/growi/" target="_blank" class="btn btn-hexagon btn-navy text-white fs-6 rounded-0 py-2">
+              <span class="mx-5 d-inline-block"><i class="fab fa-github me-2"></i>Github</span>
+            </a>
+          </div>
+          <div>
+            <a href="https://wsgrowi.slack.com" target="_blank" class="btn btn-hexagon btn-navy text-white fs-6 rounded-0 py-2">
+              <span class="mx-5 d-inline-block"><i class="fab fa-slack me-2"></i>Slack</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <div v-if="data.features && data.features.length" id="features" data-section="features">
       <div class="container">
@@ -253,11 +298,6 @@
     <!-- <script2 src="/assets/js/scrolling-nav.js"></script2> -->
     <script2 src="/assets/js/jquery.nav.js"></script2>
     <!-- scripts -->
-    <!-- scroll to top -->
-    <a href="#home" class="scroll-to-top page-scroll">
-      <i class="fa fa-angle-up"></i>
-    </a>
-    <!-- / scroll to top -->
     <!-- nav scroll -->
     <script2>
       $(document).ready(function () {
@@ -306,6 +346,10 @@ export default {
         return false;
       }
     },
+    handleClick(event) {
+      // クリックイベントを無視する
+      event.stopPropagation();
+    }
   },
 };
 </script>
