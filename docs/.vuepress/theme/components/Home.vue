@@ -66,54 +66,97 @@
       </div>
     </div>
 
-    <div v-if="data.features && data.features.length" id="features" data-section="features">
+    <div id="features" data-section="features">
       <div class="container">
-        <div class="page-header wsub first">
-          <h2>{{ data.sections.features.title }}</h2>
+        <div class="animated fadeIn text-center">
+          <h2 class="mt-5 py-5 section-title">{{ data.sections.features.title }}</h2>
+          <p class="mb-4" v-html="data.sections.features.text"></p>
         </div>
-
-        <div v-for="(feature, index) in data.features" class="row feature-row" style="margin-top: 50px; margin-bottom: 100px;">
-          <div v-if="(index % 2) === 0">
-            <div class="feature-image-left col-sm-12 col-md-7">
-              <img :src="feature.image_path" alt="">
-            </div>
-            <div class="features-left image-left col-xs-12 col-md-5">
-              <div v-for="detail in feature.details" class="feature">
-                <div class="feature-icon">
-                  <i class="lnr" :class="`lnr-${detail.icon}`"></i>
-                </div>
-                <h3>{{ detail.title }}</h3>
-                <p v-html="detail.description"></p>
+        <div class="row mt-5 pt-5">
+          <div class="col-6 col-md-4 px-4">
+            <div class="card border-0 bg-transparent">
+              <img src="/assets/images/features/editor.png" alt="Editor" class="card-img-top rounded-3 shadow" />
+              <div class="card-body">
+                <h5 class="text-center mt-4">{{ data.features.markdown.title }}</h5>
+                <p v-html="data.features.markdown.description"></p>
               </div>
             </div>
           </div>
-          <div v-else>
-            <div class="features-left image-left col-xs-12 col-md-5">
-              <div v-for="detail in feature.details" class="feature">
-                <div class="feature-icon">
-                  <i class="lnr" :class="`lnr-${detail.icon}`"></i>
-                </div>
-                <h3>{{ detail.title }}</h3>
-                <p v-html="detail.description"></p>
+          <div class="col-6 col-md-4 px-4">
+            <div class="card border-0 bg-transparent">
+              <img src="/assets/images/features/shape.png" alt="Shape" class="card-img-top rounded-3 shadow" />
+              <div class="card-body">
+                <h5 class="text-center mt-4">{{ data.features.shape.title }}</h5>
+                <p v-html="data.features.shape.description"></p>
               </div>
             </div>
-            <div class="feature-image-left col-sm-12 col-md-7">
-              <video
-                v-if="isMovieFile(feature.image_path)"
-                :src="feature.image_path"
-                autoplay
-                loop
-                playsinline
-                muted="muted"
-                width="100%"
-              ></video>
-              <img v-else :src="feature.image_path" alt />
+          </div>
+          <div class="col-6 col-md-4 px-4">
+            <div class="card border-0 bg-transparent">
+              <img src="/assets/images/features/search.png" alt="Search" class="card-img-top rounded-3 shadow" />
+              <div class="card-body">
+                <h5 class="text-center mt-4">{{ data.features.search.title }}</h5>
+                <p v-html="data.features.search.description"></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-md-4 px-4">
+            <div class="card border-0 bg-transparent">
+              <img src="/assets/images/features/hackmd.png" alt="HackMD" class="card-img-top rounded-3 shadow" />
+              <div class="card-body">
+                <h5 class="text-center mt-4">{{ data.features.hackmd.title }}</h5>
+                <p v-html="data.features.hackmd.description"></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-md-4 px-4">
+            <div class="card border-0 bg-transparent">
+              <img src="/assets/images/features/customize.png" alt="Customize" class="card-img-top rounded-3 shadow" />
+              <div class="card-body">
+                <h5 class="text-center mt-4">{{ data.features.customize.title }}</h5>
+                <p v-html="data.features.customize.description"></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-md-4 px-4">
+            <div class="card border-0 bg-transparent">
+              <img src="/assets/images/features/group.png" alt="Group" class="card-img-top rounded-3 shadow" />
+              <div class="card-body">
+                <h5 class="text-center mt-4">{{ data.features.group.title }}</h5>
+                <p v-html="data.features.group.description"></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-md-4 px-4">
+            <div class="card border-0 bg-transparent">
+              <img src="/assets/images/features/comment.png" alt="Comment" class="card-img-top rounded-3 shadow" />
+              <div class="card-body">
+                <h5 class="text-center mt-4">{{ data.features.comment.title }}</h5>
+                <p v-html="data.features.comment.description"></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-md-4 px-4">
+            <div class="card border-0 bg-transparent">
+              <img src="/assets/images/features/auth.png" alt="Auth" class="card-img-top rounded-3 shadow" />
+              <div class="card-body">
+                <h5 class="text-center mt-4">{{ data.features.auth.title }}</h5>
+                <p v-html="data.features.auth.description"></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-md-4 px-4">
+            <div class="card border-0 bg-transparent">
+              <img src="/assets/images/features/assets.png" alt="Assets management" class="card-img-top rounded-3 shadow" />
+              <div class="card-body">
+                <h5 class="text-center mt-4">{{ data.features.assets.title }}</h5>
+                <p v-html="data.features.assets.description"></p>
+              </div>
             </div>
           </div>
         </div>
-      </div><!-- /container -->
-    </div><!-- / features section image-left -->
-    <!-- / features section 4col image-left -->
+      </div>
+    </div>
 
     <div id="demo" class="row">
       <div class="col-sm-12 text-center" style="margin-top: 50px;">
