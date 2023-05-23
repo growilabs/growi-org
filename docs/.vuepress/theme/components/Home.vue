@@ -8,8 +8,8 @@
             <h2 class="fs-1 border-0 mt-0 mt-lg-4 mb-4"> {{ data.heroText.line1 }}<br />{{ data.heroText.line2 }}</h2>
             <img src="/assets/images/banner-img-2.png" alt="GROWI" v-on:click="handleClick" class="d-lg-none">
           <p class="mt-3" v-html="data.heroText.subtext"></p>
-          <a href="https://docs.growi.org/ja/admin-guide/" class="btn mt-4" target="_blank">
-            <span class="btn-text fs-6"> {{ data.button.start }}</span><i class="fa fa-angle-right btn-hexagon-angle-right"></i>
+          <a href="https://docs.growi.org/ja/admin-guide/" class="btn mt-4 btn-hexagon-angle-right" target="_blank">
+            <span class="btn-text fs-6"> {{ data.button.start }}</span>
           </a>
         </div>
         <div class="d-none d-lg-block col-lg-6 my-auto animated fadeIn">
@@ -30,16 +30,16 @@
           </p>
           <div class="d-flex flex-md-fill flex-row justify-content-center">
             <img src="/assets/images/growi-logo.svg" alt="GROWI" class="d-md-none w-25" v-on:click="handleClick">
-          <div>
-            <span class="ff-montserrat display-1 text-reset">500K+</span>
-            <p class="ff-montserrat fs-3">Docker Image Pulls </p>
+            <div>
+              <span class="ff-montserrat display-1 text-reset">500K+</span>
+              <p class="ff-montserrat fs-3">Docker Image Pulls </p>
+            </div>
           </div>
-        </div>
-        <div class="btn-green-bg mt-5 mx-auto">
-        <a href="https://docs.growi.org/ja/admin-guide/" class="btn-green-line fw-bold d-inline-block" target="_blank">
-          <i class="fab fa-docker me-2"></i><span class="btn-text">Dockerhub</span>
-        </a>
-      </div>
+          <div class="btn-green-bg mt-5 mx-auto">
+            <a href="https://docs.growi.org/ja/admin-guide/" class="btn-green-line fw-bold d-inline-block" target="_blank">
+              <i class="fab fa-docker me-2"></i><span class="btn-text">Dockerhub</span>
+            </a>
+          </div>
         </div>
         <div class="col-md-5 my-auto d-none d-md-block">
           <img src="/assets/images/growi-logo.svg" alt="GROWI" class="ms-0" v-on:click="handleClick">
@@ -169,7 +169,6 @@
           <h3 class="mb-4">{{ data.merits.management.title }}</h3>
           <p v-html="data.merits.management.description"></p>
         </div>
-        </div>
         <div class="row mx-md-5 justify-content-center mt-5">
           <img src="/assets/images/merit-get-infomation.svg" alt="Get infomation" class="col-12 col-md-6 col-xl-5 mx-0 mb-5 mb-md-auto"/>
           <div class="col-12 col-md-6 col-xl-5 my-auto px-0 px-lg-5">
@@ -184,11 +183,42 @@
               <p v-html="data.merits.team.description"></p>
             </div>
          </div>
+        </div>
+        <div class="text-center mx-auto mt-5">
+         <a
+         href="https://docs.growi.org/ja/admin-guide/"
+         class="btn btn-hexagon btn-bg-green-gradient btn-hexagon-angle-right fw-bold d-inline-block text-white px-5 py-2 rounded-0"
+         target="_blank"
+         >
+           <span class="btn-text"> {{ data.button.start }}</span>
+         </a>
        </div>
-       <div class="text-center mx-auto mt-5">
-        <a href="https://docs.growi.org/ja/admin-guide/" class="btn btn-hexagon fw-bold d-inline-block btn-green-bg text-white py-2" target="_blank">
-          <span class="btn-text"> {{ data.button.start }}</span>
-        </a>
+    </div>
+  </div>
+
+  <!-- Trial section -->
+  <div class="container text-center my-5 py-5">
+    <h2 class="border-0 d-flex">
+      <img src="/assets/images/appearl-effect.svg" class="me-3" />
+      {{ data.sections.trial.title }}
+      <img src="/assets/images/appearl-effect.svg" class="ms-3 header-appeal-effect" />
+    </h2>
+    <div class="row mt-5 justify-content-center">
+      <div class="bg-lightgreen shadow rounded p-5 mx-4 col-12 col-md-5">
+        <h5>{{ data.sections.trial.demo }}</h5>
+        <div class="btn-green-bg mt-4 mx-auto">
+            <a href="https://demo.growi.org/" class="btn-green-line btn-hexagon-angle-right fw-bold d-inline-block" target="_blank">
+              <span class="btn-text">GROWI Demo</span>
+            </a>
+        </div>
+      </div>
+      <div class="bg-lightgreen shadow rounded p-5 mx-4 col-12 col-md-5">
+        <h5>{{ data.sections.trial.operation }}</h5>
+        <div class="btn-green-bg mt-4 mx-auto">
+            <a href="https://docs.growi.org/ja/" class="btn-green-line btn-hexagon-angle-right fw-bold d-inline-block" target="_blank">
+              <span class="btn-text">GROWI Docs</span>
+            </a>
+        </div>
       </div>
     </div>
   </div>

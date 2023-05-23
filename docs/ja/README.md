@@ -24,6 +24,10 @@ sections:
     text: 豊富な機能で社内やチーム内でのスムーズな情報共有を支える <br /> GROWIの便利な機能の一部をご紹介します。機能の詳細は、<a href="https://docs.growi.org/ja/guide/">GROWI Docs/機能紹介</a> をご覧ください。
   merits:
     title: 導入のメリット
+  trial:
+    title: まずはデモでGROWIをご体験ください
+    demo: デモを試してみる
+    operation: 詳しい操作方法を見る
   cloud:
     title: GROWI.cloud
     descriptions:

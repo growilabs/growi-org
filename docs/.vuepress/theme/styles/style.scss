@@ -177,9 +177,17 @@ cite {
 }
 
 .btn-hexagon-angle-right {
+  position: relative;
+  padding-right: 24px;
+}
+
+.btn-hexagon-angle-right ::after {
+  content: '\f105';
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
   position: absolute;
   top: 50%;
-  right: 5%;
+  right: 14px;
   transform: translateY(-50%);
 }
 
@@ -1120,30 +1128,8 @@ header#parallax-header-agency h2 {
   }
 }
 
-.feature-icon-hover {
-  color: $white;
-  background-color: $primary;
-  text-decoration: none;
-}
-.feature-icon {
-  color: $text-color;
-  background-color: $bg-color;
-  padding: 21px;
-  margin-bottom: 30px;
-  display: inline-block !important;
-  font-size: 38px;
-  height: 80px;
-  width: 80px;
-  text-align: center;
-  border-radius: 100px;
-  -webkit-border-radius: 100px;
-  -moz-border-radius: 100px;
-  @include transition(0.2s);
-  &:hover,
-  &:active,
-  &:focus {
-    @extend .feature-icon-hover;
-  }
+.header-appeal-effect {
+  transform: scale(-1, 1);
 }
 
 .about {
@@ -1159,10 +1145,6 @@ header#parallax-header-agency h2 {
     &:hover,
     &:focus {
       box-shadow: #ccc 0 7px 20px;
-
-      .feature-icon {
-        @extend .feature-icon-hover;
-      }
     }
   }
 }
