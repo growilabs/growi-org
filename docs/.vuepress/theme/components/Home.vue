@@ -190,7 +190,7 @@
          class="btn btn-hexagon btn-bg-green-gradient btn-hexagon-angle-right fw-bold d-inline-block text-white px-5 py-2 rounded-0"
          target="_blank"
          >
-           <span class="btn-text"> {{ data.button.start }}</span>
+           <span class="btn-text fs-5"> {{ data.button.start }}</span>
          </a>
        </div>
     </div>
@@ -212,7 +212,7 @@
             </a>
         </div>
       </div>
-      <div class="bg-lightgreen shadow rounded p-5 mx-4 col-12 col-md-5">
+      <div class="bg-lightgreen shadow rounded p-5 mx-4 col-12 col-md-5 mt-4 mt-md-auto">
         <h5>{{ data.sections.trial.operation }}</h5>
         <div class="btn-green-bg mt-4 mx-auto">
             <a href="https://docs.growi.org/ja/" class="btn-green-line btn-hexagon-angle-right fw-bold d-inline-block" target="_blank">
@@ -242,96 +242,6 @@
         </div>
       </div>
     </div>
-
-    <!-- documetnts section 3col -->
-    <!-- <div id="documents" name="documents" data-section="documetnts">
-      <div class="container">
-        <div class="page-header wsub first">
-          <h2>{{ data.sections.documents.title }}</h2>
-        </div>
-        <div class="row">
-          <div class="about col-sm-4"> -->
-            <!--
-            <a href="https://github.com/weseek/growi">
-              <div class="feature-icon">
-                <i class="fa fa-github"></i>
-              </div>
-              <h5 class="about-title">
-                GitHub
-              </h5>
-            </a>
-            -->
-          <div class="about col-sm-4">
-            <a href="https://docs.growi.org">
-              <div class="feature-icon">
-                <i class="lnr lnr-book"></i>
-              </div>
-              <h5 class="about-title">
-                GROWI Docs<br><small>by VuePress</small>
-              </h5>
-            </a>
-          </div>
-          <div class="about col-sm-4">
-            <!--
-            <a href="https://weseek.co.jp/tags/GROWI/">
-              <div class="feature-icon">
-                <i class="lnr lnr-magic-wand"></i>
-              </div>
-              <h5 class="about-title">GROWI Blog</h5>
-            </a>
-            -->
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-sm-12 text-center animated fadeIn" style="margin: 10px 0;">
-            <NavLink
-              class="btn btn-default"
-              :item="{
-                text: 'GITHUB',
-                link: 'https://github.com/weseek/growi'
-              }"
-            />
-            <NavLink
-              class="btn btn-default"
-              :item="{
-                text: 'GROWI BLOG',
-                link: 'https://weseek.co.jp/tags/GROWI/'
-              }"
-            />
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- joinus -->
-    <div id="joinus" class="parallax" data-section="joinus" style="margin-top: 150px;">
-      <div class="container">
-        <div class="page-header wsub first">
-          <h2>JOIN US</h2>
-        </div>
-        <div class="row">
-          <div class="col-md-12">
-            <p v-for="description in data.sections.joinus.descriptions" v-html="description" class="text-center" style="margin-top: 30px;">
-            </p>
-            <p class="text-center" style="margin-top: 60px;">
-              <iframe src="https://ghbtns.com/github-btn.html?user=weseek&repo=growi&type=watch&count=true" allowtransparency="true"
-              frameborder="0" scrolling="0" width="110" height="20"></iframe>
-              <a href="https://growi-slackin.weseek.co.jp/">
-                <img src="https://growi-slackin.weseek.co.jp/badge.svg" style="display: inline; vertical-align: baseline; margin-left: -20px;">
-              </a>
-            </p>
-          </div>
-        </div>
-      </div>
-      <!-- / container -->
-    </div><!-- / joinus -->
-
-    <!-- map -->
-    <div>
-      <iframe id="map" frameborder="0" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCRwmtcbaWWW-2R-iiUBvZdVI-UeEb-aXo&q=東京都新宿区西早稲田2-20-15">
-      </iframe>
-    </div>
-    <!-- / map -->
 
     <!-- footer widgets 4col -->
     <div id="footer-widgets" data-section="footer-widgets">
@@ -514,19 +424,4 @@ export default {
   }
 }
 /* End GROWI cloud section */
-
-/* Join Us */
-
-/deep/ #joinus {
-  background: url(/assets/images/joinus-background.jpg) no-repeat;
-  padding-bottom: 50px;
-  margin-top: 50px;
-  p {
-    color: white;
-  }
-
-  .page-header h2 {
-    color: $white;
-  }
-}
 </style>
