@@ -22,8 +22,8 @@ sections:
   features:
     title: 機能と特徴
     text: 豊富な機能で社内やチーム内でのスムーズな情報共有を支える <br /> GROWIの便利な機能の一部をご紹介します。機能の詳細は、<a href="https://docs.growi.org/ja/guide/">GROWI Docs/機能紹介</a> をご覧ください。
-  documents:
-    title: ドキュメント
+  merits:
+    title: 導入のメリット
   cloud:
     title: GROWI.cloud
     descriptions:
@@ -73,5 +73,15 @@ features:
   assets:
     title: シンプルなアセット管理
     description: 編集画面にドロップするだけで、ファイルをアップロード出来ます。ストレージはローカルFS、AWS S3、Google Cloud Storage、MongoDB GridFS の4種をサポートしています。
-  
+merits:
+  management:
+    title: 情報やナレッジをまとめて管理できる
+    description: 社内では議事録や報告書、業務マニュアルなど多様な情報が存在します。GROWIを活用し、業務に関わる情報を一つの場所にまとめることで、簡単に情報やナレッジを管理、共有できるようになります。
+  infomation:
+    title: 欲しい情報がすぐに手に入る
+    description: 検索機能を利用することで、簡単に知りたい情報を探し出すことが可能です。また、業務の属人化を防ぎ、チームとして働きやすい環境を作ります。
+  team:
+    title: 個人が持っている情報を <br /> チームの発展に繋げる
+    description: 個人が持つノウハウや知識、仕事をする中で得た経験は、企業やチームとって、組織の成長に欠かせない重要な財産です。ノウハウを共有・蓄積・活用することで組織のさらなる発展へとつながります。
+
 ---

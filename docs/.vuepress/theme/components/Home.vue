@@ -21,6 +21,7 @@
       </div>
     </header>
 
+    <!-- Introduce section -->
     <div class="container">
       <h2 class="text-center mt-5 py-5 section-title animated fadeIn">{{ data.sections.introduction.title }}</h2>
       <div class="row animated fadeIn mb-5 pb-5">
@@ -46,6 +47,7 @@
       </div>
     </div>
 
+    <!-- Community section -->
     <div class="bg-lightgreen py-5 text-center">
       <div class="container">
         <h3 class="mb-4 fs-3 text-reset"> {{ data.sections.community.title }}</h3>
@@ -66,107 +68,130 @@
       </div>
     </div>
 
-    <div id="features" data-section="features">
-      <div class="container">
-        <div class="animated fadeIn text-center">
-          <h2 class="mt-5 py-5 section-title">{{ data.sections.features.title }}</h2>
-          <p class="mb-4" v-html="data.sections.features.text"></p>
+    <!-- features section -->
+    <div class="container pb-5 mb-5" id="features" data-section="features">
+      <div class="animated fadeIn text-center">
+        <h2 class="mt-5 py-5 section-title">{{ data.sections.features.title }}</h2>
+        <p class="mb-4" v-html="data.sections.features.text"></p>
+      </div>
+      <div class="row mt-5 pt-5">
+        <div class="col-12 col-sm-6 col-lg-4 px-lg-4 mb-4">
+          <div class="card border-0 bg-transparent">
+            <img src="/assets/images/features/editor.png" alt="Editor" class="card-img-top rounded-3 shadow" />
+            <div class="card-body px-0">
+              <h5 class="text-center mt-4">{{ data.features.markdown.title }}</h5>
+              <p v-html="data.features.markdown.description"></p>
+            </div>
+          </div>
         </div>
-        <div class="row mt-5 pt-5">
-          <div class="col-6 col-md-4 px-4">
-            <div class="card border-0 bg-transparent">
-              <img src="/assets/images/features/editor.png" alt="Editor" class="card-img-top rounded-3 shadow" />
-              <div class="card-body">
-                <h5 class="text-center mt-4">{{ data.features.markdown.title }}</h5>
-                <p v-html="data.features.markdown.description"></p>
-              </div>
+        <div class="col-12 col-sm-6 col-lg-4 px-lg-4 mb-4">
+          <div class="card border-0 bg-transparent">
+            <img src="/assets/images/features/shape.png" alt="Shape" class="card-img-top rounded-3 shadow" />
+            <div class="card-body px-0">
+              <h5 class="text-center mt-4">{{ data.features.shape.title }}</h5>
+              <p v-html="data.features.shape.description"></p>
             </div>
           </div>
-          <div class="col-6 col-md-4 px-4">
-            <div class="card border-0 bg-transparent">
-              <img src="/assets/images/features/shape.png" alt="Shape" class="card-img-top rounded-3 shadow" />
-              <div class="card-body">
-                <h5 class="text-center mt-4">{{ data.features.shape.title }}</h5>
-                <p v-html="data.features.shape.description"></p>
-              </div>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-4 px-lg-4 mb-4">
+          <div class="card border-0 bg-transparent">
+            <img src="/assets/images/features/search.png" alt="Search" class="card-img-top rounded-3 shadow" />
+            <div class="card-body px-0">
+              <h5 class="text-center mt-4">{{ data.features.search.title }}</h5>
+              <p v-html="data.features.search.description"></p>
             </div>
           </div>
-          <div class="col-6 col-md-4 px-4">
-            <div class="card border-0 bg-transparent">
-              <img src="/assets/images/features/search.png" alt="Search" class="card-img-top rounded-3 shadow" />
-              <div class="card-body">
-                <h5 class="text-center mt-4">{{ data.features.search.title }}</h5>
-                <p v-html="data.features.search.description"></p>
-              </div>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-4 px-lg-4 mb-4">
+          <div class="card border-0 bg-transparent">
+            <img src="/assets/images/features/hackmd.png" alt="HackMD" class="card-img-top rounded-3 shadow" />
+            <div class="card-body px-0">
+              <h5 class="text-center mt-4">{{ data.features.hackmd.title }}</h5>
+              <p v-html="data.features.hackmd.description"></p>
             </div>
           </div>
-          <div class="col-6 col-md-4 px-4">
-            <div class="card border-0 bg-transparent">
-              <img src="/assets/images/features/hackmd.png" alt="HackMD" class="card-img-top rounded-3 shadow" />
-              <div class="card-body">
-                <h5 class="text-center mt-4">{{ data.features.hackmd.title }}</h5>
-                <p v-html="data.features.hackmd.description"></p>
-              </div>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-4 px-lg-4 mb-4">
+          <div class="card border-0 bg-transparent">
+            <img src="/assets/images/features/customize.png" alt="Customize" class="card-img-top rounded-3 shadow" />
+            <div class="card-body px-0">
+              <h5 class="text-center mt-4">{{ data.features.customize.title }}</h5>
+              <p v-html="data.features.customize.description"></p>
             </div>
           </div>
-          <div class="col-6 col-md-4 px-4">
-            <div class="card border-0 bg-transparent">
-              <img src="/assets/images/features/customize.png" alt="Customize" class="card-img-top rounded-3 shadow" />
-              <div class="card-body">
-                <h5 class="text-center mt-4">{{ data.features.customize.title }}</h5>
-                <p v-html="data.features.customize.description"></p>
-              </div>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-4 px-lg-4 mb-4">
+          <div class="card border-0 bg-transparent">
+            <img src="/assets/images/features/group.png" alt="Group" class="card-img-top rounded-3 shadow" />
+            <div class="card-body px-0">
+              <h5 class="text-center mt-4">{{ data.features.group.title }}</h5>
+              <p v-html="data.features.group.description"></p>
             </div>
           </div>
-          <div class="col-6 col-md-4 px-4">
-            <div class="card border-0 bg-transparent">
-              <img src="/assets/images/features/group.png" alt="Group" class="card-img-top rounded-3 shadow" />
-              <div class="card-body">
-                <h5 class="text-center mt-4">{{ data.features.group.title }}</h5>
-                <p v-html="data.features.group.description"></p>
-              </div>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-4 px-lg-4 mb-4">
+          <div class="card border-0 bg-transparent">
+            <img src="/assets/images/features/comment.png" alt="Comment" class="card-img-top rounded-3 shadow" />
+            <div class="card-body px-0">
+              <h5 class="text-center mt-4">{{ data.features.comment.title }}</h5>
+              <p v-html="data.features.comment.description"></p>
             </div>
           </div>
-          <div class="col-6 col-md-4 px-4">
-            <div class="card border-0 bg-transparent">
-              <img src="/assets/images/features/comment.png" alt="Comment" class="card-img-top rounded-3 shadow" />
-              <div class="card-body">
-                <h5 class="text-center mt-4">{{ data.features.comment.title }}</h5>
-                <p v-html="data.features.comment.description"></p>
-              </div>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-4 px-lg-4 mb-4">
+          <div class="card border-0 bg-transparent">
+            <img src="/assets/images/features/auth.png" alt="Auth" class="card-img-top rounded-3 shadow" />
+            <div class="card-body px-0">
+              <h5 class="text-center mt-4">{{ data.features.auth.title }}</h5>
+              <p v-html="data.features.auth.description"></p>
             </div>
           </div>
-          <div class="col-6 col-md-4 px-4">
-            <div class="card border-0 bg-transparent">
-              <img src="/assets/images/features/auth.png" alt="Auth" class="card-img-top rounded-3 shadow" />
-              <div class="card-body">
-                <h5 class="text-center mt-4">{{ data.features.auth.title }}</h5>
-                <p v-html="data.features.auth.description"></p>
-              </div>
-            </div>
-          </div>
-          <div class="col-6 col-md-4 px-4">
-            <div class="card border-0 bg-transparent">
-              <img src="/assets/images/features/assets.png" alt="Assets management" class="card-img-top rounded-3 shadow" />
-              <div class="card-body">
-                <h5 class="text-center mt-4">{{ data.features.assets.title }}</h5>
-                <p v-html="data.features.assets.description"></p>
-              </div>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-4 px-lg-4 mb-4">
+          <div class="card border-0 bg-transparent">
+            <img src="/assets/images/features/assets.png" alt="Assets management" class="card-img-top rounded-3 shadow" />
+            <div class="card-body px-0">
+              <h5 class="text-center mt-4">{{ data.features.assets.title }}</h5>
+              <p v-html="data.features.assets.description"></p>
             </div>
           </div>
         </div>
       </div>
     </div>
 
-    <div id="demo" class="row">
-      <div class="col-sm-12 text-center" style="margin-top: 50px;">
-        <a href="https://demo.growi.org/" class="btn btn-success" target="_blank">
-          <i class="lnr fa-2x lnr-screen"></i>
-          <span style="margin-left: 0.5em; font-size: 1.5em;">Live Demo</span>
-          <OutboundLink/>
+  <!-- Merits section -->
+  <div class="bg-lightgreen py-5">
+    <div class="container">
+      <h2 class="mt-5 py-5 section-title text-center">{{ data.sections.merits.title }}</h2>
+      <div class="row mx-md-5 justify-content-center mt-5">
+        <img src="/assets/images/merit-management.svg" alt="Management merit" class="col-12 col-md-6 col-xl-5 mx-0 mb-5 mb-md-auto order-md-2"/>
+        <div class="col-12 col-md-6 col-xl-5 my-auto px-0 px-lg-5 order-md-1">
+          <h3 class="mb-4">{{ data.merits.management.title }}</h3>
+          <p v-html="data.merits.management.description"></p>
+        </div>
+        </div>
+        <div class="row mx-md-5 justify-content-center mt-5">
+          <img src="/assets/images/merit-get-infomation.svg" alt="Get infomation" class="col-12 col-md-6 col-xl-5 mx-0 mb-5 mb-md-auto"/>
+          <div class="col-12 col-md-6 col-xl-5 my-auto px-0 px-lg-5">
+            <h3 class="mb-4">{{ data.merits.infomation.title }}</h3>
+            <p v-html="data.merits.infomation.description"></p>
+          </div>
+        </div>
+          <div class="row mx-md-5 justify-content-center mt-5">
+            <img src="/assets/images/merit-team.svg" alt="Merit for team" class="col-12 col-md-6 col-xl-5 mx-0 mb-5 mb-md-auto order-md-2"/>
+            <div class="col-12 col-md-6 col-xl-5 my-auto px-0 px-lg-5 order-md-1">
+              <h3 class="mb-4" v-html="data.merits.team.title"></h3>
+              <p v-html="data.merits.team.description"></p>
+            </div>
+         </div>
+       </div>
+       <div class="text-center mx-auto mt-5">
+        <a href="https://docs.growi.org/ja/admin-guide/" class="btn btn-hexagon fw-bold d-inline-block btn-green-bg text-white py-2" target="_blank">
+          <span class="btn-text"> {{ data.button.start }}</span>
         </a>
       </div>
     </div>
+  </div>
 
     <!-- growi-cloud section -->
     <div id="cloud" class="parallax" data-section="growi-cloud">
@@ -189,13 +214,13 @@
     </div>
 
     <!-- documetnts section 3col -->
-    <div id="documents" name="documents" data-section="documetnts">
+    <!-- <div id="documents" name="documents" data-section="documetnts">
       <div class="container">
         <div class="page-header wsub first">
           <h2>{{ data.sections.documents.title }}</h2>
         </div>
         <div class="row">
-          <div class="about col-sm-4">
+          <div class="about col-sm-4"> -->
             <!--
             <a href="https://github.com/weseek/growi">
               <div class="feature-icon">
@@ -206,7 +231,6 @@
               </h5>
             </a>
             -->
-          </div>
           <div class="about col-sm-4">
             <a href="https://docs.growi.org">
               <div class="feature-icon">
