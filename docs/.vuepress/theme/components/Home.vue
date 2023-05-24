@@ -9,7 +9,7 @@
             <img src="/assets/images/banner-img-2.png" alt="GROWI" v-on:click="handleClick" class="d-lg-none">
           <p class="mt-3" v-html="data.heroText.subtext"></p>
           <a href="https://docs.growi.org/ja/admin-guide/" class="btn mt-4 btn-hexagon-angle-right" target="_blank">
-            <span class="btn-text fs-6"> {{ data.button.start }}</span>
+            <span class="fs-6"> {{ data.button.start }}</span>
           </a>
         </div>
         <div class="d-none d-lg-block col-lg-6 my-auto animated fadeIn">
@@ -169,30 +169,30 @@
           <h3 class="mb-4">{{ data.merits.management.title }}</h3>
           <p v-html="data.merits.management.description"></p>
         </div>
-        <div class="row mx-md-5 justify-content-center mt-5">
-          <img src="/assets/images/merit-get-infomation.svg" alt="Get infomation" class="col-12 col-md-6 col-xl-5 mx-0 mb-5 mb-md-auto"/>
-          <div class="col-12 col-md-6 col-xl-5 my-auto px-0 px-lg-5">
-            <h3 class="mb-4">{{ data.merits.infomation.title }}</h3>
-            <p v-html="data.merits.infomation.description"></p>
-          </div>
+      </div>
+      <div class="row mx-md-5 justify-content-center mt-5">
+        <img src="/assets/images/merit-get-infomation.svg" alt="Get infomation" class="col-12 col-md-6 col-xl-5 mx-0 mb-5 mb-md-auto"/>
+        <div class="col-12 col-md-6 col-xl-5 my-auto px-0 px-lg-5">
+          <h3 class="mb-4">{{ data.merits.infomation.title }}</h3>
+          <p v-html="data.merits.infomation.description"></p>
         </div>
-          <div class="row mx-md-5 justify-content-center mt-5">
-            <img src="/assets/images/merit-team.svg" alt="Merit for team" class="col-12 col-md-6 col-xl-5 mx-0 mb-5 mb-md-auto order-md-2"/>
-            <div class="col-12 col-md-6 col-xl-5 my-auto px-0 px-lg-5 order-md-1">
-              <h3 class="mb-4" v-html="data.merits.team.title"></h3>
-              <p v-html="data.merits.team.description"></p>
-            </div>
-         </div>
+      </div>
+      <div class="row mx-md-5 justify-content-center mt-5">
+        <img src="/assets/images/merit-team.svg" alt="Merit for team" class="col-12 col-md-6 col-xl-5 mx-0 mb-5 mb-md-auto order-md-2"/>
+        <div class="col-12 col-md-6 col-xl-5 my-auto px-0 px-lg-5 order-md-1">
+          <h3 class="mb-4" v-html="data.merits.team.title"></h3>
+          <p v-html="data.merits.team.description"></p>
         </div>
-        <div class="text-center mx-auto mt-5">
-         <a
-         href="https://docs.growi.org/ja/admin-guide/"
-         class="btn btn-hexagon btn-bg-green-gradient btn-hexagon-angle-right fw-bold d-inline-block text-white px-5 py-2 rounded-0"
-         target="_blank"
-         >
-           <span class="btn-text fs-5"> {{ data.button.start }}</span>
-         </a>
-       </div>
+      </div>
+    </div>
+    <div class="text-center mx-auto mt-5">
+      <a
+      href="https://docs.growi.org/ja/admin-guide/"
+      class="btn btn-hexagon btn-bg-green-gradient btn-hexagon-angle-right fw-bold d-inline-block text-white px-5 py-2 rounded-0"
+      target="_blank"
+      >
+        <span class="fs-5"> {{ data.button.start }}</span>
+      </a>
     </div>
   </div>
 
@@ -208,7 +208,7 @@
         <h5>{{ data.sections.trial.demo }}</h5>
         <div class="btn-green-bg mt-4 mx-auto">
             <a href="https://demo.growi.org/" class="btn-green-line btn-hexagon-angle-right fw-bold d-inline-block" target="_blank">
-              <span class="btn-text">GROWI Demo</span>
+              <span>GROWI Demo</span>
             </a>
         </div>
       </div>
@@ -216,7 +216,7 @@
         <h5>{{ data.sections.trial.operation }}</h5>
         <div class="btn-green-bg mt-4 mx-auto">
             <a href="https://docs.growi.org/ja/" class="btn-green-line btn-hexagon-angle-right fw-bold d-inline-block" target="_blank">
-              <span class="btn-text">GROWI Docs</span>
+              <span>GROWI Docs</span>
             </a>
         </div>
       </div>
@@ -224,21 +224,21 @@
   </div>
 
     <!-- growi-cloud section -->
-    <div id="cloud" class="parallax" data-section="growi-cloud">
+    <div class="growi-cloud-bg">
       <div class="container">
-        <div class="page-header wsub first">
-          <h2>GROWI<span style="font-size: 0.8em;">.cloud</span></h2>
-        </div>
-        <div class="row gc-parallax-section-content" style="margin-bottom: 90px;">
-          <h3 class="parallax-section-text">{{ data.sections.cloud.descriptions.text }}</h3>
-          <h4 class="parallax-section-text font-weight-normal" v-html="data.sections.cloud.descriptions.subtext"></h4>
-          <p class="parallax-section-text font-weight-normal text-muted">{{ data.sections.cloud.descriptions.subsubtext }}</p>
-          <a href="https://growi.cloud/" style="margin-top: 20px" class="btn btn-success growi-cloud-btn" target="_blank">
-            <i class="lnr lnr-cloud fa-2x"></i>
-            <span class="btn-text">{{ data.sections.cloud.descriptions.button_text }}</span>
-            <OutboundLink/>
-          </a>
-          <p class="text-center" v-html="data.sections.cloud.descriptions.description" style="margin-top: 30px;"></p>
+        <div class="row py-5 justify-content-center">
+          <div class="col-12 col-md-3 my-auto order-md-2">
+            <img src="/assets/images/growi-cloud-logo.svg" />
+          </div>
+          <div class="col-12 col-md-5 col-xl-4 my-auto order-md-1 growi-cloud-text py-4 py-md-auto ps-xl-5 text-nowrap">
+            <h5 class="text-center text-md-start" v-html="data.sections.cloud.text"></h5>
+            <h5 class="text-center text-md-start mb-0" v-html="data.sections.cloud.subtext"></h5>
+          </div>
+          <div class="col-10 col-xl-3 my-auto order-3 text-center">
+            <a href="https://growi.cloud/" target="_blank" class="btn btn-hexagon growi-cloud-btn text-white fs-6 rounded-0 py-2 btn-hexagon-angle-right">
+              <span class="mx-5 d-inline-block text-nowrap">{{ data.sections.cloud.button_text }}</span>
+            </a>
+          </div>
         </div>
       </div>
     </div>
@@ -280,10 +280,10 @@
 
     <!-- footer social icons right -->
     <footer>
-      <div class="container">
+      <div class="container bg-navy">
         <p class="row">
           <span class="col-xs-12 col-sm-8 left">
-            © 2018 <b>GROWI</b> - produced by <a href="https://weseek.co.jp">WESEEK, Inc.</a>
+            © 2023 <b>GROWI</b> - produced by <a href="https://weseek.co.jp">WESEEK, Inc.</a>
           </span>
           <span class="col-xs-12 col-sm-4 right">
             <a href="https://twitter.com/weseek_inc"><i class="fa fa-twitter" aria-hidden="true"></i></a>
@@ -387,41 +387,28 @@ export default {
 }
 
 /* GROWI cloud section */
-.gc-parallax-section-content {
-  $success: #55a79a;
-  $success-hover: darken($success, 10%);
-
-  .parallax-section-text {
-    $headings-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+.growi-cloud-bg {
+  background-color: #EFF7FC;
+  background-image: url('/assets/images/background-abstract-cloud.png');
+  background-repeat: no-repeat;
+  background-position: right -10% bottom -20px;
+  background-size: 70%;
+  @media (min-width: 992px) {
+    background-size: 40%;
   }
+}
 
-  .font-weight-normal {
-    font-weight: normal !important;
-  }
+.growi-cloud-btn {
+  background: linear-gradient(40deg,#00B9D1,#007AA7);
+}
 
-  .display-3 {
-    font-size: 3.5rem;
-    font-weight: 300;
-    line-height: 1.2;
-  }
+.growi-cloud-btn:hover, .growi-cloud-btn:focus {
+  color: $white;
+  filter: brightness(120%);
+}
 
-  .growi-cloud-btn {
-    background-color: $success;
-    border-color: $success;
-    text-transform: none;
-  }
-
-  .growi-cloud-btn:hover, .growi-cloud-btn:focus {
-    color: $white;
-    background-color: $success-hover;
-    border-color: $success-hover;
-    outline: none;
-  }
-
-  .btn-text {
-    margin-left: 0.5em;
-    font-size: 1.5em;
-  }
+.growi-cloud-text {
+  color: #555C60;
 }
 /* End GROWI cloud section */
 </style>

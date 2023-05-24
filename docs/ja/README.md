@@ -30,12 +30,9 @@ sections:
     operation: 詳しい操作方法を見る
   cloud:
     title: GROWI.cloud
-    descriptions:
-      text: 『Markdown × Wiki × 自由。』
-      subtext: 情報共有をもっと身近に、もっと手軽に
-      subsubtext: GROWI.cloud は GROWI を手軽に始められるクラウドサービスです
-      button_text: GROWI.cloud を始める
-      description: オンプレミスバージョンは <a href="https://growi.cloud/onpremise">こちら</a>
+    text: GROWIをもっと楽に運用したい方へ！
+    subtext: GROWIのクラウド版サービス！
+    button_text: 詳細はこちら
   joinus:
     title: JOIN US
     descriptions:
