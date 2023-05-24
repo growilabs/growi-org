@@ -32,7 +32,7 @@ h6 {
 }
 
 a {
-  color: $primary;
+  color: #185FA5;
   @include transition(0.2s);
   &:hover,
   &:active,
@@ -1456,28 +1456,6 @@ header#parallax-header-agency h2 {
 
 /* Parallax Section */
 
-// #parallax-section {
-#cloud {
-  margin-top: 50px;
-  background: url(/assets/images/contact-bg.jpg) no-repeat;
-  background-color: $bg-color;
-}
-
-#cloud p {
-  color: white;
-  a {
-    color: $info;
-  }
-}
-
-#cloud p.text-muted {
-  font-size: 1em;
-}
-
-#cloud .page-header h2 {
-  color: $white;
-}
-
 .parallax-section-content {
   display: block;
   padding: 38px 0 0 30px;
@@ -1821,12 +1799,41 @@ ul.portfolio-items {
 /* End Subscribe */
 
 
-/* Footer Widgets */
+/* GROWI cloud section */
+.growi-cloud-bg {
+  background-color: #EFF7FC;
+  background-image: url('/assets/images/background-abstract-cloud.png');
+  background-repeat: no-repeat;
+  background-position: right -10% bottom -20px;
+  background-size: 70%;
+  @media (min-width: 992px) {
+    background-size: 40%;
+  }
+}
 
-#footer-widgets {
-  background-color: $bg-color;
-  border-top: 15px solid $primary;
-  padding-top: 50px;
+.growi-cloud-btn {
+  background: linear-gradient(40deg,#00B9D1,#007AA7);
+}
+
+.growi-cloud-btn:hover, .growi-cloud-btn:focus {
+  color: $white;
+  filter: brightness(120%);
+}
+
+.growi-cloud-text {
+  color: #555C60;
+}
+/* End GROWI cloud section */
+
+/* Footer Widgets and Footer */
+
+#footer-widgets,
+footer {
+  background-color: #254459;
+}
+
+footer {
+  border-top: 1px solid #BDD8EA;
 }
 
 #footer-widgets .row {
@@ -1842,30 +1849,24 @@ ul.portfolio-items {
   margin: 0 0 20px 0;
 }
 
-#footer-widgets p {
+#footer-widgets a,
+#footer-widgets p,
+#footer-widgets i {
   font-size: 14px;
+  color: #BDD8EA;
+  margin-bottom: 0;
 }
 
-#footer-widgets a {
-  font-size: 14px;
-  font-weight: $bold;
+#footer-widgets li {
+  margin-bottom: 12px;
 }
 
 #footer-widgets h3 {
-  font-size: 22px;
-  margin: 5px 0 8px 0;
-  position: relative;
+  font-size: 20px;
+  color: white;
 }
 
-.widget-title:after {
-  content: '';
-  background: $primary;
-  position: absolute;
-  height: 4px;
-  width: 100px;
-}
-
-footer i.fa {
+footer i.fab {
   font-size: 18px;
 }
 
@@ -1911,27 +1912,7 @@ footer i.fa {
   border-bottom: 10px solid transparent;
   display: inline-block;
 }
-
-.footer-contact-info {
-  margin-top: 35px;
-}
-
-.footer-contact-info i {
-  font-size: 24px;
-  margin-top: 5px;
-  color: $text-color;
-}
-
-.footer-contact-info span {
-  margin-left: 20px;
-  margin-top: 3px;
-  position: absolute;
-}
-
-.footer-contact-info .info {
-  margin: 30px 0;
-}
-/* End Footer Widgets */
+/* End Footer Widgets and Footer */
 
 /* Footer Social */
 
@@ -1963,57 +1944,18 @@ footer i.fa {
 
 /* Footer */
 
-footer {
-  background: $primary;
-}
-
-footer p {
-  color: $white;
+footer p,
+footer a {
+  color: #BDD8EA;
   font-size: 14px;
   margin: 0;
-  padding: 20px 0;
+  padding: 14px 0;
 }
 
-footer .right {
-  float: right;
-  text-align: right;
-}
-
-footer a {
-  color: $white;
-  font-size: 12px;
-  opacity: 0.8;
-}
-
+#footer-widgets a:hover,
 footer a:hover {
   color: $white;
   opacity: 1;
-}
-
-footer i {
-  margin: 0 7px;
-}
-
-footer.light {
-  background-color: $bg-color;
-  text-align: center;
-  padding: 50px;
-}
-
-footer.light p {
-  color: $text-color;
-  text-align: center;
-  font-size: 18px;
-}
-
-footer.light a {
-  color: $primary;
-  font-size: 16px;
-  opacity: 1;
-}
-
-footer.light .light-footer-social {
-  margin-bottom: 10px;
 }
 /* End Footer */
 

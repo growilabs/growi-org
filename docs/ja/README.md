@@ -35,11 +35,9 @@ sections:
     button_text: 詳細はこちら
   joinus:
     title: JOIN US
-    descriptions:
-    - GROWI は、<a href="https://weseek.co.jp">WESEEK, Inc.</a> が開発を行い、<br> MITライセンスで公開しているオープンソースソフトウェアです。
-    - 開発を手伝っていただけるコントリビューター、開発してみたいインターン生を募集しています。<br> まずは Slack に参加し、気軽にWESEEKメンバーに声をかけてください。
+    descriptions: GROWI の開発を手伝っていただけるコントリビューター、開発してみたいインターン生を募集しています。 <br /> まずは Slack に参加し、気軽にWESEEKメンバーに声をかけてください！
   contact_us:
-    address: 東京都新宿区西早稲田2-20-15 高田馬場アクセス10F
+    address: 東京都新宿区西早稲田2-20-15 <br /> 高田馬場アクセス10F
     tel:
       text: 03-6233-9447
       link: 0362339447
