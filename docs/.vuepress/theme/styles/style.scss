@@ -1116,6 +1116,13 @@ header#parallax-header-agency h2 {
   }
 }
 
+.section-padding {
+  padding: 72px 0;
+  @media (min-width: $screen-md-min) {
+    padding: 144px 0;
+  }
+}
+
 .ff-montserrat {
   font-family: 'Montserrat';
 }

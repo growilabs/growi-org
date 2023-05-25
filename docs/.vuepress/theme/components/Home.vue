@@ -69,9 +69,9 @@
     </div>
 
     <!-- features section -->
-    <div class="container pb-5 mb-5" id="features" data-section="features">
+    <div class="container section-padding" id="features" data-section="features">
       <div class="animated fadeIn text-center">
-        <h2 class="mt-5 py-5 section-title">{{ data.sections.features.title }}</h2>
+        <h2 class="pb-5 section-title">{{ data.sections.features.title }}</h2>
         <p class="mb-4" v-html="data.sections.features.text"></p>
       </div>
       <div class="row mt-5 pt-5">
@@ -160,9 +160,9 @@
     </div>
 
   <!-- Merits section -->
-  <div class="bg-lightgreen py-5">
+  <div class="bg-lightgreen section-padding">
     <div class="container">
-      <h2 class="mt-5 py-5 section-title text-center">{{ data.sections.merits.title }}</h2>
+      <h2 class="pb-5 section-title text-center">{{ data.sections.merits.title }}</h2>
       <div class="row mx-md-5 justify-content-center mt-5">
         <img src="/assets/images/merit-management.svg" alt="Merit of management" class="col-md-6 col-xl-5 mx-0 mb-5 mb-md-auto order-md-2" v-on:click="handleClick" />
         <div class="col-md-6 col-xl-5 my-auto px-0 px-lg-5 order-md-1">
