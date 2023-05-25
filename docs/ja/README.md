@@ -12,6 +12,8 @@ heroButtons:
   link: https://demo.growi.org
 - text: GROWI.cloud
   link: /ja/#cloud
+links:
+  docs_admin_guide: https://docs.growi.org/ja/admin-guide/
 sections:
   introduction:
     title: オープンソース GROWI

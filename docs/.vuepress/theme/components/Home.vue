@@ -8,7 +8,7 @@
             <h2 class="fs-1 border-0 mt-0 mt-lg-4 mb-4"> {{ data.heroText.line1 }}<br />{{ data.heroText.line2 }}</h2>
             <img src="/assets/images/banner-img-2.png" alt="GROWI" v-on:click="handleClick" class="d-lg-none">
           <p class="mt-3" v-html="data.heroText.subtext"></p>
-          <a href="https://docs.growi.org/ja/admin-guide/" class="btn mt-4 btn-hexagon-angle-right" target="_blank">
+          <a href="data.links.admin_guide" class="btn mt-4 btn-hexagon-angle-right" target="_blank">
             <span class="fs-6"> {{ data.button.start }}</span>
           </a>
         </div>
@@ -164,21 +164,21 @@
     <div class="container">
       <h2 class="mt-5 py-5 section-title text-center">{{ data.sections.merits.title }}</h2>
       <div class="row mx-md-5 justify-content-center mt-5">
-        <img src="/assets/images/merit-management.svg" alt="Management merit" class="col-md-6 col-xl-5 mx-0 mb-5 mb-md-auto order-md-2"/>
+        <img src="/assets/images/merit-management.svg" alt="Management merit" class="col-md-6 col-xl-5 mx-0 mb-5 mb-md-auto order-md-2" v-on:click="handleClick" />
         <div class="col-md-6 col-xl-5 my-auto px-0 px-lg-5 order-md-1">
           <h3 class="mb-4">{{ data.merits.management.title }}</h3>
           <p v-html="data.merits.management.description"></p>
         </div>
       </div>
       <div class="row mx-md-5 justify-content-center mt-5">
-        <img src="/assets/images/merit-get-infomation.svg" alt="Get infomation" class="col-md-6 col-xl-5 mx-0 mb-5 mb-md-auto"/>
+        <img src="/assets/images/merit-get-infomation.svg" alt="Get infomation" class="col-md-6 col-xl-5 mx-0 mb-5 mb-md-auto" v-on:click="handleClick" />
         <div class="col-md-6 col-xl-5 my-auto px-0 px-lg-5">
           <h3 class="mb-4">{{ data.merits.infomation.title }}</h3>
           <p v-html="data.merits.infomation.description"></p>
         </div>
       </div>
       <div class="row mx-md-5 justify-content-center mt-5">
-        <img src="/assets/images/merit-team.svg" alt="Merit for team" class="col-md-6 col-xl-5 mx-0 mb-5 mb-md-auto order-md-2"/>
+        <img src="/assets/images/merit-team.svg" alt="Merit for team" class="col-md-6 col-xl-5 mx-0 mb-5 mb-md-auto order-md-2" v-on:click="handleClick" />
         <div class="col-md-6 col-xl-5 my-auto px-0 px-lg-5 order-md-1">
           <h3 class="mb-4" v-html="data.merits.team.title"></h3>
           <p v-html="data.merits.team.description"></p>
@@ -187,7 +187,7 @@
     </div>
     <div class="text-center mx-auto mt-5">
       <a
-      href="https://docs.growi.org/ja/admin-guide/"
+      href="data.links.admin_guide"
       class="btn btn-hexagon btn-bg-green-gradient btn-hexagon-angle-right fw-bold d-inline-block text-white px-5 py-2 rounded-0"
       target="_blank"
       >
@@ -199,9 +199,9 @@
   <!-- Trial section -->
   <div class="container text-center my-5 py-5">
     <h2 class="border-0 d-flex">
-      <img src="/assets/images/appearl-effect.svg" class="me-3" />
+      <img src="/assets/images/appearl-effect.svg" class="me-3" v-on:click="handleClick" />
       {{ data.sections.trial.title }}
-      <img src="/assets/images/appearl-effect.svg" class="ms-3 header-appeal-effect" />
+      <img src="/assets/images/appearl-effect.svg" class="ms-3 header-appeal-effect" v-on:click="handleClick" />
     </h2>
     <div class="row mt-5 justify-content-center">
       <div class="bg-lightgreen shadow rounded p-5 mx-4 col-md-5">
@@ -215,7 +215,7 @@
       <div class="bg-lightgreen shadow rounded p-5 mx-4 col-md-5 mt-4 mt-md-auto">
         <h5>{{ data.sections.trial.operation }}</h5>
         <div class="btn-green-bg mt-4 mx-auto">
-            <a href="https://docs.growi.org/ja/" class="btn-green-line btn-hexagon-angle-right fw-bold d-inline-block" target="_blank">
+            <a href="data.links.docs" class="btn-green-line btn-hexagon-angle-right fw-bold d-inline-block" target="_blank">
               <span>GROWI Docs</span>
             </a>
         </div>
@@ -227,15 +227,15 @@
     <div class="growi-cloud-bg">
       <div class="container">
         <div class="row py-4 justify-content-center">
-          <div class="col-md-3 my-auto order-md-2">
-            <img src="/assets/images/growi-cloud-logo.svg" />
+          <div class="col-md-4 my-auto order-md-2">
+            <img src="/assets/images/growi-cloud-logo.svg" v-on:click="handleClick" />
           </div>
-          <div class="col-md-5 col-xl-4 my-auto order-md-1 py-4 py-md-auto ps-xl-5 text-nowrap">
+          <div class="col-md-7 col-xl-4 my-auto order-md-1 py-4 py-md-auto ps-xxl-5 text-nowrap">
             <h5 class="text-center text-md-start growi-cloud-text" v-html="data.sections.cloud.text"></h5>
             <h5 class="text-center text-md-start mb-0 growi-cloud-text" v-html="data.sections.cloud.subtext"></h5>
           </div>
           <div class="col-10 col-xl-3 my-auto order-3 text-center">
-            <a href="https://growi.cloud/" target="_blank" class="btn btn-hexagon growi-cloud-btn text-white fs-6 rounded-0 py-2 btn-hexagon-angle-right">
+            <a href="https://growi.cloud/" class="btn btn-hexagon growi-cloud-btn text-white fs-6 rounded-0 py-2 btn-hexagon-angle-right" target="_blank">
               <span class="mx-5 d-inline-block text-nowrap">{{ data.sections.cloud.button_text }}</span>
             </a>
           </div>
@@ -250,14 +250,15 @@
           <div class="first-footer-widget col-sm-6 col-md-4">
             <div class="d-flex">
               <img src="/assets/images/growi-white-logo.svg" alt="" class="me-2" />
-              <h3>GROWI</h3>
+              <h3 class="mt-1">GROWI</h3>
             </div>
             <ul>
-              <li><a href="https://growi.cloud/">GROWI.cloud</a></li>
-              <li><a href="https://github.com/weseek/growi"><i class="fab fa-github me-1"></i> weseek/growi</a></li>
-              <li><a href="https://github.com/weseek/growi-docker-compose"><i class="fab fa-github me-1"></i> weseek/growi-docker-compose</a></li>
-              <li><a href="https://hub.docker.com/r/weseek/growi/"><i class="fab fa-docker me-1"></i>Docker Hub</a></li>
-              <li><a href="https://demo.growi.org">demo.growi.org</a></li>
+              <li><a href="https://growi.cloud/" target="_blank">GROWI.cloud</a></li>
+              <li><a href="https://github.com/weseek/growi" target="_blank"><i class="fab fa-github me-1"></i> weseek/growi</a></li>
+              <li><a href="https://github.com/weseek/growi-docker-compose" target="_blank"><i class="fab fa-github me-1"></i> weseek/growi-docker-compose</a></li>
+              <li><a href="https://hub.docker.com/r/weseek/growi/" target="_blank"><i class="fab fa-docker me-1"></i>Docker Hub</a></li>
+              <li><a href="https://demo.growi.org" target="_blank">demo.growi.org</a></li>
+              <li><a href="https://weseek.co.jp/tech/category/growi/" target="_blank">Tech Blog</a></li>
             </ul>
             <p></p>
           </div>
@@ -271,10 +272,10 @@
                 <i class="fa-regular fa-map me-2 mt-1"></i><p v-html="data.sections.contact_us.address"></p>
               </li>
               <li v-if="data.sections.contact_us.tel">
-                <a :href="`tel:+${data.sections.contact_us.tel.link}`"><i class="fa-solid fa-phone me-2"></i><span>{{ data.sections.contact_us.tel.text }}</span></a>
+                <a :href="`tel:+${data.sections.contact_us.tel.link}`" target="_blank"><i class="fa-solid fa-phone me-2"></i><span>{{ data.sections.contact_us.tel.text }}</span></a>
               </li>
               <li>
-                <a :href="`mailto:${data.sections.contact_us.email}`"><i class="fa-regular fa-envelope me-2"></i><span>{{ data.sections.contact_us.email }}</span></a>
+                <a :href="`mailto:${data.sections.contact_us.email}`" target="_blank"><i class="fa-regular fa-envelope me-2"></i><span>{{ data.sections.contact_us.email }}</span></a>
               </li>
             </ul>
           </div>
@@ -289,9 +290,9 @@
     <!-- footer social icons right -->
     <footer class="d-flex justify-content-between align-items-center">
         <p class="ms-3">
-          © 2018 GROWI - produced by <a href="https://weseek.co.jp">WESEEK, Inc.</a>
+          © 2018 GROWI - produced by <a href="https://weseek.co.jp" target="_blank">WESEEK, Inc.</a>
         </p>
-        <a href="https://github.com/weseek" class="ms-auto me-3"><i class="fab fa-github fs-4"></i></a>
+        <a href="https://github.com/weseek" class="ms-auto me-3" target="_blank"><i class="fab fa-github fs-4"></i></a>
     </footer><!-- / footer social icons right -->
 
     <!-- javascript -->
