@@ -204,7 +204,7 @@
       <img src="/assets/images/appearl-effect.svg" class="ms-3 header-appeal-effect" v-on:click="handleClick" />
     </h2>
     <div class="row mt-5 justify-content-center">
-      <div class="bg-lightgreen shadow rounded p-5 mx-4 col-10 col-lg-5">
+      <div class="bg-lightgreen shadow rounded p-5 mx-4 col-sm-10 col-lg-5">
         <h5>{{ data.sections.trial.demo }}</h5>
         <div class="btn-green-bg mt-4 mx-auto">
             <a href="https://demo.growi.org/" class="btn-green-line btn-hexagon-angle-right fw-bold d-inline-block" target="_blank">
@@ -212,7 +212,7 @@
             </a>
         </div>
       </div>
-      <div class="bg-lightgreen shadow rounded p-5 mx-4 col-10 col-lg-5 mt-4 mt-lg-auto">
+      <div class="bg-lightgreen shadow rounded p-5 mx-4 col-sm-10 col-lg-5 mt-4 mt-lg-auto">
         <h5>{{ data.sections.trial.operation }}</h5>
         <div class="btn-green-bg mt-4 mx-auto">
             <a href="data.links.docs" class="btn-green-line btn-hexagon-angle-right fw-bold d-inline-block" target="_blank">
@@ -373,4 +373,11 @@ export default {
     vertical-align: middle;
   }
 }
+
+@media (max-width: 500px) {
+  .text-nowrap {
+    white-space: normal!important;
+  }
+}
+
 </style>
