@@ -32,7 +32,7 @@ h6 {
 }
 
 a {
-  color: #185FA5;
+  color: $primary;
   @include transition(0.2s);
   &:hover,
   &:active,

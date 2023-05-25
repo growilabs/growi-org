@@ -11,7 +11,7 @@ heroButtons:
 - text: デモサイト
   link: https://demo.growi.org
 - text: GROWI.cloud
-  link: /ja/#cloud
+  link: /ja/#cloud 
 links:
   admin_guide: https://docs.growi.org/ja/admin-guide/
   docs: https://docs.growi.org/ja/
