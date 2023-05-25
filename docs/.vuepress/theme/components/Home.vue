@@ -86,7 +86,7 @@
         </div>
         <div class="col-sm-6 col-lg-4 px-lg-4 mb-4">
           <div class="card border-0 bg-transparent">
-            <img src="/assets/images/features/shape.png" alt="Shape" class="card-img-top rounded-3 shadow" />
+            <img src="/assets/images/features/shape.png" alt="Create Diagram" class="card-img-top rounded-3 shadow" />
             <div class="card-body px-0">
               <h5 class="text-center mt-4">{{ data.features.shape.title }}</h5>
               <p v-html="data.features.shape.description"></p>
@@ -104,7 +104,7 @@
         </div>
         <div class="col-sm-6 col-lg-4 px-lg-4 mb-4">
           <div class="card border-0 bg-transparent">
-            <img src="/assets/images/features/hackmd.png" alt="HackMD" class="card-img-top rounded-3 shadow" />
+            <img src="/assets/images/features/hackmd.png" alt="Highly customizable" class="card-img-top rounded-3 shadow" />
             <div class="card-body px-0">
               <h5 class="text-center mt-4">{{ data.features.hackmd.title }}</h5>
               <p v-html="data.features.hackmd.description"></p>
@@ -122,7 +122,7 @@
         </div>
         <div class="col-sm-6 col-lg-4 px-lg-4 mb-4">
           <div class="card border-0 bg-transparent">
-            <img src="/assets/images/features/group.png" alt="Group" class="card-img-top rounded-3 shadow" />
+            <img src="/assets/images/features/group.png" alt="Group Management" class="card-img-top rounded-3 shadow" />
             <div class="card-body px-0">
               <h5 class="text-center mt-4">{{ data.features.group.title }}</h5>
               <p v-html="data.features.group.description"></p>
@@ -131,7 +131,7 @@
         </div>
         <div class="col-sm-6 col-lg-4 px-lg-4 mb-4">
           <div class="card border-0 bg-transparent">
-            <img src="/assets/images/features/comment.png" alt="Comment" class="card-img-top rounded-3 shadow" />
+            <img src="/assets/images/features/comment.png" alt="Comment Features" class="card-img-top rounded-3 shadow" />
             <div class="card-body px-0">
               <h5 class="text-center mt-4">{{ data.features.comment.title }}</h5>
               <p v-html="data.features.comment.description"></p>
@@ -164,14 +164,14 @@
     <div class="container">
       <h2 class="mt-5 py-5 section-title text-center">{{ data.sections.merits.title }}</h2>
       <div class="row mx-md-5 justify-content-center mt-5">
-        <img src="/assets/images/merit-management.svg" alt="Management merit" class="col-md-6 col-xl-5 mx-0 mb-5 mb-md-auto order-md-2" v-on:click="handleClick" />
+        <img src="/assets/images/merit-management.svg" alt="Merit of management" class="col-md-6 col-xl-5 mx-0 mb-5 mb-md-auto order-md-2" v-on:click="handleClick" />
         <div class="col-md-6 col-xl-5 my-auto px-0 px-lg-5 order-md-1">
           <h3 class="mb-4">{{ data.merits.management.title }}</h3>
           <p v-html="data.merits.management.description"></p>
         </div>
       </div>
       <div class="row mx-md-5 justify-content-center mt-5">
-        <img src="/assets/images/merit-get-infomation.svg" alt="Get infomation" class="col-md-6 col-xl-5 mx-0 mb-5 mb-md-auto" v-on:click="handleClick" />
+        <img src="/assets/images/merit-get-infomation.svg" alt="Get the infomation" class="col-md-6 col-xl-5 mx-0 mb-5 mb-md-auto" v-on:click="handleClick" />
         <div class="col-md-6 col-xl-5 my-auto px-0 px-lg-5">
           <h3 class="mb-4">{{ data.merits.infomation.title }}</h3>
           <p v-html="data.merits.infomation.description"></p>
@@ -204,7 +204,7 @@
       <img src="/assets/images/appearl-effect.svg" class="ms-3 header-appeal-effect" v-on:click="handleClick" />
     </h2>
     <div class="row mt-5 justify-content-center">
-      <div class="bg-lightgreen shadow rounded p-5 mx-4 col-md-5">
+      <div class="bg-lightgreen shadow rounded p-5 mx-4 col-10 col-lg-5">
         <h5>{{ data.sections.trial.demo }}</h5>
         <div class="btn-green-bg mt-4 mx-auto">
             <a href="https://demo.growi.org/" class="btn-green-line btn-hexagon-angle-right fw-bold d-inline-block" target="_blank">
@@ -212,7 +212,7 @@
             </a>
         </div>
       </div>
-      <div class="bg-lightgreen shadow rounded p-5 mx-4 col-md-5 mt-4 mt-md-auto">
+      <div class="bg-lightgreen shadow rounded p-5 mx-4 col-10 col-lg-5 mt-4 mt-lg-auto">
         <h5>{{ data.sections.trial.operation }}</h5>
         <div class="btn-green-bg mt-4 mx-auto">
             <a href="data.links.docs" class="btn-green-line btn-hexagon-angle-right fw-bold d-inline-block" target="_blank">

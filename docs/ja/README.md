@@ -13,7 +13,8 @@ heroButtons:
 - text: GROWI.cloud
   link: /ja/#cloud
 links:
-  docs_admin_guide: https://docs.growi.org/ja/admin-guide/
+  admin_guide: https://docs.growi.org/ja/admin-guide/
+  docs: https://docs.growi.org/ja/
 sections:
   introduction:
     title: オープンソース GROWI
