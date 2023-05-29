@@ -1,10 +1,8 @@
 @import 'variables';
 @import 'mixins';
 
-
 $screen-md: 992px !default;
 $screen-md-min: $screen-md !default;
-
 
 /* Base */
 
@@ -137,7 +135,7 @@ cite {
 }
 
 .bg-lightgreen {
-  background-color: #F0FFEA;
+  background-color: $light-green;
 }
 
 /* Header */
@@ -145,32 +143,32 @@ cite {
 /* button */
 .btn-hexagon {
   clip-path: polygon(92% 0%, 100% 50%, 92% 100%, 8% 100%, 0% 50%, 8% 0%);
-  padding:8px 48px 8px 48px;
+  padding: 8px 48px 8px 48px;
 }
 
 .btn-green-bg {
-  width:270px;
-  height:48px;
+  width: 270px;
+  height: 48px;
   background-color: $success;
   clip-path: polygon(92% 0%, 100% 50%, 92% 100%, 8% 100%, 0% 50%, 8% 0%);
 }
 
 .btn-green-line {
-  width:270px;
-  height:48px;
+  width: 270px;
+  height: 48px;
   padding: 12px 5%;
   clip-path: polygon(calc(92% - 1px) 2px, calc(100% - 2px) 50%, calc(92% - 1px) calc(100% - 2px), calc(8% + 1px) calc(100% - 2px), 2px 50%, calc(8% + 1px) 2px);
-  background-color: white;
+  background-color: $white;
   color: $success;
-  &:hover{
-    color:white;
+  &:hover {
+    color: $white;
     background-color: $success;
     transition: 0.2s;
   }
 }
 
 .btn-navy {
-  background-color: #254459;
+  background-color: $navy;
   &:hover {
     filter: brightness(120%);
   }
@@ -192,8 +190,8 @@ cite {
 }
 
 .btn-bg-green-gradient {
-  color:white;
-  background: linear-gradient(40deg,#79B536, #2FB516);
+  color: $white;
+  background: $btn-green-gradient;
   &:hover {
     filter: brightness(85%);
   }
@@ -581,7 +579,7 @@ cite {
 
 .navbar-fixed-top.navbar-3 {
   background-color: $white;
-  box-shadow: #666 0px 2px 15px;
+  box-shadow: $nav-shadow 0px 2px 15px;
   border: 0;
   position: fixed;
   width: 100%;
@@ -730,7 +728,7 @@ cite {
 /* Header Content */
 
 header h2 {
-  color: #555;
+  color: $text-color;
   font-size: 34px;
   margin-top: 50px;
   text-align: center;
@@ -738,17 +736,17 @@ header h2 {
 
 header a.btn {
   margin-bottom: 50px;
-  padding:8px 48px 8px 48px;
+  padding: 8px 48px 8px 48px;
   color: $white;
-  font-size:16px;
-  background: linear-gradient(40deg,#79B536, #2FB516);
+  font-size: 16px;
+  background: $btn-green-gradient;
   clip-path: polygon(92% 0%, 100% 50%, 92% 100%, 8% 100%, 0% 50%, 8% 0%);
   border-radius: 0;
   &:hover {
     filter: brightness(85%);
   }
   @media (min-width: $screen-md-min) {
-    font-size:20px;
+    font-size: 20px;
   }
 }
 
@@ -768,7 +766,7 @@ header a.btn-success:hover {
 
 /* Parallax Header */
 #parallax-header {
-background-color: #F0FFEA !important;
+  background-color: $light-green !important;
   @media (min-width: $screen-md-min) {
     background: url('/assets/images/background-abstract-left.png'), url('/assets/images/background-abstract-right.png');
     background-repeat: no-repeat;
@@ -1099,8 +1097,8 @@ header#parallax-header-agency h2 {
 /* About Section */
 .section-title {
   font-size: 24px;
-  color: #343A40;
-  border:none;
+  color: $title-color;
+  border: none;
   @media (min-width: $screen-md-min) {
     font-size: 40px;
   }
@@ -1110,7 +1108,7 @@ header#parallax-header-agency h2 {
     height: 0px;
     margin: 15px auto 0;
     content: '';
-    border-color: #70B248 transparent transparent transparent;
+    border-color: $success transparent transparent transparent;
     border-style: solid;
     border-width: 4px 2px 0 2px;
   }
@@ -1146,12 +1144,12 @@ header#parallax-header-agency h2 {
     display: block;
     margin: 15px;
     padding: 40px 20px;
-    box-shadow: #ccc 0 3px 10px;
-    background-color: white;
+    box-shadow: $shadow-color 0 3px 10px;
+    background-color: $white;
 
     &:hover,
     &:focus {
-      box-shadow: #ccc 0 7px 20px;
+      box-shadow: $shadow-color 0 7px 20px;
     }
   }
 }
@@ -1367,7 +1365,7 @@ header#parallax-header-agency h2 {
 .feature-image-left,
 .feature-image-right {
   img {
-    box-shadow: #ccc 0 10px 30px;
+    box-shadow: $shadow-color 0 10px 30px;
   }
 }
 
@@ -1805,10 +1803,9 @@ ul.portfolio-items {
 
 /* End Subscribe */
 
-
 /* GROWI cloud section */
 .growi-cloud-bg {
-  background-color: #EFF7FC;
+  background-color: $light-blue;
   background-image: url('/assets/images/background-abstract-cloud.png');
   background-repeat: no-repeat;
   background-position: right -10% bottom -20px;
@@ -1819,16 +1816,17 @@ ul.portfolio-items {
 }
 
 .growi-cloud-btn {
-  background: linear-gradient(40deg,#00B9D1,#007AA7);
+  background: $btn-blue-gradient;
 }
 
-.growi-cloud-btn:hover, .growi-cloud-btn:focus {
+.growi-cloud-btn:hover,
+.growi-cloud-btn:focus {
   color: $white;
   filter: brightness(120%);
 }
 
 .growi-cloud-text {
-  color: #555C60;
+  color: $text-color;
 }
 /* End GROWI cloud section */
 
@@ -1836,11 +1834,11 @@ ul.portfolio-items {
 
 #footer-widgets,
 footer {
-  background-color: #254459;
+  background-color: $navy;
 }
 
 footer {
-  border-top: 1px solid #BDD8EA;
+  border-top: 1px solid $footer-color;
 }
 
 #footer-widgets .row {
@@ -1860,7 +1858,7 @@ footer {
 #footer-widgets p,
 #footer-widgets i {
   font-size: 14px;
-  color: #BDD8EA;
+  color: $footer-color;
   margin-bottom: 0;
 }
 
@@ -1870,7 +1868,7 @@ footer {
 
 #footer-widgets h3 {
   font-size: 20px;
-  color: white;
+  color: $white;
 }
 
 footer i.fab {
@@ -1953,7 +1951,7 @@ footer i.fab {
 
 footer p,
 footer a {
-  color: #BDD8EA;
+  color: $footer-color;
   font-size: 14px;
   margin: 0;
   padding: 14px 0;
