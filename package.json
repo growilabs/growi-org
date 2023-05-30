@@ -40,6 +40,8 @@
     "prettier-stylelint": "^0.4.2",
     "sass-loader": "^10.1.1",
     "stylelint-config-recess-order": "^2.0.1",
+    "textlint": "^12.0.2",
+    "textlint-rule-preset-weseek": "^1.0.2",
     "vue-script2": "^2.1.0",
     "vuepress": "^1.9.2"
   }
