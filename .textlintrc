@@ -1,5 +1,7 @@
 {
-  "filters": {},
+  "filters": {
+    "comments": true
+  },
   "rules": {
     "preset-weseek": true
   }
