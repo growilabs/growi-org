@@ -20,6 +20,7 @@
 		"esbenp.prettier-vscode",
 		"shinnn.stylelint",
 		"hex-ci.stylelint-plus",
+    "taichi.vscode-textlint",
 	],
 
 	// Uncomment the next line if you want start specific services in your Docker Compose config.
