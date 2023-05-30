@@ -289,7 +289,7 @@
     <!-- javascript -->
     <script2 src="/assets/js/jquery.min.js"></script2>
     <script2 src="/assets/js/bootstrap.min.js"></script2>
-    <script2 src="/assets/js/owl.carousel.min.js"></script2>
+    <script2 src="/assets/js/owl-carousel.min.js"></script2>
     <script2 src="/assets/js/jquery.countTo.js"></script2>
     <script2 src="/assets/js/jquery.shuffle.min.js"></script2>
     <script2 src="/assets/js/custom.js"></script2>
@@ -355,20 +355,22 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '../styles/style.scss';
-@import '../styles/owl.carousel.css';
-@import '../styles/owl.theme.css';
+@use '../styles/style.scss';
+@use '../styles/owl-carousel.css';
+@use '../styles/owl-theme.css';
 
-/deep/ {
+@use '../styles/variables' as var;
+
+::v-deep {
   -webkit-font-smoothing: auto;
   p {
     a {
-      color: $info;
+      color: var.$info
     }
   }
 }
 
-/deep/ .btn {
+::v-deep .btn {
   i, span {
     vertical-align: middle;
   }
@@ -405,7 +407,7 @@ export default {
   }
 
   .growi-cloud-btn:hover, .growi-cloud-btn:focus {
-    color: $white;
+    color:var.$white;
     background-color: $success-hover;
     border-color: $success-hover;
     outline: none;
@@ -416,20 +418,17 @@ export default {
     font-size: 1.5em;
   }
 }
-/* End GROWI cloud section */
 
-/* Join Us */
-
-/deep/ #joinus {
+::v-deep #joinus {
   background: url(/assets/images/joinus-background.jpg) no-repeat;
   padding-bottom: 50px;
   margin-top: 50px;
   p {
-    color: white;
+    color: var.$white;
   }
 
   .page-header h2 {
-    color: $white;
+    color: var.$white;
   }
 }
 </style>
