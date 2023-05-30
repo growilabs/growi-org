@@ -24,9 +24,9 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "engines": {
-    "node": ">=10.14 <11",
-    "npm": ">=6.1.0 <7",
-    "yarn": ">=1.12"
+    "node": "^14",
+    "npm": ">=6.14.8 <7",
+    "yarn": ">=1.22.5 <2"
   },
   "devDependencies": {
     "@vuepress/plugin-google-analytics": "^1.2.0",
