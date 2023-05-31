@@ -1,8 +1,6 @@
+@use 'bootstrap-init' as bs;
 @import 'variables';
 @import 'mixins';
-
-$screen-md: 992px !default;
-$screen-md-min: $screen-md !default;
 
 /* Base */
 
@@ -745,7 +743,7 @@ header a.btn {
   &:hover {
     filter: brightness(85%);
   }
-  @media (min-width: $screen-md-min) {
+  @include bs.media-breakpoint-up(md) {
     font-size: 20px;
   }
 }
@@ -767,7 +765,7 @@ header a.btn-success:hover {
 /* Parallax Header */
 #parallax-header {
   background-color: $light-green !important;
-  @media (min-width: $screen-md-min) {
+  @include bs.media-breakpoint-up(lg) {
     background: url('/assets/images/background-abstract-left.png'), url('/assets/images/background-abstract-right.png');
     background-repeat: no-repeat;
     padding-top: 68px;
@@ -1099,7 +1097,7 @@ header#parallax-header-agency h2 {
   font-size: 24px;
   color: $title-color;
   border: none;
-  @media (min-width: $screen-md-min) {
+  @include bs.media-breakpoint-up(lg) {
     font-size: 40px;
   }
   &::after {
@@ -1116,7 +1114,7 @@ header#parallax-header-agency h2 {
 
 .section-padding {
   padding: 72px 0;
-  @media (min-width: $screen-md-min) {
+  @include bs.media-breakpoint-up(lg) {
     padding: 144px 0;
   }
 }
@@ -1128,7 +1126,7 @@ header#parallax-header-agency h2 {
 .display-1 {
   font-size: 3.5rem;
   font-weight: 800;
-  @media (min-width: $screen-md-min) {
+  @include bs.media-breakpoint-up(md) {
     font-size: 6rem;
   }
 }
@@ -1373,7 +1371,7 @@ header#parallax-header-agency h2 {
   width: 100%;
 }
 
-@media (min-width: $screen-md-min) {
+@include bs.media-breakpoint-up(lg) {
   .feature-image-left {
     padding-right: 4em;
   }
@@ -1810,7 +1808,7 @@ ul.portfolio-items {
   background-repeat: no-repeat;
   background-position: right -10% bottom -20px;
   background-size: 70%;
-  @media (min-width: 992px) {
+  @include bs.media-breakpoint-up(md) {
     background-size: 40%;
   }
 }
