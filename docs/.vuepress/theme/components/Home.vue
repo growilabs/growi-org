@@ -298,7 +298,7 @@
     <!-- javascript -->
     <script2 src="/assets/js/jquery.min.js"></script2>
     <script2 src="/assets/js/bootstrap.min.js"></script2>
-    <script2 src="/assets/js/owl.carousel.min.js"></script2>
+    <script2 src="/assets/js/owl-carousel.min.js"></script2>
     <script2 src="/assets/js/jquery.countTo.js"></script2>
     <script2 src="/assets/js/jquery.shuffle.min.js"></script2>
     <script2 src="/assets/js/custom.js"></script2>
@@ -364,11 +364,22 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '../styles/style.scss';
-@import '../styles/owl.carousel.css';
-@import '../styles/owl.theme.css';
+@use '../styles/style.scss';
+@use '../styles/owl-carousel.css';
+@use '../styles/owl-theme.css';
 
-/deep/ .btn {
+@use '../styles/variables' as var;
+
+::v-deep {
+  -webkit-font-smoothing: auto;
+  p {
+    a {
+      color: var.$info
+    }
+  }
+}
+
+::v-deep .btn {
   i, span {
     vertical-align: middle;
   }
@@ -376,7 +387,7 @@ export default {
 
 @media (max-width: 500px) {
   .text-nowrap {
-    white-space: normal!important;
+    white-space: normal !important;
   }
 }
 
