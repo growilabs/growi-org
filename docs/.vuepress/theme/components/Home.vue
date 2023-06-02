@@ -6,21 +6,22 @@
         <div class="header-content row pt-4 pt-lg-5 pb-0 pb-lg-5 mt-5">
           <div class="col-lg-6 px-0 animated fadeIn">
             <h2 class="fs-1 border-0 mt-0 mt-lg-4 mb-4"> {{ data.heroText.line1 }}<br />{{ data.heroText.line2 }}</h2>
-            <img src="/assets/images/banner-img-2.png" alt="GROWI" v-on:click="handleClick" class="d-lg-none">
+            <img src="/assets/images/mock-img.png" alt="GROWI" v-on:click="handleClick" class="d-lg-none">
           <p class="mt-3" v-html="data.heroText.subtext"></p>
-          <a href="https://docs.growi.org/ja/admin-guide/" class="btn mt-4" target="_blank">
-            <span class="btn-text fs-6"> {{ data.button.start }}</span><i class="fa fa-angle-right btn-hexagon-angle-right"></i>
+          <a href="data.links.admin_guide" class="btn mt-4 btn-hexagon-angle-right" target="_blank">
+            <span class="fs-6"> {{ data.button.start }}</span>
           </a>
         </div>
         <div class="d-none d-lg-block col-lg-6 my-auto animated fadeIn">
           <p class="animated fadeIn">
-            <img src="/assets/images/banner-img-2.png" alt="GROWI" v-on:click="handleClick">
+            <img src="/assets/images/mock-img.png" alt="GROWI" v-on:click="handleClick">
           </p>
           </div>
         </div>
       </div>
     </header>
 
+    <!-- Introduce section -->
     <div class="container">
       <h2 class="text-center mt-5 py-5 section-title animated fadeIn">{{ data.sections.introduction.title }}</h2>
       <div class="row animated fadeIn mb-5 pb-5">
@@ -29,16 +30,16 @@
           </p>
           <div class="d-flex flex-md-fill flex-row justify-content-center">
             <img src="/assets/images/growi-logo.svg" alt="GROWI" class="d-md-none w-25" v-on:click="handleClick">
-          <div>
-            <span class="ff-montserrat display-1 text-reset">500K+</span>
-            <p class="ff-montserrat fs-3">Docker Image Pulls </p>
+            <div>
+              <span class="ff-montserrat display-1 text-reset">500K+</span>
+              <p class="ff-montserrat fs-3">Docker Image Pulls </p>
+            </div>
           </div>
-        </div>
-        <div class="btn-green-bg mt-5 mx-auto">
-        <a href="https://docs.growi.org/ja/admin-guide/" class="btn-green-line fw-bold d-inline-block" target="_blank">
-          <i class="fab fa-docker me-2"></i><span class="btn-text">Dockerhub</span>
-        </a>
-      </div>
+          <div class="btn-green-bg mt-5 mx-auto">
+            <a href="https://hub.docker.com/r/weseek/growi/" class="btn-green-line fw-bold d-inline-block" target="_blank">
+              <i class="fab fa-docker me-2"></i><span class="btn-text">Dockerhub</span>
+            </a>
+          </div>
         </div>
         <div class="col-md-5 my-auto d-none d-md-block">
           <img src="/assets/images/growi-logo.svg" alt="GROWI" class="ms-0" v-on:click="handleClick">
@@ -46,6 +47,7 @@
       </div>
     </div>
 
+    <!-- Community section -->
     <div class="bg-lightgreen py-5 text-center">
       <div class="container">
         <h3 class="mb-4 fs-3 text-reset"> {{ data.sections.community.title }}</h3>
@@ -66,224 +68,231 @@
       </div>
     </div>
 
-    <div v-if="data.features && data.features.length" id="features" data-section="features">
-      <div class="container">
-        <div class="page-header wsub first">
-          <h2>{{ data.sections.features.title }}</h2>
-        </div>
-
-        <div v-for="(feature, index) in data.features" class="row feature-row" style="margin-top: 50px; margin-bottom: 100px;">
-          <div v-if="(index % 2) === 0">
-            <div class="feature-image-left col-sm-12 col-md-7">
-              <img :src="feature.image_path" alt="">
-            </div>
-            <div class="features-left image-left col-xs-12 col-md-5">
-              <div v-for="detail in feature.details" class="feature">
-                <div class="feature-icon">
-                  <i class="lnr" :class="`lnr-${detail.icon}`"></i>
-                </div>
-                <h3>{{ detail.title }}</h3>
-                <p v-html="detail.description"></p>
-              </div>
-            </div>
-          </div>
-          <div v-else>
-            <div class="features-left image-left col-xs-12 col-md-5">
-              <div v-for="detail in feature.details" class="feature">
-                <div class="feature-icon">
-                  <i class="lnr" :class="`lnr-${detail.icon}`"></i>
-                </div>
-                <h3>{{ detail.title }}</h3>
-                <p v-html="detail.description"></p>
-              </div>
-            </div>
-            <div class="feature-image-left col-sm-12 col-md-7">
-              <video
-                v-if="isMovieFile(feature.image_path)"
-                :src="feature.image_path"
-                autoplay
-                loop
-                playsinline
-                muted="muted"
-                width="100%"
-              ></video>
-              <img v-else :src="feature.image_path" alt />
+    <!-- features section -->
+    <div class="container section-padding" id="features" data-section="features">
+      <div class="animated fadeIn text-center">
+        <h2 class="pb-5 section-title">{{ data.sections.features.title }}</h2>
+        <p class="mb-4" v-html="data.sections.features.text"></p>
+      </div>
+      <div class="row mt-5 pt-5">
+        <div class="col-sm-6 col-lg-4 px-lg-4 mb-4">
+          <div class="card border-0 bg-transparent">
+            <img src="/assets/images/features/editor.png" alt="Editor" class="card-img-top rounded-3 shadow" />
+            <div class="card-body px-0">
+              <h5 class="text-center mt-4">{{ data.features.markdown.title }}</h5>
+              <p v-html="data.features.markdown.description"></p>
             </div>
           </div>
         </div>
-      </div><!-- /container -->
-    </div><!-- / features section image-left -->
-    <!-- / features section 4col image-left -->
-
-    <div id="demo" class="row">
-      <div class="col-sm-12 text-center" style="margin-top: 50px;">
-        <a href="https://demo.growi.org/" class="btn btn-success" target="_blank">
-          <i class="lnr fa-2x lnr-screen"></i>
-          <span style="margin-left: 0.5em; font-size: 1.5em;">Live Demo</span>
-          <OutboundLink/>
-        </a>
+        <div class="col-sm-6 col-lg-4 px-lg-4 mb-4">
+          <div class="card border-0 bg-transparent">
+            <img src="/assets/images/features/shape.png" alt="Create Diagram" class="card-img-top rounded-3 shadow" />
+            <div class="card-body px-0">
+              <h5 class="text-center mt-4">{{ data.features.shape.title }}</h5>
+              <p v-html="data.features.shape.description"></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-4 px-lg-4 mb-4">
+          <div class="card border-0 bg-transparent">
+            <img src="/assets/images/features/search.png" alt="Search" class="card-img-top rounded-3 shadow" />
+            <div class="card-body px-0">
+              <h5 class="text-center mt-4">{{ data.features.search.title }}</h5>
+              <p v-html="data.features.search.description"></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-4 px-lg-4 mb-4">
+          <div class="card border-0 bg-transparent">
+            <img src="/assets/images/features/hackmd.png" alt="Highly customizable" class="card-img-top rounded-3 shadow" />
+            <div class="card-body px-0">
+              <h5 class="text-center mt-4">{{ data.features.hackmd.title }}</h5>
+              <p v-html="data.features.hackmd.description"></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-4 px-lg-4 mb-4">
+          <div class="card border-0 bg-transparent">
+            <img src="/assets/images/features/customize.png" alt="Customize" class="card-img-top rounded-3 shadow" />
+            <div class="card-body px-0">
+              <h5 class="text-center mt-4">{{ data.features.customize.title }}</h5>
+              <p v-html="data.features.customize.description"></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-4 px-lg-4 mb-4">
+          <div class="card border-0 bg-transparent">
+            <img src="/assets/images/features/group.png" alt="Group Management" class="card-img-top rounded-3 shadow" />
+            <div class="card-body px-0">
+              <h5 class="text-center mt-4">{{ data.features.group.title }}</h5>
+              <p v-html="data.features.group.description"></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-4 px-lg-4 mb-4">
+          <div class="card border-0 bg-transparent">
+            <img src="/assets/images/features/comment.png" alt="Comment Features" class="card-img-top rounded-3 shadow" />
+            <div class="card-body px-0">
+              <h5 class="text-center mt-4">{{ data.features.comment.title }}</h5>
+              <p v-html="data.features.comment.description"></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-4 px-lg-4 mb-4">
+          <div class="card border-0 bg-transparent">
+            <img src="/assets/images/features/auth.png" alt="Auth" class="card-img-top rounded-3 shadow" />
+            <div class="card-body px-0">
+              <h5 class="text-center mt-4">{{ data.features.auth.title }}</h5>
+              <p v-html="data.features.auth.description"></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-4 px-lg-4 mb-4">
+          <div class="card border-0 bg-transparent">
+            <img src="/assets/images/features/assets.png" alt="Assets management" class="card-img-top rounded-3 shadow" />
+            <div class="card-body px-0">
+              <h5 class="text-center mt-4">{{ data.features.assets.title }}</h5>
+              <p v-html="data.features.assets.description"></p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
+
+  <!-- Merits section -->
+  <div class="bg-lightgreen section-padding">
+    <div class="container">
+      <h2 class="pb-5 section-title text-center">{{ data.sections.merits.title }}</h2>
+      <div class="row mx-md-5 justify-content-center mt-5">
+        <img src="/assets/images/merit-management.svg" alt="Merit of management" class="col-md-6 col-xl-5 mx-0 mb-5 mb-md-auto order-md-2" v-on:click="handleClick" />
+        <div class="col-md-6 col-xl-5 my-auto px-0 px-lg-5 order-md-1">
+          <h3 class="mb-4">{{ data.merits.management.title }}</h3>
+          <p v-html="data.merits.management.description"></p>
+        </div>
+      </div>
+      <div class="row mx-md-5 justify-content-center mt-5">
+        <img src="/assets/images/merit-get-infomation.svg" alt="Get the infomation" class="col-md-6 col-xl-5 mx-0 mb-5 mb-md-auto" v-on:click="handleClick" />
+        <div class="col-md-6 col-xl-5 my-auto px-0 px-lg-5">
+          <h3 class="mb-4">{{ data.merits.infomation.title }}</h3>
+          <p v-html="data.merits.infomation.description"></p>
+        </div>
+      </div>
+      <div class="row mx-md-5 justify-content-center mt-5">
+        <img src="/assets/images/merit-team.svg" alt="Merit for team" class="col-md-6 col-xl-5 mx-0 mb-5 mb-md-auto order-md-2" v-on:click="handleClick" />
+        <div class="col-md-6 col-xl-5 my-auto px-0 px-lg-5 order-md-1">
+          <h3 class="mb-4" v-html="data.merits.team.title"></h3>
+          <p v-html="data.merits.team.description"></p>
+        </div>
+      </div>
+    </div>
+    <div class="text-center mx-auto mt-5">
+      <a
+      href="data.links.admin_guide"
+      class="btn btn-hexagon btn-bg-green-gradient btn-hexagon-angle-right fw-bold d-inline-block text-white px-5 py-2 rounded-0"
+      target="_blank"
+      >
+        <span class="fs-5"> {{ data.button.start }}</span>
+      </a>
+    </div>
+  </div>
+
+  <!-- Trial section -->
+  <div class="container text-center my-5 py-5">
+    <h2 class="border-0 d-flex">
+      <img src="/assets/images/appearl-effect.svg" class="me-3" v-on:click="handleClick" />
+      {{ data.sections.trial.title }}
+      <img src="/assets/images/appearl-effect.svg" class="ms-3 header-appeal-effect" v-on:click="handleClick" />
+    </h2>
+    <div class="row mt-5 justify-content-center">
+      <div class="bg-lightgreen shadow rounded p-5 mx-4 col-sm-10 col-lg-5">
+        <h5>{{ data.sections.trial.demo }}</h5>
+        <div class="btn-green-bg mt-4 mx-auto">
+            <a href="https://demo.growi.org/" class="btn-green-line btn-hexagon-angle-right fw-bold d-inline-block" target="_blank">
+              <span>GROWI Demo</span>
+            </a>
+        </div>
+      </div>
+      <div class="bg-lightgreen shadow rounded p-5 mx-4 col-sm-10 col-lg-5 mt-4 mt-lg-auto">
+        <h5>{{ data.sections.trial.operation }}</h5>
+        <div class="btn-green-bg mt-4 mx-auto">
+            <a href="data.links.docs" class="btn-green-line btn-hexagon-angle-right fw-bold d-inline-block" target="_blank">
+              <span>GROWI Docs</span>
+            </a>
+        </div>
+      </div>
+    </div>
+  </div>
 
     <!-- growi-cloud section -->
-    <div id="cloud" class="parallax" data-section="growi-cloud">
+    <div class="growi-cloud-bg">
       <div class="container">
-        <div class="page-header wsub first">
-          <h2>GROWI<span style="font-size: 0.8em;">.cloud</span></h2>
-        </div>
-        <div class="row gc-parallax-section-content" style="margin-bottom: 90px;">
-          <h3 class="parallax-section-text">{{ data.sections.cloud.descriptions.text }}</h3>
-          <h4 class="parallax-section-text font-weight-normal" v-html="data.sections.cloud.descriptions.subtext"></h4>
-          <p class="parallax-section-text font-weight-normal text-muted">{{ data.sections.cloud.descriptions.subsubtext }}</p>
-          <a href="https://growi.cloud/" style="margin-top: 20px" class="btn btn-success growi-cloud-btn" target="_blank">
-            <i class="lnr lnr-cloud fa-2x"></i>
-            <span class="btn-text">{{ data.sections.cloud.descriptions.button_text }}</span>
-            <OutboundLink/>
-          </a>
-          <p class="text-center" v-html="data.sections.cloud.descriptions.description" style="margin-top: 30px;"></p>
-        </div>
-      </div>
-    </div>
-
-    <!-- documetnts section 3col -->
-    <div id="documents" name="documents" data-section="documetnts">
-      <div class="container">
-        <div class="page-header wsub first">
-          <h2>{{ data.sections.documents.title }}</h2>
-        </div>
-        <div class="row">
-          <div class="about col-sm-4">
-            <!--
-            <a href="https://github.com/weseek/growi">
-              <div class="feature-icon">
-                <i class="fa fa-github"></i>
-              </div>
-              <h5 class="about-title">
-                GitHub
-              </h5>
-            </a>
-            -->
+        <div class="row py-4 justify-content-center">
+          <div class="col-md-4 my-auto order-md-2">
+            <img src="/assets/images/growi-cloud-logo.svg" v-on:click="handleClick" />
           </div>
-          <div class="about col-sm-4">
-            <a href="https://docs.growi.org">
-              <div class="feature-icon">
-                <i class="lnr lnr-book"></i>
-              </div>
-              <h5 class="about-title">
-                GROWI Docs<br><small>by VuePress</small>
-              </h5>
-            </a>
+          <div class="col-md-7 col-xl-4 my-auto order-md-1 py-4 py-md-auto ps-xxl-5 text-nowrap">
+            <h5 class="text-center text-md-start growi-cloud-text" v-html="data.sections.cloud.text"></h5>
+            <h5 class="text-center text-md-start mb-0 growi-cloud-text" v-html="data.sections.cloud.subtext"></h5>
           </div>
-          <div class="about col-sm-4">
-            <!--
-            <a href="https://weseek.co.jp/tags/GROWI/">
-              <div class="feature-icon">
-                <i class="lnr lnr-magic-wand"></i>
-              </div>
-              <h5 class="about-title">GROWI Blog</h5>
+          <div class="col-10 col-xl-3 my-auto order-3 text-center">
+            <a href="https://growi.cloud/" class="btn btn-hexagon growi-cloud-btn text-white fs-6 rounded-0 py-2 btn-hexagon-angle-right" target="_blank">
+              <span class="mx-5 d-inline-block text-nowrap">{{ data.sections.cloud.button_text }}</span>
             </a>
-            -->
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-sm-12 text-center animated fadeIn" style="margin: 10px 0;">
-            <NavLink
-              class="btn btn-default"
-              :item="{
-                text: 'GITHUB',
-                link: 'https://github.com/weseek/growi'
-              }"
-            />
-            <NavLink
-              class="btn btn-default"
-              :item="{
-                text: 'GROWI BLOG',
-                link: 'https://weseek.co.jp/tags/GROWI/'
-              }"
-            />
           </div>
         </div>
       </div>
     </div>
-
-    <!-- joinus -->
-    <div id="joinus" class="parallax" data-section="joinus" style="margin-top: 150px;">
-      <div class="container">
-        <div class="page-header wsub first">
-          <h2>JOIN US</h2>
-        </div>
-        <div class="row">
-          <div class="col-md-12">
-            <p v-for="description in data.sections.joinus.descriptions" v-html="description" class="text-center" style="margin-top: 30px;">
-            </p>
-            <p class="text-center" style="margin-top: 60px;">
-              <iframe src="https://ghbtns.com/github-btn.html?user=weseek&repo=growi&type=watch&count=true" allowtransparency="true"
-              frameborder="0" scrolling="0" width="110" height="20"></iframe>
-              <a href="https://growi-slackin.weseek.co.jp/">
-                <img src="https://growi-slackin.weseek.co.jp/badge.svg" style="display: inline; vertical-align: baseline; margin-left: -20px;">
-              </a>
-            </p>
-          </div>
-        </div>
-      </div>
-      <!-- / container -->
-    </div><!-- / joinus -->
-
-    <!-- map -->
-    <div>
-      <iframe id="map" frameborder="0" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCRwmtcbaWWW-2R-iiUBvZdVI-UeEb-aXo&q=東京都新宿区西早稲田2-20-15">
-      </iframe>
-    </div>
-    <!-- / map -->
 
     <!-- footer widgets 4col -->
     <div id="footer-widgets" data-section="footer-widgets">
-      <div class="container">
-        <div class="row">
-          <div class="first-footer-widget col-sm-6">
-            <img src="/assets/images/logo.png" alt="">
+      <div class="container pt-5 pb-3">
+        <div class="row justify-content-center">
+          <div class="first-footer-widget col-sm-6 col-md-4">
+            <div class="d-flex">
+              <img src="/assets/images/growi-white-logo.svg" alt="" class="me-2" />
+              <h3 class="mt-1">GROWI</h3>
+            </div>
             <ul>
-              <li><a href="https://growi.cloud/">GROWI.cloud</a></li>
-              <li><a href="https://github.com/weseek/growi"><i class="fa fa-github" aria-hidden="true"></i> weseek/growi</a></li>
-              <li><a href="https://github.com/weseek/growi-docker-compose"><i class="fa fa-github" aria-hidden="true"></i> weseek/growi-docker-compose</a></li>
-              <li><a href="https://hub.docker.com/r/weseek/growi/">Docker Hub</a></li>
-              <li><a href="https://demo.growi.org">demo.growi.org</a></li>
+              <li><a href="https://growi.cloud/" target="_blank">GROWI.cloud</a></li>
+              <li><a href="https://github.com/weseek/growi" target="_blank"><i class="fab fa-github me-1"></i> weseek/growi</a></li>
+              <li><a href="https://github.com/weseek/growi-docker-compose" target="_blank"><i class="fab fa-github me-1"></i> weseek/growi-docker-compose</a></li>
+              <li><a href="https://hub.docker.com/r/weseek/growi/" target="_blank"><i class="fab fa-docker me-1"></i>Docker Hub</a></li>
+              <li><a href="https://demo.growi.org" target="_blank">demo.growi.org</a></li>
+              <li><a href="https://weseek.co.jp/tech/category/growi/" target="_blank">Tech Blog</a></li>
             </ul>
             <p></p>
           </div>
-          <div class="col-sm-6">
+          <div class="col-sm-6 col-md-4 mt-4 mt-md-0">
             <div class="widget-title">
-              <h3>CONTACT US</h3>
+              <h3 class="mb-3">WESEEK,Inc.</h3>
+              <h4 class="fs-6 text-white mb-0">CONTACT US</h4>
             </div>
-            <div class="footer-contact-info">
-              <div class="info">
-                <p><i class="lnr lnr-map-marker"></i><span>{{ data.sections.contact_us.address }}</span></p>
-              </div>
-              <div class="info" v-if="data.sections.contact_us.tel">
-                <a :href="`tel:+${data.sections.contact_us.tel.link}`"><i class="lnr lnr-phone-handset"></i><span>{{ data.sections.contact_us.tel.text }}</span></a>
-              </div>
-              <div class="info">
-                <a :href="`mailto:${data.sections.contact_us.email}`"><i class="lnr lnr-envelope"></i><span>{{ data.sections.contact_us.email }}</span></a>
-              </div>
-            </div>
+            <ul class="mt-4">
+              <li class="d-flex">
+                <i class="fa-regular fa-map me-2 mt-1"></i><p v-html="data.sections.contact_us.address"></p>
+              </li>
+              <li v-if="data.sections.contact_us.tel">
+                <a :href="`tel:+${data.sections.contact_us.tel.link}`" target="_blank"><i class="fa-solid fa-phone me-2"></i><span>{{ data.sections.contact_us.tel.text }}</span></a>
+              </li>
+              <li>
+                <a :href="`mailto:${data.sections.contact_us.email}`" target="_blank"><i class="fa-regular fa-envelope me-2"></i><span>{{ data.sections.contact_us.email }}</span></a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-sm-12 col-md-3 mt-4 mt-md-0">
+            <h3 class="mb-3">JOIN US</h3>
+            <p v-html="data.sections.joinus.descriptions"></p>
           </div>
         </div>
       </div><!-- / container -->
     </div><!-- / footer widgets 4col -->
 
     <!-- footer social icons right -->
-    <footer>
-      <div class="container">
-        <p class="row">
-          <span class="col-xs-12 col-sm-8 left">
-            © 2018 <b>GROWI</b> - produced by <a href="https://weseek.co.jp">WESEEK, Inc.</a>
-          </span>
-          <span class="col-xs-12 col-sm-4 right">
-            <a href="https://twitter.com/weseek_inc"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-            <a href="https://github.com/weseek"><i class="fa fa-github" aria-hidden="true"></i></a>
-          </span>
+    <footer class="d-flex justify-content-between align-items-center">
+        <p class="ms-3">
+          © 2018 GROWI - produced by <a href="https://weseek.co.jp" target="_blank">WESEEK, Inc.</a>
         </p>
-      </div>
+        <a href="https://github.com/weseek" class="ms-auto me-3" target="_blank"><i class="fab fa-github fs-4"></i></a>
     </footer><!-- / footer social icons right -->
 
     <!-- javascript -->
@@ -374,61 +383,12 @@ export default {
   i, span {
     vertical-align: middle;
   }
+}
 
-  svg {
-    color: #fff;
-    fill: currentColor;
+@media (max-width: 500px) {
+  .text-nowrap {
+    white-space: normal !important;
   }
 }
 
-/* GROWI cloud section */
-.gc-parallax-section-content {
-  $success: #55a79a;
-  $success-hover: darken($success, 10%);
-
-  .parallax-section-text {
-    $headings-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  }
-
-  .font-weight-normal {
-    font-weight: normal !important;
-  }
-
-  .display-3 {
-    font-size: 3.5rem;
-    font-weight: 300;
-    line-height: 1.2;
-  }
-
-  .growi-cloud-btn {
-    background-color: $success;
-    border-color: $success;
-    text-transform: none;
-  }
-
-  .growi-cloud-btn:hover, .growi-cloud-btn:focus {
-    color:var.$white;
-    background-color: $success-hover;
-    border-color: $success-hover;
-    outline: none;
-  }
-
-  .btn-text {
-    margin-left: 0.5em;
-    font-size: 1.5em;
-  }
-}
-
-::v-deep #joinus {
-  background: url(/assets/images/joinus-background.jpg) no-repeat;
-  padding-bottom: 50px;
-  margin-top: 50px;
-  p {
-    color: var.$white;
-  }
-
-  .page-header h2 {
-    color: var.$white;
-  }
-}
 </style>

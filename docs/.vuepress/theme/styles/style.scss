@@ -1,10 +1,6 @@
+@use 'bootstrap-init' as bs;
 @import 'variables';
 @import 'mixins';
-
-
-$screen-md: 992px !default;
-$screen-md-min: $screen-md !default;
-
 
 /* Base */
 
@@ -137,7 +133,7 @@ cite {
 }
 
 .bg-lightgreen {
-  background-color: #F0FFEA;
+  background-color: $light-green;
 }
 
 /* Header */
@@ -145,47 +141,55 @@ cite {
 /* button */
 .btn-hexagon {
   clip-path: polygon(92% 0%, 100% 50%, 92% 100%, 8% 100%, 0% 50%, 8% 0%);
-  padding:8px 48px 8px 48px;
+  padding: 8px 48px 8px 48px;
 }
 
 .btn-green-bg {
-  width:270px;
-  height:48px;
+  width: 270px;
+  height: 48px;
   background-color: $success;
   clip-path: polygon(92% 0%, 100% 50%, 92% 100%, 8% 100%, 0% 50%, 8% 0%);
 }
 
 .btn-green-line {
-  width:270px;
-  height:48px;
+  width: 270px;
+  height: 48px;
   padding: 12px 5%;
   clip-path: polygon(calc(92% - 1px) 2px, calc(100% - 2px) 50%, calc(92% - 1px) calc(100% - 2px), calc(8% + 1px) calc(100% - 2px), 2px 50%, calc(8% + 1px) 2px);
-  background-color: white;
+  background-color: $white;
   color: $success;
-  &:hover{
-    color:white;
+  &:hover {
+    color: $white;
     background-color: $success;
     transition: 0.2s;
   }
 }
 
 .btn-navy {
-  background-color: #254459;
+  background-color: $navy;
   &:hover {
     filter: brightness(120%);
   }
 }
 
 .btn-hexagon-angle-right {
+  position: relative;
+  padding-right: 24px;
+}
+
+.btn-hexagon-angle-right ::after {
+  content: '\f105';
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
   position: absolute;
   top: 50%;
-  right: 5%;
+  right: 14px;
   transform: translateY(-50%);
 }
 
 .btn-bg-green-gradient {
-  color:white;
-  background: linear-gradient(40deg,#79B536, #2FB516);
+  color: $white;
+  background: $btn-green-gradient;
   &:hover {
     filter: brightness(85%);
   }
@@ -573,7 +577,7 @@ cite {
 
 .navbar-fixed-top.navbar-3 {
   background-color: $white;
-  box-shadow: #666 0px 2px 15px;
+  box-shadow: $nav-shadow 0px 2px 15px;
   border: 0;
   position: fixed;
   width: 100%;
@@ -586,7 +590,7 @@ cite {
 
 .navbar-3 a {
   font-size: 16px;
-  color: #555;
+  color: $text-color;
   opacity: 0.8;
   @include transition(0.2s);
   &:hover,
@@ -722,7 +726,7 @@ cite {
 /* Header Content */
 
 header h2 {
-  color: #555;
+  color: $text-color;
   font-size: 34px;
   margin-top: 50px;
   text-align: center;
@@ -730,17 +734,17 @@ header h2 {
 
 header a.btn {
   margin-bottom: 50px;
-  padding:8px 48px 8px 48px;
+  padding: 8px 48px 8px 48px;
   color: $white;
-  font-size:16px;
-  background: linear-gradient(40deg,#79B536, #2FB516);
+  font-size: 16px;
+  background: $btn-green-gradient;
   clip-path: polygon(92% 0%, 100% 50%, 92% 100%, 8% 100%, 0% 50%, 8% 0%);
   border-radius: 0;
   &:hover {
     filter: brightness(85%);
   }
-  @media (min-width: $screen-md-min) {
-    font-size:20px;
+  @include bs.media-breakpoint-up(md) {
+    font-size: 20px;
   }
 }
 
@@ -760,8 +764,8 @@ header a.btn-success:hover {
 
 /* Parallax Header */
 #parallax-header {
-background-color: #F0FFEA !important;
-  @media (min-width: $screen-md-min) {
+  background-color: $light-green !important;
+  @include bs.media-breakpoint-up(lg) {
     background: url('/assets/images/background-abstract-left.png'), url('/assets/images/background-abstract-right.png');
     background-repeat: no-repeat;
     padding-top: 68px;
@@ -1091,9 +1095,9 @@ header#parallax-header-agency h2 {
 /* About Section */
 .section-title {
   font-size: 24px;
-  color: #343A40;
-  border:none;
-  @media (min-width: $screen-md-min) {
+  color: $title-color;
+  border: none;
+  @include bs.media-breakpoint-up(lg) {
     font-size: 40px;
   }
   &::after {
@@ -1102,9 +1106,16 @@ header#parallax-header-agency h2 {
     height: 0px;
     margin: 15px auto 0;
     content: '';
-    border-color: #70B248 transparent transparent transparent;
+    border-color: $success transparent transparent transparent;
     border-style: solid;
     border-width: 4px 2px 0 2px;
+  }
+}
+
+.section-padding {
+  padding: 72px 0;
+  @include bs.media-breakpoint-up(lg) {
+    padding: 144px 0;
   }
 }
 
@@ -1115,35 +1126,13 @@ header#parallax-header-agency h2 {
 .display-1 {
   font-size: 3.5rem;
   font-weight: 800;
-  @media (min-width: $screen-md-min) {
+  @include bs.media-breakpoint-up(md) {
     font-size: 6rem;
   }
 }
 
-.feature-icon-hover {
-  color: $white;
-  background-color: $primary;
-  text-decoration: none;
-}
-.feature-icon {
-  color: $text-color;
-  background-color: $bg-color;
-  padding: 21px;
-  margin-bottom: 30px;
-  display: inline-block !important;
-  font-size: 38px;
-  height: 80px;
-  width: 80px;
-  text-align: center;
-  border-radius: 100px;
-  -webkit-border-radius: 100px;
-  -moz-border-radius: 100px;
-  @include transition(0.2s);
-  &:hover,
-  &:active,
-  &:focus {
-    @extend .feature-icon-hover;
-  }
+.header-appeal-effect {
+  transform: scale(-1, 1);
 }
 
 .about {
@@ -1153,16 +1142,12 @@ header#parallax-header-agency h2 {
     display: block;
     margin: 15px;
     padding: 40px 20px;
-    box-shadow: #ccc 0 3px 10px;
-    background-color: white;
+    box-shadow: $shadow-color 0 3px 10px;
+    background-color: $white;
 
     &:hover,
     &:focus {
-      box-shadow: #ccc 0 7px 20px;
-
-      .feature-icon {
-        @extend .feature-icon-hover;
-      }
+      box-shadow: $shadow-color 0 7px 20px;
     }
   }
 }
@@ -1378,7 +1363,7 @@ header#parallax-header-agency h2 {
 .feature-image-left,
 .feature-image-right {
   img {
-    box-shadow: #ccc 0 10px 30px;
+    box-shadow: $shadow-color 0 10px 30px;
   }
 }
 
@@ -1386,7 +1371,7 @@ header#parallax-header-agency h2 {
   width: 100%;
 }
 
-@media (min-width: $screen-md-min) {
+@include bs.media-breakpoint-up(lg) {
   .feature-image-left {
     padding-right: 4em;
   }
@@ -1473,28 +1458,6 @@ header#parallax-header-agency h2 {
 /* End Pricing */
 
 /* Parallax Section */
-
-// #parallax-section {
-#cloud {
-  margin-top: 50px;
-  background: url(/assets/images/contact-bg.jpg) no-repeat;
-  background-color: $bg-color;
-}
-
-#cloud p {
-  color: white;
-  a {
-    color: $info;
-  }
-}
-
-#cloud p.text-muted {
-  font-size: 1em;
-}
-
-#cloud .page-header h2 {
-  color: $white;
-}
 
 .parallax-section-content {
   display: block;
@@ -1838,24 +1801,42 @@ ul.portfolio-items {
 
 /* End Subscribe */
 
-/* Map */
-
-#map {
-  width: 100%;
-  height: 244px;
+/* GROWI cloud section */
+.growi-cloud-bg {
+  background-color: $light-blue;
+  background-image: url('/assets/images/background-abstract-cloud.png');
+  background-repeat: no-repeat;
+  background-position: right -10% bottom -20px;
+  background-size: 70%;
+  @include bs.media-breakpoint-up(md) {
+    background-size: 40%;
+  }
 }
 
-#map.big {
-  height: 300px;
+.growi-cloud-btn {
+  background: $btn-blue-gradient;
 }
-/* End Map */
 
-/* Footer Widgets */
+.growi-cloud-btn:hover,
+.growi-cloud-btn:focus {
+  color: $white;
+  filter: brightness(120%);
+}
 
-#footer-widgets {
-  background-color: $bg-color;
-  border-top: 15px solid $primary;
-  padding-top: 50px;
+.growi-cloud-text {
+  color: $text-color;
+}
+/* End GROWI cloud section */
+
+/* Footer Widgets and Footer */
+
+#footer-widgets,
+footer {
+  background-color: $navy;
+}
+
+footer {
+  border-top: 1px solid $footer-color;
 }
 
 #footer-widgets .row {
@@ -1871,30 +1852,24 @@ ul.portfolio-items {
   margin: 0 0 20px 0;
 }
 
-#footer-widgets p {
+#footer-widgets a,
+#footer-widgets p,
+#footer-widgets i {
   font-size: 14px;
+  color: $footer-color;
+  margin-bottom: 0;
 }
 
-#footer-widgets a {
-  font-size: 14px;
-  font-weight: $bold;
+#footer-widgets li {
+  margin-bottom: 12px;
 }
 
 #footer-widgets h3 {
-  font-size: 22px;
-  margin: 5px 0 8px 0;
-  position: relative;
+  font-size: 20px;
+  color: $white;
 }
 
-.widget-title:after {
-  content: '';
-  background: $primary;
-  position: absolute;
-  height: 4px;
-  width: 100px;
-}
-
-footer i.fa {
+footer i.fab {
   font-size: 18px;
 }
 
@@ -1940,27 +1915,7 @@ footer i.fa {
   border-bottom: 10px solid transparent;
   display: inline-block;
 }
-
-.footer-contact-info {
-  margin-top: 35px;
-}
-
-.footer-contact-info i {
-  font-size: 24px;
-  margin-top: 5px;
-  color: $text-color;
-}
-
-.footer-contact-info span {
-  margin-left: 20px;
-  margin-top: 3px;
-  position: absolute;
-}
-
-.footer-contact-info .info {
-  margin: 30px 0;
-}
-/* End Footer Widgets */
+/* End Footer Widgets and Footer */
 
 /* Footer Social */
 
@@ -1992,57 +1947,18 @@ footer i.fa {
 
 /* Footer */
 
-footer {
-  background: $primary;
-}
-
-footer p {
-  color: $white;
+footer p,
+footer a {
+  color: $footer-color;
   font-size: 14px;
   margin: 0;
-  padding: 20px 0;
+  padding: 14px 0;
 }
 
-footer .right {
-  float: right;
-  text-align: right;
-}
-
-footer a {
-  color: $white;
-  font-size: 12px;
-  opacity: 0.8;
-}
-
+#footer-widgets a:hover,
 footer a:hover {
   color: $white;
   opacity: 1;
-}
-
-footer i {
-  margin: 0 7px;
-}
-
-footer.light {
-  background-color: $bg-color;
-  text-align: center;
-  padding: 50px;
-}
-
-footer.light p {
-  color: $text-color;
-  text-align: center;
-  font-size: 18px;
-}
-
-footer.light a {
-  color: $primary;
-  font-size: 16px;
-  opacity: 1;
-}
-
-footer.light .light-footer-social {
-  margin-bottom: 10px;
 }
 /* End Footer */
 
@@ -2121,7 +2037,7 @@ footer.light .light-footer-social {
 }
 
 #error-404 a {
-  font-wieght: $bold;
+  font-weight: $bold;
 }
 
 #error-404 h2 {
