@@ -15,6 +15,8 @@ ARG USER_GID=$USER_UID
 
 RUN mkdir -p /growi-org/node_modules
 
+RUN apt-get update && apt-get -y install --no-install-recommends git-lfs
+
 # [Optional] Update UID/GID if needed
 RUN if [ "$USER_GID" != "1000" ] || [ "$USER_UID" != "1000" ]; then \
         groupmod --gid $USER_GID $USERNAME \
