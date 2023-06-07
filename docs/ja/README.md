@@ -15,6 +15,7 @@ heroButtons:
 links:
   admin_guide: https://docs.growi.org/ja/admin-guide/
   docs: https://docs.growi.org/ja/
+  weseek: https://weseek.co.jp/ja/
 sections:
   introduction:
     title: オープンソース GROWI

@@ -8,7 +8,7 @@
             <h2 class="fs-1 border-0 mt-0 mt-lg-4 mb-4"> {{ data.heroText.line1 }}<br />{{ data.heroText.line2 }}</h2>
             <img src="/assets/images/mock-img.png" alt="GROWI" v-on:click="handleClick" class="d-lg-none">
           <p class="mt-3" v-html="data.heroText.subtext"></p>
-          <a href="data.links.admin_guide" class="btn mt-4 btn-hexagon-angle-right" target="_blank">
+          <a :href="data.links.admin_guide" class="btn mt-4 btn-hexagon-angle-right" target="_blank">
             <span class="fs-6"> {{ data.button.start }}</span>
           </a>
         </div>
@@ -190,7 +190,7 @@
     </div>
     <div class="text-center mx-auto mt-5">
       <a
-      href="data.links.admin_guide"
+      :href="data.links.admin_guide"
       class="btn btn-hexagon btn-bg-green-gradient btn-hexagon-angle-right fw-bold d-inline-block text-white px-5 py-2 rounded-0"
       target="_blank"
       >
@@ -218,7 +218,7 @@
       <div class="bg-lightgreen shadow rounded p-5 mx-4 col-sm-10 col-lg-5 mt-4 mt-lg-auto">
         <h5>{{ data.sections.trial.operation }}</h5>
         <div class="btn-green-bg mt-4 mx-auto">
-            <a href="data.links.docs" class="btn-green-line btn-hexagon-angle-right fw-bold d-inline-block" target="_blank">
+            <a :href="data.links.docs" class="btn-green-line btn-hexagon-angle-right fw-bold d-inline-block" target="_blank">
               <span>GROWI Docs</span>
             </a>
         </div>
@@ -293,7 +293,7 @@
     <!-- footer social icons right -->
     <footer class="d-flex justify-content-between align-items-center">
         <p class="ms-3">
-          © 2018 GROWI - produced by <a href="https://weseek.co.jp" target="_blank">WESEEK, Inc.</a>
+          © 2018 GROWI - produced by <a :href="data.links.weseek" target="_blank">WESEEK, Inc.</a>
         </p>
         <a href="https://github.com/weseek" class="ms-auto me-3" target="_blank"><i class="fab fa-github fs-4"></i></a>
     </footer><!-- / footer social icons right -->
