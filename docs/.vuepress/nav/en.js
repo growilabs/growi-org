@@ -5,6 +5,6 @@ module.exports = [
   },
   {
     text: 'Documents',
-    link: '/en/#documents'
+    link: 'https://docs.growi.org/en/'
   },
 ]

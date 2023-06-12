@@ -15,16 +15,17 @@ heroButtons:
 links:
   admin_guide: https://docs.growi.org/ja/admin-guide/
   docs: https://docs.growi.org/ja/
+  weseek: https://weseek.co.jp/ja/
 sections:
   introduction:
     title: オープンソース GROWI
-    text: GROWI は、WESEEK, Inc. が開発を行い、 <br /> MITライセンスで公開しているオープンソースソフトウェアです。 <br /> ユーザーの方も加わった開発が日々活発に行われています。
+    text: GROWI は、WESEEK, Inc. が開発を行い、<br class="d-none d-md-block" /> MITライセンスで公開しているオープンソースソフトウェアです。 <br class="d-none d-md-block" /> ユーザーの方も加わった開発が日々活発に行われています。
   community:
     title: コミュニティ・サポート
     text: GROWIに関する質問・要望・バグの報告は、 <br /> GitHubまたはSlackにて受け付けております。
   features:
     title: 機能と特徴
-    text: 豊富な機能で社内やチーム内でのスムーズな情報共有を支える <br /> GROWIの便利な機能の一部をご紹介します。機能の詳細は、<a href="https://docs.growi.org/ja/guide/">GROWI Docs/機能紹介</a> をご覧ください。
+    text: 豊富な機能で社内やチーム内でのスムーズな情報共有を支える <br class="d-none d-md-block" /> GROWIの便利な機能の一部をご紹介します。機能の詳細は、<a href="https://docs.growi.org/ja/guide/">GROWI Docs/機能紹介</a> をご覧ください。
   merits:
     title: 導入のメリット
   trial:

@@ -7,7 +7,7 @@
       class="home-link"
     >
       <img
-        class="logo"
+        class="logo medialink"
         v-if="$site.themeConfig.logo"
         :src="$withBase($site.themeConfig.logo)"
         :alt="$siteTitle"
@@ -138,4 +138,7 @@ $navbar-horizontal-padding = 1.5rem
   background: linear-gradient(40deg,#79B536, #2FB516);
   &:hover
     filter: brightness(85%);
+.media-link.media-zoom-image
+  pointer-events: none
+  cursor: default
 </style>

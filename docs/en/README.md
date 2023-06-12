@@ -15,10 +15,11 @@ heroButtons:
 links:
   admin_guide: https://docs.growi.org/en/admin-guide/
   docs: https://docs.growi.org/en/
+  weseek: https://weseek.co.jp/en/
 sections:
   introduction:
     title: Open Source GROWI
-    text: GROWI.cloud is open software developed by WESEEK, Inc. <br /> And released under MIT license.
+    text: GROWI.cloud is open software developed by WESEEK, Inc. <br class="d-none d-md-block" /> And released under MIT license.
   community:
     title: Community-support
     text: We are accepting questions, request and report of bug on our GItHub or Slack.
@@ -38,7 +39,7 @@ sections:
     button_text: Here is more details
   joinus:
     title: JOIN US
-    descriptions: GROWI is open source software developed by <a href="https://weseek.co.jp">WESEEK, Inc</a> . and released under the MIT license. We are looking for contributors who can help with development and interns who want to develop. <br/> First join Slack and feel free to talk to the WESEEK members.
+    descriptions: GROWI is open source software developed by <a href="https://weseek.co.jp/en" target="_blank">WESEEK, Inc</a> . and released under the MIT license. We are looking for contributors who can help with development and interns who want to develop. <br/> First join Slack and feel free to talk to the WESEEK members.
   contact_us:
     address: Takadanobaba Access 10F, 2-20-15 Nishiwaseda, <br /> Shinjuku-ku, Tokyo, Japan
     email: info@weseek.co.jp

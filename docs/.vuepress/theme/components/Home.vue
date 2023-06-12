@@ -8,7 +8,7 @@
             <h2 class="fs-1 border-0 mt-0 mt-lg-4 mb-4"> {{ data.heroText.line1 }}<br />{{ data.heroText.line2 }}</h2>
             <img src="/assets/images/mock-img.png" alt="GROWI" v-on:click="handleClick" class="d-lg-none">
           <p class="mt-3" v-html="data.heroText.subtext"></p>
-          <a href="data.links.admin_guide" class="btn mt-4 btn-hexagon-angle-right" target="_blank">
+          <a :href="data.links.admin_guide" class="btn mt-4 btn-hexagon-angle-right" target="_blank">
             <span class="fs-6"> {{ data.button.start }}</span>
           </a>
         </div>
@@ -24,21 +24,24 @@
     <!-- Introduce section -->
     <div class="container">
       <h2 class="text-center mt-5 py-5 section-title animated fadeIn">{{ data.sections.introduction.title }}</h2>
-      <div class="row animated fadeIn mb-5 pb-5">
+      <div class="row animated fadeIn mb-0 mb-md-5 pb-5">
         <div class="col-md-7 text-center">
-          <p class="mb-4" v-html="data.sections.introduction.text">
-          </p>
-          <div class="d-flex flex-md-fill flex-row justify-content-center">
-            <img src="/assets/images/growi-logo.svg" alt="GROWI" class="d-md-none w-25" v-on:click="handleClick">
-            <div>
-              <span class="ff-montserrat display-1 text-reset">500K+</span>
-              <p class="ff-montserrat fs-3">Docker Image Pulls </p>
+          <div class="row">
+            <div class="d-flex flex-md-fill flex-row justify-content-center order-md-2">
+              <img src="/assets/images/growi-logo.svg" alt="GROWI" class="d-md-none w-25" v-on:click="handleClick">
+              <div class="my-auto">
+                <span class="ff-montserrat display-1 text-reset">500K+</span>
+                <p class="ff-montserrat fs-3">Docker Image Pulls </p>
+              </div>
             </div>
-          </div>
-          <div class="btn-green-bg mt-5 mx-auto">
-            <a href="https://hub.docker.com/r/weseek/growi/" class="btn-green-line fw-bold d-inline-block" target="_blank">
-              <i class="fab fa-docker me-2"></i><span class="btn-text">Dockerhub</span>
-            </a>
+            <p class="mb-0 mb-md-4 order-md-1 mt-5 mt-md-auto text-start text-md-center px-0" v-html="data.sections.introduction.text">
+            </p>
+            <!-- Preventing misalignment of button designs by using the `row` class to create a flex container -->
+            <div class="btn-green-bg mt-5 mx-auto order-md-3 row px-0">
+              <a href="https://hub.docker.com/r/weseek/growi/" class="btn-green-line fw-bold d-inline-block" target="_blank">
+                <i class="fab fa-docker me-2"></i><span class="btn-text">Dockerhub</span>
+              </a>
+            </div>
           </div>
         </div>
         <div class="col-md-5 my-auto d-none d-md-block">
@@ -72,15 +75,15 @@
     <div class="container section-padding" id="features" data-section="features">
       <div class="animated fadeIn text-center">
         <h2 class="pb-5 section-title">{{ data.sections.features.title }}</h2>
-        <p class="mb-4" v-html="data.sections.features.text"></p>
+        <p class="mb-4 text-start text-md-center mx-3 mx-md-auto" v-html="data.sections.features.text"></p>
       </div>
-      <div class="row mt-5 pt-5">
+      <div class="row mt-5 pt-0 pt-md-5">
         <div class="col-sm-6 col-lg-4 px-lg-4 mb-4">
           <div class="card border-0 bg-transparent">
             <img src="/assets/images/features/editor.png" alt="Editor" class="card-img-top rounded-3 shadow" />
             <div class="card-body px-0">
               <h5 class="text-center mt-4">{{ data.features.markdown.title }}</h5>
-              <p v-html="data.features.markdown.description"></p>
+              <p v-html="data.features.markdown.description" class=""></p>
             </div>
           </div>
         </div>
@@ -147,12 +150,12 @@
             </div>
           </div>
         </div>
-        <div class="col-sm-6 col-lg-4 px-lg-4 mb-4">
+        <div class="col-sm-6 col-lg-4 px-lg-4">
           <div class="card border-0 bg-transparent">
             <img src="/assets/images/features/assets.png" alt="Assets management" class="card-img-top rounded-3 shadow" />
-            <div class="card-body px-0">
+            <div class="card-body px-0 pb-0">
               <h5 class="text-center mt-4">{{ data.features.assets.title }}</h5>
-              <p v-html="data.features.assets.description"></p>
+              <p v-html="data.features.assets.description" class="mb-0"></p>
             </div>
           </div>
         </div>
@@ -162,7 +165,7 @@
   <!-- Merits section -->
   <div class="bg-lightgreen section-padding">
     <div class="container">
-      <h2 class="pb-5 section-title text-center">{{ data.sections.merits.title }}</h2>
+      <h2 class="pb-md-5 section-title text-center">{{ data.sections.merits.title }}</h2>
       <div class="row mx-md-5 justify-content-center mt-5">
         <img src="/assets/images/merit-management.svg" alt="Merit of management" class="col-md-6 col-xl-5 mx-0 mb-5 mb-md-auto order-md-2" v-on:click="handleClick" />
         <div class="col-md-6 col-xl-5 my-auto px-0 px-lg-5 order-md-1">
@@ -187,7 +190,7 @@
     </div>
     <div class="text-center mx-auto mt-5">
       <a
-      href="data.links.admin_guide"
+      :href="data.links.admin_guide"
       class="btn btn-hexagon btn-bg-green-gradient btn-hexagon-angle-right fw-bold d-inline-block text-white px-5 py-2 rounded-0"
       target="_blank"
       >
@@ -197,7 +200,7 @@
   </div>
 
   <!-- Trial section -->
-  <div class="container text-center my-5 py-5">
+  <div class="container text-center my-md-5 py-5">
     <h2 class="border-0 d-flex">
       <img src="/assets/images/appearl-effect.svg" class="me-3" v-on:click="handleClick" />
       {{ data.sections.trial.title }}
@@ -215,7 +218,7 @@
       <div class="bg-lightgreen shadow rounded p-5 mx-4 col-sm-10 col-lg-5 mt-4 mt-lg-auto">
         <h5>{{ data.sections.trial.operation }}</h5>
         <div class="btn-green-bg mt-4 mx-auto">
-            <a href="data.links.docs" class="btn-green-line btn-hexagon-angle-right fw-bold d-inline-block" target="_blank">
+            <a :href="data.links.docs" class="btn-green-line btn-hexagon-angle-right fw-bold d-inline-block" target="_blank">
               <span>GROWI Docs</span>
             </a>
         </div>
@@ -290,7 +293,7 @@
     <!-- footer social icons right -->
     <footer class="d-flex justify-content-between align-items-center">
         <p class="ms-3">
-          © 2018 GROWI - produced by <a href="https://weseek.co.jp" target="_blank">WESEEK, Inc.</a>
+          © 2018 GROWI - produced by <a :href="data.links.weseek" target="_blank">WESEEK, Inc.</a>
         </p>
         <a href="https://github.com/weseek" class="ms-auto me-3" target="_blank"><i class="fab fa-github fs-4"></i></a>
     </footer><!-- / footer social icons right -->
