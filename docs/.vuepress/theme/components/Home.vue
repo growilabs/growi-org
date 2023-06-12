@@ -36,7 +36,7 @@
             </div>
             <p class="mb-0 mb-md-4 order-md-1 mt-5 mt-md-auto text-start text-md-center px-0" v-html="data.sections.introduction.text">
             </p>
-            <!-- ボタンデザインのズレを防止するためrowを使ってflexコンテナにしている -->
+            <!-- Preventing misalignment of button designs by using the `row` class to create a flex container -->
             <div class="btn-green-bg mt-5 mx-auto order-md-3 row px-0">
               <a href="https://hub.docker.com/r/weseek/growi/" class="btn-green-line fw-bold d-inline-block" target="_blank">
                 <i class="fab fa-docker me-2"></i><span class="btn-text">Dockerhub</span>
