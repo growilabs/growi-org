@@ -5,6 +5,7 @@ heroText:
   line2:  wiki tool
   subtext: This tool for sharing munual, <br /> business proposal and simultaneous editing minutes in real time.<br /> it supports comfortable information sharing and work efficiency within the team.
 heroImage: /assets/images/banner-logo.png
+mockImage: /assets/images/mock-img-en.png
 heroButtons:
 - text: Features
   link: /en/#features
