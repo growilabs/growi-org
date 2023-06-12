@@ -6,7 +6,7 @@
         <div class="header-content row pt-4 pt-lg-5 pb-0 pb-lg-5 mt-5">
           <div class="col-lg-6 px-0 animated fadeIn">
             <h2 class="fs-1 border-0 mt-0 mt-lg-4 mb-4"> {{ data.heroText.line1 }}<br />{{ data.heroText.line2 }}</h2>
-            <img src="/assets/images/mock-img.png" alt="GROWI" v-on:click="handleClick" class="d-lg-none">
+            <img :src="data.mockImage" alt="GROWI" v-on:click="handleClick" class="d-lg-none">
           <p class="mt-3" v-html="data.heroText.subtext"></p>
           <a :href="data.links.admin_guide" class="btn mt-4 btn-hexagon-angle-right" target="_blank">
             <span class="fs-6"> {{ data.button.start }}</span>
@@ -14,7 +14,7 @@
         </div>
         <div class="d-none d-lg-block col-lg-6 my-auto animated fadeIn">
           <p class="animated fadeIn">
-            <img src="/assets/images/mock-img.png" alt="GROWI" v-on:click="handleClick">
+            <img :src="data.mockImage" alt="GROWI" v-on:click="handleClick">
           </p>
           </div>
         </div>

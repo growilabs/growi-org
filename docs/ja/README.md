@@ -5,6 +5,7 @@ heroText:
  line2: 高機能なwikiツール
  subtext: マニュアルや企画書の共有、議事録の同時編集など、 <br /> チーム内での快適な情報共有と作業効率化を支えるツールです。
 heroImage: /assets/images/banner-logo.png
+mockImage: /assets/images/mock-img-ja.png
 heroButtons:
 - text: 機能紹介
   link: /ja/#features
