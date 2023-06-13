@@ -12,18 +12,19 @@ jobs:
 
     strategy:
       matrix:
-        node-version: [10.14]
+        node-version: [18]
 
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v3
     - name: Use Node.js ${{ matrix.node-version }}
-      uses: actions/setup-node@v1
+      uses: actions/setup-node@v3
       with:
         node-version: ${{ matrix.node-version }}
+        lfs: true
 
     - name: Cache/Restore node_modules
       id: cache-dependencies
-      uses: actions/cache@v2
+      uses: actions/cache@v3
       with:
         path: node_modules
         key: ${{ runner.OS }}-node_modules-${{ matrix.node-version }}-${{ hashFiles('**/yarn.lock') }}
@@ -35,7 +36,7 @@ jobs:
 
     - name: Cache/Restore yarn cache
       if: steps.cache-dependencies.outputs.cache-hit != 'true'
-      uses: actions/cache@v2
+      uses: actions/cache@v3
       with:
         path: ${{ steps.cache-yarn.outputs.dir }}
         key: ${{ runner.os }}-yarn-${{ matrix.node-version }}-${{ hashFiles('**/yarn.lock') }}
@@ -54,7 +55,7 @@ jobs:
         yarn list --depth=0
 
     - name: Build and deploy
-      uses: miya/vuepress-deploy@master # TODO: Using jenkey2011/vuepress-deploy after upgrading node
+      uses: jenkey2011/vuepress-deploy@master
       env:
         ACCESS_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         BUILD_SCRIPT: yarn docs:build

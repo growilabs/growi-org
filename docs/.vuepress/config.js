@@ -51,8 +51,10 @@ module.exports = ctx => ({
     ['link', { href: 'https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css', rel: 'stylesheet'}],
     // Fonts
     ['link', { href: 'https://fonts.googleapis.com/css?family=Lato:300,400,400italic,700', rel: 'stylesheet', type: 'text/css'}],
-    ['link', { href: 'https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css', rel: 'stylesheet', integrity: 'sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN', crossorigin: 'anonymous'}],
+    ['link', { href: 'https://use.fontawesome.com/releases/v6.2.0/css/all.css', rel: 'stylesheet'}],
     ['link', { href: 'https://cdn.linearicons.com/free/1.0.0/icon-font.min.css', rel: 'stylesheet'}],
+    ['link', { href: 'https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap', rel: 'stylesheet', type: 'text/css'}],
+    ['link', { href: 'https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap', rel: 'stylesheet'}],
   ],
   locales: {
     '/en/': {

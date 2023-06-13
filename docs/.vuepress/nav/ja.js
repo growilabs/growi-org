@@ -1,30 +1,10 @@
 module.exports = [
   {
-    text: 'ホーム',
-    link: '/ja/#home'
-  },
-  {
-    text: '機能紹介',
-    link: '/ja/#features'
-  },
-  {
-    text: 'GROWI.cloud',
-    link: '/ja/#cloud'
+    text: 'デモ',
+    link: 'https://demo.growi.org/'
   },
   {
     text: 'ドキュメント',
-    link: '/ja/#documents'
+    link: 'https://docs.growi.org/ja/'
   },
-  {
-    text: 'JOIN US',
-    link: '/ja/#joinus'
-  },
-  {
-    text: 'プラグイン',
-    link: '/plugins',
-  },
-  {
-    text: 'Blog',
-    link: 'https://weseek.co.jp/tech/category/growi/'
-  }
 ]

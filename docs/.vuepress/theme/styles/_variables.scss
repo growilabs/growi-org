@@ -1,6 +1,6 @@
 // Font and Styles
 
-$primary-font: Lato, -apple-system, BlinkMacSystemFont, 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif !default;
+$primary-font: Lato, -apple-system, BlinkMacSystemFont, 'Noto Sans JP' sans-serif !default;
 $regular: 400;
 $bold: 700;
 $letter-spacing: 0.5px;
@@ -21,7 +21,7 @@ $warning: #fbd255;
 $warning-hover: #f4c63d;
 $danger: #ee4343;
 $danger-hover: #d73737;
-$title-color: #333;
+$title-color: #343a40;
 $text-color: #555;
 $bg-color: #eee;
 $white: #fff;
@@ -33,3 +33,13 @@ $grey-transparent: rgba(200, 200, 200, 0.8) !important;
 $dark-grey: #333;
 $dark-grey-transparent: rgba(150, 150, 150, 0.8) !important;
 $black: #000;
+
+// Custom Colors
+$navy: #254459;
+$light-green: #f0ffea;
+$light-blue: #eff7fc;
+$btn-green-gradient: linear-gradient(40deg, #79b536, #2fb516);
+$btn-blue-gradient: linear-gradient(40deg, #00b9d1, #007aa7);
+$footer-color: #bdd8ea;
+$nav-shadow: #666;
+$shadow-color: #ccc;
