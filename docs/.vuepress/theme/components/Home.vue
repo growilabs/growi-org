@@ -8,8 +8,8 @@
             <h2 class="fs-1 border-0 mt-0 mt-lg-4 mb-4"> {{ data.heroText.line1 }}<br />{{ data.heroText.line2 }}</h2>
             <img :src="data.mockImage" alt="GROWI" v-on:click="handleClick" class="d-lg-none">
           <p class="mt-3" v-html="data.heroText.subtext"></p>
-          <a :href="data.links.admin_guide" class="btn mt-4 btn-hexagon-angle-right" target="_blank">
-            <span class="fs-6"> {{ data.button.start }}</span>
+          <a :href="data.links.admin_guide" class="btn btn-hexagon btn-bg-green-gradient btn-hexagon-angle-right fw-bold d-inline-block text-white mt-4 mb-5 px-5 py-2 rounded-0" target="_blank">
+            <span> {{ data.button.start }}</span>
           </a>
         </div>
         <div class="d-none d-lg-block col-lg-6 my-auto animated fadeIn">

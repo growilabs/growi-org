@@ -733,16 +733,7 @@ header h2 {
 }
 
 header a.btn {
-  margin-bottom: 50px;
-  padding: 8px 48px 8px 48px;
-  color: $white;
   font-size: 16px;
-  background: $btn-green-gradient;
-  clip-path: polygon(92% 0%, 100% 50%, 92% 100%, 8% 100%, 0% 50%, 8% 0%);
-  border-radius: 0;
-  &:hover {
-    filter: brightness(85%);
-  }
   @include bs.media-breakpoint-up(md) {
     font-size: 20px;
   }
