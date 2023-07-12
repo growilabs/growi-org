@@ -7,4 +7,8 @@ module.exports = [
     text: 'ドキュメント',
     link: 'https://docs.growi.org/ja/'
   },
+  {
+    text: 'プラグイン',
+    link: 'https://growi.org/plugins/'
+  },
 ]
