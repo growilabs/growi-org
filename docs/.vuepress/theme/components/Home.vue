@@ -63,7 +63,7 @@
             </a>
           </div>
           <div>
-            <a href="https://wsgrowi.slack.com" target="_blank" class="btn btn-hexagon btn-navy text-white fs-6 rounded-0 py-2">
+            <a href="https://communityinviter.com/apps/wsgrowi/invite" target="_blank" class="btn btn-hexagon btn-navy text-white fs-6 rounded-0 py-2">
               <span class="mx-5 d-inline-block"><i class="fab fa-slack me-2"></i>Slack</span>
             </a>
           </div>
