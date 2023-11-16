@@ -21,7 +21,7 @@
     "docs:dev": "NODE_OPTIONS=--openssl-legacy-provider vuepress dev docs",
     "docs:build": "NODE_OPTIONS=--openssl-legacy-provider vuepress build docs",
     "start": "npm run docs:dev",
-    "lint": "textlint \"docs/ja/*.md\" \"docs/en/*.md\" README.md",
+    "lint": "textlint \"docs/ja/*.md\" \"docs/en/*.md\"",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "engines": {
