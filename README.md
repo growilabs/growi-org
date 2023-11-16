@@ -2,7 +2,9 @@
 [![Deploy](https://github.com/weseek/growi-org/actions/workflows/deploy.yml/badge.svg)](https://github.com/weseek/growi-org/actions/workflows/deploy.yml)
 
 ## Requirements
+<!-- textlint-disable weseek/ginger -->
 - Node.js 14.x
+<!-- textlint-disable weseek/ginger -->
 - NPM 6.x
 - Yarn 1.12 or above
 
