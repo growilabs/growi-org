@@ -3,7 +3,7 @@ home: true
 heroText: 
   line1: Free high-performance
   line2:  wiki tool
-  subtext: This tool for sharing munual, <br /> business proposal and simultaneous editing minutes in real time.<br /> it supports comfortable information sharing and work efficiency within the team.
+  subtext: A tool for sharing manual, <br /> business proposal and simultaneous editing minutes in real time.<br /> it supports comfortable information sharing and work efficiency within the team.
 heroImage: /assets/images/banner-logo.png
 mockImage: /assets/images/mock-img-en.png
 heroButtons:
@@ -23,7 +23,7 @@ sections:
     text: GROWI.cloud is open software developed by WESEEK, Inc. <br class="d-none d-md-block" /> And released under MIT license.
   community:
     title: Community-support
-    text: We are accepting questions, request and report of bug on our GItHub or Slack.
+    text: We are accepting questions, request and bug reports on our GitHub or Slack.
   features:
     title: Functions and Features
     text: Features-rich Support smooth information sharing within the company and team Share some of useful Features in GROWI. <br /> The Features Details can get from <a href="https://docs.growi.org/ja/guide/">GROWI Docs/Features</a> introduction.
@@ -83,6 +83,6 @@ merits:
     description: By utilizing the search features, it is possible to easily find the desired information. This helps prevent personalization of tasks and creates a more collaborative working environment for the team.
   team:
     title: Leveraging individual knowledge for team growth
-    description: The knowledge,skills, and experience that individuals gain from their work are essential assets for growth of organizations and teams. By sharing, storing, and using this knowledge, organizations can develop even further.
+    description: The knowledge, skills, and experience that individuals gain from their work are essential assets for growth of organizations and teams. By sharing, storing, and using this knowledge, organizations can develop even further.
 
 ---
