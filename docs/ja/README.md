@@ -59,7 +59,7 @@ features:
   search:
     title: タグ検索・全文検索
     description: アップロードされたファイルタイトルを含めた文検索が可能です。英数字は全角半角どちらでもヒットするようになっています。
-  hackmd:
+  collaborative_editor:
     title: 同時多人数編集
     description: 一つのページを複数人で同時に編集可能です。会議の議事録を取るときなどに便利です。また、編集履歴を自動保存し、過去の履歴を閲覧することも出来ます。
   customize:
