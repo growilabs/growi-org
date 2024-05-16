@@ -56,7 +56,7 @@ features:
   search:
     title: Tag and Full-text search
     description: It can search Full-text include the title of the uploaded file.The alphanumeric can be searched with either full-width or half-width characters.
-  collaborative-editor:
+  collaborative_editor:
     title: Simultaneous multi-user edits
     description: A single page can be edited by multi users simultaneously. It'll be useful when compiling minutes of Meeting. Furthermore, it can automatically save edits and allow viewing of past revisions.
   customize:
