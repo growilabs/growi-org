@@ -107,10 +107,10 @@
         </div>
         <div class="col-sm-6 col-lg-4 px-lg-4 mb-4">
           <div class="card border-0 bg-transparent">
-            <img src="/assets/images/features/hackmd.png" alt="Highly customizable" class="card-img-top rounded-3 shadow" />
+            <img src="/assets/images/features/collaborative-editor.png" alt="Collaborative Editor" class="card-img-top rounded-3 shadow" />
             <div class="card-body px-0">
-              <h5 class="text-center mt-4">{{ data.features.hackmd.title }}</h5>
-              <p v-html="data.features.hackmd.description"></p>
+              <h5 class="text-center mt-4">{{ data.features.collaborative_editor.title }}</h5>
+              <p v-html="data.features.collaborative_editor.description"></p>
             </div>
           </div>
         </div>
