@@ -38,15 +38,15 @@ module.exports = ctx => ({
     ['meta', { name: 'viewport', content: 'width=device-width, initial-scale=1'}],
     ['meta', { name: 'description', content: 'Team Collaboration Software using markdown'}],
     ['meta', { name: 'keywords', content: 'markdown, wiki, javascript, react, growi, crowi'}],
-    ['meta', { name: 'author', content: 'WESEEK, Inc.'}],
+    ['meta', { name: 'author', content: 'GROWI, Inc.'}],
     // OGP
     ['meta', { property: 'og:title', content: 'OSS開発wikiツールのGROWI | 快適な情報共有を、全ての人へ'}],
-    ['meta', { property: 'og:description', content: 'GROWIはWESEEKが開発を行い、MITライセンスで公開しているオープンソースソフトウェアです。 dockerへのインストールやオンプレ対応も可能です。 開発を手伝っていただけるコントリビューター、開発してみたいインターン生も募集しています。'}],
+    ['meta', { property: 'og:description', content: 'GROWIはGROWI, Inc.が開発を行い、MITライセンスで公開しているオープンソースソフトウェアです。 dockerへのインストールやオンプレ対応も可能です。 開発を手伝っていただけるコントリビューター、開発してみたいインターン生も募集しています。'}],
     ['meta', { property: 'og:image', content: 'https://growi.org/assets/images/ogp-logo.png'}],
     // Twitter
     ['meta', { name: 'twitter:card', content: 'summary'}],
     ['meta', { name: 'twitter:title', content: 'OSS開発wikiツールのGROWI | 快適な情報共有を、全ての人へ'}],
-    ['meta', { name: 'twitter:description', content: 'GROWIはWESEEKが開発を行い、MITライセンスで公開しているオープンソースソフトウェアです。 dockerへのインストールやオンプレ対応も可能です。 開発を手伝っていただけるコントリビューター、開発してみたいインターン生も募集しています。'}],
+    ['meta', { name: 'twitter:description', content: 'GROWIはGROWI, Inc.が開発を行い、MITライセンスで公開しているオープンソースソフトウェアです。 dockerへのインストールやオンプレ対応も可能です。 開発を手伝っていただけるコントリビューター、開発してみたいインターン生も募集しています。'}],
     ['meta', { name: 'twitter:image', content: 'https://growi.org/assets/images/ogp-logo.png'}],
     ['link', { href: 'https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css', rel: 'stylesheet'}],
     // Fonts
@@ -60,12 +60,12 @@ module.exports = ctx => ({
     '/en/': {
       lang: 'en-US',
       title: 'OSS wiki tool GROWI | Easy and Smooth Information Sharing For Everyone',
-      description: 'GROWI is open source software developed by WESEEK and released under the MIT license. Installation on docker and on-premise support are also possible. We are also looking for contributors who can help with the development and internship students who want to develop.'
+      description: 'GROWI is open source software developed by GROWI, Inc. and released under the MIT license. Installation on docker and on-premise support are also possible. We are also looking for contributors who can help with the development and internship students who want to develop.'
     },
     '/ja/': {
       lang: 'ja',
       title: 'OSS開発wikiツールのGROWI | 快適な情報共有を、全ての人へ',
-      description: 'GROWIはWESEEKが開発を行い、MITライセンスで公開しているオープンソースソフトウェアです。 dockerへのインストールやオンプレ対応も可能です。 開発を手伝っていただけるコントリビューター、開発してみたいインターン生も募集しています。'
+      description: 'GROWIはGROWI, Inc.が開発を行い、MITライセンスで公開しているオープンソースソフトウェアです。 dockerへのインストールやオンプレ対応も可能です。 開発を手伝っていただけるコントリビューター、開発してみたいインターン生も募集しています。'
     }
   },
   themeConfig: {

@@ -38,6 +38,7 @@
             </p>
             <!-- Preventing misalignment of button designs by using the `row` class to create a flex container -->
             <div class="btn-green-bg mt-5 mx-auto order-md-3 row px-0">
+              <!-- TODO: Update after decision -->
               <a href="https://hub.docker.com/r/weseek/growi/" class="btn-green-line fw-bold d-inline-block" target="_blank">
                 <i class="fab fa-docker me-2"></i><span class="btn-text">Dockerhub</span>
               </a>
@@ -58,6 +59,7 @@
         </p>
         <div class="d-md-flex justify-content-center">
           <div>
+            <!-- TODO: Update after decision -->
             <a href="https://github.com/weseek/growi/" target="_blank" class="btn btn-hexagon btn-navy text-white fs-6 rounded-0 py-2">
               <span class="mx-5 d-inline-block"><i class="fab fa-github me-2"></i>Github</span>
             </a>
@@ -257,17 +259,17 @@
             </div>
             <ul>
               <li><a href="https://growi.cloud/" target="_blank">GROWI.cloud</a></li>
+              <!-- TODO: Update after decision -->
               <li><a href="https://github.com/weseek/growi" target="_blank"><i class="fab fa-github me-1"></i> weseek/growi</a></li>
               <li><a href="https://github.com/weseek/growi-docker-compose" target="_blank"><i class="fab fa-github me-1"></i> weseek/growi-docker-compose</a></li>
               <li><a href="https://hub.docker.com/r/weseek/growi/" target="_blank"><i class="fab fa-docker me-1"></i>Docker Hub</a></li>
               <li><a href="https://demo.growi.org" target="_blank">demo.growi.org</a></li>
-              <li><a href="https://weseek.co.jp/tech/category/growi/" target="_blank">Tech Blog</a></li>
             </ul>
             <p></p>
           </div>
           <div class="col-sm-6 col-md-4 mt-4 mt-md-0">
             <div class="widget-title">
-              <h3 class="mb-3">WESEEK,Inc.</h3>
+              <h3 class="mb-3">GROWI, Inc.</h3>
               <h4 class="fs-6 text-white mb-0">CONTACT US</h4>
             </div>
             <ul class="mt-4">
@@ -293,8 +295,9 @@
     <!-- footer social icons right -->
     <footer class="d-flex justify-content-between align-items-center">
         <p class="ms-3">
-          © 2018 GROWI - produced by <a :href="data.links.weseek" target="_blank">WESEEK, Inc.</a>
+          © 2018 GROWI - produced by <a :href="data.links.growi" target="_blank">GROWI, Inc.</a>
         </p>
+        <!-- TODO: Update after decision -->
         <a href="https://github.com/weseek" class="ms-auto me-3" target="_blank"><i class="fab fa-github fs-4"></i></a>
     </footer><!-- / footer social icons right -->
 
