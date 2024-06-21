@@ -19,6 +19,7 @@
       />
     </div>
     <div class="nav-item">
+      <!-- TODO: Update after decision -->
       <a href="https://github.com/weseek/growi/" target="_blank">
         <i class="fab fa-lg fa-github"></i><a class="d-md-none ms-2">GitHub</a>
       </a>

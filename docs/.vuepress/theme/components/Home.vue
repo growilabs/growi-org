@@ -292,7 +292,7 @@
     <!-- footer social icons right -->
     <footer class="d-flex justify-content-between align-items-center">
         <p class="ms-3">
-          © 2018 GROWI - produced by <a :href="data.links.growi" target="_blank">GROWI, Inc.</a>
+          © 2024 GROWI - produced by <a :href="data.links.growi" target="_blank">GROWI, Inc.</a>
         </p>
         <!-- TODO: Update after decision -->
         <div class="d-flex">
