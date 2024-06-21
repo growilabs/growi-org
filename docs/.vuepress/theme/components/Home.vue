@@ -295,7 +295,10 @@
           © 2018 GROWI - produced by <a :href="data.links.growi" target="_blank">GROWI, Inc.</a>
         </p>
         <!-- TODO: Update after decision -->
-        <a href="https://github.com/weseek" class="ms-auto me-3" target="_blank"><i class="fab fa-github fs-4"></i></a>
+        <div class="d-flex">
+          <a href="https://github.com/weseek" class="ms-auto me-3" target="_blank"><i class="fab fa-github fs-4"></i></a>
+          <a href="https://x.com/GrowiDev" class="ms-auto me-3" target="_blank"><i class="fab fa-x-twitter fs-4"></i></a>
+        </div>
     </footer><!-- / footer social icons right -->
 
     <!-- javascript -->
