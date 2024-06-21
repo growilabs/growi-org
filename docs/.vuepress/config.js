@@ -69,7 +69,7 @@ module.exports = ctx => ({
     }
   },
   themeConfig: {
-    logo: '/assets/images/logo.png',
+    logo: '/assets/images/growi-brand-logo-positive.svg',
     search: false,
     smoothScroll: true,
     locales: {

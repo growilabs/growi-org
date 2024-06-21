@@ -46,7 +46,7 @@
           </div>
         </div>
         <div class="col-md-5 my-auto d-none d-md-block">
-          <img src="/assets/images/growi-logo.svg" alt="GROWI" class="ms-0" v-on:click="handleClick">
+          <img src="/assets/images/growi-logo.svg" alt="GROWI" class="w-75 ms-0" v-on:click="handleClick">
         </div>
       </div>
     </div>
@@ -232,7 +232,7 @@
     <div class="growi-cloud-bg">
       <div class="container">
         <div class="row py-4 justify-content-center">
-          <div class="col-md-4 my-auto order-md-2">
+          <div class="col-md-3 my-auto order-md-2">
             <img src="/assets/images/growi-cloud-logo.svg" v-on:click="handleClick" />
           </div>
           <div class="col-md-7 col-xl-4 my-auto order-md-1 py-4 py-md-auto ps-xxl-5 text-nowrap">
