@@ -253,10 +253,7 @@
       <div class="container pt-5 pb-3">
         <div class="row justify-content-center">
           <div class="first-footer-widget col-sm-6 col-md-4">
-            <div class="d-flex">
-              <img src="/assets/images/growi-white-logo.svg" alt="" class="me-2" />
-              <h3 class="mt-1">GROWI</h3>
-            </div>
+            <img src="/assets/images/growi-brand-logo-white.svg" alt="GROWI" class="me-2" />
             <ul>
               <li><a href="https://growi.cloud/" target="_blank">GROWI.cloud</a></li>
               <!-- TODO: Update after decision -->
@@ -269,7 +266,7 @@
           </div>
           <div class="col-sm-6 col-md-4 mt-4 mt-md-0">
             <div class="widget-title">
-              <h3 class="mb-3">GROWI, Inc.</h3>
+              <img src="/assets/images/growi-inc-negative.svg" class="mb-3 ms-0" alt="GROWI, Inc." style="height: 20px;" />
               <h4 class="fs-6 text-white mb-0">CONTACT US</h4>
             </div>
             <ul class="mt-4">
