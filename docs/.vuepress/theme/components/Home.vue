@@ -38,7 +38,7 @@
             </p>
             <!-- Preventing misalignment of button designs by using the `row` class to create a flex container -->
             <div class="btn-green-bg mt-5 mx-auto order-md-3 row px-0">
-              <a href="https://hub.docker.com/r/weseek/growi/" class="btn-green-line fw-bold d-inline-block" target="_blank">
+              <a href="https://hub.docker.com/r/growilabs/growi/" class="btn-green-line fw-bold d-inline-block" target="_blank">
                 <i class="fab fa-docker me-2"></i><span class="btn-text">Dockerhub</span>
               </a>
             </div>
@@ -58,7 +58,7 @@
         </p>
         <div class="d-md-flex justify-content-center">
           <div>
-            <a href="https://github.com/weseek/growi/" target="_blank" class="btn btn-hexagon btn-navy text-white fs-6 rounded-0 py-2">
+            <a href="https://github.com/growilabs/growi/" target="_blank" class="btn btn-hexagon btn-navy text-white fs-6 rounded-0 py-2">
               <span class="mx-5 d-inline-block"><i class="fab fa-github me-2"></i>Github</span>
             </a>
           </div>
@@ -257,11 +257,10 @@
             </div>
             <ul>
               <li><a href="https://growi.cloud/" target="_blank">GROWI.cloud</a></li>
-              <li><a href="https://github.com/weseek/growi" target="_blank"><i class="fab fa-github me-1"></i> weseek/growi</a></li>
-              <li><a href="https://github.com/weseek/growi-docker-compose" target="_blank"><i class="fab fa-github me-1"></i> weseek/growi-docker-compose</a></li>
-              <li><a href="https://hub.docker.com/r/weseek/growi/" target="_blank"><i class="fab fa-docker me-1"></i>Docker Hub</a></li>
+              <li><a href="https://github.com/growilabs/growi" target="_blank"><i class="fab fa-github me-1"></i> growilabs/growi</a></li>
+              <li><a href="https://github.com/growilabs/growi-docker-compose" target="_blank"><i class="fab fa-github me-1"></i> growilabs/growi-docker-compose</a></li>
+              <li><a href="https://hub.docker.com/r/growilabs/growi/" target="_blank"><i class="fab fa-docker me-1"></i>Docker Hub</a></li>
               <li><a href="https://demo.growi.org" target="_blank">demo.growi.org</a></li>
-              <li><a href="https://weseek.co.jp/tech/category/growi/" target="_blank">Tech Blog</a></li>
             </ul>
             <p></p>
           </div>
@@ -295,7 +294,7 @@
         <p class="ms-3">
           © 2024 GROWI - produced by <a :href="data.links.growi" target="_blank">GROWI, Inc.</a>
         </p>
-        <a href="https://github.com/weseek" class="ms-auto me-3" target="_blank"><i class="fab fa-github fs-4"></i></a>
+        <a href="https://github.com/growilabs" class="ms-auto me-3" target="_blank"><i class="fab fa-github fs-4"></i></a>
     </footer><!-- / footer social icons right -->
 
     <!-- javascript -->
