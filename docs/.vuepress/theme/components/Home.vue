@@ -267,7 +267,7 @@
           </div>
           <div class="col-sm-6 col-md-4 mt-4 mt-md-0">
             <div class="widget-title">
-              <h3 class="mb-3">WESEEK,Inc.</h3>
+              <h3 class="mb-3">GROWI, Inc.</h3>
               <h4 class="fs-6 text-white mb-0">CONTACT US</h4>
             </div>
             <ul class="mt-4">
@@ -293,7 +293,7 @@
     <!-- footer social icons right -->
     <footer class="d-flex justify-content-between align-items-center">
         <p class="ms-3">
-          © 2018 GROWI - produced by <a :href="data.links.weseek" target="_blank">WESEEK, Inc.</a>
+          © 2024 GROWI - produced by <a :href="data.links.growi" target="_blank">GROWI, Inc.</a>
         </p>
         <a href="https://github.com/weseek" class="ms-auto me-3" target="_blank"><i class="fab fa-github fs-4"></i></a>
     </footer><!-- / footer social icons right -->
