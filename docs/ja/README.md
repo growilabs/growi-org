@@ -16,11 +16,11 @@ heroButtons:
 links:
   admin_guide: https://docs.growi.org/ja/admin-guide/
   docs: https://docs.growi.org/ja/
-  weseek: https://weseek.co.jp/ja/
+  growi: https://growi.co.jp/
 sections:
   introduction:
     title: オープンソース GROWI
-    text: GROWI は、WESEEK, Inc. が開発を行い、<br class="d-none d-md-block" /> MITライセンスで公開しているオープンソースソフトウェアです。 <br class="d-none d-md-block" /> ユーザーの方も加わった開発が日々活発に行われています。
+    text: GROWI は、GROWI, Inc. が開発を行い、<br class="d-none d-md-block" /> MITライセンスで公開しているオープンソースソフトウェアです。 <br class="d-none d-md-block" /> ユーザーの方も加わった開発が日々活発に行われています。
   community:
     title: コミュニティ・サポート
     text: GROWIに関する質問・要望・バグの報告は、 <br /> GitHubまたはSlackにて受け付けております。
@@ -40,13 +40,13 @@ sections:
     button_text: 詳細はこちら
   joinus:
     title: JOIN US
-    descriptions: GROWI の開発を手伝っていただけるコントリビューター、開発してみたいインターン生を募集しています。 <br /> まずは Slack に参加し、気軽にWESEEKメンバーに声をかけてください！
+    descriptions: GROWI の開発を手伝っていただけるコントリビューター、開発してみたいインターン生を募集しています。 <br /> まずは Slack に参加し、気軽にGROWIメンバーに声をかけてください！
   contact_us:
     address: 東京都新宿区西早稲田2-20-15 <br /> 高田馬場アクセス10F
     tel:
       text: 03-6233-9447
       link: 0362339447
-    email: info@weseek.co.jp
+    email: contact@growi.co.jp
 button:
   start: GROWIを始める
 features:

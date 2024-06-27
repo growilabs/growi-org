@@ -90,7 +90,7 @@ $navbar-vertical-padding = 0.7rem
 $navbar-horizontal-padding = 1.5rem
 
 .navbar
-  // WESEEK Custom
+  // GROWI Custom
   padding $navbar-vertical-padding $navbar-horizontal-padding
   line-height $navbarHeight - 1.4rem
   box-shadow 0px 0px 3px #808080
