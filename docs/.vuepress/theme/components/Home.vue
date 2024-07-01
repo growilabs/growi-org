@@ -263,7 +263,7 @@
           </div>
           <div class="col-sm-6 col-md-4 mt-4 mt-md-0">
             <div class="widget-title">
-              <h3 class="mb-3">GROWI, Inc.</h3>
+              <h3 class="mb-3"><img src="/assets/images/growi-inc-negative.svg" alt="GROWI, Inc." class="ms-0" height="20px"/></h3>
               <h4 class="fs-6 text-white mb-0">CONTACT US</h4>
             </div>
             <ul class="mt-4">
