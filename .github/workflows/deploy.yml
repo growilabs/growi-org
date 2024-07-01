@@ -62,7 +62,7 @@ jobs:
     - name: Deploy to GitHub Pages
       uses: crazy-max/ghaction-github-pages@v3
       with:
-        fqdn: growi.org
+        fqdn: origin.growi.org
         # deploy to gh-pages branch
         target_branch: gh-pages
         # deploy the default output dir of VuePress
