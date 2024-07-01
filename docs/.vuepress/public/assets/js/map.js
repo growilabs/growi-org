@@ -23,7 +23,7 @@ $(function () {
         });
 
         var contentString = '<div class="info-window">' +
-                '<h4>WESEEK, Inc.</h4>' +
+                '<h4>GROWI, Inc.</h4>' +
                 '<div class="info-content">' +
                 '<p>あそびにきてね</p>' +
                 '</div>' +

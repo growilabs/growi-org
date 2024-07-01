@@ -258,13 +258,12 @@
               <li><a href="https://github.com/weseek/growi-docker-compose" target="_blank"><i class="fab fa-github me-1"></i> weseek/growi-docker-compose</a></li>
               <li><a href="https://hub.docker.com/r/weseek/growi/" target="_blank"><i class="fab fa-docker me-1"></i>Docker Hub</a></li>
               <li><a href="https://demo.growi.org" target="_blank">demo.growi.org</a></li>
-              <li><a href="https://weseek.co.jp/tech/category/growi/" target="_blank">Tech Blog</a></li>
             </ul>
             <p></p>
           </div>
           <div class="col-sm-6 col-md-4 mt-4 mt-md-0">
             <div class="widget-title">
-              <h3 class="mb-3">WESEEK,Inc.</h3>
+              <h3 class="mb-3">GROWI, Inc.</h3>
               <h4 class="fs-6 text-white mb-0">CONTACT US</h4>
             </div>
             <ul class="mt-4">
@@ -290,9 +289,12 @@
     <!-- footer social icons right -->
     <footer class="d-flex justify-content-between align-items-center">
         <p class="ms-3">
-          © 2018 GROWI - produced by <a :href="data.links.weseek" target="_blank">WESEEK, Inc.</a>
+          © 2024 GROWI - produced by <a :href="data.links.growi" target="_blank">GROWI, Inc.</a>
         </p>
-        <a href="https://github.com/weseek" class="ms-auto me-3" target="_blank"><i class="fab fa-github fs-4"></i></a>
+        <div class="d-flex">
+          <a href="https://github.com/weseek" class="ms-auto me-3" target="_blank"><i class="fab fa-github fs-4"></i></a>
+          <a href="https://x.com/GrowiDev" class="ms-auto me-3" target="_blank"><i class="fab fa-x-twitter fs-4"></i></a>
+        </div>
     </footer><!-- / footer social icons right -->
 
     <!-- javascript -->
