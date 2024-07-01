@@ -34,9 +34,7 @@ module.exports = ctx => ({
     ]
   ],
   head: [
-    ['link', { rel: 'icon', href: '/assets/images/favicon.ico', sizes: '48x48'}],
-    ['link', { rel: 'icon', href: '/assets/images/favicon.svg', sizes: 'any', type: 'image/svg+xml'}],
-    ['link', { rel: 'apple-touch-icon', href: '/assets/images/apple-touch-icon.svg'}],
+    ['link', { rel: 'icon', href: '/assets/images/favicon.ico' }],
     ['meta', { name: 'viewport', content: 'width=device-width, initial-scale=1'}],
     ['meta', { name: 'description', content: 'Team Collaboration Software using markdown'}],
     ['meta', { name: 'keywords', content: 'markdown, wiki, javascript, react, growi, crowi'}],
