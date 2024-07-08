@@ -230,14 +230,14 @@
     <div class="growi-cloud-bg">
       <div class="container">
         <div class="row py-4 justify-content-center">
-          <div class="col-md-3 my-auto order-md-2">
+          <div class="col-8 col-md-4 col-xl-3 my-auto order-md-2">
             <img src="/assets/images/growi-cloud-logo.svg" v-on:click="handleClick" />
           </div>
-          <div class="col-md-7 col-xl-4 my-auto order-md-1 py-4 py-md-auto ps-xxl-5 text-nowrap">
+          <div class="col-md-7 col-xl-5 col-xxl-4 my-auto order-md-1 py-4 py-md-auto px-xl-0 ps-xl-3 text-nowrap">
             <h5 class="text-center text-md-start growi-cloud-text" v-html="data.sections.cloud.text"></h5>
             <h5 class="text-center text-md-start mb-0 growi-cloud-text" v-html="data.sections.cloud.subtext"></h5>
           </div>
-          <div class="col-10 col-xl-3 my-auto order-3 text-center">
+          <div class="col-10 col-xl-4 my-auto order-3 text-center">
             <a href="https://growi.cloud/" class="btn btn-hexagon growi-cloud-btn text-white fs-6 rounded-0 py-2 btn-hexagon-angle-right" target="_blank">
               <span class="mx-5 d-inline-block text-nowrap">{{ data.sections.cloud.button_text }}</span>
             </a>
