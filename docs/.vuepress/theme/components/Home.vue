@@ -230,10 +230,10 @@
     <div class="growi-cloud-bg">
       <div class="container">
         <div class="row py-4 justify-content-center">
-          <div class="col-md-3 my-auto order-md-2">
+          <div class="col-8 col-md-4 col-xl-3 my-auto order-md-2">
             <img src="/assets/images/growi-cloud-logo.svg" v-on:click="handleClick" />
           </div>
-          <div class="col-md-7 col-xl-5 col-xxl-4 my-auto order-md-1 py-4 py-md-auto px-xl-0 ps-xxl-3 text-nowrap">
+          <div class="col-md-7 col-xl-5 col-xxl-4 my-auto order-md-1 py-4 py-md-auto px-xl-0 ps-xl-3 text-nowrap">
             <h5 class="text-center text-md-start growi-cloud-text" v-html="data.sections.cloud.text"></h5>
             <h5 class="text-center text-md-start mb-0 growi-cloud-text" v-html="data.sections.cloud.subtext"></h5>
           </div>
