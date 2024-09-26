@@ -9,6 +9,6 @@ module.exports = [
   },
   {
     text: 'プラグイン',
-    link: 'https://growi.org/ja/plugins/'
+    link: 'https://growi.org/ja/plugins'
   },
 ]
