@@ -23,15 +23,16 @@
 
     <!-- Introduce section -->
     <div class="container">
-      <h2 class="text-center mt-5 py-5 section-title animated fadeIn">{{ data.sections.introduction.title }}</h2>
+      <h2 class="text-center mt-5 py-4 py-md-5 section-title animated fadeIn">{{ data.sections.introduction.title }}</h2>
       <div class="row animated fadeIn mb-0 mb-md-5 pb-5">
         <div class="col-md-7 text-center">
           <div class="row">
-            <div class="d-flex flex-md-fill flex-row justify-content-center order-md-2">
-              <img src="/assets/images/growi-logo.svg" alt="GROWI" class="d-md-none w-25" v-on:click="handleClick">
-              <div class="my-auto">
-                <span class="ff-montserrat display-1 text-reset">500K+</span>
-                <p class="ff-montserrat fs-3">Docker Image Pulls </p>
+            <div class="d-sm-flex flex-md-fill flex-row justify-content-center order-md-2">
+              <img src="/assets/images/growi-logo.svg" alt="GROWI" class="d-md-none w-50 mb-4" v-on:click="handleClick">
+              <div class="my-auto ms-sm-4">
+                <p class="ff-montserrat fs-3 mb-2">More than</p>
+                <span class="ff-montserrat display-1 text-reset">1,000,000</span>
+                <p class="ff-montserrat fs-3 mt-3">Docker Image Pulls </p>
               </div>
             </div>
             <p class="mb-0 mb-md-4 order-md-1 mt-5 mt-md-auto text-start text-md-center px-0" v-html="data.sections.introduction.text">
@@ -44,8 +45,8 @@
             </div>
           </div>
         </div>
-        <div class="col-md-5 my-auto d-none d-md-block">
-          <img src="/assets/images/growi-logo.svg" alt="GROWI" class="w-75 ms-0" v-on:click="handleClick">
+        <div class="col-md-5 d-none d-md-block">
+          <img src="/assets/images/growi-logo.svg" alt="GROWI" class="h-75 ms-4 ms-lg-0" v-on:click="handleClick">
         </div>
       </div>
     </div>
