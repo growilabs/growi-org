@@ -164,30 +164,32 @@
     </div>
 
 <!-- GROWI AI Section -->
-<div class="container py-5 bg-growi-ai-section rounded-5 mb-5" id="growi-ai" data-section="growi-ai">
-  <div class="animated fadeIn text-center">
-    <h2 class="pb-3 mb-3">GROWI AI</h2>
-  </div>
-  <div class="row mx-md-5 justify-content-center">
-    <div class="col-md-10 col-lg-8 text-center mb-5">
-      <p v-html="data.sections.growi_ai.text" class="mb-4"></p>
+ <div class="pb-5 container">
+  <div class="container py-5 bg-growi-ai-section rounded-5 mb-5" id="growi-ai" data-section="growi-ai">
+    <div class="animated fadeIn">
+      <img src="/assets/images/growi-ai-logo.svg" alt="GROWI AI" class="pb-3 mb-3">
     </div>
-  </div>
-  <div class="row mx-md-5 justify-content-around align-items-center pb-5">
-    <div class="col-lg-5 col-md-8 mb-5 mb-lg-0 text-center">
-      <img src="https://placehold.co/600x400" alt="Knowledge Assistant" class="rounded-3 shadow" />
+    <div class="row mx-md-5 justify-content-center">
+      <div class="col-md-10 col-lg-8 text-center mb-5">
+        <p v-html="data.sections.growi_ai.text" class="mb-0"></p>
+      </div>
     </div>
-    <div class="col-lg-6 col-md-10">
-      <div class="py-4">
-        <h3 class="mb-4">{{ data.sections.growi_ai.knowledge_assistant.title }}</h3>
-        <p v-html="data.sections.growi_ai.knowledge_assistant.description"></p>
+    <div class="row mx-md-5 justify-content-around align-items-center pb-lg-5">
+      <div class="col-lg-5 col-md-8 mb-3 mb-lg-0 text-center">
+        <img src="/assets/images/knowledge-assistant.png" alt="Knowledge Assistant" class="rounded-3 shadow" />
+      </div>
+      <div class="col-lg-6 col-md-10 px-lg-0">
+        <div class="py-4">
+          <h3 class="mb-4">{{ data.sections.growi_ai.knowledge_assistant.title }}</h3>
+          <p v-html="data.sections.growi_ai.knowledge_assistant.description"></p>
+        </div>
       </div>
     </div>
   </div>
 </div>
 
   <!-- Merits section -->
-  <div class="bg-lightgreen section-padding ">
+  <div class="bg-lightgreen section-padding">
     <div class="container">
       <h2 class="pb-md-5 section-title text-center">{{ data.sections.merits.title }}</h2>
       <div class="row mx-md-5 justify-content-center mt-5">
