@@ -164,16 +164,13 @@
     </div>
 
 <!-- GROWI AI Section -->
-<div class="container py-5 bg-growi-ai-section mb-5" id="growi-ai" data-section="growi-ai">
+<div class="container py-5 bg-growi-ai-section rounded-5 mb-5" id="growi-ai" data-section="growi-ai">
   <div class="animated fadeIn text-center">
     <h2 class="pb-3 mb-3">GROWI AI</h2>
   </div>
   <div class="row mx-md-5 justify-content-center">
     <div class="col-md-10 col-lg-8 text-center mb-5">
-      <p class="mb-4">
-        OpenAI の Vector Store を活用した RAG 機能により、<br class="d-none d-md-block" />
-        ナレッジベースをより賢く活用できます。
-      </p>
+      <p v-html="data.sections.growi_ai.text" class="mb-4"></p>
     </div>
   </div>
   <div class="row mx-md-5 justify-content-around align-items-center pb-5">
@@ -182,11 +179,8 @@
     </div>
     <div class="col-lg-6 col-md-10">
       <div class="py-4">
-        <h3 class="mb-4">ナレッジアシスタント</h3>
-        <p>
-          ページを検索したアシスタントを作成し、チャット形式で質問に回答します。<br />
-          複数のアシスタントを作成することが可能で、組織全体やグループ単位での共有もできます。
-        </p>
+        <h3 class="mb-4">{{ data.sections.growi_ai.knowledge_assistant.title }}</h3>
+        <p v-html="data.sections.growi_ai.knowledge_assistant.description"></p>
       </div>
     </div>
   </div>

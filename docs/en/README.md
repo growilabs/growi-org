@@ -27,6 +27,11 @@ sections:
   features:
     title: Functions and Features
     text: Features-rich Support smooth information sharing within the company and team Share some of useful Features in GROWI. <br /> The Features Details can get from <a href="https://docs.growi.org/ja/guide/">GROWI Docs/Features</a> introduction.
+  growi_ai:
+    text: With RAG functionality powered by OpenAI's Vector Store, <br class="d-none d-md-block" /> you can use your knowledge base more intelligently.
+    knowledge_assistant:
+      title: Knowledge Assistant
+      description: Create assistants that search through pages and answer questions in chat format.<br />Multiple assistants can be created and shared across the entire organization or within groups.
   merits:
     title: Merit of introduction
   trial:

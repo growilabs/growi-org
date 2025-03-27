@@ -27,6 +27,11 @@ sections:
   features:
     title: 機能と特徴
     text: 豊富な機能で社内やチーム内でのスムーズな情報共有を支える <br class="d-none d-md-block" /> GROWIの便利な機能の一部をご紹介します。機能の詳細は、<a href="https://docs.growi.org/ja/guide/">GROWI Docs/機能紹介</a> をご覧ください。
+  growi_ai:
+    text: OpenAI の Vector Store を活用した RAG 機能により、<br class="d-none d-md-block" /> ナレッジベースをより賢く活用できます。
+    knowledge_assistant:
+      title: ナレッジアシスタント
+      description: ページを検索したアシスタントを作成し、チャット形式で質問に回答します。<br />複数のアシスタントを作成することが可能で、組織全体やグループ単位での共有もできます。
   merits:
     title: 導入のメリット
   trial:
