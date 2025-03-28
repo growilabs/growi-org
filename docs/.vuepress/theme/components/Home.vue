@@ -163,69 +163,94 @@
       </div>
     </div>
 
-  <!-- Merits section -->
-  <div class="bg-lightgreen section-padding">
-    <div class="container">
-      <h2 class="pb-md-5 section-title text-center">{{ data.sections.merits.title }}</h2>
-      <div class="row mx-md-5 justify-content-center mt-5">
-        <img src="/assets/images/merit-management.svg" alt="Merit of management" class="col-md-6 col-xl-5 mx-0 mb-5 mb-md-auto order-md-2" v-on:click="handleClick" />
-        <div class="col-md-6 col-xl-5 my-auto px-0 px-lg-5 order-md-1">
-          <h3 class="mb-4">{{ data.merits.management.title }}</h3>
-          <p v-html="data.merits.management.description"></p>
+    <!-- GROWI AI Section -->
+    <div class="pb-5 container">
+      <div class="container py-5 bg-growi-ai-section rounded-5 mb-5" id="growi-ai" data-section="growi-ai">
+        <div class="animated fadeIn">
+          <img src="/assets/images/growi-ai-logo.svg" alt="GROWI AI" class="pb-3 mb-3">
         </div>
-      </div>
-      <div class="row mx-md-5 justify-content-center mt-5">
-        <img src="/assets/images/merit-get-infomation.svg" alt="Get the infomation" class="col-md-6 col-xl-5 mx-0 mb-5 mb-md-auto" v-on:click="handleClick" />
-        <div class="col-md-6 col-xl-5 my-auto px-0 px-lg-5">
-          <h3 class="mb-4">{{ data.merits.infomation.title }}</h3>
-          <p v-html="data.merits.infomation.description"></p>
+        <div class="row mx-md-5 justify-content-center">
+          <div class="col-md-10 col-lg-8 text-center mb-5">
+            <p v-html="data.sections.growi_ai.text" class="mb-0"></p>
+          </div>
         </div>
-      </div>
-      <div class="row mx-md-5 justify-content-center mt-5">
-        <img src="/assets/images/merit-team.svg" alt="Merit for team" class="col-md-6 col-xl-5 mx-0 mb-5 mb-md-auto order-md-2" v-on:click="handleClick" />
-        <div class="col-md-6 col-xl-5 my-auto px-0 px-lg-5 order-md-1">
-          <h3 class="mb-4" v-html="data.merits.team.title"></h3>
-          <p v-html="data.merits.team.description"></p>
+        <div class="row mx-md-5 justify-content-around align-items-center pb-lg-5">
+          <div class="col-lg-5 col-md-8 mb-3 mb-lg-0 text-center">
+            <img src="/assets/images/knowledge-assistant.png" alt="Knowledge Assistant" class="rounded-3 shadow" />
+          </div>
+          <div class="col-lg-6 col-md-10 px-lg-0">
+            <div class="py-4">
+              <h3 class="mb-4">{{ data.sections.growi_ai.knowledge_assistant.title }}</h3>
+              <p v-html="data.sections.growi_ai.knowledge_assistant.description"></p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-    <div class="text-center mx-auto mt-5">
-      <a
-      :href="data.links.admin_guide"
-      class="btn btn-hexagon btn-bg-green-gradient btn-hexagon-angle-right fw-bold d-inline-block text-white px-5 py-2 rounded-0"
-      target="_blank"
-      >
-        <span class="fs-5"> {{ data.button.start }}</span>
-      </a>
-    </div>
-  </div>
 
-  <!-- Trial section -->
-  <div class="container text-center my-md-5 py-5">
-    <h2 class="border-0 d-flex">
-      <img src="/assets/images/appearl-effect.svg" class="me-3" v-on:click="handleClick" />
-      {{ data.sections.trial.title }}
-      <img src="/assets/images/appearl-effect.svg" class="ms-3 header-appeal-effect" v-on:click="handleClick" />
-    </h2>
-    <div class="row mt-5 justify-content-center">
-      <div class="bg-lightgreen shadow rounded p-5 mx-4 col-sm-10 col-lg-5">
-        <h5>{{ data.sections.trial.demo }}</h5>
-        <div class="btn-green-bg mt-4 mx-auto">
-            <a href="https://demo.growi.org/" class="btn-green-line btn-hexagon-angle-right fw-bold d-inline-block" target="_blank">
-              <span>GROWI Demo</span>
-            </a>
+    <!-- Merits section -->
+    <div class="bg-lightgreen section-padding">
+      <div class="container">
+        <h2 class="pb-md-5 section-title text-center">{{ data.sections.merits.title }}</h2>
+        <div class="row mx-md-5 justify-content-center mt-5">
+          <img src="/assets/images/merit-management.svg" alt="Merit of management" class="col-md-6 col-xl-5 mx-0 mb-5 mb-md-auto order-md-2" v-on:click="handleClick" />
+          <div class="col-md-6 col-xl-5 my-auto px-0 px-lg-5 order-md-1">
+            <h3 class="mb-4">{{ data.merits.management.title }}</h3>
+            <p v-html="data.merits.management.description"></p>
+          </div>
+        </div>
+        <div class="row mx-md-5 justify-content-center mt-5">
+          <img src="/assets/images/merit-get-infomation.svg" alt="Get the infomation" class="col-md-6 col-xl-5 mx-0 mb-5 mb-md-auto" v-on:click="handleClick" />
+          <div class="col-md-6 col-xl-5 my-auto px-0 px-lg-5">
+            <h3 class="mb-4">{{ data.merits.infomation.title }}</h3>
+            <p v-html="data.merits.infomation.description"></p>
+          </div>
+        </div>
+        <div class="row mx-md-5 justify-content-center mt-5">
+          <img src="/assets/images/merit-team.svg" alt="Merit for team" class="col-md-6 col-xl-5 mx-0 mb-5 mb-md-auto order-md-2" v-on:click="handleClick" />
+          <div class="col-md-6 col-xl-5 my-auto px-0 px-lg-5 order-md-1">
+            <h3 class="mb-4" v-html="data.merits.team.title"></h3>
+            <p v-html="data.merits.team.description"></p>
+          </div>
         </div>
       </div>
-      <div class="bg-lightgreen shadow rounded p-5 mx-4 col-sm-10 col-lg-5 mt-4 mt-lg-auto">
-        <h5>{{ data.sections.trial.operation }}</h5>
-        <div class="btn-green-bg mt-4 mx-auto">
-            <a :href="data.links.docs" class="btn-green-line btn-hexagon-angle-right fw-bold d-inline-block" target="_blank">
-              <span>GROWI Docs</span>
-            </a>
+      <div class="text-center mx-auto mt-5">
+        <a
+        :href="data.links.admin_guide"
+        class="btn btn-hexagon btn-bg-green-gradient btn-hexagon-angle-right fw-bold d-inline-block text-white px-5 py-2 rounded-0"
+        target="_blank"
+        >
+          <span class="fs-5"> {{ data.button.start }}</span>
+        </a>
+      </div>
+    </div>
+
+    <!-- Trial section -->
+    <div class="container text-center my-md-5 py-5">
+      <h2 class="border-0 d-flex">
+        <img src="/assets/images/appearl-effect.svg" class="me-3" v-on:click="handleClick" />
+        {{ data.sections.trial.title }}
+        <img src="/assets/images/appearl-effect.svg" class="ms-3 header-appeal-effect" v-on:click="handleClick" />
+      </h2>
+      <div class="row mt-5 justify-content-center">
+        <div class="bg-lightgreen shadow rounded p-5 mx-4 col-sm-10 col-lg-5">
+          <h5>{{ data.sections.trial.demo }}</h5>
+          <div class="btn-green-bg mt-4 mx-auto">
+              <a href="https://demo.growi.org/" class="btn-green-line btn-hexagon-angle-right fw-bold d-inline-block" target="_blank">
+                <span>GROWI Demo</span>
+              </a>
+          </div>
+        </div>
+        <div class="bg-lightgreen shadow rounded p-5 mx-4 col-sm-10 col-lg-5 mt-4 mt-lg-auto">
+          <h5>{{ data.sections.trial.operation }}</h5>
+          <div class="btn-green-bg mt-4 mx-auto">
+              <a :href="data.links.docs" class="btn-green-line btn-hexagon-angle-right fw-bold d-inline-block" target="_blank">
+                <span>GROWI Docs</span>
+              </a>
+          </div>
         </div>
       </div>
     </div>
-  </div>
 
     <!-- growi-cloud section -->
     <div class="growi-cloud-bg">
