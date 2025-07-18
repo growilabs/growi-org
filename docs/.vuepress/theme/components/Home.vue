@@ -184,7 +184,7 @@
           </div>
           <div class="col-lg-5 col-md-10">
             <div class="d-flex flex-column align-items-center text-center">
-              <img src="/assets/images/knowledge-assistant.png" alt="Editor Assistant" class="rounded-3 shadow mb-4 w-100" />
+              <img src="/assets/images/editor-assistant.png" alt="Editor Assistant" class="rounded-3 shadow mb-4 w-100" />
               <h3 class="mb-4">{{ data.sections.growi_ai.editor_assistant.title }}</h3>
               <p class="text-start" v-html="data.sections.growi_ai.editor_assistant.description"></p>
             </div>
