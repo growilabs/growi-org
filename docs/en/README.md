@@ -32,6 +32,9 @@ sections:
     knowledge_assistant:
       title: Knowledge Assistant
       description: Create assistants that search through pages and answer questions in chat format.<br />Multiple assistants can be created and shared across the entire organization or within groups.
+    editor_assistant:
+      title: Editor Assistant
+      description: Reads information from the page being edited and provides support by suggesting summaries and text corrections.<br />You can also configure specific assistants to receive highly accurate support based on knowledge information.
   merits:
     title: Merit of introduction
   trial:
