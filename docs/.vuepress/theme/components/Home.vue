@@ -176,17 +176,21 @@
         </div>
         <div class="row mx-md-5 justify-content-around pb-lg-5">
           <div class="col-lg-5 col-md-10 mb-5 mb-lg-0">
-            <div class="d-flex flex-column align-items-center text-center">
-              <img src="/assets/images/knowledge-assistant.png" alt="Knowledge Assistant" class="rounded-3 shadow mb-4 w-100" />
-              <h3 class="mb-4">{{ data.sections.growi_ai.knowledge_assistant.title }}</h3>
-              <p class="text-start" v-html="data.sections.growi_ai.knowledge_assistant.description"></p>
+            <div class="card border-0 bg-transparent">
+              <img src="/assets/images/knowledge-assistant.png" alt="Knowledge Assistant" class="card-img-top rounded-3 shadow mb-4" />
+              <div class="card-body px-0 text-center">
+                <h3 class="mb-3 fs-4">{{ data.sections.growi_ai.knowledge_assistant.title }}</h3>
+                <p class="text-start" v-html="data.sections.growi_ai.knowledge_assistant.description"></p>
+              </div>
             </div>
           </div>
           <div class="col-lg-5 col-md-10">
-            <div class="d-flex flex-column align-items-center text-center">
-              <img src="/assets/images/editor-assistant.png" alt="Editor Assistant" class="rounded-3 shadow mb-4 w-100" />
-              <h3 class="mb-4">{{ data.sections.growi_ai.editor_assistant.title }}</h3>
-              <p class="text-start" v-html="data.sections.growi_ai.editor_assistant.description"></p>
+            <div class="card border-0 bg-transparent">
+              <img src="/assets/images/editor-assistant.png" alt="Editor Assistant" class="card-img-top rounded-3 shadow mb-4" />
+              <div class="card-body px-0 text-center">
+                <h3 class="mb-3 fs-4">{{ data.sections.growi_ai.editor_assistant.title }}</h3>
+                <p class="text-start" v-html="data.sections.growi_ai.editor_assistant.description"></p>
+              </div>
             </div>
           </div>
         </div>
