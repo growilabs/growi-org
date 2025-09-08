@@ -59,7 +59,7 @@
         </p>
         <div class="d-md-flex justify-content-center">
           <div>
-            <a href="https://github.com/weseek/growi/" target="_blank" class="btn btn-hexagon btn-navy text-white fs-6 rounded-0 py-2">
+            <a href="https://github.com/growilabs/growi/" target="_blank" class="btn btn-hexagon btn-navy text-white fs-6 rounded-0 py-2">
               <span class="mx-5 d-inline-block"><i class="fab fa-github me-2"></i>Github</span>
             </a>
           </div>
@@ -289,8 +289,8 @@
             <img src="/assets/images/growi-brand-logo-white.svg" alt="GROWI" class="me-2" />
             <ul>
               <li><a href="https://growi.cloud/" target="_blank">GROWI.cloud</a></li>
-              <li><a href="https://github.com/weseek/growi" target="_blank"><i class="fab fa-github me-1"></i> weseek/growi</a></li>
-              <li><a href="https://github.com/weseek/growi-docker-compose" target="_blank"><i class="fab fa-github me-1"></i> weseek/growi-docker-compose</a></li>
+              <li><a href="https://github.com/growilabs/growi" target="_blank"><i class="fab fa-github me-1"></i> growilabs/growi</a></li>
+              <li><a href="https://github.com/growilabs/growi-docker-compose" target="_blank"><i class="fab fa-github me-1"></i> growilabs/growi-docker-compose</a></li>
               <li><a href="https://hub.docker.com/r/weseek/growi/" target="_blank"><i class="fab fa-docker me-1"></i>Docker Hub</a></li>
               <li><a href="https://demo.growi.org" target="_blank">demo.growi.org</a></li>
             </ul>
@@ -327,7 +327,7 @@
           © 2024 GROWI - produced by <a :href="data.links.growi" target="_blank">GROWI, Inc.</a>
         </p>
         <div class="d-flex">
-          <a href="https://github.com/weseek" class="ms-auto me-3" target="_blank"><i class="fab fa-github fs-4"></i></a>
+          <a href="https://github.com/growilabs" class="ms-auto me-3" target="_blank"><i class="fab fa-github fs-4"></i></a>
           <a href="https://x.com/GrowiDev" class="ms-auto me-3" target="_blank"><i class="fab fa-x-twitter fs-4"></i></a>
         </div>
     </footer><!-- / footer social icons right -->
