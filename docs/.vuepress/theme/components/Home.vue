@@ -31,7 +31,7 @@
               <img src="/assets/images/growi-logo.svg" alt="GROWI" class="d-md-none w-50 mb-4" v-on:click="handleClick">
               <div class="my-auto ms-sm-4">
                 <p class="ff-montserrat fs-3 mb-2">More than</p>
-                <span class="ff-montserrat display-1 text-reset">1,000,000</span>
+                <span class="ff-montserrat display-1 text-reset">1,00,000</span>
                 <p class="ff-montserrat fs-3 mt-3">Docker Image Pulls </p>
               </div>
             </div>
