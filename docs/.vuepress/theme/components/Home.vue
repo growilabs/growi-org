@@ -31,7 +31,7 @@
               <img src="/assets/images/growi-logo.svg" alt="GROWI" class="d-md-none w-50 mb-4" v-on:click="handleClick">
               <div class="my-auto ms-sm-4">
                 <p class="ff-montserrat fs-3 mb-2">More than</p>
-                <span class="ff-montserrat display-1 text-reset">1,000,000</span>
+                <span class="ff-montserrat display-1 text-reset">1,200,000</span>
                 <p class="ff-montserrat fs-3 mt-3">Docker Image Pulls </p>
               </div>
             </div>
@@ -39,7 +39,7 @@
             </p>
             <!-- Preventing misalignment of button designs by using the `row` class to create a flex container -->
             <div class="btn-green-bg mt-5 mx-auto order-md-3 row px-0">
-              <a href="https://hub.docker.com/r/weseek/growi/" class="btn-green-line fw-bold d-inline-block" target="_blank">
+              <a href="https://hub.docker.com/r/growilabs/growi/" class="btn-green-line fw-bold d-inline-block" target="_blank">
                 <i class="fab fa-docker me-2"></i><span class="btn-text">Dockerhub</span>
               </a>
             </div>
@@ -291,7 +291,7 @@
               <li><a href="https://growi.cloud/" target="_blank">GROWI.cloud</a></li>
               <li><a href="https://github.com/growilabs/growi" target="_blank"><i class="fab fa-github me-1"></i> growilabs/growi</a></li>
               <li><a href="https://github.com/growilabs/growi-docker-compose" target="_blank"><i class="fab fa-github me-1"></i> growilabs/growi-docker-compose</a></li>
-              <li><a href="https://hub.docker.com/r/weseek/growi/" target="_blank"><i class="fab fa-docker me-1"></i>Docker Hub</a></li>
+              <li><a href="https://hub.docker.com/r/growilabs/growi/" target="_blank"><i class="fab fa-docker me-1"></i>Docker Hub</a></li>
               <li><a href="https://demo.growi.org" target="_blank">demo.growi.org</a></li>
             </ul>
             <p></p>
