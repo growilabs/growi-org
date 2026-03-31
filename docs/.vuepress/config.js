@@ -1,3 +1,46 @@
+function jsonLd(obj) {
+  return JSON.stringify(obj).replace(/</g, '\\u003c');
+}
+
+const schemaOrg = {
+  softwareApplication: {
+    '@context': 'https://schema.org',
+    '@type': 'SoftwareApplication',
+    'name': 'GROWI',
+    'url': 'https://growi.org',
+    'description': [
+      {
+        '@language': 'ja',
+        '@value': 'オープンソースのMarkdown Wikiシステムです。チームの情報共有・ドキュメント管理に利用されています。MITライセンスで公開されており、セルフホストが可能です。Docker Imageは120万回以上ダウンロードされています。'
+      },
+      {
+        '@language': 'en',
+        '@value': 'An open-source Markdown Wiki system for team information sharing and document management. Released under the MIT license and available for self-hosting. The Docker image has been downloaded more than 1.2 million times.'
+      }
+    ],
+    'applicationCategory': 'BusinessApplication',
+    'operatingSystem': 'Web, Linux, Docker',
+    'license': 'https://opensource.org/licenses/MIT',
+    'downloadUrl': 'https://github.com/growilabs/growi',
+    'offers': {
+      '@type': 'Offer',
+      'price': '0',
+      'priceCurrency': 'USD'
+    }
+  },
+  organization: {
+    '@context': 'https://schema.org',
+    '@type': 'Organization',
+    'name': 'GROWI, Inc.',
+    'url': 'https://growi.org',
+    'logo': 'https://growi.org/assets/images/growi-brand-logo-positive.svg',
+    'sameAs': [
+      'https://growi.cloud',
+      'https://github.com/growilabs/growi'
+    ]
+  }
+};
+
 module.exports = ctx => ({
   title: 'GROWI - Get the best Markdown Wiki for *FREE*',
   plugins: [
@@ -57,6 +100,9 @@ module.exports = ctx => ({
     ['link', { href: 'https://cdn.linearicons.com/free/1.0.0/icon-font.min.css', rel: 'stylesheet'}],
     ['link', { href: 'https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap', rel: 'stylesheet', type: 'text/css'}],
     ['link', { href: 'https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap', rel: 'stylesheet'}],
+    // JSON-LD / Schema.org
+    ['script', { type: 'application/ld+json' }, jsonLd(schemaOrg.softwareApplication)],
+    ['script', { type: 'application/ld+json' }, jsonLd(schemaOrg.organization)],
   ],
   locales: {
     '/en/': {
