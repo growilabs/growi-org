@@ -17,6 +17,8 @@ links:
   admin_guide: https://docs.growi.org/en/admin-guide/
   docs: https://docs.growi.org/en/
   growi: https://growi.co.jp/
+  growi_ai_agent: https://docs.growi.org/en/admin-guide/management-cookbook/growi-ai-agent.html
+  mcp_server: https://docs.growi.org/en/guide/features/mcp-server.html
 sections:
   introduction:
     title: Open Source GROWI
@@ -28,13 +30,22 @@ sections:
     title: Functions and Features
     text: Features-rich Support smooth information sharing within the company and team Share some of useful Features in GROWI. <br /> The Features Details can get from <a href="https://docs.growi.org/ja/guide/">GROWI Docs/Features</a> introduction.
   growi_ai:
-    text: With RAG functionality powered by OpenAI's Vector Store, <br class="d-none d-md-block" /> you can use your knowledge base more intelligently.
-    knowledge_assistant:
-      title: Knowledge Assistant
-      description: Create assistants that search through pages and answer questions in chat format.<br />Multiple assistants can be created and shared across the entire organization or within groups.
-    editor_assistant:
-      title: Editor Assistant
-      description: Reads information from the page being edited and provides support by suggesting summaries and text corrections.<br />You can also configure specific assistants to receive highly accurate support based on knowledge information.
+    text: Starting with version 8.0.0, GROWI AI has been reborn as <strong>GROWI AI Agent</strong>.<br class="d-none d-md-block" /> No assistants to create, no training required. Just ask a question, and it <strong>explores your entire wiki on its own, gathers evidence, and builds an answer.</strong>
+    explore:
+      title: Explores your entire wiki to answer
+      descriptions:
+        - Ask a question, and it autonomously explores and cross-references related pages to gather evidence and answer. Specify pages with @ to narrow down the scope.
+        - It always refers to the latest pages. Access permissions are checked at access time, so pages you cannot view are never used.
+    providers:
+      title: Choose your own provider and model
+      descriptions:
+        - Register an API key to choose from OpenAI, Anthropic, Google, and Azure OpenAI as your provider.
+        - Users switch models from the sidebar, and administrators can narrow down the models available in advance.
+    button_text: Setup and Management
+    mcp_server:
+      title: GROWI MCP Server
+      description: GROWI provides a server that supports the Model Context Protocol (MCP). Register it with a client such as Claude Code, and agents can search, view, create, and update pages directly.
+      button_text: Learn more
   merits:
     title: Merit of introduction
   trial:

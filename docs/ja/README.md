@@ -17,6 +17,8 @@ links:
   admin_guide: https://docs.growi.org/ja/admin-guide/
   docs: https://docs.growi.org/ja/
   growi: https://growi.co.jp/
+  growi_ai_agent: https://docs.growi.org/ja/admin-guide/management-cookbook/growi-ai-agent.html
+  mcp_server: https://docs.growi.org/ja/guide/features/mcp-server.html
 sections:
   introduction:
     title: オープンソース GROWI
@@ -28,13 +30,22 @@ sections:
     title: 機能と特徴
     text: 豊富な機能で社内やチーム内でのスムーズな情報共有を支える <br class="d-none d-md-block" /> GROWIの便利な機能の一部をご紹介します。機能の詳細は、<a href="https://docs.growi.org/ja/guide/">GROWI Docs/機能紹介</a> をご覧ください。
   growi_ai:
-    text: OpenAI の Vector Store を活用した RAG 機能により、<br class="d-none d-md-block" /> ナレッジベースをより賢く活用できます。
-    knowledge_assistant:
-      title: ナレッジアシスタント
-      description: ページを検索したアシスタントを作成し、チャット形式で質問に回答します。<br />複数のアシスタントを作成することが可能で、組織全体やグループ単位での共有もできます。
-    editor_assistant:
-      title: エディターアシスタント
-      description: 編集しているページの情報を読み取り、要約や文章の修正などを提案する形でサポートします。<br />特定のアシスタントを設定し、ナレッジの情報を元にした精度の高い支援を受けることもできます。
+    text: バージョン 8.0.0 より、GROWI AI は <strong>GROWI AI Agent</strong> として生まれ変わりました。<br class="d-none d-md-block" /> アシスタントの作成も学習も不要。質問を投げるだけで、<strong>wiki 全体を自ら探索して根拠を集め、答えを組み立てます。</strong>
+    explore:
+      title: wiki 全体を、自ら探索して答える
+      descriptions:
+        - 質問を投げると、関連するページを自律的に探索・横断参照して根拠を集め、回答します。@ でページを指定すれば、参照範囲を絞り込めます。
+        - 参照するのは常に最新のページ。閲覧権限もアクセス時に判定され、権限のないページは使われません。
+    providers:
+      title: プロバイダとモデルは、自分で選ぶ
+      descriptions:
+        - API キーを登録すれば、OpenAI・Anthropic・Google・Azure OpenAI からプロバイダを選択できます。
+        - モデルはユーザーがサイドバーで切り替え、管理者は使わせたいモデルを事前に絞り込めます。
+    button_text: セットアップと管理
+    mcp_server:
+      title: GROWI MCP Server
+      description: GROWI は Model Context Protocol (MCP) 対応のサーバーを提供しています。Claude Code などのクライアントに登録すれば、エージェントがページの検索・閲覧・作成・更新を直接実行できます。
+      button_text: 詳しく見る
   merits:
     title: 導入のメリット
   trial:
