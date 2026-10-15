@@ -2,6 +2,7 @@ const fs = require('fs');
 const path = require('path');
 
 const SITE_URL = 'https://growi.org';
+const VIDEO_UPLOAD_DATE = '2026-10-15';
 const OGP_IMAGE = `${SITE_URL}/assets/images/ogp-logo.png`;
 
 const LOCALES = {
@@ -46,17 +47,31 @@ module.exports = (options, ctx) => ({
     $page.frontmatter.meta = [...($page.frontmatter.meta || []), ...meta];
   },
 
-  // VuePress 1 cannot emit per-page <link rel="alternate">, so add hreflang links to the built HTML.
+  // VuePress 1 cannot emit per-page <link> or extra JSON-LD, so add them to the built HTML.
   async generated() {
-    const tags = [
+    const hreflangTags = [
       ...Object.keys(LOCALES).map(base => `<link rel="alternate" hreflang="${LOCALES[base].hreflang}" href="${SITE_URL}${base}">`),
       `<link rel="alternate" hreflang="x-default" href="${SITE_URL}/">`,
     ].join('');
 
     await Promise.all(Object.keys(LOCALES).map(async base => {
+      const page = ctx.pages.find(p => p.path === base);
+      const mcp = page.frontmatter.sections.growi_ai.mcp_server;
+      const video = {
+        '@context': 'https://schema.org',
+        '@type': 'VideoObject',
+        'name': mcp.video_label,
+        'description': mcp.video_description,
+        'thumbnailUrl': `${SITE_URL}/assets/images/growi-mcp-server-poster.jpg`,
+        'contentUrl': `${SITE_URL}/assets/images/growi-mcp-server.mp4`,
+        'uploadDate': VIDEO_UPLOAD_DATE,
+        'inLanguage': LOCALES[base].hreflang,
+      };
+      const videoTag = `<script type="application/ld+json">${JSON.stringify(video).replace(/</g, '\\u003c')}</script>`;
+
       const file = path.join(ctx.outDir, base, 'index.html');
       const html = await fs.promises.readFile(file, 'utf8');
-      await fs.promises.writeFile(file, html.replace('</head>', `${tags}</head>`));
+      await fs.promises.writeFile(file, html.replace('</head>', `${hreflangTags}${videoTag}</head>`));
     }));
   },
 });

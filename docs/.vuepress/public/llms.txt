@@ -12,11 +12,29 @@ x-publisher-description: "GROWI, Inc. is the developer of GROWI, an open-source 
 x-sitemap: https://growi.org/sitemap.xml
 x-supported-languages: ja, en
 
-## Links
+## Official site
 - [GROWI.org（日本語）](https://growi.org/ja/): 公式サイト
 - [GROWI.org (English)](https://growi.org/en/): Official site
+- [GROWI AI Agent（日本語）](https://growi.org/ja/#growi-ai-feature): wiki 全体を自ら探索して回答する AI Agent
+- [GROWI AI Agent (English)](https://growi.org/en/#growi-ai-feature): An agent that explores the whole wiki to answer questions
+- [GROWI MCP Server（日本語）](https://growi.org/ja/#mcp-server): AI エージェントから GROWI のページを検索・作成・更新する MCP サーバー
+- [GROWI MCP Server (English)](https://growi.org/en/#mcp-server): MCP server that lets AI agents search, create and update GROWI pages
+
+## Documentation
 - [GROWI Docs（日本語）](https://docs.growi.org/ja/): ドキュメント
 - [GROWI Docs (English)](https://docs.growi.org/en/): Documentation
-- [GROWI.cloud](https://growi.cloud): クラウドホスティングサービス / Cloud hosting service
+- [管理者ガイド](https://docs.growi.org/ja/admin-guide/): インストール・運用の手順
+- [Admin guide](https://docs.growi.org/en/admin-guide/): Installation and operation
+- [GROWI AI Agent のセットアップと管理](https://docs.growi.org/ja/admin-guide/management-cookbook/growi-ai-agent.html): AI Agent の設定方法
+- [Set up and manage GROWI AI Agent](https://docs.growi.org/en/admin-guide/management-cookbook/growi-ai-agent.html): How to configure the AI Agent
+- [GROWI MCP Server（機能紹介）](https://docs.growi.org/ja/guide/features/mcp-server.html): MCP Server の使い方
+- [GROWI MCP Server (feature guide)](https://docs.growi.org/en/guide/features/mcp-server.html): How to use the MCP server
+
+## Source code and services
 - [GitHub](https://github.com/growilabs/growi): ソースコード / Source code
+- [growi-mcp-server (GitHub)](https://github.com/growilabs/growi-mcp-server): MCP サーバーのソースコード / MCP server source code
+- [@growi/mcp-server (npm)](https://www.npmjs.com/package/@growi/mcp-server): MCP サーバーのパッケージ / MCP server package
+- [growi-docker-compose (GitHub)](https://github.com/growilabs/growi-docker-compose): Docker Compose での導入 / Install with Docker Compose
+- [Docker Hub](https://hub.docker.com/r/growilabs/growi/): Docker イメージ / Docker image
+- [GROWI.cloud](https://growi.cloud): クラウドホスティングサービス / Cloud hosting service
 - [デモ / Demo](https://demo.growi.org): デモ環境 / Demo environment

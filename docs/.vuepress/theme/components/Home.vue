@@ -169,7 +169,9 @@
       <span id="growi-ai"></span>
       <div class="container py-5 bg-growi-ai-feature-section rounded-5 mb-5">
         <div class="animated fadeIn">
-          <img src="/assets/images/growi-ai-agent-logo.svg" alt="GROWI AI Agent" class="pb-3 mb-3" v-on:click="handleClick">
+          <h2 class="border-0 p-0 mt-0 mb-0">
+            <img src="/assets/images/growi-ai-agent-logo.svg" alt="GROWI AI Agent" class="pb-3 mb-3" v-on:click="handleClick">
+          </h2>
         </div>
         <div class="row mx-md-5 justify-content-center">
           <div class="col-md-10 col-lg-8 col-xl-12 text-center mb-5">
@@ -204,13 +206,23 @@
       </div>
 
       <!-- GROWI MCP Server -->
-      <div class="row mx-xl-5 justify-content-center align-items-center py-5">
+      <div id="mcp-server" class="row mx-xl-5 justify-content-center align-items-center py-5">
         <div class="col-lg-6 mb-4 mb-lg-0">
           <video ref="mcpServerVideo" data-src="/assets/images/growi-mcp-server.mp4" poster="/assets/images/growi-mcp-server-poster.jpg" class="rounded-3 shadow w-100" muted loop playsinline controls preload="none" :aria-label="data.sections.growi_ai.mcp_server.video_label"></video>
+          <p class="small text-muted mt-2 mb-0">{{ data.sections.growi_ai.mcp_server.video_description }}</p>
         </div>
         <div class="col-lg-5 ps-lg-5 text-lg-start text-center">
           <h3 class="mb-4 fs-2">{{ data.sections.growi_ai.mcp_server.title }}</h3>
           <p v-html="data.sections.growi_ai.mcp_server.description"></p>
+          <h4 class="fs-6 mb-2">{{ data.sections.growi_ai.mcp_server.capabilities_title }}</h4>
+          <ul class="list-unstyled mb-3">
+            <li v-for="(capability, index) in data.sections.growi_ai.mcp_server.capabilities" :key="`mcp-capability-${index}`">{{ capability }}</li>
+          </ul>
+          <p class="small mb-2">{{ data.sections.growi_ai.mcp_server.compatibility }}</p>
+          <p class="small mb-0">
+            <a :href="data.links.mcp_server_repo" target="_blank" rel="noopener">GitHub: growilabs/growi-mcp-server</a>
+            ・ <a :href="data.links.mcp_server_npm" target="_blank" rel="noopener">npm: @growi/mcp-server</a>
+          </p>
           <a :href="data.links.mcp_server" class="btn btn-hexagon btn-bg-green-gradient btn-hexagon-angle-right fw-bold d-inline-block text-white px-5 py-2 mt-3 rounded-0" target="_blank">
             <span class="fs-5">{{ data.sections.growi_ai.mcp_server.button_text }}</span>
           </a>
