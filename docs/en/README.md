@@ -32,11 +32,13 @@ sections:
   growi_ai:
     text: Starting with version 8.0.0, GROWI AI has been reborn as <strong>GROWI AI Agent</strong>.<br class="d-none d-md-block" /> No assistants to create, no training required. Just ask a question, and it <strong>explores your entire wiki on its own, gathers evidence, and builds an answer.</strong>
     explore:
+      image_alt: "Wiki exploration and answering"
       title: Explores your entire wiki to answer
       descriptions:
         - Ask a question, and it autonomously explores and cross-references related pages to gather evidence and answer. Specify pages with @ to narrow down the scope.
         - It always refers to the latest pages. Access permissions are checked at access time, so pages you cannot view are never used.
     providers:
+      image_alt: "Provider and model selection"
       title: Choose your own provider and model
       descriptions:
         - Register an API key to choose from OpenAI, Anthropic, Google, and Azure OpenAI as your provider.

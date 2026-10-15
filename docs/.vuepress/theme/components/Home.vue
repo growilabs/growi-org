@@ -179,7 +179,7 @@
         <div class="row mx-md-5 justify-content-around">
           <div class="col-lg-5 col-md-10 mb-5 mb-lg-0">
             <div class="card border-0 bg-transparent">
-              <img src="/assets/images/growi-ai-agent-explore.png" alt="Wiki exploration and answering" class="card-img-top rounded-3 shadow mb-2" />
+              <img src="/assets/images/growi-ai-agent-explore.png" :alt="data.sections.growi_ai.explore.image_alt" class="card-img-top rounded-3 shadow mb-2" />
               <div class="card-body px-0 text-center">
                 <h3 class="mb-3 fs-4">{{ data.sections.growi_ai.explore.title }}</h3>
                 <p v-for="(description, index) in data.sections.growi_ai.explore.descriptions" :key="`explore-${index}`" class="text-start mb-2" v-html="description"></p>
@@ -188,7 +188,7 @@
           </div>
           <div class="col-lg-5 col-md-10">
             <div class="card border-0 bg-transparent">
-              <img src="/assets/images/growi-ai-agent-providers.png" alt="Provider and model selection" class="card-img-top rounded-3 shadow mb-2" />
+              <img src="/assets/images/growi-ai-agent-providers.png" :alt="data.sections.growi_ai.providers.image_alt" class="card-img-top rounded-3 shadow mb-2" />
               <div class="card-body px-0 text-center">
                 <h3 class="mb-3 fs-4">{{ data.sections.growi_ai.providers.title }}</h3>
                 <p v-for="(description, index) in data.sections.growi_ai.providers.descriptions" :key="`providers-${index}`" class="text-start mb-2" v-html="description"></p>

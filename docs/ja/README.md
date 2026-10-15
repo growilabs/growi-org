@@ -32,11 +32,13 @@ sections:
   growi_ai:
     text: バージョン 8.0.0 より、GROWI AI は <strong>GROWI AI Agent</strong> として生まれ変わりました。<br class="d-none d-md-block" /> アシスタントの作成も学習も不要。質問を投げるだけで、<strong>wiki 全体を自ら探索して根拠を集め、答えを組み立てます。</strong>
     explore:
+      image_alt: "wiki 全体を探索して回答する画面"
       title: wiki 全体を、自ら探索して答える
       descriptions:
         - 質問を投げると、関連するページを自律的に探索・横断参照して根拠を集め、回答します。@ でページを指定すれば、参照範囲を絞り込めます。
         - 参照するのは常に最新のページ。閲覧権限もアクセス時に判定され、権限のないページは使われません。
     providers:
+      image_alt: "プロバイダとモデルを選択する画面"
       title: プロバイダとモデルは、自分で選ぶ
       descriptions:
         - API キーを登録すれば、OpenAI・Anthropic・Google・Azure OpenAI からプロバイダを選択できます。
