@@ -163,36 +163,57 @@
       </div>
     </div>
 
-    <!-- GROWI AI Section -->
-    <div class="pb-5 container">
-      <div class="container py-5 bg-growi-ai-section rounded-5 mb-5" id="growi-ai" data-section="growi-ai">
+    <!-- AI Section -->
+    <div class="pb-5 container" id="growi-ai-feature" data-section="growi-ai-feature">
+      <!-- Keep the previous anchor so existing #growi-ai links still scroll here -->
+      <span id="growi-ai"></span>
+      <div class="container py-5 bg-growi-ai-feature-section rounded-5 mb-5">
         <div class="animated fadeIn">
-          <img src="/assets/images/growi-ai-logo.svg" alt="GROWI AI" class="pb-3 mb-3">
+          <img src="/assets/images/growi-ai-agent-logo.svg" alt="GROWI AI Agent" class="pb-3 mb-3" v-on:click="handleClick">
         </div>
         <div class="row mx-md-5 justify-content-center">
-          <div class="col-md-10 col-lg-8 text-center mb-5">
+          <div class="col-md-10 col-lg-8 col-xl-12 text-center mb-5">
             <p v-html="data.sections.growi_ai.text" class="mb-0"></p>
           </div>
         </div>
-        <div class="row mx-md-5 justify-content-around pb-lg-5">
+        <div class="row mx-md-5 justify-content-around">
           <div class="col-lg-5 col-md-10 mb-5 mb-lg-0">
             <div class="card border-0 bg-transparent">
-              <img src="/assets/images/knowledge-assistant.png" alt="Knowledge Assistant" class="card-img-top rounded-3 shadow mb-4" />
+              <img src="/assets/images/growi-ai-agent-explore.png" :alt="data.sections.growi_ai.explore.image_alt" class="card-img-top rounded-3 shadow mb-2" />
               <div class="card-body px-0 text-center">
-                <h3 class="mb-3 fs-4">{{ data.sections.growi_ai.knowledge_assistant.title }}</h3>
-                <p class="text-start" v-html="data.sections.growi_ai.knowledge_assistant.description"></p>
+                <h3 class="mb-3 fs-4">{{ data.sections.growi_ai.explore.title }}</h3>
+                <p v-for="(description, index) in data.sections.growi_ai.explore.descriptions" :key="`explore-${index}`" class="text-start mb-2" v-html="description"></p>
               </div>
             </div>
           </div>
           <div class="col-lg-5 col-md-10">
             <div class="card border-0 bg-transparent">
-              <img src="/assets/images/editor-assistant.png" alt="Editor Assistant" class="card-img-top rounded-3 shadow mb-4" />
+              <img src="/assets/images/growi-ai-agent-providers.png" :alt="data.sections.growi_ai.providers.image_alt" class="card-img-top rounded-3 shadow mb-2" />
               <div class="card-body px-0 text-center">
-                <h3 class="mb-3 fs-4">{{ data.sections.growi_ai.editor_assistant.title }}</h3>
-                <p class="text-start" v-html="data.sections.growi_ai.editor_assistant.description"></p>
+                <h3 class="mb-3 fs-4">{{ data.sections.growi_ai.providers.title }}</h3>
+                <p v-for="(description, index) in data.sections.growi_ai.providers.descriptions" :key="`providers-${index}`" class="text-start mb-2" v-html="description"></p>
               </div>
             </div>
           </div>
+        </div>
+        <div class="text-center mt-4">
+          <a :href="data.links.growi_ai_agent" class="btn btn-hexagon btn-bg-green-gradient btn-hexagon-angle-right fw-bold d-inline-block text-white px-5 py-2 rounded-0" target="_blank">
+            <span class="fs-5">{{ data.sections.growi_ai.button_text }}</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- GROWI MCP Server -->
+      <div class="row mx-xl-5 justify-content-center align-items-center py-5">
+        <div class="col-lg-6 mb-4 mb-lg-0">
+          <video ref="mcpServerVideo" data-src="/assets/images/growi-mcp-server.mp4" poster="/assets/images/growi-mcp-server-poster.jpg" class="rounded-3 shadow w-100" muted loop playsinline controls preload="none" :aria-label="data.sections.growi_ai.mcp_server.video_label"></video>
+        </div>
+        <div class="col-lg-5 ps-lg-5 text-lg-start text-center">
+          <h3 class="mb-4 fs-2">{{ data.sections.growi_ai.mcp_server.title }}</h3>
+          <p v-html="data.sections.growi_ai.mcp_server.description"></p>
+          <a :href="data.links.mcp_server" class="btn btn-hexagon btn-bg-green-gradient btn-hexagon-angle-right fw-bold d-inline-block text-white px-5 py-2 mt-3 rounded-0" target="_blank">
+            <span class="fs-5">{{ data.sections.growi_ai.mcp_server.button_text }}</span>
+          </a>
         </div>
       </div>
     </div>
@@ -383,6 +404,16 @@ export default {
     },
   },
 
+  mounted() {
+    this.observeMcpServerVideo();
+  },
+
+  beforeDestroy() {
+    if (this.videoObserver != null) {
+      this.videoObserver.disconnect();
+    }
+  },
+
   methods: {
     isMovieFile(path) {
       const extension = path.split('.').pop();
@@ -392,8 +423,42 @@ export default {
         return false;
       }
     },
+    observeMcpServerVideo() {
+      const video = this.$refs.mcpServerVideo;
+      if (video == null) {
+        return;
+      }
+      // Keep the source in data-src and set src right before playback
+      // (preload is only a hint that browsers may ignore, so control load timing by whether src is set)
+      const loadAndPlay = () => {
+        if (!video.hasAttribute('src')) {
+          video.src = video.dataset.src;
+        }
+        video.play().catch(() => {});
+      };
+      // Respect the OS "reduce motion" setting: never autoplay, the user starts it with the controls
+      if (window.matchMedia != null && window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+        return;
+      }
+      // Play immediately in browsers without IntersectionObserver support
+      if (!('IntersectionObserver' in window)) {
+        loadAndPlay();
+        return;
+      }
+      // Load and play only while in the viewport; pause when out of view
+      this.videoObserver = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting && !document.hidden) {
+            loadAndPlay();
+          } else {
+            video.pause();
+          }
+        });
+      }, { threshold: 0.25 });
+      this.videoObserver.observe(video);
+    },
     handleClick(event) {
-      // クリックイベントを無視する
+      // Ignore click events
       event.stopPropagation();
     }
   },
