@@ -110,12 +110,12 @@ module.exports = ctx => ({
     '/en/': {
       lang: 'en-US',
       title: 'GROWI - Free Open Source Markdown Wiki | Easy and Smooth Information Sharing For Everyone',
-      description: 'GROWI is a free, open source Markdown wiki under the MIT license. Self-host it with Docker or use GROWI.cloud. Includes GROWI AI Agent and MCP Server support.'
+      description: 'GROWI is a free, open source Markdown wiki under the MIT license. Self-host it with Docker. Includes GROWI AI Agent and MCP Server support.'
     },
     '/ja/': {
       lang: 'ja',
       title: 'GROWI｜無料のオープンソース Markdown Wiki｜快適な情報共有を、全ての人へ',
-      description: 'GROWI は Markdown で書けるオープンソースの Wiki です。MIT ライセンスで無料公開。Docker で自社サーバーに導入でき、クラウド版 GROWI.cloud、AI Agent や MCP Server にも対応しています。'
+      description: 'GROWI は Markdown で書けるオープンソースの Wiki です。MIT ライセンスで無料公開。Docker で自社サーバーに導入でき、AI Agent や MCP Server にも対応しています。'
     }
   },
   themeConfig: {
