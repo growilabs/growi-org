@@ -163,9 +163,9 @@
       </div>
     </div>
 
-    <!-- GROWI AI Section -->
-    <div class="pb-5 container" id="growi-ai" data-section="growi-ai">
-      <div class="container py-5 bg-growi-ai-section rounded-5 mb-5">
+    <!-- AI Section -->
+    <div class="pb-5 container" id="growi-ai-feature" data-section="growi-ai-feature">
+      <div class="container py-5 bg-growi-ai-feature-section rounded-5 mb-5">
         <div class="animated fadeIn">
           <img src="/assets/images/growi-ai-agent-logo.svg" alt="GROWI AI Agent" class="pb-3 mb-3" v-on:click="handleClick">
         </div>
@@ -204,7 +204,7 @@
       <!-- GROWI MCP Server -->
       <div class="row mx-xl-5 justify-content-center align-items-center py-5">
         <div class="col-lg-6 mb-4 mb-lg-0">
-          <video ref="mcpServerVideo" src="/assets/images/growi-mcp-server.mp4#t=0.001" class="rounded-3 shadow w-100" muted loop playsinline preload="metadata" aria-label="GROWI MCP Server"></video>
+          <video ref="mcpServerVideo" data-src="/assets/images/growi-mcp-server.mp4" poster="/assets/images/growi-mcp-server-poster.jpg" class="rounded-3 shadow w-100" muted loop playsinline preload="none" aria-label="Demo: creating a GROWI wiki page from Claude via GROWI MCP Server"></video>
         </div>
         <div class="col-lg-5 ps-lg-5 text-lg-start text-center">
           <h3 class="mb-4 fs-2">{{ data.sections.growi_ai.mcp_server.title }}</h3>
@@ -426,16 +426,24 @@ export default {
       if (video == null) {
         return;
       }
+      // src は data-src に置いておき、再生する直前に設定する
+      // (preload はヒントに過ぎずブラウザが無視し得るため、src の有無で読み込みタイミングを制御する)
+      const loadAndPlay = () => {
+        if (!video.hasAttribute('src')) {
+          video.src = video.dataset.src;
+        }
+        video.play().catch(() => {});
+      };
       // IntersectionObserver 非対応ブラウザではそのまま再生する
       if (!('IntersectionObserver' in window)) {
-        video.play().catch(() => {});
+        loadAndPlay();
         return;
       }
       // 画面内に入ったときだけ読み込み・再生し、画面外では一時停止する
       this.videoObserver = new IntersectionObserver((entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
-            video.play().catch(() => {});
+            loadAndPlay();
           } else {
             video.pause();
           }
