@@ -46,6 +46,7 @@ sections:
       title: GROWI MCP Server
       description: GROWI provides a server that supports the Model Context Protocol (MCP). Register it with a client such as Claude Code, and agents can search, view, create, and update pages directly.
       button_text: Learn more
+      video_label: "Demo: creating a GROWI wiki page from Claude via GROWI MCP Server"
   merits:
     title: Merit of introduction
   trial:

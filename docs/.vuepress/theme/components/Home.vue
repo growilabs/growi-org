@@ -165,6 +165,8 @@
 
     <!-- AI Section -->
     <div class="pb-5 container" id="growi-ai-feature" data-section="growi-ai-feature">
+      <!-- Keep the previous anchor so existing #growi-ai links still scroll here -->
+      <span id="growi-ai"></span>
       <div class="container py-5 bg-growi-ai-feature-section rounded-5 mb-5">
         <div class="animated fadeIn">
           <img src="/assets/images/growi-ai-agent-logo.svg" alt="GROWI AI Agent" class="pb-3 mb-3" v-on:click="handleClick">
@@ -175,7 +177,7 @@
           </div>
         </div>
         <div class="row mx-md-5 justify-content-around">
-          <div class="col-lg-5 mb-5 mb-lg-0">
+          <div class="col-lg-5 col-md-10 mb-5 mb-lg-0">
             <div class="card border-0 bg-transparent">
               <img src="/assets/images/growi-ai-agent-explore.png" alt="Wiki exploration and answering" class="card-img-top rounded-3 shadow mb-2" />
               <div class="card-body px-0 text-center">
@@ -184,7 +186,7 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-5">
+          <div class="col-lg-5 col-md-10">
             <div class="card border-0 bg-transparent">
               <img src="/assets/images/growi-ai-agent-providers.png" alt="Provider and model selection" class="card-img-top rounded-3 shadow mb-2" />
               <div class="card-body px-0 text-center">
@@ -204,7 +206,7 @@
       <!-- GROWI MCP Server -->
       <div class="row mx-xl-5 justify-content-center align-items-center py-5">
         <div class="col-lg-6 mb-4 mb-lg-0">
-          <video ref="mcpServerVideo" data-src="/assets/images/growi-mcp-server.mp4" poster="/assets/images/growi-mcp-server-poster.jpg" class="rounded-3 shadow w-100" muted loop playsinline preload="none" aria-label="Demo: creating a GROWI wiki page from Claude via GROWI MCP Server"></video>
+          <video ref="mcpServerVideo" data-src="/assets/images/growi-mcp-server.mp4" poster="/assets/images/growi-mcp-server-poster.jpg" class="rounded-3 shadow w-100" muted loop playsinline controls preload="none" :aria-label="data.sections.growi_ai.mcp_server.video_label"></video>
         </div>
         <div class="col-lg-5 ps-lg-5 text-lg-start text-center">
           <h3 class="mb-4 fs-2">{{ data.sections.growi_ai.mcp_server.title }}</h3>
@@ -434,6 +436,10 @@ export default {
         }
         video.play().catch(() => {});
       };
+      // Respect the OS "reduce motion" setting: never autoplay, the user starts it with the controls
+      if (window.matchMedia != null && window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+        return;
+      }
       // Play immediately in browsers without IntersectionObserver support
       if (!('IntersectionObserver' in window)) {
         loadAndPlay();
@@ -442,7 +448,7 @@ export default {
       // Load and play only while in the viewport; pause when out of view
       this.videoObserver = new IntersectionObserver((entries) => {
         entries.forEach((entry) => {
-          if (entry.isIntersecting) {
+          if (entry.isIntersecting && !document.hidden) {
             loadAndPlay();
           } else {
             video.pause();
