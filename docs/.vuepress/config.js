@@ -69,7 +69,14 @@ module.exports = ctx => ({
         'ga': 'UA-55480073-14' // UA-00000000-0
       }
     ],
-    require('./plugins/seo-head')
+    [
+      'sitemap',
+      {
+        'hostname': 'https://growi.org',
+        'exclude': ['/404.html'],
+        'changefreq': 'weekly'
+      }
+    ]
   ],
   head: [
     ['link', { rel: 'icon', href: '/assets/images/favicon.ico', sizes: '48x48'}],

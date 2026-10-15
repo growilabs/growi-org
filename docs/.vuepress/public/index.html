@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>GROWI - Open Source Markdown Wiki</title>
+  <meta name="description" content="GROWI is an open source Markdown wiki. Choose your language / 言語を選択してください。">
+  <link rel="canonical" href="https://growi.org/">
+  <script>
+    (function () {
+      var lang = (navigator.languages || [navigator.language || ''])[0] || '';
+      location.replace(/^ja/i.test(lang) ? '/ja/' : '/en/');
+    })();
+  </script>
+</head>
+<body>
+  <h1>GROWI</h1>
+  <ul>
+    <li><a href="/ja/">日本語</a></li>
+    <li><a href="/en/">English</a></li>
+  </ul>
+</body>
+</html>

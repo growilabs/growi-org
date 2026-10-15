@@ -1,5 +1,6 @@
 ---
 home: true
+canonicalUrl: https://growi.org/en/
 heroText: 
   line1: Free high-performance
   line2:  wiki tool
