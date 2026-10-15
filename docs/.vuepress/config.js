@@ -1,5 +1,6 @@
 module.exports = ctx => ({
-  title: 'GROWI - Get the best Markdown Wiki for *FREE*',
+  title: 'GROWI | Free Open Source Markdown Wiki',
+  description: 'GROWI is a free, open source Markdown wiki. GROWI は Markdown で書けるオープンソースの Wiki です。',
   plugins: [
     [
       'vuepress-plugin-medium-zoom',
@@ -40,9 +41,6 @@ module.exports = ctx => ({
     ['link', { rel: 'icon', href: '/assets/images/favicon.ico', sizes: '48x48'}],
     ['link', { rel: 'icon', href: '/assets/images/favicon.svg', sizes: 'any', type: 'image/svg+xml'}],
     ['link', { rel: 'apple-touch-icon', href: '/assets/images/apple-touch-icon.png'}],
-    ['meta', { name: 'viewport', content: 'width=device-width, initial-scale=1'}],
-    ['meta', { name: 'description', content: 'Team Collaboration Software using markdown'}],
-    ['meta', { name: 'keywords', content: 'markdown, wiki, javascript, react, growi, crowi'}],
     ['meta', { name: 'author', content: 'GROWI, Inc.'}],
     ['link', { href: 'https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css', rel: 'stylesheet'}],
     // Fonts

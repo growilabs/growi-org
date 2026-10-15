@@ -6,6 +6,7 @@ heroText:
  line2: 高機能なwikiツール
  subtext: マニュアルや企画書の共有、議事録の同時編集など、 <br /> チーム内での快適な情報共有と作業効率化を支えるツールです。
 heroImage: /assets/images/banner-logo.png
+heroImageAlt: GROWI の画面イメージ
 mockImage: /assets/images/mock-img-ja.png
 heroButtons:
 - text: 機能紹介
@@ -78,7 +79,7 @@ sections:
     address: 東京都新宿区西早稲田2-20-15 <br /> 高田馬場アクセス10F
     tel:
       text: 03-6233-9447
-      link: 0362339447
+      link: 81362339447
     email: contact@growi.co.jp
 button:
   start: GROWIを始める
