@@ -426,20 +426,20 @@ export default {
       if (video == null) {
         return;
       }
-      // src は data-src に置いておき、再生する直前に設定する
-      // (preload はヒントに過ぎずブラウザが無視し得るため、src の有無で読み込みタイミングを制御する)
+      // Keep the source in data-src and set src right before playback
+      // (preload is only a hint that browsers may ignore, so control load timing by whether src is set)
       const loadAndPlay = () => {
         if (!video.hasAttribute('src')) {
           video.src = video.dataset.src;
         }
         video.play().catch(() => {});
       };
-      // IntersectionObserver 非対応ブラウザではそのまま再生する
+      // Play immediately in browsers without IntersectionObserver support
       if (!('IntersectionObserver' in window)) {
         loadAndPlay();
         return;
       }
-      // 画面内に入ったときだけ読み込み・再生し、画面外では一時停止する
+      // Load and play only while in the viewport; pause when out of view
       this.videoObserver = new IntersectionObserver((entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
@@ -452,7 +452,7 @@ export default {
       this.videoObserver.observe(video);
     },
     handleClick(event) {
-      // クリックイベントを無視する
+      // Ignore click events
       event.stopPropagation();
     }
   },
