@@ -6,7 +6,7 @@
         <div class="header-content row pt-4 pt-lg-5 pb-0 pb-lg-5 mt-5">
           <div class="col-lg-6 px-0 animated fadeIn">
             <h1 class="fs-1 border-0 mt-0 mt-lg-4 mb-4"> {{ data.heroText.line1 }} <br />{{ data.heroText.line2 }}</h1>
-            <img :src="data.mockImage" alt="GROWI" v-on:click="handleClick" class="d-lg-none">
+            <img :src="data.mockImage" alt="GROWI" width="2078" height="1217" loading="lazy" decoding="async" v-on:click="handleClick" class="d-lg-none">
           <p class="mt-3" v-html="data.heroText.subtext"></p>
           <a :href="data.links.admin_guide" class="btn btn-hexagon btn-bg-green-gradient btn-hexagon-angle-right fw-bold d-inline-block text-white mt-4 mb-5 px-5 py-2 rounded-0" target="_blank">
             <span> {{ data.button.start }}</span>
@@ -14,7 +14,7 @@
         </div>
         <div class="d-none d-lg-block col-lg-6 my-auto animated fadeIn">
           <p class="animated fadeIn">
-            <img :src="data.mockImage" alt="GROWI" v-on:click="handleClick">
+            <img :src="data.mockImage" alt="GROWI" width="2078" height="1217" fetchpriority="high" v-on:click="handleClick">
           </p>
           </div>
         </div>
@@ -28,7 +28,7 @@
         <div class="col-md-7 text-center">
           <div class="row">
             <div class="d-sm-flex flex-md-fill flex-row justify-content-center order-md-2">
-              <img src="/assets/images/growi-logo.svg" alt="GROWI" class="d-md-none w-50 mb-4" v-on:click="handleClick">
+              <img src="/assets/images/growi-logo.svg" loading="lazy" alt="GROWI" class="d-md-none w-50 mb-4" v-on:click="handleClick">
               <div class="my-auto ms-sm-4">
                 <p class="ff-montserrat fs-3 mb-2">More than</p>
                 <span class="ff-montserrat display-1 text-reset">1,200,000</span>
@@ -46,7 +46,7 @@
           </div>
         </div>
         <div class="col-md-5 d-none d-md-block">
-          <img src="/assets/images/growi-logo.svg" alt="GROWI" class="h-75 ms-4 ms-lg-0" v-on:click="handleClick">
+          <img src="/assets/images/growi-logo.svg" loading="lazy" alt="GROWI" class="h-75 ms-4 ms-lg-0" v-on:click="handleClick">
         </div>
       </div>
     </div>
@@ -81,7 +81,7 @@
       <div class="row mt-5 pt-0 pt-md-5">
         <div class="col-sm-6 col-lg-4 px-lg-4 mb-4">
           <div class="card border-0 bg-transparent">
-            <img src="/assets/images/features/editor.png" alt="Editor" class="card-img-top rounded-3 shadow" />
+            <img src="/assets/images/features/editor.png" width="680" height="480" loading="lazy" alt="Editor" class="card-img-top rounded-3 shadow" />
             <div class="card-body px-0">
               <h3 class="text-center mt-4 fs-5">{{ data.features.markdown.title }}</h3>
               <p v-html="data.features.markdown.description" class=""></p>
@@ -90,7 +90,7 @@
         </div>
         <div class="col-sm-6 col-lg-4 px-lg-4 mb-4">
           <div class="card border-0 bg-transparent">
-            <img src="/assets/images/features/shape.png" alt="Create Diagram" class="card-img-top rounded-3 shadow" />
+            <img src="/assets/images/features/shape.png" width="680" height="480" loading="lazy" alt="Create Diagram" class="card-img-top rounded-3 shadow" />
             <div class="card-body px-0">
               <h3 class="text-center mt-4 fs-5">{{ data.features.shape.title }}</h3>
               <p v-html="data.features.shape.description"></p>
@@ -99,7 +99,7 @@
         </div>
         <div class="col-sm-6 col-lg-4 px-lg-4 mb-4">
           <div class="card border-0 bg-transparent">
-            <img src="/assets/images/features/search.png" alt="Search" class="card-img-top rounded-3 shadow" />
+            <img src="/assets/images/features/search.png" width="680" height="480" loading="lazy" alt="Search" class="card-img-top rounded-3 shadow" />
             <div class="card-body px-0">
               <h3 class="text-center mt-4 fs-5">{{ data.features.search.title }}</h3>
               <p v-html="data.features.search.description"></p>
@@ -108,7 +108,7 @@
         </div>
         <div class="col-sm-6 col-lg-4 px-lg-4 mb-4">
           <div class="card border-0 bg-transparent">
-            <img src="/assets/images/features/collaborative-editor.png" alt="Collaborative Editor" class="card-img-top rounded-3 shadow" />
+            <img src="/assets/images/features/collaborative-editor.png" width="680" height="480" loading="lazy" alt="Collaborative Editor" class="card-img-top rounded-3 shadow" />
             <div class="card-body px-0">
               <h3 class="text-center mt-4 fs-5">{{ data.features.collaborative_editor.title }}</h3>
               <p v-html="data.features.collaborative_editor.description"></p>
@@ -117,7 +117,7 @@
         </div>
         <div class="col-sm-6 col-lg-4 px-lg-4 mb-4">
           <div class="card border-0 bg-transparent">
-            <img src="/assets/images/features/customize.png" alt="Customize" class="card-img-top rounded-3 shadow" />
+            <img src="/assets/images/features/customize.png" width="680" height="480" loading="lazy" alt="Customize" class="card-img-top rounded-3 shadow" />
             <div class="card-body px-0">
               <h3 class="text-center mt-4 fs-5">{{ data.features.customize.title }}</h3>
               <p v-html="data.features.customize.description"></p>
@@ -126,7 +126,7 @@
         </div>
         <div class="col-sm-6 col-lg-4 px-lg-4 mb-4">
           <div class="card border-0 bg-transparent">
-            <img src="/assets/images/features/group.png" alt="Group Management" class="card-img-top rounded-3 shadow" />
+            <img src="/assets/images/features/group.png" width="680" height="480" loading="lazy" alt="Group Management" class="card-img-top rounded-3 shadow" />
             <div class="card-body px-0">
               <h3 class="text-center mt-4 fs-5">{{ data.features.group.title }}</h3>
               <p v-html="data.features.group.description"></p>
@@ -135,7 +135,7 @@
         </div>
         <div class="col-sm-6 col-lg-4 px-lg-4 mb-4">
           <div class="card border-0 bg-transparent">
-            <img src="/assets/images/features/comment.png" alt="Comment Features" class="card-img-top rounded-3 shadow" />
+            <img src="/assets/images/features/comment.png" width="680" height="480" loading="lazy" alt="Comment Features" class="card-img-top rounded-3 shadow" />
             <div class="card-body px-0">
               <h3 class="text-center mt-4 fs-5">{{ data.features.comment.title }}</h3>
               <p v-html="data.features.comment.description"></p>
@@ -144,7 +144,7 @@
         </div>
         <div class="col-sm-6 col-lg-4 px-lg-4 mb-4">
           <div class="card border-0 bg-transparent">
-            <img src="/assets/images/features/auth.png" alt="Auth" class="card-img-top rounded-3 shadow" />
+            <img src="/assets/images/features/auth.png" width="680" height="480" loading="lazy" alt="Auth" class="card-img-top rounded-3 shadow" />
             <div class="card-body px-0">
               <h3 class="text-center mt-4 fs-5">{{ data.features.auth.title }}</h3>
               <p v-html="data.features.auth.description"></p>
@@ -153,7 +153,7 @@
         </div>
         <div class="col-sm-6 col-lg-4 px-lg-4">
           <div class="card border-0 bg-transparent">
-            <img src="/assets/images/features/assets.png" alt="Assets management" class="card-img-top rounded-3 shadow" />
+            <img src="/assets/images/features/assets.png" width="680" height="480" loading="lazy" alt="Assets management" class="card-img-top rounded-3 shadow" />
             <div class="card-body px-0 pb-0">
               <h3 class="text-center mt-4 fs-5">{{ data.features.assets.title }}</h3>
               <p v-html="data.features.assets.description" class="mb-0"></p>
@@ -170,7 +170,7 @@
       <div class="container py-5 bg-growi-ai-feature-section rounded-5 mb-5">
         <div class="animated fadeIn">
           <h2 class="border-0 p-0 mt-0 mb-0">
-            <img src="/assets/images/growi-ai-agent-logo.svg" alt="GROWI AI Agent" class="pb-3 mb-3" v-on:click="handleClick">
+            <img src="/assets/images/growi-ai-agent-logo.svg" loading="lazy" alt="GROWI AI Agent" class="pb-3 mb-3" v-on:click="handleClick">
           </h2>
         </div>
         <div class="row mx-md-5 justify-content-center">
@@ -181,7 +181,7 @@
         <div class="row mx-md-5 justify-content-around">
           <div class="col-lg-5 col-md-10 mb-5 mb-lg-0">
             <div class="card border-0 bg-transparent">
-              <img src="/assets/images/growi-ai-agent-explore.png" :alt="data.sections.growi_ai.explore.image_alt" class="card-img-top rounded-3 shadow mb-2" />
+              <img src="/assets/images/growi-ai-agent-explore.png" width="800" height="520" loading="lazy" :alt="data.sections.growi_ai.explore.image_alt" class="card-img-top rounded-3 shadow mb-2" />
               <div class="card-body px-0 text-center">
                 <h3 class="mb-3 fs-4">{{ data.sections.growi_ai.explore.title }}</h3>
                 <p v-for="(description, index) in data.sections.growi_ai.explore.descriptions" :key="`explore-${index}`" class="text-start mb-2" v-html="description"></p>
@@ -190,7 +190,7 @@
           </div>
           <div class="col-lg-5 col-md-10">
             <div class="card border-0 bg-transparent">
-              <img src="/assets/images/growi-ai-agent-providers.png" :alt="data.sections.growi_ai.providers.image_alt" class="card-img-top rounded-3 shadow mb-2" />
+              <img src="/assets/images/growi-ai-agent-providers.png" width="800" height="520" loading="lazy" :alt="data.sections.growi_ai.providers.image_alt" class="card-img-top rounded-3 shadow mb-2" />
               <div class="card-body px-0 text-center">
                 <h3 class="mb-3 fs-4">{{ data.sections.growi_ai.providers.title }}</h3>
                 <p v-for="(description, index) in data.sections.growi_ai.providers.descriptions" :key="`providers-${index}`" class="text-start mb-2" v-html="description"></p>
@@ -235,21 +235,21 @@
       <div class="container">
         <h2 class="pb-md-5 section-title text-center">{{ data.sections.merits.title }}</h2>
         <div class="row mx-md-5 justify-content-center mt-5">
-          <img src="/assets/images/merit-management.svg" alt="Merit of management" class="col-md-6 col-xl-5 mx-0 mb-5 mb-md-auto order-md-2" v-on:click="handleClick" />
+          <img src="/assets/images/merit-management.svg" loading="lazy" alt="Merit of management" class="col-md-6 col-xl-5 mx-0 mb-5 mb-md-auto order-md-2" v-on:click="handleClick" />
           <div class="col-md-6 col-xl-5 my-auto px-0 px-lg-5 order-md-1">
             <h3 class="mb-4">{{ data.merits.management.title }}</h3>
             <p v-html="data.merits.management.description"></p>
           </div>
         </div>
         <div class="row mx-md-5 justify-content-center mt-5">
-          <img src="/assets/images/merit-get-infomation.svg" alt="Get the infomation" class="col-md-6 col-xl-5 mx-0 mb-5 mb-md-auto" v-on:click="handleClick" />
+          <img src="/assets/images/merit-get-infomation.svg" loading="lazy" alt="Get the infomation" class="col-md-6 col-xl-5 mx-0 mb-5 mb-md-auto" v-on:click="handleClick" />
           <div class="col-md-6 col-xl-5 my-auto px-0 px-lg-5">
             <h3 class="mb-4">{{ data.merits.infomation.title }}</h3>
             <p v-html="data.merits.infomation.description"></p>
           </div>
         </div>
         <div class="row mx-md-5 justify-content-center mt-5">
-          <img src="/assets/images/merit-team.svg" alt="Merit for team" class="col-md-6 col-xl-5 mx-0 mb-5 mb-md-auto order-md-2" v-on:click="handleClick" />
+          <img src="/assets/images/merit-team.svg" loading="lazy" alt="Merit for team" class="col-md-6 col-xl-5 mx-0 mb-5 mb-md-auto order-md-2" v-on:click="handleClick" />
           <div class="col-md-6 col-xl-5 my-auto px-0 px-lg-5 order-md-1">
             <h3 class="mb-4" v-html="data.merits.team.title"></h3>
             <p v-html="data.merits.team.description"></p>
@@ -270,9 +270,9 @@
     <!-- Trial section -->
     <div class="container text-center my-md-5 py-5">
       <h2 class="border-0 d-flex">
-        <img src="/assets/images/appearl-effect.svg" class="me-3" v-on:click="handleClick" />
+        <img src="/assets/images/appearl-effect.svg" loading="lazy" class="me-3" v-on:click="handleClick" />
         {{ data.sections.trial.title }}
-        <img src="/assets/images/appearl-effect.svg" class="ms-3 header-appeal-effect" v-on:click="handleClick" />
+        <img src="/assets/images/appearl-effect.svg" loading="lazy" class="ms-3 header-appeal-effect" v-on:click="handleClick" />
       </h2>
       <div class="row mt-5 justify-content-center">
         <div class="bg-lightgreen shadow rounded p-5 mx-4 col-sm-10 col-lg-5">
@@ -299,7 +299,7 @@
       <div class="container">
         <div class="row py-4 justify-content-center">
           <div class="col-8 col-md-4 col-xl-3 my-auto order-md-2">
-            <img src="/assets/images/growi-cloud-logo.svg" v-on:click="handleClick" />
+            <img src="/assets/images/growi-cloud-logo.svg" loading="lazy" v-on:click="handleClick" />
           </div>
           <div class="col-md-7 col-xl-5 col-xxl-4 my-auto order-md-1 py-4 py-md-auto px-xl-0 ps-xl-3 text-nowrap">
             <h5 class="text-center text-md-start growi-cloud-text" v-html="data.sections.cloud.text"></h5>
@@ -319,7 +319,7 @@
       <div class="container pt-5 pb-3">
         <div class="row justify-content-center">
           <div class="first-footer-widget col-sm-6 col-md-4">
-            <img src="/assets/images/growi-brand-logo-white.svg" alt="GROWI" class="me-2" />
+            <img src="/assets/images/growi-brand-logo-white.svg" loading="lazy" alt="GROWI" class="me-2" />
             <ul>
               <li><a href="https://growi.cloud/" target="_blank">GROWI.cloud</a></li>
               <li><a href="https://github.com/growilabs/growi" target="_blank"><i class="fab fa-github me-1"></i> growilabs/growi</a></li>
@@ -331,7 +331,7 @@
           </div>
           <div class="col-sm-6 col-md-4 mt-4 mt-md-0">
             <div class="widget-title">
-              <h3 class="mb-3"><img src="/assets/images/growi-inc-negative.svg" alt="GROWI, Inc." class="ms-0" height="20px"/></h3>
+              <h3 class="mb-3"><img src="/assets/images/growi-inc-negative.svg" loading="lazy" alt="GROWI, Inc." class="ms-0" height="20px"/></h3>
               <h4 class="fs-6 text-white mb-0">CONTACT US</h4>
             </div>
             <ul class="mt-4">
@@ -365,35 +365,6 @@
         </div>
     </footer><!-- / footer social icons right -->
 
-    <!-- javascript -->
-    <script2 src="/assets/js/jquery.min.js"></script2>
-    <script2 src="/assets/js/bootstrap.min.js"></script2>
-    <script2 src="/assets/js/owl-carousel.min.js"></script2>
-    <script2 src="/assets/js/jquery.countTo.js"></script2>
-    <script2 src="/assets/js/jquery.shuffle.min.js"></script2>
-    <script2 src="/assets/js/custom.js"></script2>
-    <!-- <script2 src="/assets/js/sticky-nav.js"></script2> -->
-    <script2 src="/assets/js/jquery.easing.min.js"></script2>
-    <!-- <script2 src="/assets/js/scrolling-nav.js"></script2> -->
-    <script2 src="/assets/js/jquery.nav.js"></script2>
-    <!-- scripts -->
-    <!-- nav scroll -->
-    <script2>
-      $(document).ready(function () {
-        $('.nav').onePageNav();
-      });
-    </script2>
-    <!-- / nav scroll -->
-    <!-- facts counter -->
-    <script2 type="text/javascript">
-      $('.timer').countTo({
-        refreshInterval: 60,
-        formatter: function (value, options) {
-          return value.toFixed(options.decimals);
-        },
-      });
-    </script2>
-    <!-- / facts counter -->
   </main>
 </template>
 
@@ -479,8 +450,6 @@ export default {
 
 <style lang="scss" scoped>
 @use '../styles/style.scss';
-@use '../styles/owl-carousel.css';
-@use '../styles/owl-theme.css';
 
 @use '../styles/variables' as var;
 
@@ -491,6 +460,10 @@ export default {
       color: var.$info
     }
   }
+}
+
+::v-deep img[width][height] {
+  height: auto;
 }
 
 ::v-deep .btn {
