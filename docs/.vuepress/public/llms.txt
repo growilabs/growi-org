@@ -1,22 +1,33 @@
 # GROWI
 
-> GROWIはオープンソースのWikiシステムです。Markdownで書けるナレッジベースとして、チームの情報共有・ドキュメント管理に利用されています。MITライセンスで公開されており、セルフホストが可能です。Docker Imageは120万回以上ダウンロードされています。
-> GROWI is an open-source Wiki system. It serves as a Markdown-based knowledge base for team information sharing and document management. Released under the MIT license and available for self-hosting. The Docker image has been downloaded more than 1.2 million times.
+> GROWI is an open-source Wiki system. It serves as a Markdown-based knowledge base for team information sharing and document management. Released under the MIT license and available for self-hosting with Docker. A cloud service, GROWI.cloud, is also available. The Docker image has been downloaded more than 1.2 million times.
+> GROWI（グロウィ）は Markdown で書けるオープンソースの Wiki システムです。MIT ライセンスで公開されており、Docker でセルフホストできます。クラウド版の GROWI.cloud もあります。
 
-user-agent: *
-x-canonical-url: https://growi.org/
-x-content-license: "(c) GROWI, Inc. All rights reserved."
-x-ai-training-policy: "allowed"
-x-publisher-name: "GROWI, Inc."
-x-publisher-description: "GROWI, Inc. is the developer of GROWI, an open-source Markdown-based Wiki system. GROWI is used by teams and organizations for knowledge management and information sharing."
-x-sitemap: https://growi.org/sitemap.xml
-x-supported-languages: ja, en
+GROWI is developed by GROWI, Inc. Supported site languages: Japanese and English. This site's content may be quoted and summarized by AI search engines and assistants; please link to the source page. Sitemap: https://growi.org/sitemap.xml
 
-## Links
-- [GROWI.org（日本語）](https://growi.org/ja/): 公式サイト
-- [GROWI.org (English)](https://growi.org/en/): Official site
-- [GROWI Docs（日本語）](https://docs.growi.org/ja/): ドキュメント
-- [GROWI Docs (English)](https://docs.growi.org/en/): Documentation
-- [GROWI.cloud](https://growi.cloud): クラウドホスティングサービス / Cloud hosting service
-- [GitHub](https://github.com/growilabs/growi): ソースコード / Source code
-- [デモ / Demo](https://demo.growi.org): デモ環境 / Demo environment
+## Official site
+- [GROWI.org（日本語）](https://growi.org/ja/): 製品の概要・機能・導入のメリット
+- [GROWI.org (English)](https://growi.org/en/): Product overview, features and benefits
+- [GROWI AI Agent（日本語）](https://growi.org/ja/#growi-ai-feature): wiki 全体を自ら探索して回答する AI Agent
+- [GROWI AI Agent (English)](https://growi.org/en/#growi-ai-feature): An agent that explores the whole wiki to answer questions
+- [GROWI MCP Server（日本語）](https://growi.org/ja/#mcp-server): AI エージェントから GROWI のページを検索・作成・更新する MCP サーバー
+- [GROWI MCP Server (English)](https://growi.org/en/#mcp-server): MCP server that lets AI agents search, create and update GROWI pages
+
+## Documentation
+- [GROWI Docs（日本語）](https://docs.growi.org/ja/): ドキュメントのトップ
+- [GROWI Docs (English)](https://docs.growi.org/en/): Documentation top
+- [管理者ガイド](https://docs.growi.org/ja/admin-guide/): インストール・運用の手順
+- [Admin guide](https://docs.growi.org/en/admin-guide/): Installation and operation
+- [GROWI AI Agent のセットアップと管理](https://docs.growi.org/ja/admin-guide/management-cookbook/growi-ai-agent.html): AI Agent の設定方法
+- [Set up and manage GROWI AI Agent](https://docs.growi.org/en/admin-guide/management-cookbook/growi-ai-agent.html): How to configure the AI Agent
+- [GROWI MCP Server（機能紹介）](https://docs.growi.org/ja/guide/features/mcp-server.html): MCP Server の使い方
+- [GROWI MCP Server (feature guide)](https://docs.growi.org/en/guide/features/mcp-server.html): How to use the MCP server
+
+## Source code and services
+- [GROWI (GitHub)](https://github.com/growilabs/growi): ソースコード / Source code
+- [growi-mcp-server (GitHub)](https://github.com/growilabs/growi-mcp-server): MCP サーバーのソースコード / MCP server source code
+- [@growi/mcp-server (npm)](https://www.npmjs.com/package/@growi/mcp-server): MCP サーバーのパッケージ / MCP server package
+- [growi-docker-compose (GitHub)](https://github.com/growilabs/growi-docker-compose): Docker Compose での導入 / Install with Docker Compose
+- [Docker Hub](https://hub.docker.com/r/growilabs/growi/): Docker イメージ / Docker image
+- [GROWI.cloud](https://growi.cloud): クラウド版サービス / Cloud service
+- [Demo](https://demo.growi.org): デモ環境 / Demo environment

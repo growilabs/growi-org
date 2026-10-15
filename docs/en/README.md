@@ -20,6 +20,8 @@ links:
   growi: https://growi.co.jp/
   growi_ai_agent: https://docs.growi.org/en/admin-guide/management-cookbook/growi-ai-agent.html
   mcp_server: https://docs.growi.org/en/guide/features/mcp-server.html
+  mcp_server_repo: https://github.com/growilabs/growi-mcp-server
+  mcp_server_npm: https://www.npmjs.com/package/@growi/mcp-server
 sections:
   introduction:
     title: Open Source GROWI
@@ -50,6 +52,14 @@ sections:
       description: GROWI provides a server that supports the Model Context Protocol (MCP). Register it with a client such as Claude Code, and agents can search, view, create, and update pages directly.
       button_text: Learn more
       video_label: "Demo: creating a GROWI wiki page from Claude via GROWI MCP Server"
+      video_description: "A demo video of registering GROWI MCP Server with Claude Code and creating a GROWI page from the conversation."
+      capabilities_title: What it can do
+      capabilities:
+        - Search and retrieve pages
+        - Create, update and manage pages
+        - Manage tags, comments and share links
+        - Connect to multiple GROWI apps
+      compatibility: GROWI v7.3.x or later is recommended. Works with clients such as Claude Desktop, Claude Code and Gemini CLI.
   merits:
     title: Merit of introduction
   trial:
