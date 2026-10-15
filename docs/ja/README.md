@@ -78,10 +78,10 @@ features:
     description: 段落や見出し、箇条書きの記入も簡単です。また、リッチテキストエディタ、プログラミング言語ごとのコードハイライト、絵文字、注釈、TODOリスト、数式、UML、Bootstrap(HTML) にも対応しています。
   shape:
     title: 図形作成
-    description: draw.io と連携し、GROWI 上で簡単に図表を作成することができます。文章では表現しにくい内容も図表を用いて伝わりやすい情報共有が可能です。
+    description: draw.io と連携し  GROWI.cloud 上で簡単に図表を作成することができます。文章では表現しにくい内容も図表を用いて伝わりやすい情報共有が可能です。
   search:
     title: タグ検索・全文検索
-    description: アップロードされたファイルのタイトルを含めた全文検索が可能です。英数字は全角半角どちらでもヒットするようになっています。
+    description: アップロードされたファイルタイトルを含めた文検索が可能です。英数字は全角半角どちらでもヒットするようになっています。
   collaborative_editor:
     title: 同時多人数編集
     description: 一つのページを複数人で同時に編集可能です。会議の議事録を取るときなどに便利です。また、編集履歴を自動保存し、過去の履歴を閲覧することも出来ます。
@@ -96,10 +96,10 @@ features:
     description: ページ毎にコメントをスレッド表示できます。コメントも Markdown による記述・プレビュー、またファイル添付が可能です。
   auth:
     title: 強力な認証機構
-    description: Passportによる認証機構を採用、SSO を実現する SAML や OpenID Connect (OIDC)、LDAP 認証、GitHub・Google OAuth プロバイダを利用したログインをサポートしています。
+    description: Passportによる認証機構を採用、SSO を実現する SAML や、LDAP 認証、GitHub/Twitter/Google OAuth プロバイダを利用したログインをサポートしています。
   assets:
     title: シンプルなアセット管理
-    description: 編集画面にドロップするだけで、ファイルをアップロード出来ます。ストレージはローカルFS、AWS S3、Google Cloud Storage、Azure Blob Storage、MongoDB GridFS の5種をサポートしています。
+    description: 編集画面にドロップするだけで、ファイルをアップロード出来ます。ストレージはローカルFS、AWS S3、Google Cloud Storage、MongoDB GridFS の4種をサポートしています。
 merits:
   management:
     title: 情報やナレッジをまとめて管理できる
@@ -109,6 +109,6 @@ merits:
     description: 検索機能を利用することで、簡単に知りたい情報を探し出すことが可能です。また、業務の属人化を防ぎ、チームとして働きやすい環境を作ります。
   team:
     title: 個人が持っている情報を <br /> チームの発展に繋げる
-    description: 個人が持つノウハウや知識、仕事をする中で得た経験は、企業やチームにとって、組織の成長に欠かせない重要な財産です。ノウハウを共有・蓄積・活用することで組織のさらなる発展へとつながります。
+    description: 個人が持つノウハウや知識、仕事をする中で得た経験は、企業やチームとって、組織の成長に欠かせない重要な財産です。ノウハウを共有・蓄積・活用することで組織のさらなる発展へとつながります。
 
 ---

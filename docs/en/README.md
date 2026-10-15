@@ -4,7 +4,7 @@ canonicalUrl: https://growi.org/en/
 heroText: 
   line1: Free high-performance
   line2:  wiki tool
-  subtext: A tool for sharing manuals and business proposals, and for editing meeting minutes together in real time. <br /> It supports comfortable information sharing and work efficiency within your team.
+  subtext: This tool for sharing munual, <br /> business proposal and simultaneous editing minutes in real time.<br /> it supports comfortable information sharing and work efficiency within the team.
 heroImage: /assets/images/banner-logo.png
 mockImage: /assets/images/mock-img-en.png
 heroButtons:
@@ -23,13 +23,13 @@ links:
 sections:
   introduction:
     title: Open Source GROWI
-    text: GROWI is open source software developed by GROWI, Inc. <br class="d-none d-md-block" /> and released under the MIT license. <br class="d-none d-md-block" /> Users also take part in its development, which is very active every day.
+    text: GROWI.cloud is open software developed by GROWI, Inc. <br class="d-none d-md-block" /> And released under MIT license.
   community:
     title: Community-support
-    text: Questions, requests and bug reports about GROWI are welcome on GitHub or Slack.
+    text: We are accepting questions, request and report of bug on our GItHub or Slack.
   features:
     title: Functions and Features
-    text: Rich features support smooth information sharing within your company and team. Here are some of GROWI's useful features. <br /> For details, see <a href="https://docs.growi.org/en/guide/">GROWI Docs/Features</a>.
+    text: Features-rich Support smooth information sharing within the company and team Share some of useful Features in GROWI. <br /> The Features Details can get from <a href="https://docs.growi.org/ja/guide/">GROWI Docs/Features</a> introduction.
   growi_ai:
     text: Starting with version 8.0.0, GROWI AI has been reborn as <strong>GROWI AI Agent</strong>.<br class="d-none d-md-block" /> No assistants to create, no training required. Just ask a question, and it <strong>explores your entire wiki on its own, gathers evidence, and builds an answer.</strong>
     explore:
@@ -51,16 +51,16 @@ sections:
       button_text: Learn more
       video_label: "Demo: creating a GROWI wiki page from Claude via GROWI MCP Server"
   merits:
-    title: Benefits of adopting GROWI
+    title: Merit of introduction
   trial:
-    title: Try GROWI with the demo first!
+    title: Try first GROWI with a demo!
     demo: Try the demo
     operation: See detailed operation instructions
   cloud:
     title: GROWI.cloud
-    text: Want to run GROWI more easily?
-    subtext: GROWI.cloud is the cloud service version of GROWI!
-    button_text: See GROWI.cloud details
+    text: Who want to operate GROWI more easily!
+    subtext: Cloud version service of GROWI!
+    button_text: Here is more details
   joinus:
     title: JOIN US
     descriptions: GROWI is open source software developed by <a href="https://growi.co.jp" target="_blank">GROWI, Inc</a> . and released under the MIT license. We are looking for contributors who can help with development and interns who want to develop. <br/> First join Slack and feel free to talk to the GROWI members.
@@ -72,40 +72,40 @@ button:
 features:
   markdown:
     title: Markdown support
-    description: Paragraphs, headings and bullet points are easy to write. GROWI also supports a rich text editor, syntax highlighting for each programming language, emoji, footnotes, to-do lists, math formulas, UML and Bootstrap (HTML).
+    description: It is easy to fill in a paragraph, headline and bullet point Also, supporting rich text editors, Programming language per code, highlight and Emoji, annotation, To-Dolist, formula, UML, Bootstrap(HTML).
   shape:
     title: Create Diagram
-    description: GROWI integrates with draw.io, so you can create diagrams easily on GROWI. Diagrams help you share information that is difficult to express in writing.
+    description: Integrate with draw.io, it can create diagrams easily on GROWI.cloud. Diagram can use to share information effectively that is difficult to express in writing.
   search:
     title: Tag and Full-text search
-    description: Full-text search covers the titles of uploaded files as well. Alphanumeric characters match in both full-width and half-width forms.
+    description: It can search Full-text include the title of the uploaded file.The alphanumeric can be searched with either full-width or half-width characters.
   collaborative_editor:
     title: Simultaneous multi-user edits
-    description: Multiple users can edit a single page at the same time, which is useful for taking meeting minutes. Edits are saved automatically, and past revisions can be viewed.
+    description: A single page can be edited by multi users simultaneously. It'll be useful when compiling minutes of Meeting. Furthermore, it can automatically save edits and allow viewing of past revisions.
   customize:
     title: Highly customizable
-    description: You can choose themes and layouts, and even customize the sidebar, which is rare among similar services. Flexible settings let you match the way your team works.
+    description: It allows users to select themes and layouts, and offers customization of the sidebar, which is rare compared to other services. Flexible settings are available to match the usage of your team.
   group:
     title: Group Management
-    description: You can grant administrator privileges to specific users and set page viewing permissions for each user group.
+    description: It is possible to grant administrator privileges to specific users and to set viewing permissions for pages by user groups.
   comment:
     title: Comment Features
-    description: Each page shows comments in threads. Comments can be written in Markdown, previewed, and can have files attached.
+    description: It is possible to display comments in a threaded format for each page on the website. Comments can be written in Markdown format, previewed, and files can also be attached.
   auth:
     title: Powerful authentication mechanism
-    description: GROWI's authentication is built on Passport. It supports single sign-on (SSO) with SAML and OpenID Connect (OIDC), LDAP authentication, and login through GitHub and Google OAuth providers.
+    description: Our system implements an authentication mechanism using Passport, and supports single sigh-on(SSO) using SAML, LDAP authentication, and login through GitHub/Twitter/Google OAuth provider.
   assets:
-    title: Simple asset management
-    description: Upload files simply by dropping them into the editing screen. GROWI supports five storage types&#58; local file system, AWS S3, Google Cloud Storage, Azure Blob Storage and MongoDB GridFS.
+    title: Asset management as simple
+    description: We can upload files simply by dropping them into the editing screen. The system supports storage on one of four types&#58; local FS, AWS S3, Google Cloud Storage, MongoDB GridFS.
 merits:
   management:
     title: Able to manage information and knowledge in one place
-    description: GROWI lets you manage and share information and knowledge easily by consolidating business-related information in one place.
+    description: GROWI allows you to easily manage and share information and knowledge by consolidating business-related information in one place.
   infomation:
-    title: Find the information you want quickly
-    description: With the search features, you can easily find the information you need. This helps prevent work from depending on a single person and creates a more collaborative working environment for the team.
+    title: Get the information what you want quickly
+    description: By utilizing the search features, it is possible to easily find the desired information. This helps prevent personalization of tasks and creates a more collaborative working environment for the team.
   team:
-    title: Turn individual knowledge into team growth
-    description: The knowledge, skills and experience that individuals gain from their work are essential assets for the growth of organizations and teams. By sharing, storing and using this knowledge, organizations can develop even further.
+    title: Leveraging individual knowledge for team growth
+    description: The knowledge,skills, and experience that individuals gain from their work are essential assets for growth of organizations and teams. By sharing, storing, and using this knowledge, organizations can develop even further.
 
 ---
