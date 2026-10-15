@@ -4,7 +4,7 @@
       <div id="home" class="container py-5">
         <!-- header content -->
         <div class="header-content row pt-4 pt-lg-5 pb-0 pb-lg-5 mt-5">
-          <div class="col-lg-6 px-0">
+          <div class="col-lg-6 px-0 animated fadeIn">
             <h1 id="main-title" class="fs-1 border-0 mt-0 mt-lg-4 mb-4"> {{ data.heroText.line1 }} <br />{{ data.heroText.line2 }}</h1>
             <img :src="data.mockImage" :alt="data.heroImageAlt" width="2078" height="1217" loading="lazy" decoding="async" v-on:click="handleClick" class="d-lg-none">
           <p class="mt-3" v-html="data.heroText.subtext"></p>
@@ -12,8 +12,8 @@
             <span> {{ data.button.start }}</span>
           </a>
         </div>
-        <div class="d-none d-lg-block col-lg-6 my-auto">
-          <p>
+        <div class="d-none d-lg-block col-lg-6 my-auto animated fadeIn">
+          <p class="animated fadeIn">
             <img :src="data.mockImage" :alt="data.heroImageAlt" width="2078" height="1217" fetchpriority="high" v-on:click="handleClick">
           </p>
           </div>
