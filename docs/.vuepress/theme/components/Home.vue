@@ -30,9 +30,10 @@
             <div class="d-sm-flex flex-md-fill flex-row justify-content-center order-md-2">
               <img src="/assets/images/growi-logo.svg" alt="GROWI" class="d-md-none w-50 mb-4" v-on:click="handleClick">
               <div class="my-auto ms-sm-4">
-                <p class="ff-montserrat fs-3 mb-2">More than</p>
+                <p class="ff-montserrat fs-3 mb-2" v-if="data.sections.introduction.pulls_more_than">{{ data.sections.introduction.pulls_more_than }}</p>
                 <span class="ff-montserrat display-1 text-reset">1,200,000</span>
-                <p class="ff-montserrat fs-3 mt-3">Docker Image Pulls </p>
+                <p class="ff-montserrat fs-3 mt-3 mb-1">{{ data.sections.introduction.pulls_label }}</p>
+                <p class="small text-muted mb-0">{{ data.sections.introduction.pulls_note }}</p>
               </div>
             </div>
             <p class="mb-0 mb-md-4 order-md-1 mt-5 mt-md-auto text-start text-md-center px-0" v-html="data.sections.introduction.text">
@@ -264,6 +265,19 @@
         >
           <span class="fs-5"> {{ data.button.start }}</span>
         </a>
+      </div>
+    </div>
+
+    <!-- FAQ section -->
+    <div class="container section-padding" id="faq" data-section="faq">
+      <h2 class="text-center section-title pb-5">{{ data.faq.title }}</h2>
+      <div class="row justify-content-center">
+        <dl class="col-lg-9">
+          <template v-for="(item, index) in data.faq.items">
+            <dt :key="`faq-q-${index}`" class="fs-5 mt-4">{{ item.question }}</dt>
+            <dd :key="`faq-a-${index}`" class="mb-0">{{ item.answer }}</dd>
+          </template>
+        </dl>
       </div>
     </div>
 
