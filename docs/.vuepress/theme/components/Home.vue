@@ -204,7 +204,7 @@
       <!-- GROWI MCP Server -->
       <div class="row mx-xl-5 justify-content-center align-items-center py-5">
         <div class="col-lg-6 mb-4 mb-lg-0">
-          <video ref="mcpServerVideo" src="/assets/images/growi-mcp-server.mp4" class="rounded-3 shadow w-100" muted loop playsinline preload="none" aria-label="GROWI MCP Server"></video>
+          <video ref="mcpServerVideo" src="/assets/images/growi-mcp-server.mp4#t=0.001" class="rounded-3 shadow w-100" muted loop playsinline preload="metadata" aria-label="GROWI MCP Server"></video>
         </div>
         <div class="col-lg-5 ps-lg-5 text-lg-start text-center">
           <h3 class="mb-4 fs-2">{{ data.sections.growi_ai.mcp_server.title }}</h3>
