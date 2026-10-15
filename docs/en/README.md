@@ -25,9 +25,6 @@ links:
 sections:
   introduction:
     title: Open Source GROWI
-    pulls_more_than: More than
-    pulls_label: Docker Image Pulls
-    pulls_note: As of October 2026. Total of weseek/growi and growilabs/growi on Docker Hub
     text: GROWI.cloud is open software developed by GROWI, Inc. <br class="d-none d-md-block" /> And released under MIT license.
   community:
     title: Community-support
@@ -120,21 +117,5 @@ merits:
   team:
     title: Leveraging individual knowledge for team growth
     description: The knowledge,skills, and experience that individuals gain from their work are essential assets for growth of organizations and teams. By sharing, storing, and using this knowledge, organizations can develop even further.
-
-faq:
-  title: FAQ
-  items:
-    - question: Is GROWI free to use?
-      answer: Yes. GROWI is open source software released under the MIT license and is free to use. If you run it on your own servers, you provide the server resources yourself. GROWI.cloud, the cloud version, is a separate service for those who prefer not to operate GROWI themselves.
-    - question: Can I use GROWI commercially?
-      answer: Yes. Under the MIT license you can use, modify and redistribute GROWI freely, including for commercial purposes.
-    - question: How do I install GROWI?
-      answer: You can install GROWI on your own servers with Docker. The admin guide describes the installation steps using Docker Compose. If you would rather not operate it yourself, GROWI.cloud is also available.
-    - question: What is the difference between GROWI and GROWI.cloud?
-      answer: GROWI is the open source wiki itself, which you run on your own servers. GROWI.cloud provides GROWI as a cloud service, so the server operation is handled for you.
-    - question: Where is my data stored?
-      answer: When you run GROWI on your own servers, pages are stored in MongoDB. Attachments can be stored in the local file system, AWS S3, Google Cloud Storage, Azure Blob Storage or MongoDB GridFS.
-    - question: Does GROWI support AI features and MCP?
-      answer: Yes. Starting with version 8.0.0, GROWI AI Agent explores your whole wiki on its own to answer questions, and you can choose OpenAI, Anthropic, Google or Azure OpenAI as the provider. GROWI MCP Server also lets AI agents such as Claude Code search, create and update pages.
 
 ---

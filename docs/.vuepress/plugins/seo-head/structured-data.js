@@ -55,16 +55,6 @@ const buildStructuredData = ({ base, hreflang, description, frontmatter }) => {
         'offers': { '@type': 'Offer', 'price': '0', 'priceCurrency': 'USD' },
       },
       {
-        '@type': 'FAQPage',
-        '@id': `${pageUrl}#faq`,
-        'inLanguage': hreflang,
-        'mainEntity': frontmatter.faq.items.map(item => ({
-          '@type': 'Question',
-          'name': item.question,
-          'acceptedAnswer': { '@type': 'Answer', 'text': item.answer },
-        })),
-      },
-      {
         '@type': 'VideoObject',
         '@id': `${pageUrl}#mcp-server-demo`,
         'name': mcp.video_label,

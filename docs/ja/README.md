@@ -25,9 +25,6 @@ links:
 sections:
   introduction:
     title: オープンソース GROWI
-    pulls_more_than: Docker Image のダウンロード数
-    pulls_label: 回以上
-    pulls_note: 2026年10月時点。Docker Hub の weseek/growi と growilabs/growi の合計
     text: GROWI は、GROWI, Inc. が開発を行い、<br class="d-none d-md-block" /> MITライセンスで公開しているオープンソースソフトウェアです。 <br class="d-none d-md-block" /> ユーザーの方も加わった開発が日々活発に行われています。
   community:
     title: コミュニティ・サポート
@@ -123,21 +120,5 @@ merits:
   team:
     title: 個人が持っている情報を <br /> チームの発展に繋げる
     description: 個人が持つノウハウや知識、仕事をする中で得た経験は、企業やチームとって、組織の成長に欠かせない重要な財産です。ノウハウを共有・蓄積・活用することで組織のさらなる発展へとつながります。
-
-faq:
-  title: よくある質問
-  items:
-    - question: GROWI は無料で使えますか？
-      answer: はい。GROWI は MIT ライセンスで公開されているオープンソースソフトウェアで、無料で利用できます。自社のサーバーで運用する場合は、サーバー費用などをご自身で用意します。クラウド版の GROWI.cloud は、運用を任せたい方向けの別サービスです。
-    - question: 商用利用できますか？
-      answer: はい。MIT ライセンスのため、商用利用を含めて自由に利用・改変・再配布できます。
-    - question: どうやって導入しますか？
-      answer: Docker で自社のサーバーに導入できます。Docker Compose を使った導入手順は管理者ガイドに掲載しています。運用を任せたい場合は、クラウド版の GROWI.cloud も利用できます。
-    - question: GROWI と GROWI.cloud の違いは何ですか？
-      answer: GROWI はオープンソースの wiki 本体で、自社のサーバーで運用します。GROWI.cloud は、その GROWI をクラウドサービスとして提供するもので、サーバーの運用を任せられます。
-    - question: データはどこに保存されますか？
-      answer: 自社のサーバーで運用する場合、ページは MongoDB に保存されます。添付ファイルはローカルのファイルシステム、AWS S3、Google Cloud Storage、Azure Blob Storage、MongoDB GridFS のいずれかに保存できます。
-    - question: AI 機能や MCP に対応していますか？
-      answer: はい。バージョン 8.0.0 以降、GROWI AI Agent が wiki 全体を自ら探索して質問に回答します。プロバイダは OpenAI・Anthropic・Google・Azure OpenAI から選べます。また GROWI MCP Server により、Claude Code などの AI エージェントからページの検索・作成・更新ができます。
 
 ---
