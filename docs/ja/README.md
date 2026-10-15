@@ -51,7 +51,7 @@ sections:
     mcp_server:
       title: GROWI MCP Server
       description: GROWI は Model Context Protocol (MCP) 対応のサーバーを提供しています。Claude Code などのクライアントに登録すれば、エージェントがページの検索・閲覧・作成・更新を直接実行できます。
-      button_text: GROWI MCP Server の詳細を見る
+      button_text: 詳しく見る
       video_label: "デモ: Claude から GROWI MCP Server 経由で GROWI のページを作成する様子"
       video_description: "Claude Code に GROWI MCP Server を登録し、会話の中から GROWI のページを作成するデモ動画です。"
       capabilities_title: できること
@@ -71,7 +71,7 @@ sections:
     title: GROWI.cloud
     text: GROWIをもっと楽に運用したい方へ！
     subtext: GROWIのクラウド版サービス！
-    button_text: GROWI.cloud の詳細を見る
+    button_text: 詳細はこちら
   joinus:
     title: JOIN US
     descriptions: GROWI の開発を手伝っていただけるコントリビューター、開発してみたいインターン生を募集しています。 <br /> まずは Slack に参加し、気軽にGROWIメンバーに声をかけてください！

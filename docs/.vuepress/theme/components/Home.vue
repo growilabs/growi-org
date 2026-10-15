@@ -357,7 +357,7 @@
     <!-- footer social icons right -->
     <footer class="d-flex justify-content-between align-items-center">
         <p class="ms-3">
-          © {{ currentYear }} GROWI - produced by <a :href="data.links.growi" target="_blank">GROWI, Inc.</a>
+          © 2024 GROWI - produced by <a :href="data.links.growi" target="_blank">GROWI, Inc.</a>
         </p>
         <div class="d-flex">
           <a href="https://github.com/growilabs" class="ms-auto me-3" target="_blank" aria-label="GROWI on GitHub"><i class="fab fa-github fs-4" aria-hidden="true"></i></a>
@@ -377,10 +377,6 @@ export default {
   computed: {
     data() {
       return this.$page.frontmatter;
-    },
-
-    currentYear() {
-      return new Date().getFullYear();
     },
 
     actionLink() {
