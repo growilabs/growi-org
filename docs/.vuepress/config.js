@@ -109,13 +109,13 @@ module.exports = ctx => ({
   locales: {
     '/en/': {
       lang: 'en-US',
-      title: 'OSS wiki tool GROWI | Easy and Smooth Information Sharing For Everyone',
-      description: 'GROWI is open source software developed by GROWI, Inc. and released under the MIT license. Installation on docker and on-premise support are also possible. We are also looking for contributors who can help with the development and internship students who want to develop.'
+      title: 'GROWI - Free Open Source Markdown Wiki | Easy and Smooth Information Sharing For Everyone',
+      description: 'GROWI is open source software developed by GROWI, Inc. and released under the MIT license. Installation on Docker and on-premise support are also possible. It also supports GROWI AI Agent and GROWI MCP Server. We are also looking for contributors who can help with the development and interns who want to try development.'
     },
     '/ja/': {
       lang: 'ja',
-      title: 'OSS開発wikiツールのGROWI | 快適な情報共有を、全ての人へ',
-      description: 'GROWIはGROWI, Inc.が開発を行い、MITライセンスで公開しているオープンソースソフトウェアです。 dockerへのインストールやオンプレ対応も可能です。 開発を手伝っていただけるコントリビューター、開発してみたいインターン生も募集しています。'
+      title: 'GROWI｜無料のオープンソース Markdown Wiki｜快適な情報共有を、全ての人へ',
+      description: 'GROWIはGROWI, Inc.が開発を行い、MITライセンスで公開しているオープンソースソフトウェアです。dockerへのインストールやオンプレ対応も可能です。GROWI AI Agent や GROWI MCP Server にも対応しています。開発を手伝っていただけるコントリビューター、開発してみたいインターン生も募集しています。'
     }
   },
   themeConfig: {
