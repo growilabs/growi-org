@@ -202,11 +202,11 @@
       </div>
 
       <!-- GROWI MCP Server -->
-      <div class="row mx-md-5 justify-content-center align-items-center py-5">
-        <div class="col-lg-6 col-md-10 mb-4 mb-lg-0">
-          <img src="/assets/images/growi-mcp-server.png" alt="GROWI MCP Server" class="rounded-3 shadow" />
+      <div class="row mx-xl-5 justify-content-center align-items-center py-5">
+        <div class="col-lg-6 mb-4 mb-lg-0">
+          <video src="/assets/images/growi-mcp-server.mp4" class="rounded-3 shadow w-100" autoplay muted loop playsinline preload="metadata" aria-label="GROWI MCP Server"></video>
         </div>
-        <div class="col-lg-5 col-md-10 ps-lg-5 text-lg-start text-center">
+        <div class="col-lg-5 ps-lg-5 text-lg-start text-center">
           <h3 class="mb-4 fs-2">{{ data.sections.growi_ai.mcp_server.title }}</h3>
           <p v-html="data.sections.growi_ai.mcp_server.description"></p>
           <a :href="data.links.mcp_server" class="btn btn-hexagon btn-bg-green-gradient btn-hexagon-angle-right fw-bold d-inline-block text-white px-5 py-2 mt-3 rounded-0" target="_blank">
