@@ -4,7 +4,7 @@ canonicalUrl: https://growi.org/ja/
 heroText: 
  line1: 無料で使える
  line2: 高機能なwikiツール
- subtext: GROWI は、Markdown で書けるオープンソースの Wiki です。MIT ライセンスで無料公開され、Docker で自社サーバーに導入できます。<br /> マニュアルや企画書の共有、議事録の同時編集など、チーム内での快適な情報共有と作業効率化を支えます。
+ subtext: マニュアルや企画書の共有、議事録の同時編集など、 <br /> チーム内での快適な情報共有と作業効率化を支えるツールです。
 heroImage: /assets/images/banner-logo.png
 mockImage: /assets/images/mock-img-ja.png
 heroButtons:
