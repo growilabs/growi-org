@@ -72,7 +72,9 @@ module.exports = ctx => ({
     [
       'sitemap',
       {
-        'hostname': 'https://growi.org'
+        'hostname': 'https://growi.org',
+        'exclude': ['/404.html'],
+        'changefreq': 'weekly'
       }
     ]
   ],

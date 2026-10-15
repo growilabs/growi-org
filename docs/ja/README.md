@@ -1,5 +1,6 @@
 ---
 home: true
+canonicalUrl: https://growi.org/ja/
 heroText: 
  line1: 無料で使える
  line2: 高機能なwikiツール

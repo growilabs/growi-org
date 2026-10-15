@@ -5,7 +5,7 @@
         <!-- header content -->
         <div class="header-content row pt-4 pt-lg-5 pb-0 pb-lg-5 mt-5">
           <div class="col-lg-6 px-0 animated fadeIn">
-            <h2 class="fs-1 border-0 mt-0 mt-lg-4 mb-4"> {{ data.heroText.line1 }}<br />{{ data.heroText.line2 }}</h2>
+            <h1 class="fs-1 border-0 mt-0 mt-lg-4 mb-4"> {{ data.heroText.line1 }}<br />{{ data.heroText.line2 }}</h1>
             <img :src="data.mockImage" alt="GROWI" v-on:click="handleClick" class="d-lg-none">
           <p class="mt-3" v-html="data.heroText.subtext"></p>
           <a :href="data.links.admin_guide" class="btn btn-hexagon btn-bg-green-gradient btn-hexagon-angle-right fw-bold d-inline-block text-white mt-4 mb-5 px-5 py-2 rounded-0" target="_blank">
@@ -83,7 +83,7 @@
           <div class="card border-0 bg-transparent">
             <img src="/assets/images/features/editor.png" alt="Editor" class="card-img-top rounded-3 shadow" />
             <div class="card-body px-0">
-              <h5 class="text-center mt-4">{{ data.features.markdown.title }}</h5>
+              <h3 class="text-center mt-4 fs-5">{{ data.features.markdown.title }}</h3>
               <p v-html="data.features.markdown.description" class=""></p>
             </div>
           </div>
@@ -92,7 +92,7 @@
           <div class="card border-0 bg-transparent">
             <img src="/assets/images/features/shape.png" alt="Create Diagram" class="card-img-top rounded-3 shadow" />
             <div class="card-body px-0">
-              <h5 class="text-center mt-4">{{ data.features.shape.title }}</h5>
+              <h3 class="text-center mt-4 fs-5">{{ data.features.shape.title }}</h3>
               <p v-html="data.features.shape.description"></p>
             </div>
           </div>
@@ -101,7 +101,7 @@
           <div class="card border-0 bg-transparent">
             <img src="/assets/images/features/search.png" alt="Search" class="card-img-top rounded-3 shadow" />
             <div class="card-body px-0">
-              <h5 class="text-center mt-4">{{ data.features.search.title }}</h5>
+              <h3 class="text-center mt-4 fs-5">{{ data.features.search.title }}</h3>
               <p v-html="data.features.search.description"></p>
             </div>
           </div>
@@ -110,7 +110,7 @@
           <div class="card border-0 bg-transparent">
             <img src="/assets/images/features/collaborative-editor.png" alt="Collaborative Editor" class="card-img-top rounded-3 shadow" />
             <div class="card-body px-0">
-              <h5 class="text-center mt-4">{{ data.features.collaborative_editor.title }}</h5>
+              <h3 class="text-center mt-4 fs-5">{{ data.features.collaborative_editor.title }}</h3>
               <p v-html="data.features.collaborative_editor.description"></p>
             </div>
           </div>
@@ -119,7 +119,7 @@
           <div class="card border-0 bg-transparent">
             <img src="/assets/images/features/customize.png" alt="Customize" class="card-img-top rounded-3 shadow" />
             <div class="card-body px-0">
-              <h5 class="text-center mt-4">{{ data.features.customize.title }}</h5>
+              <h3 class="text-center mt-4 fs-5">{{ data.features.customize.title }}</h3>
               <p v-html="data.features.customize.description"></p>
             </div>
           </div>
@@ -128,7 +128,7 @@
           <div class="card border-0 bg-transparent">
             <img src="/assets/images/features/group.png" alt="Group Management" class="card-img-top rounded-3 shadow" />
             <div class="card-body px-0">
-              <h5 class="text-center mt-4">{{ data.features.group.title }}</h5>
+              <h3 class="text-center mt-4 fs-5">{{ data.features.group.title }}</h3>
               <p v-html="data.features.group.description"></p>
             </div>
           </div>
@@ -137,7 +137,7 @@
           <div class="card border-0 bg-transparent">
             <img src="/assets/images/features/comment.png" alt="Comment Features" class="card-img-top rounded-3 shadow" />
             <div class="card-body px-0">
-              <h5 class="text-center mt-4">{{ data.features.comment.title }}</h5>
+              <h3 class="text-center mt-4 fs-5">{{ data.features.comment.title }}</h3>
               <p v-html="data.features.comment.description"></p>
             </div>
           </div>
@@ -146,7 +146,7 @@
           <div class="card border-0 bg-transparent">
             <img src="/assets/images/features/auth.png" alt="Auth" class="card-img-top rounded-3 shadow" />
             <div class="card-body px-0">
-              <h5 class="text-center mt-4">{{ data.features.auth.title }}</h5>
+              <h3 class="text-center mt-4 fs-5">{{ data.features.auth.title }}</h3>
               <p v-html="data.features.auth.description"></p>
             </div>
           </div>
@@ -155,7 +155,7 @@
           <div class="card border-0 bg-transparent">
             <img src="/assets/images/features/assets.png" alt="Assets management" class="card-img-top rounded-3 shadow" />
             <div class="card-body px-0 pb-0">
-              <h5 class="text-center mt-4">{{ data.features.assets.title }}</h5>
+              <h3 class="text-center mt-4 fs-5">{{ data.features.assets.title }}</h3>
               <p v-html="data.features.assets.description" class="mb-0"></p>
             </div>
           </div>
