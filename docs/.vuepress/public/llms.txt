@@ -1,7 +1,7 @@
 # GROWI
 
-> GROWI is an open-source Wiki system. It serves as a Markdown-based knowledge base for team information sharing and document management. Released under the MIT license and available for self-hosting with Docker. A cloud service, GROWI.cloud, is also available. The Docker image has been downloaded more than 1.2 million times.
-> GROWI は Markdown で書けるオープンソースの Wiki システムです。MIT ライセンスで公開されており、Docker でセルフホストできます。クラウド版の GROWI.cloud もあります。
+> GROWI is an open-source Wiki system. It serves as a Markdown-based knowledge base for team information sharing and document management. Released under the MIT license and available for self-hosting with Docker. The Docker image has been downloaded more than 1.2 million times.
+> GROWI は Markdown で書けるオープンソースの Wiki システムです。MIT ライセンスで公開されており、Docker でセルフホストできます。
 
 GROWI is developed by GROWI, Inc. Supported site languages: Japanese and English. This site's content may be quoted and summarized by AI search engines and assistants; please link to the source page. Sitemap: https://growi.org/sitemap.xml
 
