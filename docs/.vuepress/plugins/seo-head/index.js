@@ -67,5 +67,12 @@ module.exports = (options, ctx) => ({
       const html = await fs.promises.readFile(file, 'utf8');
       await fs.promises.writeFile(file, html.replace('</head>', `${hreflangTags}${toJsonLdScript(structuredData)}</head>`));
     }));
+
+    // Keep the 404 page out of the index even if a proxy in front does not forward the 404 status.
+    const notFound = path.join(ctx.outDir, '404.html');
+    if (fs.existsSync(notFound)) {
+      const html = await fs.promises.readFile(notFound, 'utf8');
+      await fs.promises.writeFile(notFound, html.replace('</head>', '<meta name="robots" content="noindex"></head>'));
+    }
   },
 });

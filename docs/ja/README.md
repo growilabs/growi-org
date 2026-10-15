@@ -6,6 +6,7 @@ heroText:
  line2: 高機能なwikiツール
  subtext: マニュアルや企画書の共有、議事録の同時編集など、 <br /> チーム内での快適な情報共有と作業効率化を支えるツールです。
 heroImage: /assets/images/banner-logo.png
+heroImageAlt: GROWI の画面イメージ
 mockImage: /assets/images/mock-img-ja.png
 heroButtons:
 - text: 機能紹介
@@ -50,7 +51,7 @@ sections:
     mcp_server:
       title: GROWI MCP Server
       description: GROWI は Model Context Protocol (MCP) 対応のサーバーを提供しています。Claude Code などのクライアントに登録すれば、エージェントがページの検索・閲覧・作成・更新を直接実行できます。
-      button_text: 詳しく見る
+      button_text: GROWI MCP Server の詳細を見る
       video_label: "デモ: Claude から GROWI MCP Server 経由で GROWI のページを作成する様子"
       video_description: "Claude Code に GROWI MCP Server を登録し、会話の中から GROWI のページを作成するデモ動画です。"
       capabilities_title: できること
@@ -70,7 +71,7 @@ sections:
     title: GROWI.cloud
     text: GROWIをもっと楽に運用したい方へ！
     subtext: GROWIのクラウド版サービス！
-    button_text: 詳細はこちら
+    button_text: GROWI.cloud の詳細を見る
   joinus:
     title: JOIN US
     descriptions: GROWI の開発を手伝っていただけるコントリビューター、開発してみたいインターン生を募集しています。 <br /> まずは Slack に参加し、気軽にGROWIメンバーに声をかけてください！
@@ -78,7 +79,7 @@ sections:
     address: 東京都新宿区西早稲田2-20-15 <br /> 高田馬場アクセス10F
     tel:
       text: 03-6233-9447
-      link: 0362339447
+      link: 81362339447
     email: contact@growi.co.jp
 button:
   start: GROWIを始める

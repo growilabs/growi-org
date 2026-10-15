@@ -6,6 +6,7 @@ heroText:
   line2:  wiki tool
   subtext: This tool for sharing munual, <br /> business proposal and simultaneous editing minutes in real time.<br /> it supports comfortable information sharing and work efficiency within the team.
 heroImage: /assets/images/banner-logo.png
+heroImageAlt: GROWI screen mockup
 mockImage: /assets/images/mock-img-en.png
 heroButtons:
 - text: Features
@@ -50,7 +51,7 @@ sections:
     mcp_server:
       title: GROWI MCP Server
       description: GROWI provides a server that supports the Model Context Protocol (MCP). Register it with a client such as Claude Code, and agents can search, view, create, and update pages directly.
-      button_text: Learn more
+      button_text: Learn more about GROWI MCP Server
       video_label: "Demo: creating a GROWI wiki page from Claude via GROWI MCP Server"
       video_description: "A demo video of registering GROWI MCP Server with Claude Code and creating a GROWI page from the conversation."
       capabilities_title: What it can do
