@@ -69,6 +69,7 @@ module.exports = ctx => ({
         'ga': 'UA-55480073-14' // UA-00000000-0
       }
     ],
+    require('./plugins/seo-head'),
     [
       'sitemap',
       {
@@ -86,15 +87,6 @@ module.exports = ctx => ({
     ['meta', { name: 'description', content: 'Team Collaboration Software using markdown'}],
     ['meta', { name: 'keywords', content: 'markdown, wiki, javascript, react, growi, crowi'}],
     ['meta', { name: 'author', content: 'GROWI, Inc.'}],
-    // OGP
-    ['meta', { property: 'og:title', content: 'OSS開発wikiツールのGROWI | 快適な情報共有を、全ての人へ'}],
-    ['meta', { property: 'og:description', content: 'GROWIはGROWI, Inc.が開発を行い、MITライセンスで公開しているオープンソースソフトウェアです。 dockerへのインストールやオンプレ対応も可能です。 開発を手伝っていただけるコントリビューター、開発してみたいインターン生も募集しています。'}],
-    ['meta', { property: 'og:image', content: 'https://growi.org/assets/images/ogp-logo.png'}],
-    // Twitter
-    ['meta', { name: 'twitter:card', content: 'summary'}],
-    ['meta', { name: 'twitter:title', content: 'OSS開発wikiツールのGROWI | 快適な情報共有を、全ての人へ'}],
-    ['meta', { name: 'twitter:description', content: 'GROWIはGROWI, Inc.が開発を行い、MITライセンスで公開しているオープンソースソフトウェアです。 dockerへのインストールやオンプレ対応も可能です。 開発を手伝っていただけるコントリビューター、開発してみたいインターン生も募集しています。'}],
-    ['meta', { name: 'twitter:image', content: 'https://growi.org/assets/images/ogp-logo.png'}],
     ['link', { href: 'https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css', rel: 'stylesheet'}],
     // Fonts
     ['link', { href: 'https://fonts.googleapis.com/css?family=Lato:300,400,400italic,700', rel: 'stylesheet', type: 'text/css'}],
@@ -108,7 +100,7 @@ module.exports = ctx => ({
   ],
   locales: {
     '/en/': {
-      lang: 'en-US',
+      lang: 'en',
       title: 'GROWI - Free Open Source Markdown Wiki | Easy and Smooth Information Sharing For Everyone',
       description: 'GROWI is open source software developed by GROWI, Inc. and released under the MIT license. Installation on Docker and on-premise support are also possible. It also supports GROWI AI Agent and GROWI MCP Server. We are also looking for contributors who can help with the development and interns who want to try development.'
     },
