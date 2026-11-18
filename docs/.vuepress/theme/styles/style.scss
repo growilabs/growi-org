@@ -140,6 +140,20 @@ cite {
   background: linear-gradient(130deg, #eeeaff 11%, #e0f5ff 89%);
 }
 
+// Bulleted list (overrides the global `ul { list-style: none }`)
+.list-disc {
+  list-style: disc;
+}
+
+.vault-command {
+  overflow-x: auto;
+  color: #c6f3a8;
+  background-color: $dark-grey;
+  code {
+    color: inherit;
+  }
+}
+
 /* Header */
 
 /* button */

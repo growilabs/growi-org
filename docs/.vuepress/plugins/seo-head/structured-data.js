@@ -10,7 +10,17 @@ const WEBSITE_ID = `${SITE_URL}/#website`;
 // locale config so the JSON-LD always matches the visible content and language.
 const buildStructuredData = ({ base, hreflang, description, frontmatter }) => {
   const pageUrl = `${SITE_URL}${base}`;
+  const { readable_wiki: readableWiki, api, vault } = frontmatter.sections;
   const mcp = frontmatter.sections.growi_ai.mcp_server;
+  // Features shown in dedicated sections come first, then the "other features" cards
+  const featureList = [
+    readableWiki.markdown.title,
+    readableWiki.diagram.title,
+    mcp.title,
+    api.rest_api.title,
+    vault.title,
+    ...Object.values(frontmatter.features).map(feature => feature.title),
+  ];
 
   return {
     '@context': 'https://schema.org',
@@ -49,7 +59,7 @@ const buildStructuredData = ({ base, hreflang, description, frontmatter }) => {
         'installUrl': 'https://hub.docker.com/r/growilabs/growi/',
         'isAccessibleForFree': true,
         'screenshot': `${SITE_URL}${frontmatter.mockImage}`,
-        'featureList': Object.values(frontmatter.features).map(feature => feature.title),
+        'featureList': featureList,
         'author': { '@id': ORG_ID },
         'publisher': { '@id': ORG_ID },
         'offers': { '@type': 'Offer', 'price': '0', 'priceCurrency': 'USD' },

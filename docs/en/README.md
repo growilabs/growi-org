@@ -23,6 +23,10 @@ links:
   mcp_server: https://docs.growi.org/en/guide/features/mcp-server.html
   mcp_server_repo: https://github.com/growilabs/growi-mcp-server
   mcp_server_npm: https://www.npmjs.com/package/@growi/mcp-server
+  markdown_guide: https://docs.growi.org/en/guide/getting-started/markdown.html
+  api_reference: https://docs.growi.org/en/api/
+  vault: https://docs.growi.org/en/guide/features/vault.html
+  vault_setup: https://docs.growi.org/en/admin-guide/management-cookbook/setup-vault.html
 sections:
   introduction:
     title: Open Source GROWI
@@ -30,9 +34,39 @@ sections:
   community:
     title: Community-support
     text: We are accepting questions, request and bug reports on our GitHub or Slack.
+  readable_wiki:
+    title: A wiki readable by people and AI alike
+    markdown:
+      image_alt: "A page written in Markdown and its body fetched from the .md endpoint"
+      title: Markdown native
+      description: Every page is plain Markdown. Paragraphs, headings and bullet lists are easy to write, and it supports a rich text editor, code highlighting for each programming language, emoji, footnotes, TODO lists, math, UML and Bootstrap (HTML). Append <code>.md</code> to a page URL to fetch its body as raw Markdown, so AI agents can read a page with a single GET.
+      link_text: See the Markdown syntax
+    diagram:
+      image_alt: "Diagram notation embedded in Markdown and how it renders"
+      title: Embedded diagrams
+      description: Besides intuitive drawing with <strong class="text-dark">draw.io</strong>, diagrams written in <strong class="text-dark">Mermaid</strong> or <strong class="text-dark">PlantUML</strong> notation can be embedded in Markdown as plain text. Share ideas that are hard to put into words clearly with diagrams.
+  api:
+    title: Rich APIs and an MCP server
+    rest_api:
+      image_alt: "Access token permission (scope) settings"
+      title: REST API
+      description: GROWI provides a REST API for working with pages, users, attachments and more, so you can flexibly integrate it with your existing tools and workflows.
+      button_text: API Reference
+  vault:
+    image_alt: "How GROWI pages are cloned and pulled to your PC as Markdown files"
+    title: GROWI Vault
+    tagline: git clone your wiki.
+    descriptions:
+      - Fetch the pages you have permission to view as a tree of Markdown files in a Git repository.
+      - Keep it up to date with git pull, or fetch only some pages with sparse checkout.
+      - AI coding agents can explore the wiki just like local files.
+    command: git clone https://x:<ACCESS_TOKEN>@<GROWI_HOST>/vault.git
+    note: Read-only. Available in self-hosted environments when enabled by an administrator.
+    button_text: How to use
+    setup_link_text: Setup for administrators
   features:
-    title: Functions and Features
-    text: Features-rich Support smooth information sharing within the company and team Share some of useful Features in GROWI. <br /> The Features Details can get from <a href="https://docs.growi.org/ja/guide/">GROWI Docs/Features</a> introduction.
+    title: Other Functions and Features
+    text: GROWI also has many other features that support smooth information sharing within your company and team. <br class="d-none d-md-block" /> For details, see <a href="https://docs.growi.org/en/guide/">GROWI Docs/Features</a>.
   growi_ai:
     text: Starting with version 8.0.0, GROWI AI has been reborn as <strong>GROWI AI Agent</strong>.<br class="d-none d-md-block" /> No assistants to create, no training required. Just ask a question, and it <strong>explores your entire wiki on its own, gathers evidence, and builds an answer.</strong>
     explore:
@@ -81,12 +115,6 @@ sections:
 button:
   start: Starting GROWI
 features:
-  markdown:
-    title: Markdown support
-    description: It is easy to fill in a paragraph, headline and bullet point Also, supporting rich text editors, Programming language per code, highlight and Emoji, annotation, To-Dolist, formula, UML, Bootstrap(HTML).
-  shape:
-    title: Create Diagram
-    description: Integrate with draw.io, it can create diagrams easily on GROWI.cloud. Diagram can use to share information effectively that is difficult to express in writing.
   search:
     title: Tag and Full-text search
     description: It can search Full-text include the title of the uploaded file.The alphanumeric can be searched with either full-width or half-width characters.
