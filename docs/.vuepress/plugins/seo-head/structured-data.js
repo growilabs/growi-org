@@ -10,7 +10,31 @@ const WEBSITE_ID = `${SITE_URL}/#website`;
 // locale config so the JSON-LD always matches the visible content and language.
 const buildStructuredData = ({ base, hreflang, description, frontmatter }) => {
   const pageUrl = `${SITE_URL}${base}`;
-  const mcp = frontmatter.sections.growi_ai.mcp_server;
+  const sections = frontmatter.sections ?? {};
+  const mcp = sections.growi_ai?.mcp_server ?? {};
+  // Features shown in dedicated sections come first, then the "other features" cards.
+  // Sections missing from a locale's frontmatter are skipped instead of failing the build.
+  const featureList = [
+    sections.readable_wiki?.markdown?.title,
+    sections.readable_wiki?.diagram?.title,
+    mcp.title,
+    sections.api?.rest_api?.title,
+    sections.vault?.title,
+    ...Object.values(frontmatter.features ?? {}).map(feature => feature?.title),
+  ].filter(Boolean);
+
+  const videoObject = mcp.video_label
+    ? [{
+      '@type': 'VideoObject',
+      '@id': `${pageUrl}#mcp-server-demo`,
+      'name': mcp.video_label,
+      'description': mcp.video_description,
+      'thumbnailUrl': `${SITE_URL}/assets/images/growi-mcp-server-poster.jpg`,
+      'contentUrl': `${SITE_URL}/assets/images/growi-mcp-server.mp4`,
+      'uploadDate': VIDEO_UPLOAD_DATE,
+      'inLanguage': hreflang,
+    }]
+    : [];
 
   return {
     '@context': 'https://schema.org',
@@ -49,21 +73,12 @@ const buildStructuredData = ({ base, hreflang, description, frontmatter }) => {
         'installUrl': 'https://hub.docker.com/r/growilabs/growi/',
         'isAccessibleForFree': true,
         'screenshot': `${SITE_URL}${frontmatter.mockImage}`,
-        'featureList': Object.values(frontmatter.features).map(feature => feature.title),
+        'featureList': featureList,
         'author': { '@id': ORG_ID },
         'publisher': { '@id': ORG_ID },
         'offers': { '@type': 'Offer', 'price': '0', 'priceCurrency': 'USD' },
       },
-      {
-        '@type': 'VideoObject',
-        '@id': `${pageUrl}#mcp-server-demo`,
-        'name': mcp.video_label,
-        'description': mcp.video_description,
-        'thumbnailUrl': `${SITE_URL}/assets/images/growi-mcp-server-poster.jpg`,
-        'contentUrl': `${SITE_URL}/assets/images/growi-mcp-server.mp4`,
-        'uploadDate': VIDEO_UPLOAD_DATE,
-        'inLanguage': hreflang,
-      },
+      ...videoObject,
     ],
   };
 };

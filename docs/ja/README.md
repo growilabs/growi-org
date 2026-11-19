@@ -10,7 +10,7 @@ heroImageAlt: GROWI の画面イメージ
 mockImage: /assets/images/mock-img-ja.png
 heroButtons:
 - text: 機能紹介
-  link: /ja/#features
+  link: /ja/#readable-wiki
 - text: デモサイト
   link: https://demo.growi.org
 - text: GROWI.cloud
@@ -23,6 +23,10 @@ links:
   mcp_server: https://docs.growi.org/ja/guide/features/mcp-server.html
   mcp_server_repo: https://github.com/growilabs/growi-mcp-server
   mcp_server_npm: https://www.npmjs.com/package/@growi/mcp-server
+  markdown_guide: https://docs.growi.org/ja/guide/getting-started/markdown.html
+  api_reference: https://docs.growi.org/en/api/
+  vault: https://docs.growi.org/ja/guide/features/vault.html
+  vault_setup: https://docs.growi.org/ja/admin-guide/management-cookbook/setup-vault.html
 sections:
   introduction:
     title: オープンソース GROWI
@@ -30,9 +34,39 @@ sections:
   community:
     title: コミュニティ・サポート
     text: GROWIに関する質問・要望・バグの報告は、 <br /> GitHubまたはSlackにて受け付けております。
+  readable_wiki:
+    title: 人にも、AI にも読みやすい wiki
+    markdown:
+      image_alt: "Markdown で書かれたページと .md エンドポイントで取得した本文"
+      title: Markdown ネイティブ
+      description: ページの実体は Markdown そのもの。段落や見出し、箇条書きの記入も簡単で、リッチテキストエディタ、プログラミング言語ごとのコードハイライト、絵文字、注釈、TODOリスト、数式、UML、Bootstrap(HTML) にも対応しています。ページの URL に <code>.md</code> を付ければ本文を Markdown のまま取得できるので、AI エージェントも 1 回の GET でページを読み取れます。
+      link_text: Markdown 記法を見る
+    diagram:
+      image_alt: "Markdown に埋め込んだ図の記法とその表示"
+      title: 図形の埋め込み
+      description: <strong class="text-dark">draw.io</strong> による直感的な作図に加え、<strong class="text-dark">Mermaid</strong> や <strong class="text-dark">PlantUML</strong> の記法で書いた図も、テキストのまま Markdown の中に埋め込めます。文章では表現しにくい内容も、図を用いて伝わりやすく共有できます。
+  api:
+    title: 豊富な API と MCP サーバー
+    rest_api:
+      image_alt: "アクセストークンの権限（scope）設定画面"
+      title: REST API
+      description: ページやユーザー、添付ファイルなどを操作できる REST API を備えています。既存のツールやワークフローとの連携を柔軟に組めます。
+      button_text: API リファレンス
+  vault:
+    image_alt: "GROWI のページを Markdown ファイルとして手元に git clone / git pull する仕組み"
+    title: GROWI Vault
+    tagline: wiki を、git clone する。
+    descriptions:
+      - 自分が閲覧権限を持つページを、Markdown ファイルのツリーとして Git リポジトリで取得できます。
+      - git pull で最新化でき、sparse checkout で一部のページだけを取得することも可能。
+      - AI コーディングエージェントが、手元のファイルと同じように wiki を探索できます。
+    command: git clone https://x:<ACCESS_TOKEN>@<GROWI_HOST>/vault.git
+    note: 読み取り専用。self-hosted 環境で管理者が有効化した場合に利用できます。
+    button_text: 使い方を見る
+    setup_link_text: 管理者向けセットアップ
   features:
-    title: 機能と特徴
-    text: 豊富な機能で社内やチーム内でのスムーズな情報共有を支える <br class="d-none d-md-block" /> GROWIの便利な機能の一部をご紹介します。機能の詳細は、<a href="https://docs.growi.org/ja/guide/">GROWI Docs/機能紹介</a> をご覧ください。
+    title: その他の機能と特徴
+    text: このほかにも、社内やチーム内でのスムーズな情報共有を支える機能を豊富に備えています。<br class="d-none d-md-block" /> 機能の詳細は、<a href="https://docs.growi.org/ja/guide/">GROWI Docs/機能紹介</a> をご覧ください。
   growi_ai:
     text: バージョン 8.0.0 より、GROWI AI は <strong>GROWI AI Agent</strong> として生まれ変わりました。<br class="d-none d-md-block" /> アシスタントの作成も学習も不要。質問を投げるだけで、<strong>wiki 全体を自ら探索して根拠を集め、答えを組み立てます。</strong>
     explore:
@@ -84,12 +118,6 @@ sections:
 button:
   start: GROWIを始める
 features:
-  markdown:
-    title: Markdown 対応
-    description: 段落や見出し、箇条書きの記入も簡単です。また、リッチテキストエディタ、プログラミング言語ごとのコードハイライト、絵文字、注釈、TODOリスト、数式、UML、Bootstrap(HTML) にも対応しています。
-  shape:
-    title: 図形作成
-    description: draw.io と連携し  GROWI.cloud 上で簡単に図表を作成することができます。文章では表現しにくい内容も図表を用いて伝わりやすい情報共有が可能です。
   search:
     title: タグ検索・全文検索
     description: アップロードされたファイルタイトルを含めた文検索が可能です。英数字は全角半角どちらでもヒットするようになっています。

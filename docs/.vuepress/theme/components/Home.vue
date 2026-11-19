@@ -72,31 +72,179 @@
       </div>
     </div>
 
-    <!-- features section -->
+    <!-- Readable wiki section (target of the "Features" hero button) -->
+    <div class="container pt-5 mt-5" id="readable-wiki" data-section="readable-wiki">
+      <div class="animated fadeIn text-center">
+        <h2 class="pb-4 section-title">{{ data.sections.readable_wiki.title }}</h2>
+      </div>
+      <div class="bg-light rounded-3 px-3 px-sm-5 py-5 mt-4">
+        <div class="row align-items-center mb-5">
+          <div class="col-lg-6 mb-4 mb-lg-0">
+            <img src="/assets/images/markdown-native.png" width="1200" height="718" loading="lazy" :alt="data.sections.readable_wiki.markdown.image_alt" class="img-fluid rounded-3 shadow" />
+          </div>
+          <div class="col-lg-6 ps-lg-4">
+            <h3 class="fs-2 mb-3 mb-md-4">
+              <i class="fab fa-markdown d-block text-logo-green mb-2" aria-hidden="true"></i>
+              {{ data.sections.readable_wiki.markdown.title }}
+            </h3>
+            <p v-html="data.sections.readable_wiki.markdown.description" class="mb-4"></p>
+            <a :href="data.links.markdown_guide" target="_blank" rel="noopener" class="fw-bold text-decoration-none">
+              {{ data.sections.readable_wiki.markdown.link_text }}<i class="fas fa-angle-right ms-2" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+        <div class="row align-items-center">
+          <div class="col-lg-6 mb-4 mb-lg-0 order-lg-2">
+            <img src="/assets/images/diagram-embed.png" width="1200" height="735" loading="lazy" :alt="data.sections.readable_wiki.diagram.image_alt" class="img-fluid rounded-3 shadow" />
+          </div>
+          <div class="col-lg-6 pe-lg-4 order-lg-1">
+            <h3 class="fs-2 mb-3 mb-md-4">
+              <i class="fas fa-project-diagram d-block text-logo-green mb-2" aria-hidden="true"></i>
+              {{ data.sections.readable_wiki.diagram.title }}
+            </h3>
+            <p v-html="data.sections.readable_wiki.diagram.description" class="mb-0"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- API and MCP server section -->
+    <div class="container pt-5 mt-5" id="api" data-section="api">
+      <div class="animated fadeIn text-center">
+        <h2 class="pb-4 section-title">{{ data.sections.api.title }}</h2>
+      </div>
+
+      <!-- GROWI MCP Server -->
+      <div id="mcp-server" class="row justify-content-center align-items-center mt-4">
+        <div class="col-lg-6 mb-4 mb-lg-0">
+          <figure class="bg-light rounded-3 shadow overflow-hidden mb-0">
+            <video ref="mcpServerVideo" data-src="/assets/images/growi-mcp-server.mp4" poster="/assets/images/growi-mcp-server-poster.jpg" class="d-block w-100" muted loop playsinline controls preload="none" :aria-label="data.sections.growi_ai.mcp_server.video_label"></video>
+            <figcaption class="small text-muted px-3 py-2">{{ data.sections.growi_ai.mcp_server.video_description }}</figcaption>
+          </figure>
+        </div>
+        <div class="col-lg-6 ps-lg-5 text-center text-lg-start">
+          <h3 class="fs-2 mb-3">{{ data.sections.growi_ai.mcp_server.title }}</h3>
+          <p v-html="data.sections.growi_ai.mcp_server.description" class="mb-4"></p>
+          <div class="d-sm-flex justify-content-center justify-content-lg-start align-items-center bg-lightgreen rounded-3 px-4 py-3 mb-4">
+            <h4 class="fs-5 fw-bold text-logo-green text-nowrap mb-2 mb-sm-0 me-sm-4">{{ data.sections.growi_ai.mcp_server.capabilities_title }}</h4>
+            <ul class="fa-ul d-inline-block text-start mb-0">
+              <li class="mb-0 fs-6 lh-base" v-for="(capability, index) in data.sections.growi_ai.mcp_server.capabilities" :key="`mcp-capability-${index}`"><span class="fa-li"><i class="fas fa-check text-logo-green" aria-hidden="true"></i></span>{{ capability }}</li>
+            </ul>
+          </div>
+          <a :href="data.links.mcp_server" class="btn btn-hexagon btn-bg-green-gradient btn-hexagon-angle-right fw-bold d-inline-block text-white px-5 py-2 rounded-0" target="_blank" rel="noopener">
+            <span class="fs-5">{{ data.sections.growi_ai.mcp_server.button_text }}</span>
+          </a>
+          <div class="d-flex flex-column flex-xl-row align-items-center align-items-lg-start gap-2 gap-xl-4 mt-3 mb-2">
+            <a :href="data.links.mcp_server_repo" target="_blank" rel="noopener" class="fw-bold text-decoration-none">
+              <i class="fab fa-github me-2" aria-hidden="true"></i>growilabs/growi-mcp-server
+            </a>
+            <a :href="data.links.mcp_server_npm" target="_blank" rel="noopener" class="fw-bold text-decoration-none">
+              <i class="fab fa-npm me-2" aria-hidden="true"></i>@growi/mcp-server
+            </a>
+          </div>
+          <p class="text-muted mb-0"><small>{{ data.sections.growi_ai.mcp_server.compatibility }}</small></p>
+        </div>
+      </div>
+
+      <!-- REST API -->
+      <div id="rest-api" class="bg-light rounded-3 px-4 px-lg-5 mt-5">
+        <div class="row justify-content-center">
+          <!-- Screenshot hangs from the top edge; the fade is baked into the image -->
+          <div class="col-8 col-sm-6 col-md-4 col-xl-3">
+            <img src="/assets/images/rest-api-scopes.png" width="418" height="406" loading="lazy" :alt="data.sections.api.rest_api.image_alt" class="img-fluid" />
+          </div>
+          <div class="col-sm-10 col-md-8 align-self-center py-4">
+            <div class="row align-items-center justify-content-around">
+              <div class="col-lg-8 px-0 mb-4 mb-lg-0">
+                <h3 class="fs-2 mb-3">
+                  <i class="fas fa-code d-block fs-4 text-logo-green mb-2" aria-hidden="true"></i>
+                  {{ data.sections.api.rest_api.title }}
+                </h3>
+                <p class="mb-0">{{ data.sections.api.rest_api.description }}</p>
+              </div>
+              <div class="col-lg-3 px-0">
+                <div class="btn-green-bg btn-green-bg-narrow">
+                  <a :href="data.links.api_reference" class="btn-green-line btn-hexagon-angle-right fw-bold d-inline-block text-center" target="_blank" rel="noopener">
+                    <span>{{ data.sections.api.rest_api.button_text }}</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- AI Section -->
+    <div class="container pt-5 mt-5" id="growi-ai-feature" data-section="growi-ai-feature">
+      <!-- Keep the previous anchor so existing #growi-ai links still scroll here -->
+      <span id="growi-ai"></span>
+      <div class="container py-5 bg-growi-ai-feature-section rounded-5">
+        <div class="animated fadeIn">
+          <h2 class="border-0 p-0 mt-0 mb-0">
+            <img src="/assets/images/growi-ai-agent-logo.svg" loading="lazy" alt="GROWI AI Agent" class="pb-3 mb-3" v-on:click="handleClick">
+          </h2>
+        </div>
+        <div class="row mx-md-5 justify-content-center">
+          <div class="col-md-10 col-lg-8 col-xl-12 text-center mb-5">
+            <p v-html="data.sections.growi_ai.text" class="mb-0"></p>
+          </div>
+        </div>
+        <div class="row mx-md-5 justify-content-around">
+          <div class="col-lg-5 col-md-10 mb-5 mb-lg-0">
+            <div class="card border-0 bg-transparent">
+              <img src="/assets/images/growi-ai-agent-explore.png" width="800" height="520" loading="lazy" :alt="data.sections.growi_ai.explore.image_alt" class="card-img-top rounded-3 shadow mb-2" />
+              <div class="card-body px-0 text-center">
+                <h3 class="mb-3 fs-4">{{ data.sections.growi_ai.explore.title }}</h3>
+                <p v-for="(description, index) in data.sections.growi_ai.explore.descriptions" :key="`explore-${index}`" class="text-start mb-2" v-html="description"></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-5 col-md-10">
+            <div class="card border-0 bg-transparent">
+              <img src="/assets/images/growi-ai-agent-providers.png" width="800" height="520" loading="lazy" :alt="data.sections.growi_ai.providers.image_alt" class="card-img-top rounded-3 shadow mb-2" />
+              <div class="card-body px-0 text-center">
+                <h3 class="mb-3 fs-4">{{ data.sections.growi_ai.providers.title }}</h3>
+                <p v-for="(description, index) in data.sections.growi_ai.providers.descriptions" :key="`providers-${index}`" class="text-start mb-2" v-html="description"></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="text-center mt-4">
+          <a :href="data.links.growi_ai_agent" class="btn btn-hexagon btn-bg-green-gradient btn-hexagon-angle-right fw-bold d-inline-block text-white px-5 py-2 rounded-0" target="_blank" rel="noopener">
+            <span class="fs-5">{{ data.sections.growi_ai.button_text }}</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- GROWI Vault -->
+      <div id="growi-vault" class="bg-light rounded-5 p-4 p-lg-5 mt-5 text-center">
+        <img src="/assets/images/growi-vault.png" width="2208" height="604" loading="lazy" :alt="data.sections.vault.image_alt" class="img-fluid rounded-4 mb-4" />
+        <div class="d-flex flex-column flex-md-row justify-content-center align-items-center align-items-md-end gap-2 gap-md-4 mb-3">
+          <h3 class="fs-1 fw-bold mb-0">{{ data.sections.vault.title }}</h3>
+          <p class="vault-tagline fs-5 fw-bold mb-2">{{ data.sections.vault.tagline }}</p>
+        </div>
+        <p v-for="(description, index) in data.sections.vault.descriptions" :key="`vault-${index}`" class="mb-0">{{ description }}</p>
+        <pre class="vault-command small d-inline-block text-start rounded-3 px-4 py-2 mt-4 mb-2 mw-100"><code>{{ data.sections.vault.command }}</code></pre>
+        <p class="text-muted mb-4"><small>{{ data.sections.vault.note }}</small></p>
+        <div class="d-flex flex-column flex-sm-row justify-content-center align-items-center gap-4">
+          <a :href="data.links.vault" class="btn btn-hexagon btn-bg-green-gradient btn-hexagon-angle-right fw-bold d-inline-block text-white px-5 py-2 rounded-0" target="_blank" rel="noopener">
+            <span class="fs-5">{{ data.sections.vault.button_text }}</span>
+          </a>
+          <a :href="data.links.vault_setup" target="_blank" rel="noopener" class="fw-bold text-decoration-none">
+            {{ data.sections.vault.setup_link_text }}<i class="fas fa-angle-right ms-2" aria-hidden="true"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Other features section -->
     <div class="container section-padding" id="features" data-section="features">
       <div class="animated fadeIn text-center">
         <h2 class="pb-5 section-title">{{ data.sections.features.title }}</h2>
         <p class="mb-4 text-start text-md-center mx-3 mx-md-auto" v-html="data.sections.features.text"></p>
       </div>
-      <div class="row mt-5 pt-0 pt-md-5">
-        <div class="col-sm-6 col-lg-4 px-lg-4 mb-4">
-          <div class="card border-0 bg-transparent">
-            <img src="/assets/images/features/editor.png" width="680" height="480" loading="lazy" :alt="data.features.markdown.title" class="card-img-top rounded-3 shadow" />
-            <div class="card-body px-0">
-              <h3 class="text-center mt-4 fs-5">{{ data.features.markdown.title }}</h3>
-              <p v-html="data.features.markdown.description" class=""></p>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-6 col-lg-4 px-lg-4 mb-4">
-          <div class="card border-0 bg-transparent">
-            <img src="/assets/images/features/shape.png" width="680" height="480" loading="lazy" :alt="data.features.shape.title" class="card-img-top rounded-3 shadow" />
-            <div class="card-body px-0">
-              <h3 class="text-center mt-4 fs-5">{{ data.features.shape.title }}</h3>
-              <p v-html="data.features.shape.description"></p>
-            </div>
-          </div>
-        </div>
+      <div class="row mt-5">
         <div class="col-sm-6 col-lg-4 px-lg-4 mb-4">
           <div class="card border-0 bg-transparent">
             <img src="/assets/images/features/search.png" width="680" height="480" loading="lazy" :alt="data.features.search.title" class="card-img-top rounded-3 shadow" />
@@ -159,73 +307,6 @@
               <p v-html="data.features.assets.description" class="mb-0"></p>
             </div>
           </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- AI Section -->
-    <div class="pb-5 container" id="growi-ai-feature" data-section="growi-ai-feature">
-      <!-- Keep the previous anchor so existing #growi-ai links still scroll here -->
-      <span id="growi-ai"></span>
-      <div class="container py-5 bg-growi-ai-feature-section rounded-5 mb-5">
-        <div class="animated fadeIn">
-          <h2 class="border-0 p-0 mt-0 mb-0">
-            <img src="/assets/images/growi-ai-agent-logo.svg" loading="lazy" alt="GROWI AI Agent" class="pb-3 mb-3" v-on:click="handleClick">
-          </h2>
-        </div>
-        <div class="row mx-md-5 justify-content-center">
-          <div class="col-md-10 col-lg-8 col-xl-12 text-center mb-5">
-            <p v-html="data.sections.growi_ai.text" class="mb-0"></p>
-          </div>
-        </div>
-        <div class="row mx-md-5 justify-content-around">
-          <div class="col-lg-5 col-md-10 mb-5 mb-lg-0">
-            <div class="card border-0 bg-transparent">
-              <img src="/assets/images/growi-ai-agent-explore.png" width="800" height="520" loading="lazy" :alt="data.sections.growi_ai.explore.image_alt" class="card-img-top rounded-3 shadow mb-2" />
-              <div class="card-body px-0 text-center">
-                <h3 class="mb-3 fs-4">{{ data.sections.growi_ai.explore.title }}</h3>
-                <p v-for="(description, index) in data.sections.growi_ai.explore.descriptions" :key="`explore-${index}`" class="text-start mb-2" v-html="description"></p>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-5 col-md-10">
-            <div class="card border-0 bg-transparent">
-              <img src="/assets/images/growi-ai-agent-providers.png" width="800" height="520" loading="lazy" :alt="data.sections.growi_ai.providers.image_alt" class="card-img-top rounded-3 shadow mb-2" />
-              <div class="card-body px-0 text-center">
-                <h3 class="mb-3 fs-4">{{ data.sections.growi_ai.providers.title }}</h3>
-                <p v-for="(description, index) in data.sections.growi_ai.providers.descriptions" :key="`providers-${index}`" class="text-start mb-2" v-html="description"></p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="text-center mt-4">
-          <a :href="data.links.growi_ai_agent" class="btn btn-hexagon btn-bg-green-gradient btn-hexagon-angle-right fw-bold d-inline-block text-white px-5 py-2 rounded-0" target="_blank">
-            <span class="fs-5">{{ data.sections.growi_ai.button_text }}</span>
-          </a>
-        </div>
-      </div>
-
-      <!-- GROWI MCP Server -->
-      <div id="mcp-server" class="row mx-xl-5 justify-content-center align-items-center py-5">
-        <div class="col-lg-6 mb-4 mb-lg-0">
-          <video ref="mcpServerVideo" data-src="/assets/images/growi-mcp-server.mp4" poster="/assets/images/growi-mcp-server-poster.jpg" class="rounded-3 shadow w-100" muted loop playsinline controls preload="none" :aria-label="data.sections.growi_ai.mcp_server.video_label"></video>
-          <p class="small text-muted mt-2 mb-0">{{ data.sections.growi_ai.mcp_server.video_description }}</p>
-        </div>
-        <div class="col-lg-5 ps-lg-5 text-lg-start text-center">
-          <h3 class="mb-4 fs-2">{{ data.sections.growi_ai.mcp_server.title }}</h3>
-          <p v-html="data.sections.growi_ai.mcp_server.description"></p>
-          <h4 class="fs-6 mb-2">{{ data.sections.growi_ai.mcp_server.capabilities_title }}</h4>
-          <ul class="list-unstyled mb-3">
-            <li v-for="(capability, index) in data.sections.growi_ai.mcp_server.capabilities" :key="`mcp-capability-${index}`">{{ capability }}</li>
-          </ul>
-          <p class="small mb-2">{{ data.sections.growi_ai.mcp_server.compatibility }}</p>
-          <p class="small mb-0">
-            <a :href="data.links.mcp_server_repo" target="_blank" rel="noopener">GitHub: growilabs/growi-mcp-server</a>
-            ・ <a :href="data.links.mcp_server_npm" target="_blank" rel="noopener">npm: @growi/mcp-server</a>
-          </p>
-          <a :href="data.links.mcp_server" class="btn btn-hexagon btn-bg-green-gradient btn-hexagon-angle-right fw-bold d-inline-block text-white px-5 py-2 mt-3 rounded-0" target="_blank">
-            <span class="fs-5">{{ data.sections.growi_ai.mcp_server.button_text }}</span>
-          </a>
         </div>
       </div>
     </div>
@@ -458,11 +539,10 @@ export default {
 
 ::v-deep {
   -webkit-font-smoothing: auto;
-  p {
-    a {
-      color: var.$info
-    }
-  }
+}
+
+footer p a {
+  color: var.$info;
 }
 
 ::v-deep img[width][height] {

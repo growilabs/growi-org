@@ -2,6 +2,10 @@
 @import 'variables';
 @import 'mixins';
 
+.text-logo-green {
+  color: $success;
+}
+
 /* Base */
 
 body {
@@ -140,6 +144,22 @@ cite {
   background: linear-gradient(130deg, #eeeaff 11%, #e0f5ff 89%);
 }
 
+// Tagline sits outside the heading but keeps the heading look
+.vault-tagline {
+  color: $title-color;
+  letter-spacing: $letter-spacing;
+  line-height: 1.25;
+}
+
+.vault-command {
+  overflow-x: auto;
+  color: #c6f3a8;
+  background-color: $dark-grey;
+  code {
+    color: inherit;
+  }
+}
+
 /* Header */
 
 /* button */
@@ -155,8 +175,14 @@ cite {
   clip-path: polygon(92% 0%, 100% 50%, 92% 100%, 8% 100%, 0% 50%, 8% 0%);
 }
 
+// Narrower variant for short labels
+.btn-green-bg-narrow {
+  width: 200px;
+}
+
+// Follows the width of the surrounding .btn-green-bg
 .btn-green-line {
-  width: 270px;
+  width: 100%;
   height: 48px;
   padding: 12px 5%;
   clip-path: polygon(calc(92% - 1px) 2px, calc(100% - 2px) 50%, calc(92% - 1px) calc(100% - 2px), calc(8% + 1px) calc(100% - 2px), 2px 50%, calc(8% + 1px) 2px);
