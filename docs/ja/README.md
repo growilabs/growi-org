@@ -10,7 +10,7 @@ heroImageAlt: GROWI の画面イメージ
 mockImage: /assets/images/mock-img-ja.png
 heroButtons:
 - text: 機能紹介
-  link: /ja/#features
+  link: /ja/#readable-wiki
 - text: デモサイト
   link: https://demo.growi.org
 - text: GROWI.cloud

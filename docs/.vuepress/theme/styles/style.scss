@@ -2,12 +2,8 @@
 @import 'variables';
 @import 'mixins';
 
-.home {
-  --logo-green: #{$success};
-}
-
 .text-logo-green {
-  color: var(--logo-green) !important;
+  color: $success;
 }
 
 /* Base */
@@ -146,6 +142,13 @@ cite {
 
 .bg-growi-ai-feature-section {
   background: linear-gradient(130deg, #eeeaff 11%, #e0f5ff 89%);
+}
+
+// Tagline sits outside the heading but keeps the heading look
+.vault-tagline {
+  color: $title-color;
+  letter-spacing: $letter-spacing;
+  line-height: 1.25;
 }
 
 .vault-command {

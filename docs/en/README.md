@@ -10,7 +10,7 @@ heroImageAlt: GROWI screen mockup
 mockImage: /assets/images/mock-img-en.png
 heroButtons:
 - text: Features
-  link: /en/#features
+  link: /en/#readable-wiki
 - text: Demo
   link: https://demo.growi.org
 - text: GROWI.cloud

@@ -73,7 +73,7 @@
     </div>
 
     <!-- Readable wiki section (target of the "Features" hero button) -->
-    <div class="container pt-5 mt-5" id="features" data-section="features">
+    <div class="container pt-5 mt-5" id="readable-wiki" data-section="readable-wiki">
       <div class="animated fadeIn text-center">
         <h2 class="pb-4 section-title">{{ data.sections.readable_wiki.title }}</h2>
       </div>
@@ -131,7 +131,7 @@
               <li class="mb-0 fs-6 lh-base" v-for="(capability, index) in data.sections.growi_ai.mcp_server.capabilities" :key="`mcp-capability-${index}`"><span class="fa-li"><i class="fas fa-check text-logo-green" aria-hidden="true"></i></span>{{ capability }}</li>
             </ul>
           </div>
-          <a :href="data.links.mcp_server" class="btn btn-hexagon btn-bg-green-gradient btn-hexagon-angle-right fw-bold d-inline-block text-white px-5 py-2 rounded-0" target="_blank">
+          <a :href="data.links.mcp_server" class="btn btn-hexagon btn-bg-green-gradient btn-hexagon-angle-right fw-bold d-inline-block text-white px-5 py-2 rounded-0" target="_blank" rel="noopener">
             <span class="fs-5">{{ data.sections.growi_ai.mcp_server.button_text }}</span>
           </a>
           <div class="d-flex flex-column flex-xl-row align-items-center align-items-lg-start gap-2 gap-xl-4 mt-3 mb-2">
@@ -151,7 +151,7 @@
         <div class="row justify-content-center">
           <!-- Screenshot hangs from the top edge; the fade is baked into the image -->
           <div class="col-8 col-sm-6 col-md-4 col-xl-3">
-            <img src="/assets/images/rest-api-scopes.png.png" width="418" height="406" loading="lazy" :alt="data.sections.api.rest_api.image_alt" class="img-fluid" />
+            <img src="/assets/images/rest-api-scopes.png" width="418" height="406" loading="lazy" :alt="data.sections.api.rest_api.image_alt" class="img-fluid" />
           </div>
           <div class="col-sm-10 col-md-8 align-self-center py-4">
             <div class="row align-items-center justify-content-around">
@@ -164,7 +164,7 @@
               </div>
               <div class="col-lg-3 px-0">
                 <div class="btn-green-bg btn-green-bg-narrow">
-                  <a :href="data.links.api_reference" class="btn-green-line btn-hexagon-angle-right fw-bold d-inline-block text-center" target="_blank">
+                  <a :href="data.links.api_reference" class="btn-green-line btn-hexagon-angle-right fw-bold d-inline-block text-center" target="_blank" rel="noopener">
                     <span>{{ data.sections.api.rest_api.button_text }}</span>
                   </a>
                 </div>
@@ -211,7 +211,7 @@
           </div>
         </div>
         <div class="text-center mt-4">
-          <a :href="data.links.growi_ai_agent" class="btn btn-hexagon btn-bg-green-gradient btn-hexagon-angle-right fw-bold d-inline-block text-white px-5 py-2 rounded-0" target="_blank">
+          <a :href="data.links.growi_ai_agent" class="btn btn-hexagon btn-bg-green-gradient btn-hexagon-angle-right fw-bold d-inline-block text-white px-5 py-2 rounded-0" target="_blank" rel="noopener">
             <span class="fs-5">{{ data.sections.growi_ai.button_text }}</span>
           </a>
         </div>
@@ -220,15 +220,15 @@
       <!-- GROWI Vault -->
       <div id="growi-vault" class="bg-light rounded-5 p-4 p-lg-5 mt-5 text-center">
         <img src="/assets/images/growi-vault.png" width="2208" height="604" loading="lazy" :alt="data.sections.vault.image_alt" class="img-fluid rounded-4 mb-4" />
-        <h3 class="d-flex flex-column flex-md-row justify-content-center align-items-center align-items-md-end gap-2 gap-md-4 mb-3">
-          <span class="fs-1 fw-bold">{{ data.sections.vault.title }}</span>
-          <span class="fs-5 mb-2">{{ data.sections.vault.tagline }}</span>
-        </h3>
+        <div class="d-flex flex-column flex-md-row justify-content-center align-items-center align-items-md-end gap-2 gap-md-4 mb-3">
+          <h3 class="fs-1 fw-bold mb-0">{{ data.sections.vault.title }}</h3>
+          <p class="vault-tagline fs-5 fw-bold mb-2">{{ data.sections.vault.tagline }}</p>
+        </div>
         <p v-for="(description, index) in data.sections.vault.descriptions" :key="`vault-${index}`" class="mb-0">{{ description }}</p>
         <pre class="vault-command small d-inline-block text-start rounded-3 px-4 py-2 mt-4 mb-2 mw-100"><code>{{ data.sections.vault.command }}</code></pre>
         <p class="text-muted mb-4"><small>{{ data.sections.vault.note }}</small></p>
         <div class="d-flex flex-column flex-sm-row justify-content-center align-items-center gap-4">
-          <a :href="data.links.vault" class="btn btn-hexagon btn-bg-green-gradient btn-hexagon-angle-right fw-bold d-inline-block text-white px-5 py-2 rounded-0" target="_blank">
+          <a :href="data.links.vault" class="btn btn-hexagon btn-bg-green-gradient btn-hexagon-angle-right fw-bold d-inline-block text-white px-5 py-2 rounded-0" target="_blank" rel="noopener">
             <span class="fs-5">{{ data.sections.vault.button_text }}</span>
           </a>
           <a :href="data.links.vault_setup" target="_blank" rel="noopener" class="fw-bold text-decoration-none">
@@ -239,7 +239,7 @@
     </div>
 
     <!-- Other features section -->
-    <div class="container section-padding" id="other-features" data-section="other-features">
+    <div class="container section-padding" id="features" data-section="features">
       <div class="animated fadeIn text-center">
         <h2 class="pb-5 section-title">{{ data.sections.features.title }}</h2>
         <p class="features-lead mb-4 text-start text-md-center mx-3 mx-md-auto" v-html="data.sections.features.text"></p>
