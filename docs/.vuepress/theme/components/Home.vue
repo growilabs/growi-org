@@ -83,7 +83,7 @@
             <img src="/assets/images/markdown-native.png" width="1200" height="718" loading="lazy" :alt="data.sections.readable_wiki.markdown.image_alt" class="img-fluid rounded-3 shadow" />
           </div>
           <div class="col-lg-6 ps-lg-4">
-            <h3 class="fs-2 mb-4">
+            <h3 class="fs-2 mb-3 mb-md-4">
               <i class="fab fa-markdown d-block text-logo-green mb-2" aria-hidden="true"></i>
               {{ data.sections.readable_wiki.markdown.title }}
             </h3>
@@ -98,7 +98,7 @@
             <img src="/assets/images/diagram-embed.png" width="1200" height="735" loading="lazy" :alt="data.sections.readable_wiki.diagram.image_alt" class="img-fluid rounded-3 shadow" />
           </div>
           <div class="col-lg-6 pe-lg-4 order-lg-1">
-            <h3 class="fs-2 mb-4">
+            <h3 class="fs-2 mb-3 mb-md-4">
               <i class="fas fa-project-diagram d-block text-logo-green mb-2" aria-hidden="true"></i>
               {{ data.sections.readable_wiki.diagram.title }}
             </h3>
@@ -119,22 +119,22 @@
         <div class="col-lg-6 mb-4 mb-lg-0">
           <figure class="bg-light rounded-3 shadow overflow-hidden mb-0">
             <video ref="mcpServerVideo" data-src="/assets/images/growi-mcp-server.mp4" poster="/assets/images/growi-mcp-server-poster.jpg" class="d-block w-100" muted loop playsinline controls preload="none" :aria-label="data.sections.growi_ai.mcp_server.video_label"></video>
-            <figcaption class="text-muted px-3 py-2">{{ data.sections.growi_ai.mcp_server.video_description }}</figcaption>
+            <figcaption class="small text-muted px-3 py-2">{{ data.sections.growi_ai.mcp_server.video_description }}</figcaption>
           </figure>
         </div>
-        <div class="col-lg-6 ps-lg-5">
+        <div class="col-lg-6 ps-lg-5 text-center text-lg-start">
           <h3 class="fs-2 mb-3">{{ data.sections.growi_ai.mcp_server.title }}</h3>
           <p v-html="data.sections.growi_ai.mcp_server.description" class="mb-4"></p>
-          <div class="d-sm-flex align-items-center bg-lightgreen rounded-3 px-4 py-3 mb-4">
+          <div class="d-sm-flex justify-content-center justify-content-lg-start align-items-center bg-lightgreen rounded-3 px-4 py-3 mb-4">
             <h4 class="fs-5 fw-bold text-logo-green text-nowrap mb-2 mb-sm-0 me-sm-4">{{ data.sections.growi_ai.mcp_server.capabilities_title }}</h4>
-            <ul class="fa-ul mb-0">
+            <ul class="fa-ul d-inline-block text-start mb-0">
               <li class="mb-0 fs-6 lh-base" v-for="(capability, index) in data.sections.growi_ai.mcp_server.capabilities" :key="`mcp-capability-${index}`"><span class="fa-li"><i class="fas fa-check text-logo-green" aria-hidden="true"></i></span>{{ capability }}</li>
             </ul>
           </div>
           <a :href="data.links.mcp_server" class="btn btn-hexagon btn-bg-green-gradient btn-hexagon-angle-right fw-bold d-inline-block text-white px-5 py-2 rounded-0" target="_blank">
             <span class="fs-5">{{ data.sections.growi_ai.mcp_server.button_text }}</span>
           </a>
-          <div class="d-flex flex-wrap gap-3 mt-3 mb-2">
+          <div class="d-flex flex-column flex-xl-row align-items-center align-items-lg-start gap-2 gap-xl-4 mt-3 mb-2">
             <a :href="data.links.mcp_server_repo" target="_blank" rel="noopener" class="fw-bold text-decoration-none">
               <i class="fab fa-github me-2" aria-hidden="true"></i>growilabs/growi-mcp-server
             </a>
@@ -142,7 +142,7 @@
               <i class="fab fa-npm me-2" aria-hidden="true"></i>@growi/mcp-server
             </a>
           </div>
-          <p class="text-muted mb-0">{{ data.sections.growi_ai.mcp_server.compatibility }}</p>
+          <p class="text-muted mb-0"><small>{{ data.sections.growi_ai.mcp_server.compatibility }}</small></p>
         </div>
       </div>
 
@@ -150,11 +150,11 @@
       <div id="rest-api" class="bg-light rounded-3 px-4 px-lg-5 mt-5">
         <div class="row justify-content-center">
           <!-- Screenshot hangs from the top edge; the fade is baked into the image -->
-          <div class="col-sm-4 col-xl-3 d-none d-md-block">
+          <div class="col-8 col-sm-6 col-md-4 col-xl-3">
             <img src="/assets/images/rest-api-scopes.png.png" width="418" height="406" loading="lazy" :alt="data.sections.api.rest_api.image_alt" class="img-fluid" />
           </div>
           <div class="col-sm-10 col-md-8 align-self-center py-4">
-            <div class="row align-items-center justify-content-center">
+            <div class="row align-items-center justify-content-around">
               <div class="col-lg-8 px-0 mb-4 mb-lg-0">
                 <h3 class="fs-2 mb-3">
                   <i class="fas fa-code d-block fs-4 text-logo-green mb-2" aria-hidden="true"></i>
@@ -162,8 +162,8 @@
                 </h3>
                 <p class="mb-0">{{ data.sections.api.rest_api.description }}</p>
               </div>
-              <div class="col-lg-3">
-                <div class="btn-green-bg btn-green-bg-narrow mx-auto">
+              <div class="col-lg-3 px-0">
+                <div class="btn-green-bg btn-green-bg-narrow">
                   <a :href="data.links.api_reference" class="btn-green-line btn-hexagon-angle-right fw-bold d-inline-block text-center" target="_blank">
                     <span>{{ data.sections.api.rest_api.button_text }}</span>
                   </a>
@@ -226,7 +226,7 @@
         </h3>
         <p v-for="(description, index) in data.sections.vault.descriptions" :key="`vault-${index}`" class="mb-0">{{ description }}</p>
         <pre class="vault-command small d-inline-block text-start rounded-3 px-4 py-2 mt-4 mb-2 mw-100"><code>{{ data.sections.vault.command }}</code></pre>
-        <p class="small text-muted mb-4">{{ data.sections.vault.note }}</p>
+        <p class="text-muted mb-4"><small>{{ data.sections.vault.note }}</small></p>
         <div class="d-flex flex-column flex-sm-row justify-content-center align-items-center gap-4">
           <a :href="data.links.vault" class="btn btn-hexagon btn-bg-green-gradient btn-hexagon-angle-right fw-bold d-inline-block text-white px-5 py-2 rounded-0" target="_blank">
             <span class="fs-5">{{ data.sections.vault.button_text }}</span>
