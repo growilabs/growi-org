@@ -242,7 +242,7 @@
     <div class="container section-padding" id="features" data-section="features">
       <div class="animated fadeIn text-center">
         <h2 class="pb-5 section-title">{{ data.sections.features.title }}</h2>
-        <p class="features-lead mb-4 text-start text-md-center mx-3 mx-md-auto" v-html="data.sections.features.text"></p>
+        <p class="mb-4 text-start text-md-center mx-3 mx-md-auto" v-html="data.sections.features.text"></p>
       </div>
       <div class="row mt-5">
         <div class="col-sm-6 col-lg-4 px-lg-4 mb-4">
@@ -539,15 +539,10 @@ export default {
 
 ::v-deep {
   -webkit-font-smoothing: auto;
-  p {
-    a {
-      color: var.$info
-    }
-  }
-  // Keep the default link color for the link in the features lead text
-  .features-lead a {
-    color: var.$primary;
-  }
+}
+
+footer p a {
+  color: var.$info;
 }
 
 ::v-deep img[width][height] {
