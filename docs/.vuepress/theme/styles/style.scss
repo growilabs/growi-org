@@ -2,6 +2,14 @@
 @import 'variables';
 @import 'mixins';
 
+.home {
+  --logo-green: #{$success};
+}
+
+.text-logo-green {
+  color: var(--logo-green) !important;
+}
+
 /* Base */
 
 body {

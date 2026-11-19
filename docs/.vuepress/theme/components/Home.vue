@@ -84,7 +84,7 @@
           </div>
           <div class="col-lg-6 ps-lg-5">
             <h3 class="fs-2 mb-4">
-              <i class="fab fa-markdown d-block text-success mb-2" aria-hidden="true"></i>
+              <i class="fab fa-markdown d-block text-logo-green mb-2" aria-hidden="true"></i>
               {{ data.sections.readable_wiki.markdown.title }}
             </h3>
             <p v-html="data.sections.readable_wiki.markdown.description" class="mb-4"></p>
@@ -99,7 +99,7 @@
           </div>
           <div class="col-lg-6 pe-lg-5 order-lg-1">
             <h3 class="fs-2 mb-4">
-              <i class="fas fa-project-diagram d-block text-success mb-2" aria-hidden="true"></i>
+              <i class="fas fa-project-diagram d-block text-logo-green mb-2" aria-hidden="true"></i>
               {{ data.sections.readable_wiki.diagram.title }}
             </h3>
             <p v-html="data.sections.readable_wiki.diagram.description" class="mb-0"></p>
@@ -124,7 +124,7 @@
           <h3 class="fs-2 mb-3">{{ data.sections.growi_ai.mcp_server.title }}</h3>
           <p v-html="data.sections.growi_ai.mcp_server.description" class="mb-4"></p>
           <div class="d-sm-flex align-items-center bg-lightgreen rounded-3 px-4 py-3 mb-4">
-            <h4 class="fs-5 fw-bold text-success text-nowrap mb-2 mb-sm-0 me-sm-4">{{ data.sections.growi_ai.mcp_server.capabilities_title }}</h4>
+            <h4 class="fs-5 fw-bold text-logo-green text-nowrap mb-2 mb-sm-0 me-sm-4">{{ data.sections.growi_ai.mcp_server.capabilities_title }}</h4>
             <ul class="list-disc mb-0 ps-4">
               <li class="mb-0 fs-6 lh-base" v-for="(capability, index) in data.sections.growi_ai.mcp_server.capabilities" :key="`mcp-capability-${index}`">{{ capability }}</li>
             </ul>
@@ -155,7 +155,7 @@
             <div class="row align-items-center">
               <div class="col-lg-8 mb-4 mb-lg-0">
                 <h3 class="fs-2 mb-3">
-                  <i class="fas fa-code d-block fs-4 text-success mb-2" aria-hidden="true"></i>
+                  <i class="fas fa-code d-block fs-4 text-logo-green mb-2" aria-hidden="true"></i>
                   {{ data.sections.api.rest_api.title }}
                 </h3>
                 <p class="mb-0">{{ data.sections.api.rest_api.description }}</p>
